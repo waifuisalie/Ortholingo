@@ -1,0 +1,7 @@
+# Ortholingo asset pipeline
+# Python 3.11+ · also requires ffmpeg (ffprobe) on PATH
+edge-tts>=7.0
+PyYAML>=6.0
+
+# Optional — only for the --qc whisper round-trip gate:
+# faster-whisper>=1.1
