@@ -1,0 +1,141 @@
+# Ortholingo — Architecture & Decision Log
+
+Last updated: 2026-07-17 (phases 1–2). This file is the durable record of *why*
+things are the way they are. If you (human or AI) are about to change a
+decision recorded here, read its rationale first.
+
+## 1. System overview
+
+```
+┌────────────────── Browser (SvelteKit PWA) ──────────────────┐
+│  Lesson player · karaoke cards · SRS review · mic capture   │
+│  progress cache (localStorage + device id)                  │
+└──────────────────────────┬──────────────────────────────────┘
+                           │ HTTPS · JSON (+ multipart audio)
+┌──────────────────────────▼──────────────────────────────────┐
+│  Caddy / dev server                                         │
+│    ├── /assets/audio/*   static phrase + word recordings    │
+│    ├── /assets/timings/* word-boundary JSONs                │
+│    └── /api → FastAPI                                       │
+│          ├── content endpoints                              │
+│          ├── progress + FSRS scheduling                     │
+│          └── POST /speech/score → ffmpeg → faster-whisper   │
+│                └─ normalize → word-level diff → per-word ✓✗ │
+│  SQLite                                                     │
+└─────────────────────────────────────────────────────────────┘
+             ▲
+   content/*.yaml ──> pipeline/build_assets.py ──> assets/
+   (priest-reviewable)     (edge-tts + QC gate)
+```
+
+**Hosting:** prototype runs on the developer desktop (Ryzen 7 5700G / 32GB);
+demos are shared via Cloudflare quick tunnel (`cloudflared tunnel --url …`)
+because browser mic capture requires a secure context (HTTPS or localhost).
+Production later = same Docker Compose on a small VPS.
+
+## 2. Core design decisions
+
+### D1 — Byzantine pronunciation, never Erasmian
+Liturgical Koine is pronounced as Modern Greek in Greek Orthodox practice
+(η=ι=υ=ει=οι=/i/, β=/v/, αι=/e/…). Consequences: Whisper's modern-Greek
+training matches church recitation; all transliterations follow Byzantine
+values (Καὶ τῷ πνεύματί σου → "Ke to pnevmatí su").
+
+### D2 — Closed corpus, curated content, no runtime generation
+The Liturgy is a fixed text (~hundreds of phrases). All content is YAML in
+git with source citations, built to be reviewed by clergy (every entry has
+`review: pending` until then). No LLM generates doctrine at runtime.
+LLM-assisted *authoring* is allowed; human/priest review is the gate.
+
+### D3 — TTS is build-time; STT is runtime
+Audio is pre-generated into `assets/` (static files, offline app). Only STT
+runs live (pronunciation scoring), so only STT has a latency budget (≤3s).
+
+### D4 — Speech stack (decided by bake-off, `bakeoff/`, 2026-07-17)
+- **TTS:** edge-tts (dev) / official Azure Speech free tier (production).
+  **Casting: `el-GR-AthinaNeural` speaks all Greek liturgical text;
+  `en-US-AvaMultilingualNeural` is the mascot (PT/EN).** Nestoras (male el)
+  reserved for a possible "chanter mode"; Thalita (pt-BR multilingual) is the
+  swap if Ava's PT accent grates. Chatterbox Multilingual (MIT, local) stayed
+  installed in `bakeoff/` as the fully-local fallback — it won local-model
+  Greek but is unstable on very short phrases (~25% clean-take yield).
+- **Slow mode:** TWO files per phrase — normal and native `rate="-40%"`
+  generation. Client-side playbackRate was rejected: sounds robotic (user
+  judgment). −40% chosen by ear from a rate ladder (−15/−25/−40).
+- **STT:** faster-whisper `large-v3-turbo` int8 CPU. Measured 5.3s/phrase at
+  beam_size=5 → tuning pass pending (beam 1, silence trim, whisper.cpp Vulkan
+  escape hatch for the AMD RX 6700 XT — CUDA stacks won't see that GPU, and
+  ROCm on gfx1031 is unsupported/hacky; CPU-first).
+- **Whisper "modernizes" Koine** (τῷ→το, ἡμῶν→ημών variants): the scorer must
+  normalize phonetically, and `initial_prompt` biasing must be tested against
+  its hallucination risk (it may echo the target when the user said garbage).
+
+### D5 — QC gate for generated audio (two signals, validated)
+whisper round-trip similarity ≥ 0.90 **AND** speech rate within 7–20
+letters/sec of audio. Rationale: similarity alone shipped a junk-padded take
+(model babble that Whisper politely ignored — scored 1.00); the rate bound
+catches padding, the similarity bound catches mispronunciation. Retry loop
+regenerates failures. Cheap rate check always on; whisper check opt-in
+(`--qc`) since edge output is stable.
+
+### D6 — Word-level sync is captured at generation, not aligned after
+edge-tts emits WordBoundary events (exact per-word timestamps) during
+synthesis — **but only with `boundary="WordBoundary"`; edge-tts 7.x defaults
+to sentence boundaries** (cost us a debug cycle; never again). Timings are
+saved per phrase per speed into `assets/timings/{id}.json`. The lesson card
+highlights the Greek word and its transliteration counterpart together
+(paired spans by index), both during playback and on tap. Tap-a-word plays an
+isolated word clip (−20% rate) from a corpus-wide deduplicated pool
+(`assets/audio/words/`) — frequent liturgical words are shared across
+phrases.
+
+### D7 — Content schema invariants
+- `greek` (polytonic) is for display; `tts` (monotonic) is what engines
+  receive — polytonic input degrades modern-Greek TTS.
+- `words[]` (polytonic tokens) and their `tl` transliterations are aligned
+  1:1, and `len(words) == len(tts tokens)` — the pipeline validates this;
+  boundary events map to these indices.
+- Transliteration is a *training wheel*: UI shows it early and fades it per
+  phrase as SRS mastery grows (manual override in settings for accessibility).
+- Every entry cites its source (Devocional page / liturgy text) and carries
+  `review: pending|approved`.
+
+### D8 — Reverence rules (non-negotiable design constraints)
+- The mascot (monastery cat: plain black robe, skoufos, komboskini) never
+  wears sacred vestments, sacramental objects, or sacred inscriptions. The
+  first draft in a Great Schema analavos was rejected as disrespectful.
+- The learning path goes narthex → nave and never "enters" the sanctuary.
+- No competitive leaderboards; no punitive mechanics; the mascot never
+  guilt-trips. Streak = candle motif (komboskini-as-streak idea shelved
+  pending the priest's opinion).
+- Branding uses the three-bar Orthodox cross (user's choice, aware it's more
+  Slavic than Greek tradition — to be confirmed with the parish priest).
+- Source books (PDFs) are copyrighted and are gitignored, never committed.
+
+## 3. Asset pipeline contract
+
+`pipeline/build_assets.py` reads every `content/units/*.yaml` and produces:
+
+```
+assets/
+├── audio/phrases/{id}_normal.mp3     Athina (or per-entry voice), +0%
+├── audio/phrases/{id}_slow.mp3       same text, rate=-40%
+├── audio/words/{key}.mp3             isolated word clips, rate=-20%, deduped
+├── timings/{id}.json                 {"normal": [[s,e]…], "slow": [[s,e]…]}
+└── manifest.json                     everything the frontend needs to render
+```
+
+Properties: idempotent (skips up-to-date items by text hash; `--force`
+regenerates), validating (schema + word-count alignment fail the build),
+QC-gated (D5). Assets are committed to git: they're small, and contributors
+shouldn't need network + TTS access to run the app.
+
+## 4. Roadmap
+
+1. ✅ Scaffold (this)
+2. ✅ Content pipeline + Units 0–1
+3. Frontend: SvelteKit lesson player, karaoke card, Unit 0 playable
+4. Backend: /speech/score + latency tuning + own-voice benchmark harness
+5. FSRS + Liturgy Map (frequency-weighted "% of Liturgy understood")
+6. PWA polish, Sunday-prep, tunnel demos, priest review & blessing,
+   parish recordings (ask readers for a slow take too)

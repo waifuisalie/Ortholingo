@@ -1,0 +1,21 @@
+# Source books — copyrighted, never published to the repo
+*.pdf
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Node (phase 3+)
+node_modules/
+.svelte-kit/
+build/
+dist/
+
+# Bake-off laboratory outputs (regenerable experiments)
+bakeoff/out/
+
+# OS / editor noise
+.DS_Store
+*.swp
