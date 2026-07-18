@@ -1,0 +1,1401 @@
+{
+ "voices": {
+  "athina": "el-GR-AthinaNeural",
+  "ava": "en-US-AvaMultilingualNeural"
+ },
+ "slow_rate": "-40%",
+ "units": [
+  {
+   "id": "unit0-alfabeto",
+   "title": "O alfabeto grego",
+   "section": "nartex",
+   "order": 1,
+   "intro_pt": "Antes de rezar em grego, aprendemos a lê-lo. São 24 letras — e a pronúncia que usamos é a bizantina, a mesma que você ouve na Divina Liturgia (não a pronúncia \"clássica\" de escola). Toque em cada letra para ouvir seu nome.",
+   "items": [
+    "letra-alfa",
+    "letra-vita",
+    "letra-gamma",
+    "letra-delta",
+    "letra-epsilon",
+    "letra-zita",
+    "letra-ita",
+    "letra-thita",
+    "letra-iota",
+    "letra-kappa",
+    "letra-lamda",
+    "letra-mi",
+    "letra-ni",
+    "letra-xi",
+    "letra-omikron",
+    "letra-pi",
+    "letra-ro",
+    "letra-sigma",
+    "letra-taf",
+    "letra-ipsilon",
+    "letra-fi",
+    "letra-chi",
+    "letra-psi",
+    "letra-omega"
+   ]
+  },
+  {
+   "id": "unit1-respostas",
+   "title": "As respostas do povo",
+   "section": "nave",
+   "order": 2,
+   "intro_pt": "A Divina Liturgia é um diálogo: o sacerdote e o diácono oram, e o povo — você — responde. Estas são as respostas que você dirá já no próximo domingo. Começamos pela mais frequente de todas.",
+   "items": [
+    "kyrie-eleison",
+    "amin",
+    "ke-to-pnevmati-su",
+    "irini-pasi",
+    "si-kyrie",
+    "paraschu-kyrie",
+    "doxa-patri",
+    "ke-nin",
+    "proschomen",
+    "sofia-orthi",
+    "trisagion"
+   ]
+  }
+ ],
+ "items": {
+  "letra-alfa": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Α α",
+   "words": [
+    {
+     "el": "Α α",
+     "tl": "álfa"
+    }
+   ],
+   "pt": "Som de A, como em «pai».",
+   "gloss": [
+    {
+     "el": "α",
+     "pt": "sempre /a/ aberto"
+    }
+   ],
+   "context_pt": "Primeira letra. «Ἀμήν» começa com ela.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "ac1baaa005bc397b",
+   "wordkeys": [
+    "αλφα"
+   ]
+  },
+  "letra-vita": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Β β",
+   "words": [
+    {
+     "el": "Β β",
+     "tl": "víta"
+    }
+   ],
+   "pt": "Som de V, como em «vida» — não de B!",
+   "gloss": [
+    {
+     "el": "β",
+     "pt": "/v/ — a marca da pronúncia bizantina"
+    }
+   ],
+   "context_pt": "Na pronúncia bizantina, β é sempre /v/: «Βασιλεύς» (rei) soa «Vasilévs».",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto",
+    "bizantino"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "3cf6c575d54da57b",
+   "wordkeys": [
+    "βητα"
+   ]
+  },
+  "letra-gamma": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Γ γ",
+   "words": [
+    {
+     "el": "Γ γ",
+     "tl": "gámma"
+    }
+   ],
+   "pt": "Som de G suave (gutural); antes de E/I vira som de Y, como em «ioga».",
+   "gloss": [
+    {
+     "el": "γ",
+     "pt": "/gh/ suave; /y/ antes de ε, ι"
+    }
+   ],
+   "context_pt": "«Ἁγία» (santa) soa «ayía» — o γ amolece antes de ι.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "b060373e663f6f0c",
+   "wordkeys": [
+    "γαμμα"
+   ]
+  },
+  "letra-delta": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Δ δ",
+   "words": [
+    {
+     "el": "Δ δ",
+     "tl": "délta"
+    }
+   ],
+   "pt": "Som de TH sonoro do inglês «this» — não de D!",
+   "gloss": [
+    {
+     "el": "δ",
+     "pt": "/ð/ — ponha a língua entre os dentes"
+    }
+   ],
+   "context_pt": "«Δόξα» (glória) começa com esse som: «Dhóxa».",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto",
+    "bizantino"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "f57ab4063ea30c13",
+   "wordkeys": [
+    "δελτα"
+   ]
+  },
+  "letra-epsilon": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ε ε",
+   "words": [
+    {
+     "el": "Ε ε",
+     "tl": "épsilon"
+    }
+   ],
+   "pt": "Som de É aberto, como em «fé».",
+   "gloss": [
+    {
+     "el": "ε",
+     "pt": "sempre /e/ aberto"
+    }
+   ],
+   "context_pt": "«ἐλέησον» (tem piedade) tem três deles.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "bb2f2c9fecee3421",
+   "wordkeys": [
+    "εψιλον"
+   ]
+  },
+  "letra-zita": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ζ ζ",
+   "words": [
+    {
+     "el": "Ζ ζ",
+     "tl": "zíta"
+    }
+   ],
+   "pt": "Som de Z, como em «zelo».",
+   "gloss": [
+    {
+     "el": "ζ",
+     "pt": "/z/"
+    }
+   ],
+   "context_pt": "«ζωή» (vida) — «zoí». A palavra da inscrição ΙΣ ΧΣ ΝΙΚΑ vem logo.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "272fbfd74bc5b76c",
+   "wordkeys": [
+    "ζητα"
+   ]
+  },
+  "letra-ita": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Η η",
+   "words": [
+    {
+     "el": "Η η",
+     "tl": "íta"
+    }
+   ],
+   "pt": "Som de I, como em «vida» — não de E!",
+   "gloss": [
+    {
+     "el": "η",
+     "pt": "/i/ na pronúncia bizantina"
+    }
+   ],
+   "context_pt": "Na escola clássica η é «ê»; na igreja é /i/. «Εἰρήνη» (paz) soa «Iríni». Este é o ponto onde a pronúncia bizantina mais surpreende.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto",
+    "bizantino"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "fb999e4062d05254",
+   "wordkeys": [
+    "ητα"
+   ]
+  },
+  "letra-thita": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Θ θ",
+   "words": [
+    {
+     "el": "Θ θ",
+     "tl": "thíta"
+    }
+   ],
+   "pt": "Som de TH surdo do inglês «think».",
+   "gloss": [
+    {
+     "el": "θ",
+     "pt": "/θ/ — sopro entre os dentes, sem voz"
+    }
+   ],
+   "context_pt": "«Θεός» (Deus) — «Theós». Você dirá essa palavra muitas vezes.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "7b4e10d432d5118c",
+   "wordkeys": [
+    "θητα"
+   ]
+  },
+  "letra-iota": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ι ι",
+   "words": [
+    {
+     "el": "Ι ι",
+     "tl": "yóta"
+    }
+   ],
+   "pt": "Som de I, como em «vida».",
+   "gloss": [
+    {
+     "el": "ι",
+     "pt": "/i/"
+    }
+   ],
+   "context_pt": "A menor letra — a do «iota» de Mt 5:18.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "83da5a8db3e8f10b",
+   "wordkeys": [
+    "γιωτα"
+   ]
+  },
+  "letra-kappa": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Κ κ",
+   "words": [
+    {
+     "el": "Κ κ",
+     "tl": "káppa"
+    }
+   ],
+   "pt": "Som de K, como em «casa».",
+   "gloss": [
+    {
+     "el": "κ",
+     "pt": "/k/"
+    }
+   ],
+   "context_pt": "«Κύριε» (Senhor) começa com ela — a palavra mais frequente da Liturgia.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "484fdb810e9dff91",
+   "wordkeys": [
+    "καππα"
+   ]
+  },
+  "letra-lamda": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Λ λ",
+   "words": [
+    {
+     "el": "Λ λ",
+     "tl": "lámda"
+    }
+   ],
+   "pt": "Som de L, como em «luz».",
+   "gloss": [
+    {
+     "el": "λ",
+     "pt": "/l/"
+    }
+   ],
+   "context_pt": "«λαός» (povo) — nós, que respondemos na Liturgia.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "6f1766f0dcee8297",
+   "wordkeys": [
+    "λαμδα"
+   ]
+  },
+  "letra-mi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Μ μ",
+   "words": [
+    {
+     "el": "Μ μ",
+     "tl": "mi"
+    }
+   ],
+   "pt": "Som de M, como em «mãe».",
+   "gloss": [
+    {
+     "el": "μ",
+     "pt": "/m/"
+    }
+   ],
+   "context_pt": "«Μαρία» — a Theotokos.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "e3d0ec4064b97f91",
+   "wordkeys": [
+    "μι"
+   ]
+  },
+  "letra-ni": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ν ν",
+   "words": [
+    {
+     "el": "Ν ν",
+     "tl": "ni"
+    }
+   ],
+   "pt": "Som de N, como em «nós». Cuidado: parece um V latino!",
+   "gloss": [
+    {
+     "el": "ν",
+     "pt": "/n/ — apesar da forma ν"
+    }
+   ],
+   "context_pt": "«ΝΙΚΑ» (vence) — da inscrição ΙΣ ΧΣ ΝΙΚΑ na cruz.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "74fb6461065260aa",
+   "wordkeys": [
+    "νι"
+   ]
+  },
+  "letra-xi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ξ ξ",
+   "words": [
+    {
+     "el": "Ξ ξ",
+     "tl": "xi"
+    }
+   ],
+   "pt": "Som de KS, como o X de «táxi».",
+   "gloss": [
+    {
+     "el": "ξ",
+     "pt": "/ks/"
+    }
+   ],
+   "context_pt": "«Δόξα» (glória) — «Dhóksa».",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "c55b5e206563ae92",
+   "wordkeys": [
+    "ξι"
+   ]
+  },
+  "letra-omikron": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ο ο",
+   "words": [
+    {
+     "el": "Ο ο",
+     "tl": "ómikron"
+    }
+   ],
+   "pt": "Som de Ó aberto, como em «avó».",
+   "gloss": [
+    {
+     "el": "ο",
+     "pt": "/o/"
+    }
+   ],
+   "context_pt": "«ὁ Θεός» — o artigo «o» antes de Deus, igual ao português!",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "5cc38003a5b47e54",
+   "wordkeys": [
+    "ομικρον"
+   ]
+  },
+  "letra-pi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Π π",
+   "words": [
+    {
+     "el": "Π π",
+     "tl": "pi"
+    }
+   ],
+   "pt": "Som de P, como em «paz».",
+   "gloss": [
+    {
+     "el": "π",
+     "pt": "/p/"
+    }
+   ],
+   "context_pt": "«Πάτερ» (Pai) — a primeira palavra do Pai Nosso.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "786ef3da581e4850",
+   "wordkeys": [
+    "πι"
+   ]
+  },
+  "letra-ro": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ρ ρ",
+   "words": [
+    {
+     "el": "Ρ ρ",
+     "tl": "ro"
+    }
+   ],
+   "pt": "Som de R vibrado, como em «caro». Cuidado: parece um P latino!",
+   "gloss": [
+    {
+     "el": "ρ",
+     "pt": "/r/ — apesar da forma ρ"
+    }
+   ],
+   "context_pt": "«Κύριε» tem um ρ no meio: «Kí-ri-e».",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "b8d9347a3909f049",
+   "wordkeys": [
+    "ρο"
+   ]
+  },
+  "letra-sigma": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Σ σ ς",
+   "words": [
+    {
+     "el": "Σ σ ς",
+     "tl": "sígma"
+    }
+   ],
+   "pt": "Som de S, como em «santo». No fim da palavra escreve-se ς.",
+   "gloss": [
+    {
+     "el": "σ / ς",
+     "pt": "/s/ — ς só no final"
+    }
+   ],
+   "context_pt": "«Ἅγιος» (santo) termina com o sigma final: ς.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "38fc189872ffb678",
+   "wordkeys": [
+    "σιγμα"
+   ]
+  },
+  "letra-taf": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Τ τ",
+   "words": [
+    {
+     "el": "Τ τ",
+     "tl": "taf"
+    }
+   ],
+   "pt": "Som de T, como em «terra».",
+   "gloss": [
+    {
+     "el": "τ",
+     "pt": "/t/"
+    }
+   ],
+   "context_pt": "A letra em forma de cruz — «σταυρός» (cruz) a carrega no meio.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "93dd4d1ab94a7fb6",
+   "wordkeys": [
+    "ταυ"
+   ]
+  },
+  "letra-ipsilon": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Υ υ",
+   "words": [
+    {
+     "el": "Υ υ",
+     "tl": "ípsilon"
+    }
+   ],
+   "pt": "Som de I, como em «vida» — a terceira letra com som de I!",
+   "gloss": [
+    {
+     "el": "υ",
+     "pt": "/i/; em ου vira /u/, em αυ/ευ vira /v/ ou /f/"
+    }
+   ],
+   "context_pt": "«Κύριε» — o υ soa /i/: «Kírie». Em «οὐρανός» (céu), ου soa /u/.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto",
+    "bizantino"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "54f84a848fe8da3a",
+   "wordkeys": [
+    "υψιλον"
+   ]
+  },
+  "letra-fi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Φ φ",
+   "words": [
+    {
+     "el": "Φ φ",
+     "tl": "fi"
+    }
+   ],
+   "pt": "Som de F, como em «fé».",
+   "gloss": [
+    {
+     "el": "φ",
+     "pt": "/f/"
+    }
+   ],
+   "context_pt": "«φῶς» (luz) — «fos». «Luz da Luz», no Credo.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "2d58b10f77b9bd74",
+   "wordkeys": [
+    "φι"
+   ]
+  },
+  "letra-chi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Χ χ",
+   "words": [
+    {
+     "el": "Χ χ",
+     "tl": "chi"
+    }
+   ],
+   "pt": "Som de RR aspirado (como «carro» no Rio), suave antes de E/I.",
+   "gloss": [
+    {
+     "el": "χ",
+     "pt": "/ch/ gutural — nunca /ks/"
+    }
+   ],
+   "context_pt": "«Χριστός» (Cristo) — «Christós». O Χ do ΙΣ ΧΣ.",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "8bee4cb1c7cb64e8",
+   "wordkeys": [
+    "χι"
+   ]
+  },
+  "letra-psi": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ψ ψ",
+   "words": [
+    {
+     "el": "Ψ ψ",
+     "tl": "psi"
+    }
+   ],
+   "pt": "Som de PS, como em «psicologia» (pronunciando o P!).",
+   "gloss": [
+    {
+     "el": "ψ",
+     "pt": "/ps/"
+    }
+   ],
+   "context_pt": "«ψυχή» (alma) — «psichí». Os Salmos são «Ψαλμοί».",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "ee312b126d690c94",
+   "wordkeys": [
+    "ψι"
+   ]
+  },
+  "letra-omega": {
+   "unit": "unit0-alfabeto",
+   "kind": "letter",
+   "greek": "Ω ω",
+   "words": [
+    {
+     "el": "Ω ω",
+     "tl": "oméga"
+    }
+   ],
+   "pt": "Som de Ó, igual ao ómikron — sem diferença na pronúncia bizantina.",
+   "gloss": [
+    {
+     "el": "ω",
+     "pt": "/o/"
+    }
+   ],
+   "context_pt": "«Ἐγώ εἰμι τὸ Ἄλφα καὶ τὸ Ὦ» — o Alfa e o Ômega (Ap 22:13).",
+   "source": "Alfabeto grego",
+   "tags": [
+    "alfabeto",
+    "bizantino"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "1ab824cde5aed54a",
+   "wordkeys": [
+    "ωμεγα"
+   ]
+  },
+  "kyrie-eleison": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Κύριε, ἐλέησον.",
+   "words": [
+    {
+     "el": "Κύριε,",
+     "tl": "Kírie,"
+    },
+    {
+     "el": "ἐλέησον.",
+     "tl": "eléison."
+    }
+   ],
+   "pt": "Senhor, tem piedade.",
+   "gloss": [
+    {
+     "el": "Κύριε",
+     "pt": "Senhor (vocativo — chamando)"
+    },
+    {
+     "el": "ἐλέησον",
+     "pt": "tem piedade (imperativo)"
+    }
+   ],
+   "context_pt": "A resposta mais frequente de toda a Liturgia — o povo a repete a cada petição das litanias, mais de doze vezes por celebração. É também o coração da Oração de Jesus.",
+   "source": "Devocional, p. 8–9",
+   "tags": [
+    "liturgia",
+    "litania",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "61d2e2591f151c7a",
+   "wordkeys": [
+    "κυριε",
+    "ελεησον"
+   ]
+  },
+  "amin": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Ἀμήν.",
+   "words": [
+    {
+     "el": "Ἀμήν.",
+     "tl": "Amín."
+    }
+   ],
+   "pt": "Amém.",
+   "gloss": [
+    {
+     "el": "Ἀμήν",
+     "pt": "assim seja (do hebraico)"
+    }
+   ],
+   "context_pt": "O selo de toda oração. Em grego soa «Amín» — com i. O povo o diz ao fim de cada doxologia do sacerdote.",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "db2aa58804d8a6cf",
+   "wordkeys": [
+    "αμην"
+   ]
+  },
+  "ke-to-pnevmati-su": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Καὶ τῷ πνεύματί σου.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to"
+    },
+    {
+     "el": "πνεύματί",
+     "tl": "pnevmatí"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    }
+   ],
+   "pt": "E ao teu espírito.",
+   "gloss": [
+    {
+     "el": "καί",
+     "pt": "e"
+    },
+    {
+     "el": "τῷ",
+     "pt": "ao (artigo dativo)"
+    },
+    {
+     "el": "πνεύματι",
+     "pt": "espírito"
+    },
+    {
+     "el": "σου",
+     "pt": "teu"
+    }
+   ],
+   "context_pt": "Quando o sacerdote diz «Εἰρήνη πᾶσι» (Paz a todos), o povo devolve a bênção: «E ao teu espírito». Repare no ευ de «πνεύματί» soando /ev/.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "07158e5e5ccc0125",
+   "wordkeys": [
+    "και",
+    "τω",
+    "πνευματι",
+    "σου"
+   ]
+  },
+  "irini-pasi": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Εἰρήνη πᾶσι.",
+   "words": [
+    {
+     "el": "Εἰρήνη",
+     "tl": "Iríni"
+    },
+    {
+     "el": "πᾶσι.",
+     "tl": "pási."
+    }
+   ],
+   "pt": "Paz a todos.",
+   "gloss": [
+    {
+     "el": "εἰρήνη",
+     "pt": "paz (de onde vem o nome Irene)"
+    },
+    {
+     "el": "πᾶσι",
+     "pt": "a todos"
+    }
+   ],
+   "context_pt": "A saudação do sacerdote antes das leituras e em outros momentos. Você a ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "2061e9f9312ed6ed",
+   "wordkeys": [
+    "ειρηνη",
+    "πασι"
+   ]
+  },
+  "si-kyrie": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Σοί, Κύριε.",
+   "words": [
+    {
+     "el": "Σοί,",
+     "tl": "Si,"
+    },
+    {
+     "el": "Κύριε.",
+     "tl": "Kírie."
+    }
+   ],
+   "pt": "A Ti, Senhor.",
+   "gloss": [
+    {
+     "el": "σοί",
+     "pt": "a ti (dativo)"
+    },
+    {
+     "el": "Κύριε",
+     "pt": "Senhor"
+    }
+   ],
+   "context_pt": "Resposta do povo quando o diácono conclui «…entreguemos toda a nossa vida a Cristo Deus»: entregamos «a Ti, Senhor».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "litania",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "027473b59a54c693",
+   "wordkeys": [
+    "σοι",
+    "κυριε"
+   ]
+  },
+  "paraschu-kyrie": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Παράσχου, Κύριε.",
+   "words": [
+    {
+     "el": "Παράσχου,",
+     "tl": "Paráschu,"
+    },
+    {
+     "el": "Κύριε.",
+     "tl": "Kírie."
+    }
+   ],
+   "pt": "Concede, Senhor.",
+   "gloss": [
+    {
+     "el": "παράσχου",
+     "pt": "concede (imperativo)"
+    },
+    {
+     "el": "Κύριε",
+     "pt": "Senhor"
+    }
+   ],
+   "context_pt": "Resposta às petições da litania da súplica («Um dia todo perfeito, santo, pacífico e sem pecado…»). O ου soa /u/: «Paráschu».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "litania",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "6fbe038076a2f793",
+   "wordkeys": [
+    "παρασχου",
+    "κυριε"
+   ]
+  },
+  "doxa-patri": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι.",
+   "words": [
+    {
+     "el": "Δόξα",
+     "tl": "Dóxa"
+    },
+    {
+     "el": "Πατρὶ",
+     "tl": "Patrí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "Υἱῷ",
+     "tl": "Ió"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "Ἁγίῳ",
+     "tl": "Ayío"
+    },
+    {
+     "el": "Πνεύματι.",
+     "tl": "Pnévmati."
+    }
+   ],
+   "pt": "Glória ao Pai e ao Filho e ao Espírito Santo.",
+   "gloss": [
+    {
+     "el": "δόξα",
+     "pt": "glória"
+    },
+    {
+     "el": "Πατρί",
+     "pt": "ao Pai"
+    },
+    {
+     "el": "καί",
+     "pt": "e"
+    },
+    {
+     "el": "Υἱῷ",
+     "pt": "ao Filho"
+    },
+    {
+     "el": "Ἁγίῳ",
+     "pt": "ao Santo"
+    },
+    {
+     "el": "Πνεύματι",
+     "pt": "Espírito"
+    }
+   ],
+   "context_pt": "A pequena doxologia — dita incontáveis vezes na Liturgia e nas orações diárias. Sempre seguida de «Καὶ νῦν…».",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "doxologia",
+    "oracoes-diarias"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "2ef4851a0ae1e1b4",
+   "wordkeys": [
+    "δοξα",
+    "πατρι",
+    "και",
+    "υιω",
+    "και",
+    "αγιω",
+    "πνευματι"
+   ]
+  },
+  "ke-nin": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀεὶ",
+     "tl": "aí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "αἰῶνας",
+     "tl": "eónas"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων.",
+     "tl": "eónon."
+    },
+    {
+     "el": "Ἀμήν.",
+     "tl": "Amín."
+    }
+   ],
+   "pt": "Agora e sempre e pelos séculos dos séculos. Amém.",
+   "gloss": [
+    {
+     "el": "νῦν",
+     "pt": "agora"
+    },
+    {
+     "el": "ἀεί",
+     "pt": "sempre"
+    },
+    {
+     "el": "εἰς",
+     "pt": "para/até"
+    },
+    {
+     "el": "αἰῶνας",
+     "pt": "séculos, eras"
+    }
+   ],
+   "context_pt": "A segunda metade da doxologia — completa o «Δόξα Πατρί». O αι soa /e/: «eónas». Ouvida em cada ofício, da manhã à noite.",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "doxologia",
+    "oracoes-diarias"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "9e429c487dc84ebf",
+   "wordkeys": [
+    "και",
+    "νυν",
+    "και",
+    "αει",
+    "και",
+    "εισ",
+    "τουσ",
+    "αιωνασ",
+    "των",
+    "αιωνων",
+    "αμην"
+   ]
+  },
+  "proschomen": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Πρόσχωμεν.",
+   "words": [
+    {
+     "el": "Πρόσχωμεν.",
+     "tl": "Próschomen."
+    }
+   ],
+   "pt": "Estejamos atentos!",
+   "gloss": [
+    {
+     "el": "πρόσχωμεν",
+     "pt": "prestemos atenção (exortação)"
+    }
+   ],
+   "context_pt": "O chamado do diácono antes das leituras e dos momentos solenes: a Liturgia pede a nossa atenção total.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "de75a458ceb95750",
+   "wordkeys": [
+    "προσχωμεν"
+   ]
+  },
+  "sofia-orthi": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Σοφία· ὀρθοί.",
+   "words": [
+    {
+     "el": "Σοφία·",
+     "tl": "Sofía;"
+    },
+    {
+     "el": "ὀρθοί.",
+     "tl": "orthí."
+    }
+   ],
+   "pt": "Sabedoria! De pé!",
+   "gloss": [
+    {
+     "el": "σοφία",
+     "pt": "sabedoria"
+    },
+    {
+     "el": "ὀρθοί",
+     "pt": "de pé, eretos — mesma raiz ὀρθός (reto) de «ortodoxo», a reta glória"
+    }
+   ],
+   "context_pt": "Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» — levantamo-nos diante da Palavra.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "entrada",
+    "para-reconhecer"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "c42ba649637c2e57",
+   "wordkeys": [
+    "σοφια",
+    "ορθοι"
+   ]
+  },
+  "trisagion": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς.",
+   "words": [
+    {
+     "el": "Ἅγιος",
+     "tl": "Áyios"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "Θεός,",
+     "tl": "Theós,"
+    },
+    {
+     "el": "Ἅγιος",
+     "tl": "Áyios"
+    },
+    {
+     "el": "Ἰσχυρός,",
+     "tl": "Ischirós,"
+    },
+    {
+     "el": "Ἅγιος",
+     "tl": "Áyios"
+    },
+    {
+     "el": "Ἀθάνατος,",
+     "tl": "Athánatos,"
+    },
+    {
+     "el": "ἐλέησον",
+     "tl": "eléison"
+    },
+    {
+     "el": "ἡμᾶς.",
+     "tl": "imás."
+    }
+   ],
+   "pt": "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós.",
+   "gloss": [
+    {
+     "el": "ἅγιος",
+     "pt": "santo"
+    },
+    {
+     "el": "ὁ Θεός",
+     "pt": "Deus"
+    },
+    {
+     "el": "ἰσχυρός",
+     "pt": "forte"
+    },
+    {
+     "el": "ἀθάνατος",
+     "pt": "imortal (a- + thánatos, morte)"
+    },
+    {
+     "el": "ἡμᾶς",
+     "pt": "de nós"
+    }
+   ],
+   "context_pt": "O Hino Trisságio («três vezes santo»), cantado antes das leituras e rezado em toda regra de oração diária. Três títulos, uma só súplica.",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "hino",
+    "oracoes-diarias"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "eff6f72b12296e99",
+   "wordkeys": [
+    "αγιοσ",
+    "ο",
+    "θεοσ",
+    "αγιοσ",
+    "ισχυροσ",
+    "αγιοσ",
+    "αθανατοσ",
+    "ελεησον",
+    "ημασ"
+   ]
+  }
+ },
+ "words": {
+  "αγιοσ": "audio/words/αγιοσ.mp3",
+  "αγιω": "audio/words/αγιω.mp3",
+  "αει": "audio/words/αει.mp3",
+  "αθανατοσ": "audio/words/αθανατοσ.mp3",
+  "αιωνασ": "audio/words/αιωνασ.mp3",
+  "αιωνων": "audio/words/αιωνων.mp3",
+  "αλφα": "audio/words/αλφα.mp3",
+  "αμην": "audio/words/αμην.mp3",
+  "βητα": "audio/words/βητα.mp3",
+  "γαμμα": "audio/words/γαμμα.mp3",
+  "γιωτα": "audio/words/γιωτα.mp3",
+  "δελτα": "audio/words/δελτα.mp3",
+  "δοξα": "audio/words/δοξα.mp3",
+  "ειρηνη": "audio/words/ειρηνη.mp3",
+  "εισ": "audio/words/εισ.mp3",
+  "ελεησον": "audio/words/ελεησον.mp3",
+  "εψιλον": "audio/words/εψιλον.mp3",
+  "ζητα": "audio/words/ζητα.mp3",
+  "ημασ": "audio/words/ημασ.mp3",
+  "ητα": "audio/words/ητα.mp3",
+  "θεοσ": "audio/words/θεοσ.mp3",
+  "θητα": "audio/words/θητα.mp3",
+  "ισχυροσ": "audio/words/ισχυροσ.mp3",
+  "και": "audio/words/και.mp3",
+  "καππα": "audio/words/καππα.mp3",
+  "κυριε": "audio/words/κυριε.mp3",
+  "λαμδα": "audio/words/λαμδα.mp3",
+  "μι": "audio/words/μι.mp3",
+  "νι": "audio/words/νι.mp3",
+  "νυν": "audio/words/νυν.mp3",
+  "ξι": "audio/words/ξι.mp3",
+  "ο": "audio/words/ο.mp3",
+  "ομικρον": "audio/words/ομικρον.mp3",
+  "ορθοι": "audio/words/ορθοι.mp3",
+  "παρασχου": "audio/words/παρασχου.mp3",
+  "πασι": "audio/words/πασι.mp3",
+  "πατρι": "audio/words/πατρι.mp3",
+  "πι": "audio/words/πι.mp3",
+  "πνευματι": "audio/words/πνευματι.mp3",
+  "προσχωμεν": "audio/words/προσχωμεν.mp3",
+  "ρο": "audio/words/ρο.mp3",
+  "σιγμα": "audio/words/σιγμα.mp3",
+  "σοι": "audio/words/σοι.mp3",
+  "σου": "audio/words/σου.mp3",
+  "σοφια": "audio/words/σοφια.mp3",
+  "ταυ": "audio/words/ταυ.mp3",
+  "τουσ": "audio/words/τουσ.mp3",
+  "τω": "audio/words/τω.mp3",
+  "των": "audio/words/των.mp3",
+  "υιω": "audio/words/υιω.mp3",
+  "υψιλον": "audio/words/υψιλον.mp3",
+  "φι": "audio/words/φι.mp3",
+  "χι": "audio/words/χι.mp3",
+  "ψι": "audio/words/ψι.mp3",
+  "ωμεγα": "audio/words/ωμεγα.mp3"
+ }
+}
