@@ -75,8 +75,12 @@ whisper round-trip similarity ≥ 0.90 **AND** speech rate within 7–20
 letters/sec of audio. Rationale: similarity alone shipped a junk-padded take
 (model babble that Whisper politely ignored — scored 1.00); the rate bound
 catches padding, the similarity bound catches mispronunciation. Retry loop
-regenerates failures. Cheap rate check always on; whisper check opt-in
-(`--qc`) since edge output is stable.
+regenerates failures. Cheap check always on; whisper check opt-in
+(`--qc`) since edge output is stable. Refinement (same day): raw letters/sec
+bounds only work for phrases — single-letter items ("άλφα") legitimately sit
+far below 7 l/s. The pipeline therefore uses a **duration window scaled by
+text length** (min 0.2s + letters/30, max 2s + letters/8, ×1.8 for slow),
+which catches both babble-padding and truncation at every item size.
 
 ### D6 — Word-level sync is captured at generation, not aligned after
 edge-tts emits WordBoundary events (exact per-word timestamps) during

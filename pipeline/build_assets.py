@@ -14,7 +14,8 @@ Validation (fails the build):
   - item ids unique repo-wide
 
 QC (see docs/ARCHITECTURE.md D5):
-  - always: speech-rate bounds (7-20 letters/sec) on phrase audio, with retries
+  - always: duration window scaled by text length (catches babble-padding and
+    truncation on any item size, including single letters), with retries
   - --qc: whisper round-trip similarity >= 0.90 (needs faster-whisper installed)
 
 Idempotent: items are skipped when their manifest hash (tts+voice) is
@@ -46,7 +47,6 @@ MANIFEST = ASSETS / "manifest.json"
 VOICES = {"athina": "el-GR-AthinaNeural", "ava": "en-US-AvaMultilingualNeural"}
 SLOW_RATE = "-40%"
 WORD_RATE = "-20%"
-RATE_BOUNDS = (7.0, 20.0)   # letters per second of audio
 MAX_RETRIES = 3
 
 # Polytonic-only combining marks that must not appear in tts text
@@ -135,15 +135,16 @@ async def gen_phrase_speed(item: dict, label: str, rate: str, qc_fn):
     for attempt in range(1, MAX_RETRIES + 1):
         bounds = await synth(item["tts"], voice, rate, path, want_bounds=True)
         dur = mp3_duration(path)
-        rate_ls = letters(item["tts"]) / dur if dur else 0.0
-        # slow speech legitimately lowers letters/sec; scale bound for slow label
-        lo = RATE_BOUNDS[0] * (0.6 if label == "slow" else 1.0)
-        ok = lo <= rate_ls <= RATE_BOUNDS[1] and len(bounds) == len(item["words"])
+        nletters = letters(item["tts"])
+        # duration window: generous per-length bounds; slow rate stretches ~1.8x
+        dur_max = (2.0 + nletters / 8) * (1.8 if label == "slow" else 1.0)
+        dur_min = 0.2 + nletters / 30
+        ok = dur_min <= dur <= dur_max and len(bounds) == len(item["words"])
         if ok and qc_fn:
             ok = qc_fn(path, item)
         if ok:
             return bounds
-        last = f"rate={rate_ls:.1f} l/s, {len(bounds)}/{len(item['words'])} bounds"
+        last = f"dur={dur:.1f}s (window {dur_min:.1f}-{dur_max:.1f}), {len(bounds)}/{len(item['words'])} bounds"
         print(f"    retry {attempt} for {item['id']}_{label} ({last})")
     die(f"{item['id']}_{label}: QC failed after {MAX_RETRIES} attempts ({last})")
 
