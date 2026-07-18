@@ -1,0 +1,39 @@
+# Ortholingo TTS bake-off — test phrases
+# display: polytonic (what the app shows) · tts_text: monotonic (what TTS models expect)
+# Byzantine pronunciation throughout.
+
+- id: kyrie
+  lang: el
+  display: "Κύριε, ἐλέησον."
+  tts_text: "Κύριε, ελέησον."
+  pt: "Senhor, tem piedade."
+
+- id: trisagion
+  lang: el
+  display: "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς."
+  tts_text: "Άγιος ο Θεός, Άγιος Ισχυρός, Άγιος Αθάνατος, ελέησον ημάς."
+  pt: "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós."
+
+- id: pater
+  lang: el
+  display: "Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου."
+  tts_text: "Πάτερ ημών ο εν τοις ουρανοίς, αγιασθήτω το όνομά σου."
+  pt: "Pai nosso, que estás nos Céus, santificado seja o teu Nome."
+
+- id: eirini
+  lang: el
+  display: "Εἰρήνη πᾶσι. — Καὶ τῷ πνεύματί σου."
+  tts_text: "Ειρήνη πάσι. Και τω πνεύματί σου."
+  pt: "Paz a todos. — E ao teu espírito."
+
+- id: pt-jesus
+  lang: pt
+  display: "Senhor Jesus Cristo, Filho de Deus, tem piedade de nós. Amém."
+  tts_text: "Senhor Jesus Cristo, Filho de Deus, tem piedade de nós. Amém."
+  pt: "—"
+
+- id: en-greeting
+  lang: en
+  display: "Welcome back! Ready to practice your responses for Sunday?"
+  tts_text: "Welcome back! Ready to practice your responses for Sunday?"
+  pt: "—"
