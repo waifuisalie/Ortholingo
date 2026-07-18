@@ -1,0 +1,250 @@
+unit:
+  id: unit1-respostas
+  title: "As respostas do povo"
+  section: nave
+  order: 2
+  intro_pt: >-
+    A Divina Liturgia é um diálogo: o sacerdote e o diácono oram, e o povo —
+    você — responde. Estas são as respostas que você dirá já no próximo
+    domingo. Começamos pela mais frequente de todas.
+
+items:
+  - id: kyrie-eleison
+    kind: phrase
+    greek: "Κύριε, ἐλέησον."
+    tts: "Κύριε, ελέησον."
+    words:
+      - { el: "Κύριε,",   tl: "Kírie," }
+      - { el: "ἐλέησον.", tl: "eléison." }
+    pt: "Senhor, tem piedade."
+    gloss:
+      - { el: "Κύριε",   pt: "Senhor (vocativo — chamando)" }
+      - { el: "ἐλέησον", pt: "tem piedade (imperativo)" }
+    context_pt: >-
+      A resposta mais frequente de toda a Liturgia — o povo a repete a cada
+      petição das litanias, mais de doze vezes por celebração. É também o
+      coração da Oração de Jesus.
+    source: "Devocional, p. 8–9"
+    tags: [liturgia, litania, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: amin
+    kind: phrase
+    greek: "Ἀμήν."
+    tts: "Αμήν."
+    words:
+      - { el: "Ἀμήν.", tl: "Amín." }
+    pt: "Amém."
+    gloss:
+      - { el: "Ἀμήν", pt: "assim seja (do hebraico)" }
+    context_pt: >-
+      O selo de toda oração. Em grego soa «Amín» — com i. O povo o diz ao fim
+      de cada doxologia do sacerdote.
+    source: "Devocional, p. 8"
+    tags: [liturgia, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: ke-to-pnevmati-su
+    kind: phrase
+    greek: "Καὶ τῷ πνεύματί σου."
+    tts: "Και τω πνεύματί σου."
+    words:
+      - { el: "Καὶ",       tl: "Ke" }
+      - { el: "τῷ",        tl: "to" }
+      - { el: "πνεύματί",  tl: "pnevmatí" }
+      - { el: "σου.",      tl: "su." }
+    pt: "E ao teu espírito."
+    gloss:
+      - { el: "καί",     pt: "e" }
+      - { el: "τῷ",      pt: "ao (artigo dativo)" }
+      - { el: "πνεύματι", pt: "espírito" }
+      - { el: "σου",     pt: "teu" }
+    context_pt: >-
+      Quando o sacerdote diz «Εἰρήνη πᾶσι» (Paz a todos), o povo devolve a
+      bênção: «E ao teu espírito». Repare no ευ de «πνεύματί» soando /ev/.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: irini-pasi
+    kind: phrase
+    greek: "Εἰρήνη πᾶσι."
+    tts: "Ειρήνη πάσι."
+    words:
+      - { el: "Εἰρήνη", tl: "Iríni" }
+      - { el: "πᾶσι.",  tl: "pási." }
+    pt: "Paz a todos."
+    gloss:
+      - { el: "εἰρήνη", pt: "paz (de onde vem o nome Irene)" }
+      - { el: "πᾶσι",   pt: "a todos" }
+    context_pt: >-
+      A saudação do sacerdote antes das leituras e em outros momentos. Você a
+      ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, sacerdote, para-reconhecer]
+    voice: athina
+    review: pending
+
+  - id: si-kyrie
+    kind: phrase
+    greek: "Σοί, Κύριε."
+    tts: "Σοι, Κύριε."
+    words:
+      - { el: "Σοί,",    tl: "Si," }
+      - { el: "Κύριε.",  tl: "Kírie." }
+    pt: "A Ti, Senhor."
+    gloss:
+      - { el: "σοί",   pt: "a ti (dativo)" }
+      - { el: "Κύριε", pt: "Senhor" }
+    context_pt: >-
+      Resposta do povo quando o diácono conclui «…entreguemos toda a nossa
+      vida a Cristo Deus»: entregamos «a Ti, Senhor».
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, litania, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: paraschu-kyrie
+    kind: phrase
+    greek: "Παράσχου, Κύριε."
+    tts: "Παράσχου, Κύριε."
+    words:
+      - { el: "Παράσχου,", tl: "Paráschu," }
+      - { el: "Κύριε.",    tl: "Kírie." }
+    pt: "Concede, Senhor."
+    gloss:
+      - { el: "παράσχου", pt: "concede (imperativo)" }
+      - { el: "Κύριε",    pt: "Senhor" }
+    context_pt: >-
+      Resposta às petições da litania da súplica («Um dia todo perfeito,
+      santo, pacífico e sem pecado…»). O ου soa /u/: «Paráschu».
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, litania, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: doxa-patri
+    kind: phrase
+    greek: "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι."
+    tts: "Δόξα Πατρί και Υιώ και Αγίω Πνεύματι."
+    words:
+      - { el: "Δόξα",     tl: "Dóxa" }
+      - { el: "Πατρὶ",    tl: "Patrí" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "Υἱῷ",      tl: "Ió" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "Ἁγίῳ",     tl: "Ayío" }
+      - { el: "Πνεύματι.", tl: "Pnévmati." }
+    pt: "Glória ao Pai e ao Filho e ao Espírito Santo."
+    gloss:
+      - { el: "δόξα",     pt: "glória" }
+      - { el: "Πατρί",    pt: "ao Pai" }
+      - { el: "καί",      pt: "e" }
+      - { el: "Υἱῷ",      pt: "ao Filho" }
+      - { el: "Ἁγίῳ",     pt: "ao Santo" }
+      - { el: "Πνεύματι", pt: "Espírito" }
+    context_pt: >-
+      A pequena doxologia — dita incontáveis vezes na Liturgia e nas orações
+      diárias. Sempre seguida de «Καὶ νῦν…».
+    source: "Devocional, p. 8"
+    tags: [liturgia, doxologia, oracoes-diarias]
+    voice: athina
+    review: pending
+
+  - id: ke-nin
+    kind: phrase
+    greek: "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν."
+    tts: "Και νυν και αεί και εις τους αιώνας των αιώνων. Αμήν."
+    words:
+      - { el: "Καὶ",      tl: "Ke" }
+      - { el: "νῦν",      tl: "nin" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "ἀεὶ",      tl: "aí" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "εἰς",      tl: "is" }
+      - { el: "τοὺς",     tl: "tus" }
+      - { el: "αἰῶνας",   tl: "eónas" }
+      - { el: "τῶν",      tl: "ton" }
+      - { el: "αἰώνων.",  tl: "eónon." }
+      - { el: "Ἀμήν.",    tl: "Amín." }
+    pt: "Agora e sempre e pelos séculos dos séculos. Amém."
+    gloss:
+      - { el: "νῦν",    pt: "agora" }
+      - { el: "ἀεί",    pt: "sempre" }
+      - { el: "εἰς",    pt: "para/até" }
+      - { el: "αἰῶνας", pt: "séculos, eras" }
+    context_pt: >-
+      A segunda metade da doxologia — completa o «Δόξα Πατρί». O αι soa /e/:
+      «eónas». Ouvida em cada ofício, da manhã à noite.
+    source: "Devocional, p. 8"
+    tags: [liturgia, doxologia, oracoes-diarias]
+    voice: athina
+    review: pending
+
+  - id: proschomen
+    kind: phrase
+    greek: "Πρόσχωμεν."
+    tts: "Πρόσχωμεν."
+    words:
+      - { el: "Πρόσχωμεν.", tl: "Próschomen." }
+    pt: "Estejamos atentos!"
+    gloss:
+      - { el: "πρόσχωμεν", pt: "prestemos atenção (exortação)" }
+    context_pt: >-
+      O chamado do diácono antes das leituras e dos momentos solenes: a
+      Liturgia pede a nossa atenção total.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, diacono, para-reconhecer]
+    voice: athina
+    review: pending
+
+  - id: sofia-orthi
+    kind: phrase
+    greek: "Σοφία· ὀρθοί."
+    tts: "Σοφία. Ορθοί."
+    words:
+      - { el: "Σοφία·", tl: "Sofía;" }
+      - { el: "ὀρθοί.", tl: "orthí." }
+    pt: "Sabedoria! De pé!"
+    gloss:
+      - { el: "σοφία", pt: "sabedoria" }
+      - { el: "ὀρθοί", pt: "de pé, eretos — mesma raiz ὀρθός (reto) de «ortodoxo», a reta glória" }
+    context_pt: >-
+      Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» —
+      levantamo-nos diante da Palavra.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, entrada, para-reconhecer]
+    voice: athina
+    review: pending
+
+  - id: trisagion
+    kind: phrase
+    greek: "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς."
+    tts: "Άγιος ο Θεός, Άγιος Ισχυρός, Άγιος Αθάνατος, ελέησον ημάς."
+    words:
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "ὁ",         tl: "o" }
+      - { el: "Θεός,",     tl: "Theós," }
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "Ἰσχυρός,",  tl: "Ischirós," }
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "Ἀθάνατος,", tl: "Athánatos," }
+      - { el: "ἐλέησον",   tl: "eléison" }
+      - { el: "ἡμᾶς.",     tl: "imás." }
+    pt: "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós."
+    gloss:
+      - { el: "ἅγιος",    pt: "santo" }
+      - { el: "ὁ Θεός",   pt: "Deus" }
+      - { el: "ἰσχυρός",  pt: "forte" }
+      - { el: "ἀθάνατος", pt: "imortal (a- + thánatos, morte)" }
+      - { el: "ἡμᾶς",     pt: "de nós" }
+    context_pt: >-
+      O Hino Trisságio («três vezes santo»), cantado antes das leituras e
+      rezado em toda regra de oração diária. Três títulos, uma só súplica.
+    source: "Devocional, p. 8"
+    tags: [liturgia, hino, oracoes-diarias]
+    voice: athina
+    review: pending

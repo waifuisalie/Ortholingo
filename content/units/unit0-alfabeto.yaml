@@ -1,0 +1,324 @@
+unit:
+  id: unit0-alfabeto
+  title: "O alfabeto grego"
+  section: nartex
+  order: 1
+  intro_pt: >-
+    Antes de rezar em grego, aprendemos a lê-lo. São 24 letras — e a pronúncia
+    que usamos é a bizantina, a mesma que você ouve na Divina Liturgia (não a
+    pronúncia "clássica" de escola). Toque em cada letra para ouvir seu nome.
+
+items:
+  - id: letra-alfa
+    kind: letter
+    greek: "Α α"
+    tts: "άλφα"
+    words: [{ el: "Α α", tl: "álfa" }]
+    pt: "Som de A, como em «pai»."
+    gloss: [{ el: "α", pt: "sempre /a/ aberto" }]
+    context_pt: "Primeira letra. «Ἀμήν» começa com ela."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-vita
+    kind: letter
+    greek: "Β β"
+    tts: "βήτα"
+    words: [{ el: "Β β", tl: "víta" }]
+    pt: "Som de V, como em «vida» — não de B!"
+    gloss: [{ el: "β", pt: "/v/ — a marca da pronúncia bizantina" }]
+    context_pt: "Na pronúncia bizantina, β é sempre /v/: «Βασιλεύς» (rei) soa «Vasilévs»."
+    source: "Alfabeto grego"
+    tags: [alfabeto, bizantino]
+    voice: athina
+    review: pending
+
+  - id: letra-gamma
+    kind: letter
+    greek: "Γ γ"
+    tts: "γάμμα"
+    words: [{ el: "Γ γ", tl: "gámma" }]
+    pt: "Som de G suave (gutural); antes de E/I vira som de Y, como em «ioga»."
+    gloss: [{ el: "γ", pt: "/gh/ suave; /y/ antes de ε, ι" }]
+    context_pt: "«Ἁγία» (santa) soa «ayía» — o γ amolece antes de ι."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-delta
+    kind: letter
+    greek: "Δ δ"
+    tts: "δέλτα"
+    words: [{ el: "Δ δ", tl: "délta" }]
+    pt: "Som de TH sonoro do inglês «this» — não de D!"
+    gloss: [{ el: "δ", pt: "/ð/ — ponha a língua entre os dentes" }]
+    context_pt: "«Δόξα» (glória) começa com esse som: «Dhóxa»."
+    source: "Alfabeto grego"
+    tags: [alfabeto, bizantino]
+    voice: athina
+    review: pending
+
+  - id: letra-epsilon
+    kind: letter
+    greek: "Ε ε"
+    tts: "έψιλον"
+    words: [{ el: "Ε ε", tl: "épsilon" }]
+    pt: "Som de É aberto, como em «fé»."
+    gloss: [{ el: "ε", pt: "sempre /e/ aberto" }]
+    context_pt: "«ἐλέησον» (tem piedade) tem três deles."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-zita
+    kind: letter
+    greek: "Ζ ζ"
+    tts: "ζήτα"
+    words: [{ el: "Ζ ζ", tl: "zíta" }]
+    pt: "Som de Z, como em «zelo»."
+    gloss: [{ el: "ζ", pt: "/z/" }]
+    context_pt: "«ζωή» (vida) — «zoí». A palavra da inscrição ΙΣ ΧΣ ΝΙΚΑ vem logo."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-ita
+    kind: letter
+    greek: "Η η"
+    tts: "ήτα"
+    words: [{ el: "Η η", tl: "íta" }]
+    pt: "Som de I, como em «vida» — não de E!"
+    gloss: [{ el: "η", pt: "/i/ na pronúncia bizantina" }]
+    context_pt: >-
+      Na escola clássica η é «ê»; na igreja é /i/. «Εἰρήνη» (paz) soa «Iríni».
+      Este é o ponto onde a pronúncia bizantina mais surpreende.
+    source: "Alfabeto grego"
+    tags: [alfabeto, bizantino]
+    voice: athina
+    review: pending
+
+  - id: letra-thita
+    kind: letter
+    greek: "Θ θ"
+    tts: "θήτα"
+    words: [{ el: "Θ θ", tl: "thíta" }]
+    pt: "Som de TH surdo do inglês «think»."
+    gloss: [{ el: "θ", pt: "/θ/ — sopro entre os dentes, sem voz" }]
+    context_pt: "«Θεός» (Deus) — «Theós». Você dirá essa palavra muitas vezes."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-iota
+    kind: letter
+    greek: "Ι ι"
+    tts: "γιώτα"
+    words: [{ el: "Ι ι", tl: "yóta" }]
+    pt: "Som de I, como em «vida»."
+    gloss: [{ el: "ι", pt: "/i/" }]
+    context_pt: "A menor letra — a do «iota» de Mt 5:18."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-kappa
+    kind: letter
+    greek: "Κ κ"
+    tts: "κάππα"
+    words: [{ el: "Κ κ", tl: "káppa" }]
+    pt: "Som de K, como em «casa»."
+    gloss: [{ el: "κ", pt: "/k/" }]
+    context_pt: "«Κύριε» (Senhor) começa com ela — a palavra mais frequente da Liturgia."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-lamda
+    kind: letter
+    greek: "Λ λ"
+    tts: "λάμδα"
+    words: [{ el: "Λ λ", tl: "lámda" }]
+    pt: "Som de L, como em «luz»."
+    gloss: [{ el: "λ", pt: "/l/" }]
+    context_pt: "«λαός» (povo) — nós, que respondemos na Liturgia."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-mi
+    kind: letter
+    greek: "Μ μ"
+    tts: "μι"
+    words: [{ el: "Μ μ", tl: "mi" }]
+    pt: "Som de M, como em «mãe»."
+    gloss: [{ el: "μ", pt: "/m/" }]
+    context_pt: "«Μαρία» — a Theotokos."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-ni
+    kind: letter
+    greek: "Ν ν"
+    tts: "νι"
+    words: [{ el: "Ν ν", tl: "ni" }]
+    pt: "Som de N, como em «nós». Cuidado: parece um V latino!"
+    gloss: [{ el: "ν", pt: "/n/ — apesar da forma ν" }]
+    context_pt: "«ΝΙΚΑ» (vence) — da inscrição ΙΣ ΧΣ ΝΙΚΑ na cruz."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-xi
+    kind: letter
+    greek: "Ξ ξ"
+    tts: "ξι"
+    words: [{ el: "Ξ ξ", tl: "xi" }]
+    pt: "Som de KS, como o X de «táxi»."
+    gloss: [{ el: "ξ", pt: "/ks/" }]
+    context_pt: "«Δόξα» (glória) — «Dhóksa»."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-omikron
+    kind: letter
+    greek: "Ο ο"
+    tts: "όμικρον"
+    words: [{ el: "Ο ο", tl: "ómikron" }]
+    pt: "Som de Ó aberto, como em «avó»."
+    gloss: [{ el: "ο", pt: "/o/" }]
+    context_pt: "«ὁ Θεός» — o artigo «o» antes de Deus, igual ao português!"
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-pi
+    kind: letter
+    greek: "Π π"
+    tts: "πι"
+    words: [{ el: "Π π", tl: "pi" }]
+    pt: "Som de P, como em «paz»."
+    gloss: [{ el: "π", pt: "/p/" }]
+    context_pt: "«Πάτερ» (Pai) — a primeira palavra do Pai Nosso."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-ro
+    kind: letter
+    greek: "Ρ ρ"
+    tts: "ρο"
+    words: [{ el: "Ρ ρ", tl: "ro" }]
+    pt: "Som de R vibrado, como em «caro». Cuidado: parece um P latino!"
+    gloss: [{ el: "ρ", pt: "/r/ — apesar da forma ρ" }]
+    context_pt: "«Κύριε» tem um ρ no meio: «Kí-ri-e»."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-sigma
+    kind: letter
+    greek: "Σ σ ς"
+    tts: "σίγμα"
+    words: [{ el: "Σ σ ς", tl: "sígma" }]
+    pt: "Som de S, como em «santo». No fim da palavra escreve-se ς."
+    gloss: [{ el: "σ / ς", pt: "/s/ — ς só no final" }]
+    context_pt: "«Ἅγιος» (santo) termina com o sigma final: ς."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-taf
+    kind: letter
+    greek: "Τ τ"
+    tts: "ταυ"
+    words: [{ el: "Τ τ", tl: "taf" }]
+    pt: "Som de T, como em «terra»."
+    gloss: [{ el: "τ", pt: "/t/" }]
+    context_pt: "A letra em forma de cruz — «σταυρός» (cruz) a carrega no meio."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-ipsilon
+    kind: letter
+    greek: "Υ υ"
+    tts: "ύψιλον"
+    words: [{ el: "Υ υ", tl: "ípsilon" }]
+    pt: "Som de I, como em «vida» — a terceira letra com som de I!"
+    gloss: [{ el: "υ", pt: "/i/; em ου vira /u/, em αυ/ευ vira /v/ ou /f/" }]
+    context_pt: "«Κύριε» — o υ soa /i/: «Kírie». Em «οὐρανός» (céu), ου soa /u/."
+    source: "Alfabeto grego"
+    tags: [alfabeto, bizantino]
+    voice: athina
+    review: pending
+
+  - id: letra-fi
+    kind: letter
+    greek: "Φ φ"
+    tts: "φι"
+    words: [{ el: "Φ φ", tl: "fi" }]
+    pt: "Som de F, como em «fé»."
+    gloss: [{ el: "φ", pt: "/f/" }]
+    context_pt: "«φῶς» (luz) — «fos». «Luz da Luz», no Credo."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-chi
+    kind: letter
+    greek: "Χ χ"
+    tts: "χι"
+    words: [{ el: "Χ χ", tl: "chi" }]
+    pt: "Som de RR aspirado (como «carro» no Rio), suave antes de E/I."
+    gloss: [{ el: "χ", pt: "/ch/ gutural — nunca /ks/" }]
+    context_pt: "«Χριστός» (Cristo) — «Christós». O Χ do ΙΣ ΧΣ."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-psi
+    kind: letter
+    greek: "Ψ ψ"
+    tts: "ψι"
+    words: [{ el: "Ψ ψ", tl: "psi" }]
+    pt: "Som de PS, como em «psicologia» (pronunciando o P!)."
+    gloss: [{ el: "ψ", pt: "/ps/" }]
+    context_pt: "«ψυχή» (alma) — «psichí». Os Salmos são «Ψαλμοί»."
+    source: "Alfabeto grego"
+    tags: [alfabeto]
+    voice: athina
+    review: pending
+
+  - id: letra-omega
+    kind: letter
+    greek: "Ω ω"
+    tts: "ωμέγα"
+    words: [{ el: "Ω ω", tl: "oméga" }]
+    pt: "Som de Ó, igual ao ómikron — sem diferença na pronúncia bizantina."
+    gloss: [{ el: "ω", pt: "/o/" }]
+    context_pt: "«Ἐγώ εἰμι τὸ Ἄλφα καὶ τὸ Ὦ» — o Alfa e o Ômega (Ap 22:13)."
+    source: "Alfabeto grego"
+    tags: [alfabeto, bizantino]
+    voice: athina
+    review: pending
