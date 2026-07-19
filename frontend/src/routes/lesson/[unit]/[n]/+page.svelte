@@ -7,6 +7,7 @@
 	import KaraokeCard from '$lib/components/KaraokeCard.svelte';
 	import QuizCard from '$lib/components/QuizCard.svelte';
 	import MatchPairs from '$lib/components/MatchPairs.svelte';
+	import SpeakCheck from '$lib/components/SpeakCheck.svelte';
 	import Mascot from '$lib/components/Mascot.svelte';
 
 	let { data } = $props();
@@ -62,6 +63,8 @@
 	{#key idx}
 		{#if step.type === 'karaoke'}
 			<KaraokeCard item={step.item} onDone={advance} />
+		{:else if step.type === 'speak'}
+			<SpeakCheck item={step.item} {onResult} onDone={advance} />
 		{:else if step.type === 'match'}
 			<MatchPairs {step} {onResult} onDone={advance} />
 		{:else}

@@ -69,6 +69,10 @@ export function buildLesson(manifest, unitId, n) {
 	const quizzes = items.map((item, i) =>
 		item.kind === 'letter' || i % 2 === 0 ? listenChooseStep(item, pool) : chooseGreekStep(item, pool)
 	);
+	// phrases get a speak check (skippable, never penalized); letters don't
+	for (const item of items) {
+		if (item.kind === 'phrase') quizzes.push({ type: 'speak', item });
+	}
 	steps.push(...shuffle(quizzes));
 	if (items.length >= 3) steps.push(matchStep(shuffle(items)));
 	return { items, steps };

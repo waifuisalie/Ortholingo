@@ -67,13 +67,19 @@ runs live (pronunciation scoring), so only STT has a latency budget (≤3s).
   stays honest to church speed while calmer, −50% is the study speed).
   Rates are part of the pipeline's idempotency hash, so changing them
   regenerates the corpus automatically.
-- **STT:** faster-whisper `large-v3-turbo` int8 CPU. Measured 5.3s/phrase at
-  beam_size=5 → tuning pass pending (beam 1, silence trim, whisper.cpp Vulkan
-  escape hatch for the AMD RX 6700 XT — CUDA stacks won't see that GPU, and
-  ROCm on gfx1031 is unsupported/hacky; CPU-first).
-- **Whisper "modernizes" Koine** (τῷ→το, ἡμῶν→ημών variants): the scorer must
-  normalize phonetically, and `initial_prompt` biasing must be tested against
-  its hallucination risk (it may echo the target when the user said garbage).
+- **STT (phase 4, decided by backend/bench.py):** two-tier scorer. Bench on
+  the generated corpus (perfect-speaker proxy): turbo = matched 1.00/sep 0.86
+  but 5.6s; small = 1.3s but fails long phrases (min 0.46); medium = worst of
+  both (3.7s, min 0.73). Design: `small` int8 answers (~1.3s); any take
+  below PASS=0.75 is re-judged by `large-v3-turbo` before the app calls it
+  wrong (~7s worst case). Correct speech feels instant; only turbo may fail
+  a learner. Models via ORTHOLINGO_WHISPER_FAST/_CAREFUL. Vulkan/whisper.cpp
+  remains the GPU escape hatch (AMD gfx1031: no CUDA, ROCm unsupported).
+- **Whisper "modernizes" Koine** (τῷ→το, Υἱῷ→Υιό): solved in phase 4 by
+  Byzantine phonetic folding in `backend/scoring.py` (η/ι/υ/ει/οι/υι→i,
+  αι→e, ω→ο, ου→u before comparison) plus fuzzy per-word matching — homophone
+  spellings converge, so grammar-form transcription can't fail a learner.
+  `initial_prompt` biasing remains untested/unused (hallucination risk).
 
 ### D5 — QC gate for generated audio (two signals, validated)
 whisper round-trip similarity ≥ 0.90 **AND** speech rate within 7–20
@@ -143,8 +149,8 @@ shouldn't need network + TTS access to run the app.
 
 1. ✅ Scaffold (this)
 2. ✅ Content pipeline + Units 0–1
-3. Frontend: SvelteKit lesson player, karaoke card, Unit 0 playable
-4. Backend: /speech/score + latency tuning + own-voice benchmark harness
+3. ✅ Frontend: SvelteKit lesson player, karaoke card, Units 0–1 playable
+4. ✅ Backend: two-tier /api/speech/score + SpeakCheck card + bench harness
 5. FSRS + Liturgy Map (frequency-weighted "% of Liturgy understood")
 6. PWA polish, Sunday-prep, tunnel demos, priest review & blessing,
    parish recordings (ask readers for a slow take too)
