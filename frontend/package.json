@@ -15,5 +15,8 @@
     "@sveltejs/vite-plugin-svelte": "^7.2.0",
     "svelte": "^5.56.6",
     "vite": "^8.1.5"
+  },
+  "dependencies": {
+    "ts-fsrs": "^5.4.1"
   }
 }

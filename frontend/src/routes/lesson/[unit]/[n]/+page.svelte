@@ -3,6 +3,7 @@
 	import { goto } from '$app/navigation';
 	import { buildLesson } from '$lib/lesson.js';
 	import { completeLesson } from '$lib/progress.svelte.js';
+	import { rate } from '$lib/srs.svelte.js';
 	import { stop } from '$lib/audio.js';
 	import KaraokeCard from '$lib/components/KaraokeCard.svelte';
 	import QuizCard from '$lib/components/QuizCard.svelte';
@@ -25,6 +26,9 @@
 
 	function onResult(ok) {
 		if (ok) hits += 1;
+		const s = lesson.steps[idx];
+		if (s.type === 'match') for (const p of s.pairs) rate(p.id, ok);
+		else if (s.item) rate(s.item.id, ok);
 	}
 
 	function advance() {

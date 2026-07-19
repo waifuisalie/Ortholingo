@@ -235,6 +235,18 @@ async def main():
     manifest["words"] = {k: f"audio/words/{k}.mp3" for k in sorted(wordfiles)}
     ASSETS.mkdir(parents=True, exist_ok=True)
     MANIFEST.write_text(json.dumps(manifest, ensure_ascii=False, indent=1))
+
+    # liturgy map: validate refs against the corpus, emit as JSON
+    lit_path = REPO / "content" / "liturgy-map.yaml"
+    if lit_path.exists():
+        lit = yaml.safe_load(lit_path.read_text())
+        for sec in lit["sections"]:
+            for it in sec["items"]:
+                if not it.get("future") and it["ref"] not in manifest["items"]:
+                    die(f"liturgy-map: unknown ref {it['ref']} (not future, not in corpus)")
+        (ASSETS / "liturgy-map.json").write_text(json.dumps(lit, ensure_ascii=False, indent=1))
+        print("liturgy map: OK")
+
     print(f"\ngenerated {n_gen} items, skipped {n_skip} up-to-date, "
           f"{len(wordfiles)} word clips\nmanifest: {MANIFEST}")
 

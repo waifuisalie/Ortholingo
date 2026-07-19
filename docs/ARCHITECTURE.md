@@ -151,6 +151,19 @@ shouldn't need network + TTS access to run the app.
 2. ✅ Content pipeline + Units 0–1
 3. ✅ Frontend: SvelteKit lesson player, karaoke card, Units 0–1 playable
 4. ✅ Backend: two-tier /api/speech/score + SpeakCheck card + bench harness
-5. FSRS + Liturgy Map (frequency-weighted "% of Liturgy understood")
+5. ✅ FSRS + Liturgy Map (frequency-weighted "% of Liturgy understood")
 6. PWA polish, Sunday-prep, tunnel demos, priest review & blessing,
    parish recordings (ask readers for a slow take too)
+
+### D9 — Spaced repetition & the Liturgy Map (phase 5)
+FSRS via `ts-fsrs`, one card per item, deck in localStorage. Ratings are
+binary for now: correct→Good, wrong→Again (no self-graded Hard/Easy — the
+exercises grade you). Meeting an item (karaoke card) enrolls it, so the
+review queue knows everything introduced. Review sessions cap at 10 items,
+quiz-only (no mic friction). Transliteration fades per item at stability ≥ 4
+days, with an "Aa" peek button (D7). The Liturgy Map
+(`content/liturgy-map.yaml` → validated → `assets/liturgy-map.json`) places
+every phrase in its liturgical section with a frequency weight; "% da
+Liturgia" = weighted share of known items, and `future: true` placeholders
+(Credo, Anáfora, Pai Nosso…) keep the denominator honest about what the
+corpus doesn't cover yet. Weights are estimates pending clergy review.

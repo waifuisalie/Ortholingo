@@ -1,0 +1,128 @@
+{
+ "liturgy": {
+  "title_pt": "Divina Liturgia de S. João Crisóstomo"
+ },
+ "sections": [
+  {
+   "id": "enarxis",
+   "title_pt": "Grande Litania",
+   "items": [
+    {
+     "ref": "kyrie-eleison",
+     "weight": 12
+    },
+    {
+     "ref": "amin",
+     "weight": 10
+    },
+    {
+     "ref": "si-kyrie",
+     "weight": 3
+    },
+    {
+     "ref": "paraschu-kyrie",
+     "weight": 6
+    }
+   ]
+  },
+  {
+   "id": "antifonas",
+   "title_pt": "Antífonas e Pequena Entrada",
+   "items": [
+    {
+     "ref": "doxa-patri",
+     "weight": 2
+    },
+    {
+     "ref": "ke-nin",
+     "weight": 2
+    },
+    {
+     "ref": "sofia-orthi",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "trisagio",
+   "title_pt": "O Trisságio",
+   "items": [
+    {
+     "ref": "trisagion",
+     "weight": 3
+    }
+   ]
+  },
+  {
+   "id": "leituras",
+   "title_pt": "Leituras e Evangelho",
+   "items": [
+    {
+     "ref": "irini-pasi",
+     "weight": 2
+    },
+    {
+     "ref": "ke-to-pnevmati-su",
+     "weight": 4
+    },
+    {
+     "ref": "proschomen",
+     "weight": 3
+    }
+   ]
+  },
+  {
+   "id": "credo",
+   "title_pt": "O Credo",
+   "items": [
+    {
+     "ref": "credo",
+     "weight": 2,
+     "future": true,
+     "label_el": "Πιστεύω εἰς ἕνα Θεόν…",
+     "label_pt": "Símbolo da Fé"
+    }
+   ]
+  },
+  {
+   "id": "anafora",
+   "title_pt": "A Anáfora",
+   "items": [
+    {
+     "ref": "anafora-axion",
+     "weight": 2,
+     "future": true,
+     "label_el": "Ἄξιον καὶ δίκαιον",
+     "label_pt": "É digno e justo"
+    },
+    {
+     "ref": "anafora-agios",
+     "weight": 1,
+     "future": true,
+     "label_el": "Ἅγιος, ἅγιος, ἅγιος…",
+     "label_pt": "Santo, santo, santo"
+    }
+   ]
+  },
+  {
+   "id": "pai-nosso",
+   "title_pt": "Pai Nosso e Comunhão",
+   "items": [
+    {
+     "ref": "pater-imon",
+     "weight": 2,
+     "future": true,
+     "label_el": "Πάτερ ἡμῶν…",
+     "label_pt": "Pai Nosso"
+    },
+    {
+     "ref": "metalipsi",
+     "weight": 2,
+     "future": true,
+     "label_el": "Μετὰ φόβου Θεοῦ…",
+     "label_pt": "Com temor de Deus"
+    }
+   ]
+  }
+ ]
+}

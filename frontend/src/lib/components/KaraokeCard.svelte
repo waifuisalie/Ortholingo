@@ -3,6 +3,7 @@
 	import Mascot from './Mascot.svelte';
 	import { play, stop } from '$lib/audio.js';
 	import { phraseAudio, wordAudio, loadTimings } from '$lib/content.js';
+	import { ensureCard, fadeTranslit } from '$lib/srs.svelte.js';
 
 	/** @type {{ item: any, onDone: () => void }} */
 	let { item, onDone } = $props();
@@ -10,11 +11,16 @@
 	let timings = $state(null);
 	let hot = $state(-1);
 	let mood = $state('content');
+	let peek = $state(false);
 	let raf = null;
+
+	const faded = $derived(fadeTranslit(item.id) && !peek);
 
 	$effect(() => {
 		item.id; // re-fetch when the item changes
 		timings = null;
+		peek = false;
+		ensureCard(item.id); // meeting an item enrolls it in spaced repetition
 		loadTimings(item.id).then((t) => (timings = t));
 	});
 
@@ -61,11 +67,16 @@
 				<button class="w" class:hot={hot === i} onclick={() => playWord(i)}>{w.el}</button>
 			{/each}
 		</div>
-		<div class="tl">
-			{#each item.words as w, i}
-				<button class="w" class:hot={hot === i} onclick={() => playWord(i)}>{w.tl}</button>
-			{/each}
-		</div>
+		{#if !faded}
+			<div class="tl">
+				{#each item.words as w, i}
+					<button class="w" class:hot={hot === i} onclick={() => playWord(i)}>{w.tl}</button>
+				{/each}
+			</div>
+		{:else}
+			<button class="peek" onclick={() => (peek = true)}
+				title="Você já domina esta frase — a transliteração se despediu. Toque para espiar.">Aa</button>
+		{/if}
 		<p class="pt">{item.pt}</p>
 	</div>
 
@@ -114,6 +125,11 @@
 	.w:hover { background: var(--raised); }
 	.w.hot { background: var(--gold); color: #241c08; }
 	.pt { text-align: center; font-size: 15px; margin: 10px 0 0; }
+	.peek {
+		display: block; margin: 6px auto 0; font-size: 11px; background: none;
+		border: 1px dashed var(--line); color: var(--dim); border-radius: 999px;
+		padding: 2px 10px; cursor: pointer;
+	}
 	.gloss { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 12px 0 0; }
 	.g {
 		font-size: 12px;

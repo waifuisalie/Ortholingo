@@ -1,6 +1,7 @@
 <script>
 	import { lessonChunks } from '$lib/content.js';
 	import { progress, isDone } from '$lib/progress.svelte.js';
+	import { dueIds } from '$lib/srs.svelte.js';
 
 	let { data } = $props();
 	const manifest = data.manifest;
@@ -27,6 +28,7 @@
 		return null;
 	}
 	const next = $derived(nextLesson());
+	const due = dueIds().length;
 </script>
 
 <header class="top">
@@ -36,6 +38,13 @@
 	</span>
 	<span class="xp">{progress.xp} XP</span>
 </header>
+
+<nav class="navrow">
+	<a class="navchip" href="/liturgia">Mapa da Liturgia</a>
+	<a class="navchip" class:hasdue={due > 0} href="/review">
+		Revisar{#if due > 0}&nbsp;· {due}{/if}
+	</a>
+</nav>
 
 {#if next}
 	<a class="continue arch" href="/lesson/{next.unit}/{next.n}">
@@ -70,6 +79,13 @@
 		color: var(--gold); font-weight: 700; display: flex; align-items: center; gap: 6px;
 	}
 	.xp { font-size: 13px; color: var(--gold2); font-variant-numeric: tabular-nums; }
+	.navrow { display: flex; gap: 8px; margin-bottom: 14px; }
+	.navchip {
+		flex: 1; text-align: center; font-size: 13px; font-weight: 600;
+		color: var(--dim); text-decoration: none; padding: 9px 6px;
+		border: 1.5px solid var(--line); border-radius: 999px;
+	}
+	.navchip.hasdue { color: var(--gold2); border-color: var(--gold); }
 	.continue { display: block; text-decoration: none; color: inherit; margin-bottom: 20px; border-color: var(--gold); }
 	.continue b { font-size: 15px; }
 	.section-label {
