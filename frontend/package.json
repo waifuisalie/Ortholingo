@@ -1,0 +1,19 @@
+{
+  "name": "ortholingo-frontend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "sync-assets": "rm -rf static/assets && cp -r ../assets static/assets",
+    "dev": "npm run sync-assets && vite dev",
+    "build": "npm run sync-assets && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/adapter-static": "^3.0.10",
+    "@sveltejs/kit": "^2.70.1",
+    "@sveltejs/vite-plugin-svelte": "^7.2.0",
+    "svelte": "^5.56.6",
+    "vite": "^8.1.5"
+  }
+}

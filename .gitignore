@@ -12,6 +12,7 @@ node_modules/
 .svelte-kit/
 build/
 dist/
+frontend/static/assets/
 
 # Bake-off laboratory outputs (regenerable experiments)
 bakeoff/out/
