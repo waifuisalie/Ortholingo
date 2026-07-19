@@ -152,8 +152,15 @@ shouldn't need network + TTS access to run the app.
 3. ✅ Frontend: SvelteKit lesson player, karaoke card, Units 0–1 playable
 4. ✅ Backend: two-tier /api/speech/score + SpeakCheck card + bench harness
 5. ✅ FSRS + Liturgy Map (frequency-weighted "% of Liturgy understood")
-6. PWA polish, Sunday-prep, tunnel demos, priest review & blessing,
-   parish recordings (ask readers for a slow take too)
+6. ✅ PWA (manifest, mascot icons, service worker precaching the whole
+   corpus — lessons work offline; /api network-only, degrades kindly),
+   candle streak (daily practice, silent reset, no guilt), Sunday-prep
+   (/domingo: Fri–Sun card, top liturgy-weighted known phrases,
+   audio-recognition emphasis).
+   Remaining items are human, not code: priest review & blessing (content,
+   mascot, three-bar cross, komboskini-streak question), parish recordings
+   (ask readers for a slow take too), and sharing with the São Savas
+   community via tunnel/VPS.
 
 ### D9 — Spaced repetition & the Liturgy Map (phase 5)
 FSRS via `ts-fsrs`, one card per item, deck in localStorage. Ratings are

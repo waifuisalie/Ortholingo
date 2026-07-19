@@ -69,6 +69,20 @@ provides a secure context; the vite proxy forwards /api to your desktop.
       review across sessions, or temporarily lower FADE_STABILITY_DAYS in
       src/lib/srs.svelte.js)
 
+### PWA, streak & Sunday prep (phase 6)
+- [ ] Candle + count appear in the home header after finishing any
+      lesson/review; next calendar day of practice increments it
+- [ ] Completion screen mentions "vela acesa: N dias"
+- [ ] Fri–Sun (after meeting at least one phrase): gold "Preparação para o
+      domingo" card on home → /domingo quizzes the heaviest liturgy phrases,
+      mostly by ear; end screen wishes you Καλή Κυριακή
+- [ ] PWA: in the production build (`npm run build && npx vite preview` or
+      via tunnel on the phone), the browser offers "install app" / "add to
+      home screen"; the icon is the mascot on night blue
+- [ ] Offline: load the app once, kill the network (airplane mode), reload —
+      lessons, audio and the map still work; speak checks fail kindly
+      (note: the service worker registers in production builds, not dev)
+
 ## What to report
 Wording that reads wrong, speeds that feel off (normal is −15%, slow −50%),
 scoring that feels unfair (which phrase, what you said, what it heard),

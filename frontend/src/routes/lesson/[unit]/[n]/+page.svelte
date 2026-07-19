@@ -2,7 +2,7 @@
 	import { page } from '$app/state';
 	import { goto } from '$app/navigation';
 	import { buildLesson } from '$lib/lesson.js';
-	import { completeLesson } from '$lib/progress.svelte.js';
+	import { completeLesson, touchStreak, progress } from '$lib/progress.svelte.js';
 	import { rate } from '$lib/srs.svelte.js';
 	import { stop } from '$lib/audio.js';
 	import KaraokeCard from '$lib/components/KaraokeCard.svelte';
@@ -38,6 +38,7 @@
 		} else {
 			done = true;
 			completeLesson(unitId, n);
+			touchStreak();
 		}
 	}
 
@@ -54,7 +55,7 @@
 	<section class="donebox">
 		<p class="eyebrow">Lição concluída</p>
 		<Mascot mood="wave" size={130} />
-		<p class="xp">+20 <small>XP</small></p>
+		<p class="xp">+20 <small>XP · vela acesa: {progress.streak.count} {progress.streak.count === 1 ? 'dia' : 'dias'}</small></p>
 		<p class="score">Você acertou {hits} de {lesson.items.length + (lesson.steps.some((s) => s.type === 'match') ? 1 : 0)} exercícios.</p>
 		<button class="btn" onclick={exit}>Voltar ao caminho</button>
 	</section>

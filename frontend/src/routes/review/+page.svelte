@@ -1,6 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { dueIds, rate } from '$lib/srs.svelte.js';
+	import { touchStreak } from '$lib/progress.svelte.js';
 	import { stop } from '$lib/audio.js';
 	import QuizCard from '$lib/components/QuizCard.svelte';
 	import Mascot from '$lib/components/Mascot.svelte';
@@ -59,7 +60,10 @@
 	function advance() {
 		stop();
 		if (idx + 1 < steps.length) idx += 1;
-		else done = true;
+		else {
+			done = true;
+			touchStreak();
+		}
 	}
 
 	function exit() {
