@@ -45,9 +45,13 @@ TIMINGS_DIR = ASSETS / "timings"
 MANIFEST = ASSETS / "manifest.json"
 
 VOICES = {"athina": "el-GR-AthinaNeural", "ava": "en-US-AvaMultilingualNeural"}
-SLOW_RATE = "-40%"
+NORMAL_RATE = "-15%"   # Athina's native pace is brisk; keep "normal" honest but calm
+SLOW_RATE = "-50%"     # study speed — user-picked, beyond the -40% ladder step
 WORD_RATE = "-20%"
 MAX_RETRIES = 3
+
+# duration-window stretch factors relative to natural pace
+STRETCH = {"normal": 1.25, "slow": 2.2}
 
 # Polytonic-only combining marks that must not appear in tts text
 POLYTONIC_MARKS = {"̓", "̔", "͂", "̀", "ͅ"}
@@ -68,7 +72,8 @@ def letters(text: str) -> int:
 
 
 def item_hash(item: dict) -> str:
-    return hashlib.sha256(f"{item['tts']}|{item['voice']}".encode()).hexdigest()[:16]
+    key = f"{item['tts']}|{item['voice']}|{NORMAL_RATE}|{SLOW_RATE}"
+    return hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
 def mp3_duration(path: pathlib.Path) -> float:
@@ -136,8 +141,8 @@ async def gen_phrase_speed(item: dict, label: str, rate: str, qc_fn):
         bounds = await synth(item["tts"], voice, rate, path, want_bounds=True)
         dur = mp3_duration(path)
         nletters = letters(item["tts"])
-        # duration window: generous per-length bounds; slow rate stretches ~1.8x
-        dur_max = (2.0 + nletters / 8) * (1.8 if label == "slow" else 1.0)
+        # duration window: generous per-length bounds, stretched per speed label
+        dur_max = (2.0 + nletters / 8) * STRETCH[label]
         dur_min = 0.2 + nletters / 30
         ok = dur_min <= dur <= dur_max and len(bounds) == len(item["words"])
         if ok and qc_fn:
@@ -183,7 +188,8 @@ async def main():
     qc_fn = make_qc_fn() if args.qc else None
 
     old = json.loads(MANIFEST.read_text()) if MANIFEST.exists() else {"items": {}}
-    manifest = {"voices": VOICES, "slow_rate": SLOW_RATE, "units": [], "items": {}, "words": {}}
+    manifest = {"voices": VOICES, "normal_rate": NORMAL_RATE, "slow_rate": SLOW_RATE,
+                "units": [], "items": {}, "words": {}}
     wordfiles = {}
     n_gen = n_skip = 0
 
@@ -209,7 +215,7 @@ async def main():
             if fresh:
                 n_skip += 1
             else:
-                t_normal = await gen_phrase_speed(item, "normal", "+0%", qc_fn)
+                t_normal = await gen_phrase_speed(item, "normal", NORMAL_RATE, qc_fn)
                 t_slow = await gen_phrase_speed(item, "slow", SLOW_RATE, qc_fn)
                 timings_path.parent.mkdir(parents=True, exist_ok=True)
                 timings_path.write_text(json.dumps({"normal": t_normal, "slow": t_slow}))

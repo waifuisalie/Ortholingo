@@ -59,9 +59,14 @@ runs live (pronunciation scoring), so only STT has a latency budget (≤3s).
   swap if Ava's PT accent grates. Chatterbox Multilingual (MIT, local) stayed
   installed in `bakeoff/` as the fully-local fallback — it won local-model
   Greek but is unstable on very short phrases (~25% clean-take yield).
-- **Slow mode:** TWO files per phrase — normal and native `rate="-40%"`
-  generation. Client-side playbackRate was rejected: sounds robotic (user
-  judgment). −40% chosen by ear from a rate ladder (−15/−25/−40).
+- **Slow mode:** TWO files per phrase, both natively rate-controlled.
+  Client-side playbackRate was rejected: sounds robotic (user judgment).
+  History: slow=−40% chosen from a rate ladder (−15/−25/−40); then, after
+  playing real lessons, "normal" felt too fast — now **normal=−15%,
+  slow=−50%** (Athina's native pace is brisk conversational Greek; −15%
+  stays honest to church speed while calmer, −50% is the study speed).
+  Rates are part of the pipeline's idempotency hash, so changing them
+  regenerates the corpus automatically.
 - **STT:** faster-whisper `large-v3-turbo` int8 CPU. Measured 5.3s/phrase at
   beam_size=5 → tuning pass pending (beam 1, silence trim, whisper.cpp Vulkan
   escape hatch for the AMD RX 6700 XT — CUDA stacks won't see that GPU, and

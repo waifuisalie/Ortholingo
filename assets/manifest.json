@@ -3,7 +3,8 @@
   "athina": "el-GR-AthinaNeural",
   "ava": "en-US-AvaMultilingualNeural"
  },
- "slow_rate": "-40%",
+ "normal_rate": "-15%",
+ "slow_rate": "-50%",
  "units": [
   {
    "id": "unit0-alfabeto",
@@ -84,7 +85,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "ac1baaa005bc397b",
+   "hash": "dac8d36ebca59105",
    "wordkeys": [
     "αλφα"
    ]
@@ -114,7 +115,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "3cf6c575d54da57b",
+   "hash": "ca6efaa2dd240bfe",
    "wordkeys": [
     "βητα"
    ]
@@ -143,7 +144,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "b060373e663f6f0c",
+   "hash": "cb288e04cf7c4d66",
    "wordkeys": [
     "γαμμα"
    ]
@@ -173,7 +174,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "f57ab4063ea30c13",
+   "hash": "f6f89b7769a755c1",
    "wordkeys": [
     "δελτα"
    ]
@@ -202,7 +203,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "bb2f2c9fecee3421",
+   "hash": "8ec933ccb811261b",
    "wordkeys": [
     "εψιλον"
    ]
@@ -231,7 +232,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "272fbfd74bc5b76c",
+   "hash": "10393cd1f44b422c",
    "wordkeys": [
     "ζητα"
    ]
@@ -261,7 +262,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "fb999e4062d05254",
+   "hash": "a3f523eda83df86d",
    "wordkeys": [
     "ητα"
    ]
@@ -290,7 +291,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "7b4e10d432d5118c",
+   "hash": "f6c9c9c7c6d9005a",
    "wordkeys": [
     "θητα"
    ]
@@ -319,7 +320,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "83da5a8db3e8f10b",
+   "hash": "97f567c230475736",
    "wordkeys": [
     "γιωτα"
    ]
@@ -348,7 +349,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "484fdb810e9dff91",
+   "hash": "ca80742371447319",
    "wordkeys": [
     "καππα"
    ]
@@ -377,7 +378,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "6f1766f0dcee8297",
+   "hash": "a7e700e6bfa76b36",
    "wordkeys": [
     "λαμδα"
    ]
@@ -406,7 +407,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "e3d0ec4064b97f91",
+   "hash": "c26d48a806a1b4e5",
    "wordkeys": [
     "μι"
    ]
@@ -435,7 +436,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "74fb6461065260aa",
+   "hash": "a17d66ff2f7860ca",
    "wordkeys": [
     "νι"
    ]
@@ -464,7 +465,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "c55b5e206563ae92",
+   "hash": "837130d1a5b811e2",
    "wordkeys": [
     "ξι"
    ]
@@ -493,7 +494,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "5cc38003a5b47e54",
+   "hash": "40e55330a0dbc08c",
    "wordkeys": [
     "ομικρον"
    ]
@@ -522,7 +523,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "786ef3da581e4850",
+   "hash": "e2650cb9e59b4e18",
    "wordkeys": [
     "πι"
    ]
@@ -551,7 +552,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "b8d9347a3909f049",
+   "hash": "2b32c1d072ffdbe5",
    "wordkeys": [
     "ρο"
    ]
@@ -580,7 +581,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "38fc189872ffb678",
+   "hash": "1daec320ee076b7d",
    "wordkeys": [
     "σιγμα"
    ]
@@ -609,7 +610,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "93dd4d1ab94a7fb6",
+   "hash": "a63bdda66cf7f813",
    "wordkeys": [
     "ταυ"
    ]
@@ -639,7 +640,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "54f84a848fe8da3a",
+   "hash": "5193891bf1b5175f",
    "wordkeys": [
     "υψιλον"
    ]
@@ -668,7 +669,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "2d58b10f77b9bd74",
+   "hash": "9b2f0b5c0a3a7eb5",
    "wordkeys": [
     "φι"
    ]
@@ -697,7 +698,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "8bee4cb1c7cb64e8",
+   "hash": "e727fed295d5dfb1",
    "wordkeys": [
     "χι"
    ]
@@ -726,7 +727,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "ee312b126d690c94",
+   "hash": "857e39d98e2d825d",
    "wordkeys": [
     "ψι"
    ]
@@ -756,7 +757,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "1ab824cde5aed54a",
+   "hash": "ee3c4d1ff7108c37",
    "wordkeys": [
     "ωμεγα"
    ]
@@ -795,7 +796,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "61d2e2591f151c7a",
+   "hash": "08e63ebd8448dd91",
    "wordkeys": [
     "κυριε",
     "ελεησον"
@@ -826,7 +827,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "db2aa58804d8a6cf",
+   "hash": "b7dac6e08d1b145c",
    "wordkeys": [
     "αμην"
    ]
@@ -880,7 +881,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "07158e5e5ccc0125",
+   "hash": "357bde2acb496e76",
    "wordkeys": [
     "και",
     "τω",
@@ -922,7 +923,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "2061e9f9312ed6ed",
+   "hash": "8e7c8bebfcfcea12",
    "wordkeys": [
     "ειρηνη",
     "πασι"
@@ -962,7 +963,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "027473b59a54c693",
+   "hash": "fbbdaa8e0431f2ab",
    "wordkeys": [
     "σοι",
     "κυριε"
@@ -1002,7 +1003,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "6fbe038076a2f793",
+   "hash": "a0079d9665bf7c7b",
    "wordkeys": [
     "παρασχου",
     "κυριε"
@@ -1078,7 +1079,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "2ef4851a0ae1e1b4",
+   "hash": "f9520d3330d19a0e",
    "wordkeys": [
     "δοξα",
     "πατρι",
@@ -1167,7 +1168,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "9e429c487dc84ebf",
+   "hash": "aba04e7e6284bd0b",
    "wordkeys": [
     "και",
     "νυν",
@@ -1208,7 +1209,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "de75a458ceb95750",
+   "hash": "2b8701a1262a0964",
    "wordkeys": [
     "προσχωμεν"
    ]
@@ -1247,7 +1248,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "c42ba649637c2e57",
+   "hash": "2e5ba86992eba953",
    "wordkeys": [
     "σοφια",
     "ορθοι"
@@ -1327,7 +1328,7 @@
    ],
    "voice": "athina",
    "review": "pending",
-   "hash": "eff6f72b12296e99",
+   "hash": "ab0261515652d5b7",
    "wordkeys": [
     "αγιοσ",
     "ο",
