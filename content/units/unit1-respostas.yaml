@@ -157,7 +157,9 @@ items:
   - id: ke-nin
     kind: phrase
     greek: "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν."
-    tts: "Και νυν και αεί και εις τους αιώνας των αιώνων. Αμήν."
+    # tts respelling: accented "αεί" makes the TTS voice spell-read the word
+    # aloud ("...me tono"); the accentless form is pronounced normally.
+    tts: "Και νυν και αει και εις τους αιώνας των αιώνων. Αμήν."
     words:
       - { el: "Καὶ",      tl: "Ke" }
       - { el: "νῦν",      tl: "nin" }
