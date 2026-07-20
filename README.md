@@ -23,6 +23,14 @@ Built by a catechumen, for catechumens and converts: instead of "general Greek f
 - 🧠 Spaced repetition (FSRS) with transliteration "training wheels" that fade as mastery grows
 - 🐈 A monastery-cat mascot who reacts, waits patiently, and never guilt-trips
 
+## The road ahead
+
+Greek first — but the architecture is language-agnostic by design. The same
+curated-corpus schema, asset pipeline, and pronunciation scoring extend
+naturally to the other liturgical languages of the one Orthodox Church:
+Church Slavonic, Romanian, Arabic, Georgian… One app, every tradition,
+starting from the nave of a Greek parish in Brazil.
+
 ## Repository layout
 
 ```
