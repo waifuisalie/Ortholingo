@@ -2,7 +2,7 @@
 	import { onDestroy } from 'svelte';
 	import Mascot from './Mascot.svelte';
 	import { play, stop } from '$lib/audio.js';
-	import { phraseAudio } from '$lib/content.js';
+	import { phraseAudio, wordAudio } from '$lib/content.js';
 
 	/** @type {{ item: any, onResult: (ok: boolean) => void, onDone: () => void }} */
 	let { item, onResult, onDone } = $props();
@@ -15,6 +15,7 @@
 	let phase = $state('idle'); // idle | rec | busy | result | error
 	let result = $state(null);
 	let mood = $state('content');
+	let hot = $state(-1);
 	let answered = false;
 	let recorder = null;
 	let chunks = [];
@@ -25,8 +26,18 @@
 		phase = 'idle';
 		result = null;
 		mood = 'content';
+		hot = -1;
 		answered = false;
 	});
+
+	/** tap a word to hear just that one (don't leak audio into a live recording) */
+	function playWord(i) {
+		if (phase === 'rec') return;
+		stop();
+		hot = i;
+		const a = play(wordAudio(item.wordkeys[i]));
+		a.onended = () => (hot = -1);
+	}
 
 	async function toggleRec() {
 		if (phase === 'rec') return stopRec();
@@ -96,15 +107,22 @@
 	<div class="target">
 		<div class="gr greek">
 			{#each item.words as w, i}
-				<span class="w" class:ok={result && result.words[i]} class:err={result && !result.words[i]}>{w.el}</span>
+				<button type="button" class="w" class:hot={hot === i}
+					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
+					onclick={() => playWord(i)}>{w.el}</button>
 			{/each}
 		</div>
 		<div class="tl">
 			{#each item.words as w, i}
-				<span class="w" class:ok={result && result.words[i]} class:err={result && !result.words[i]}>{w.tl}</span>
+				<button type="button" class="w" class:hot={hot === i}
+					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
+					onclick={() => playWord(i)}>{w.tl}</button>
 			{/each}
 		</div>
-		<button class="hearbtn" onclick={() => play(phraseAudio(item.id, 'slow'))}>ouvir de novo (lento)</button>
+		{#if phase !== 'rec'}
+			<p class="taphint">Toque numa palavra para ouvi-la</p>
+		{/if}
+		<button class="hearbtn" onclick={() => play(phraseAudio(item.id, 'slow'))}>ouvir a frase (lento)</button>
 	</div>
 
 	{#if phase === 'idle' || phase === 'rec'}
@@ -139,9 +157,16 @@
 	.gr, .tl { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: center; }
 	.gr { font-size: 27px; }
 	.tl { font-size: 13.5px; font-style: italic; color: var(--dim); margin-top: 2px; }
-	.w { border-radius: 8px; padding: 1px 6px; }
+	.w {
+		background: none; border: 0; color: inherit; font: inherit;
+		cursor: pointer; border-radius: 8px; padding: 1px 6px;
+		transition: background 0.12s, color 0.12s;
+	}
+	.w:hover { background: var(--raised); }
 	.w.ok { background: #82a85c26; box-shadow: inset 0 0 0 1.5px var(--good); }
 	.w.err { background: #c05a4426; box-shadow: inset 0 0 0 1.5px var(--bad); }
+	.w.hot { background: var(--gold); color: #241c08; box-shadow: none; }
+	.taphint { text-align: center; font-size: 11.5px; color: var(--dim); margin: 8px 0 0; }
 	.hearbtn {
 		display: block; margin: 10px auto 0; font-size: 12px; background: none;
 		border: 1px solid var(--line); color: var(--gold2); border-radius: 999px;
