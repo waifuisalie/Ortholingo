@@ -9,6 +9,7 @@
 	const GLYPHS = {
 		'unit0-alfabeto': 'Α',
 		'unit1-respostas': 'Κ',
+		'unit5-grande-entrada': 'Χ',
 		'unit2-credo': 'Σ',
 		'unit3-anafora': 'Ἄ',
 		'unit4-painosso-comunhao': 'Π'

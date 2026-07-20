@@ -2,7 +2,7 @@ unit:
   id: unit4-painosso-comunhao
   title: "Pai Nosso e Comunhão"
   section: nave
-  order: 5
+  order: 6
   intro_pt: >-
     A oração que o próprio Cristo ensinou — na língua em que os Evangelhos a
     registraram — e as palavras que cercam o cálice. Com esta unidade, você
@@ -329,5 +329,36 @@ items:
       agora vista, recebida, encontrada.
     source: "Divina Liturgia (GOA), p. 31"
     tags: [comunhao, hino, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: ii-to-onoma
+    kind: phrase
+    greek: "Εἴη τὸ ὄνομα Κυρίου εὐλογημένον ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος."
+    # tts respelling: accented "Εἴη" gets spell-read (like the αεί case); the
+    # accentless "Ειη" is pronounced normally.
+    tts: "Ειη το όνομα Κυρίου ευλογημένον από του νυν και έως του αιώνος."
+    words:
+      - { el: "Εἴη",          tl: "Íi" }
+      - { el: "τὸ",           tl: "to" }
+      - { el: "ὄνομα",        tl: "ónoma" }
+      - { el: "Κυρίου",       tl: "Kiríu" }
+      - { el: "εὐλογημένον",  tl: "evloyiménon" }
+      - { el: "ἀπὸ",          tl: "apó" }
+      - { el: "τοῦ",          tl: "tu" }
+      - { el: "νῦν",          tl: "nin" }
+      - { el: "καὶ",          tl: "ke" }
+      - { el: "ἕως",          tl: "éos" }
+      - { el: "τοῦ",          tl: "tu" }
+      - { el: "αἰῶνος.",      tl: "eónos." }
+    pt: "Bendito seja o nome do Senhor, desde agora e para sempre."
+    gloss:
+      - { el: "εὐλογημένον", pt: "bendito, abençoado" }
+      - { el: "ἕως",         pt: "até" }
+    context_pt: >-
+      Cantado pelo povo três vezes ao fim da Liturgia, antes da despedida —
+      é o Salmo 112 (LXX): a bênção com que voltamos ao mundo.
+    source: "Divina Liturgia (GOA), p. 33"
+    tags: [despedida, hino, resposta-do-povo]
     voice: athina
     review: pending

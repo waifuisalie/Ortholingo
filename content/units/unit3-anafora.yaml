@@ -2,7 +2,7 @@ unit:
   id: unit3-anafora
   title: "A Anáfora · o diálogo sagrado"
   section: nave
-  order: 4
+  order: 5
   intro_pt: >-
     O coração da Liturgia. Aqui você aprende os dois lados do diálogo: o que
     o sacerdote e o diácono proclamam (voz masculina) e o que o povo — você —
@@ -372,6 +372,90 @@ items:
       Cantado pelo povo enquanto o sacerdote invoca o Espírito Santo sobre
       os dons — o momento mais sagrado da Liturgia.
     source: "Divina Liturgia (GOA), p. 22"
+    tags: [anafora, hino, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-exeretos
+    kind: phrase
+    greek: "Ἐξαιρέτως τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας."
+    tts: "Εξαιρέτως της παναγίας, αχράντου, υπερευλογημένης, ενδόξου, δεσποίνης ημών Θεοτόκου και αειπαρθένου Μαρίας."
+    words:
+      - { el: "Ἐξαιρέτως",        tl: "Exerétos" }
+      - { el: "τῆς",              tl: "tis" }
+      - { el: "παναγίας,",        tl: "panayías," }
+      - { el: "ἀχράντου,",        tl: "achrándu," }
+      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis," }
+      - { el: "ἐνδόξου,",         tl: "endóxu," }
+      - { el: "δεσποίνης",        tl: "despínis" }
+      - { el: "ἡμῶν",             tl: "imón" }
+      - { el: "Θεοτόκου",         tl: "Theotóku" }
+      - { el: "καὶ",              tl: "ke" }
+      - { el: "ἀειπαρθένου",      tl: "aiparthénu" }
+      - { el: "Μαρίας.",          tl: "Marías." }
+    pt: "De modo especial pela nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria."
+    gloss:
+      - { el: "ἐξαιρέτως", pt: "de modo especial, sobretudo" }
+    context_pt: >-
+      Logo após a invocação do Espírito, o sacerdote recorda todos os santos
+      — «e de modo especial» a Theotokos. É a deixa: o povo responde cantando
+      o «Ἄξιόν ἐστιν».
+    source: "Divina Liturgia (GOA), p. 23"
+    tags: [anafora, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-axion-estin
+    kind: phrase
+    greek: "Ἄξιόν ἐστιν ὡς ἀληθῶς μακαρίζειν σε τὴν Θεοτόκον, τὴν ἀειμακάριστον καὶ παναμώμητον καὶ μητέρα τοῦ Θεοῦ ἡμῶν. Τὴν τιμιωτέραν τῶν Χερουβεὶμ καὶ ἐνδοξοτέραν ἀσυγκρίτως τῶν Σεραφείμ, τὴν ἀδιαφθόρως Θεὸν Λόγον τεκοῦσαν, τὴν ὄντως Θεοτόκον, σὲ μεγαλύνομεν."
+    tts: "Άξιόν εστιν ως αληθώς μακαρίζειν σε την Θεοτόκον, την αειμακάριστον και παναμώμητον και μητέρα του Θεού ημών. Την τιμιωτέραν των Χερουβείμ και ενδοξοτέραν ασυγκρίτως των Σεραφείμ, την αδιαφθόρως Θεόν Λόγον τεκούσαν, την όντως Θεοτόκον, σε μεγαλύνομεν."
+    words:
+      - { el: "Ἄξιόν",         tl: "Áxión" }
+      - { el: "ἐστιν",         tl: "estin" }
+      - { el: "ὡς",            tl: "os" }
+      - { el: "ἀληθῶς",        tl: "alithós" }
+      - { el: "μακαρίζειν",    tl: "makarízin" }
+      - { el: "σε",            tl: "se" }
+      - { el: "τὴν",           tl: "tin" }
+      - { el: "Θεοτόκον,",     tl: "Theotókon," }
+      - { el: "τὴν",           tl: "tin" }
+      - { el: "ἀειμακάριστον", tl: "aimakáriston" }
+      - { el: "καὶ",           tl: "ke" }
+      - { el: "παναμώμητον",   tl: "panamómiton" }
+      - { el: "καὶ",           tl: "ke" }
+      - { el: "μητέρα",        tl: "mitéra" }
+      - { el: "τοῦ",           tl: "tu" }
+      - { el: "Θεοῦ",          tl: "Theú" }
+      - { el: "ἡμῶν.",         tl: "imón." }
+      - { el: "Τὴν",           tl: "Tin" }
+      - { el: "τιμιωτέραν",    tl: "timiotéran" }
+      - { el: "τῶν",           tl: "ton" }
+      - { el: "Χερουβεὶμ",     tl: "Cheruvím" }
+      - { el: "καὶ",           tl: "ke" }
+      - { el: "ἐνδοξοτέραν",   tl: "endoxotéran" }
+      - { el: "ἀσυγκρίτως",    tl: "asingrítos" }
+      - { el: "τῶν",           tl: "ton" }
+      - { el: "Σεραφείμ,",     tl: "Serafím," }
+      - { el: "τὴν",           tl: "tin" }
+      - { el: "ἀδιαφθόρως",    tl: "adiafthóros" }
+      - { el: "Θεὸν",          tl: "Theón" }
+      - { el: "Λόγον",         tl: "Lógon" }
+      - { el: "τεκοῦσαν,",     tl: "tekúsan," }
+      - { el: "τὴν",           tl: "tin" }
+      - { el: "ὄντως",         tl: "óndos" }
+      - { el: "Θεοτόκον,",     tl: "Theotókon," }
+      - { el: "σὲ",            tl: "se" }
+      - { el: "μεγαλύνομεν.",  tl: "megalínomen." }
+    pt: "Verdadeiramente é digno bendizer-te, ó Theotókos, sempre bem-aventurada e toda imaculada, e Mãe do nosso Deus. Mais honrosa que os querubins e incomparavelmente mais gloriosa que os serafins, tu que sem corrupção deste à luz o Deus Verbo, verdadeira Theotókos, nós te magnificamos."
+    gloss:
+      - { el: "τιμιωτέραν",  pt: "mais honrosa" }
+      - { el: "ἀσυγκρίτως",  pt: "incomparavelmente" }
+      - { el: "μεγαλύνομεν", pt: "magnificamos, engrandecemos" }
+    context_pt: >-
+      O hino à Theotokos («É verdadeiramente digno») que o povo canta na
+      resposta ao sacerdote — um dos mais amados de toda a Igreja. Aqui você
+      canta com o coro.
+    source: "Divina Liturgia (GOA), p. 23"
     tags: [anafora, hino, resposta-do-povo]
     voice: athina
     review: pending

@@ -1,0 +1,92 @@
+unit:
+  id: unit5-grande-entrada
+  title: "A Grande Entrada"
+  section: nave
+  order: 3
+  intro_pt: >-
+    O momento em que os dons — o pão e o vinho — são levados em procissão até
+    o altar. O povo canta o Hino Querubínico, e o sacerdote, diante da porta
+    do iconostásio, recorda a todos no Reino. Muitos se persignam. Aqui você
+    aprende a cantar com o coro e a reconhecer o que o sacerdote proclama.
+
+items:
+  - id: cherubikon
+    kind: phrase
+    greek: "Οἱ τὰ Χερουβεὶμ μυστικῶς εἰκονίζοντες καὶ τῇ ζωοποιῷ Τριάδι τὸν τρισάγιον ὕμνον προσᾴδοντες, πᾶσαν νῦν βιοτικὴν ἀποθώμεθα μέριμναν, ὡς τὸν βασιλέα τῶν ὅλων ὑποδεξόμενοι."
+    tts: "Οι τα Χερουβείμ μυστικώς εικονίζοντες και τη ζωοποιώ Τριάδι τον τρισάγιον ύμνον προσάδοντες, πάσαν νυν βιοτικήν αποθώμεθα μέριμναν, ως τον βασιλέα των όλων υποδεξόμενοι."
+    words:
+      - { el: "Οἱ",            tl: "I" }
+      - { el: "τὰ",            tl: "ta" }
+      - { el: "Χερουβεὶμ",     tl: "Cheruvím" }
+      - { el: "μυστικῶς",      tl: "mistikós" }
+      - { el: "εἰκονίζοντες",  tl: "ikonízondes" }
+      - { el: "καὶ",           tl: "ke" }
+      - { el: "τῇ",            tl: "ti" }
+      - { el: "ζωοποιῷ",       tl: "zoopió" }
+      - { el: "Τριάδι",        tl: "Triádi" }
+      - { el: "τὸν",           tl: "ton" }
+      - { el: "τρισάγιον",     tl: "trisáyion" }
+      - { el: "ὕμνον",         tl: "ímnon" }
+      - { el: "προσᾴδοντες,",  tl: "prosádondes," }
+      - { el: "πᾶσαν",         tl: "pásan" }
+      - { el: "νῦν",           tl: "nin" }
+      - { el: "βιοτικὴν",      tl: "viotikín" }
+      - { el: "ἀποθώμεθα",     tl: "apothómetha" }
+      - { el: "μέριμναν,",     tl: "mérimnan," }
+      - { el: "ὡς",            tl: "os" }
+      - { el: "τὸν",           tl: "ton" }
+      - { el: "βασιλέα",       tl: "vasiléa" }
+      - { el: "τῶν",           tl: "ton" }
+      - { el: "ὅλων",          tl: "ólon" }
+      - { el: "ὑποδεξόμενοι.", tl: "ipodexómeni." }
+    pt: "Nós que misticamente representamos os querubins e cantamos à Trindade vivificante o hino trisságio, deixemos agora de lado toda preocupação mundana, para recebermos o Rei de todos."
+    gloss:
+      - { el: "μυστικῶς",         pt: "misticamente" }
+      - { el: "βιοτικὴν μέριμναν", pt: "preocupação mundana, cuidado da vida" }
+      - { el: "ὑποδεξόμενοι",     pt: "prestes a receber (como hóspede)" }
+    context_pt: >-
+      O Hino Querubínico. Enquanto o coro o canta devagar, o sacerdote prepara
+      a Grande Entrada. É um convite a largar tudo — «deixemos toda preocupação
+      mundana» — para receber o Rei. Cante com o coro.
+    source: "Divina Liturgia (GOA), p. 15"
+    tags: [entrada-grande, hino, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: panton-imon
+    kind: phrase
+    greek: "Πάντων ὑμῶν μνησθείη Κύριος ὁ Θεὸς ἐν τῇ βασιλείᾳ αὐτοῦ, πάντοτε, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+    tts: "Πάντων υμών μνησθείη Κύριος ο Θεός εν τη βασιλεία αυτού, πάντοτε, νυν και αει και εις τους αιώνας των αιώνων."
+    words:
+      - { el: "Πάντων",     tl: "Pándon" }
+      - { el: "ὑμῶν",       tl: "imón" }
+      - { el: "μνησθείη",   tl: "mnisthíi" }
+      - { el: "Κύριος",     tl: "Kírios" }
+      - { el: "ὁ",          tl: "o" }
+      - { el: "Θεὸς",       tl: "Theós" }
+      - { el: "ἐν",         tl: "en" }
+      - { el: "τῇ",         tl: "ti" }
+      - { el: "βασιλείᾳ",   tl: "vasilía" }
+      - { el: "αὐτοῦ,",     tl: "aftú," }
+      - { el: "πάντοτε,",   tl: "pándote," }
+      - { el: "νῦν",        tl: "nin" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "ἀεὶ",        tl: "aí" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "εἰς",        tl: "is" }
+      - { el: "τοὺς",       tl: "tus" }
+      - { el: "αἰῶνας",     tl: "eónas" }
+      - { el: "τῶν",        tl: "ton" }
+      - { el: "αἰώνων.",    tl: "eónon." }
+    pt: "A todos vós recorde o Senhor Deus no seu reino, sempre, agora e sempre e pelos séculos dos séculos."
+    gloss:
+      - { el: "μνησθείη", pt: "recorde, lembre-se de (optativo)" }
+      - { el: "βασιλείᾳ", pt: "reino" }
+    context_pt: >-
+      É isto que o sacerdote (ou o diácono) proclama na Grande Entrada, de pé
+      diante do povo com os dons sagrados nas mãos: «que o Senhor vos recorde
+      no seu Reino». Por isso muitos se persignam. O povo responde «Ἀμήν».
+    source: "Divina Liturgia (GOA), p. 16"
+    tags: [entrada-grande, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending

@@ -16,6 +16,10 @@
      "weight": 10
     },
     {
+     "ref": "tis-panagias",
+     "weight": 4
+    },
+    {
      "ref": "si-kyrie",
      "weight": 3
     },
@@ -68,6 +72,10 @@
     {
      "ref": "proschomen",
      "weight": 3
+    },
+    {
+     "ref": "doxa-si-kyrie",
+     "weight": 2
     }
    ]
   },
@@ -77,10 +85,11 @@
    "items": [
     {
      "ref": "cherubikon",
-     "weight": 1,
-     "future": true,
-     "label_el": "Οἱ τὰ Χερουβεὶμ…",
-     "label_pt": "Hino Querubínico"
+     "weight": 1
+    },
+    {
+     "ref": "panton-imon",
+     "weight": 1
     }
    ]
   },
@@ -195,11 +204,12 @@
      "weight": 1
     },
     {
-     "ref": "axion-estin",
-     "weight": 1,
-     "future": true,
-     "label_el": "Ἄξιόν ἐστιν…",
-     "label_pt": "Hino à Theotokos"
+     "ref": "anafora-exeretos",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-axion-estin",
+     "weight": 1
     }
    ]
   },
@@ -250,6 +260,16 @@
     {
      "ref": "idomen",
      "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "despedida",
+   "title_pt": "Bênção final e Despedida",
+   "items": [
+    {
+     "ref": "ii-to-onoma",
+     "weight": 3
     }
    ]
   }

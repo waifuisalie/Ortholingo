@@ -117,6 +117,9 @@ def load_units(only=None):
         units.append((unit, items))
     if not units:
         die("no units found")
+    # display/lesson order follows the Liturgy, not the filename glob — a unit's
+    # `order` is its place in the rite (e.g. the Great Entrance before the Creed)
+    units.sort(key=lambda u: u[0].get("order", 999))
     return units
 
 

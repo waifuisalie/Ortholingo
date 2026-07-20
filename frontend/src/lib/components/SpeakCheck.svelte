@@ -8,7 +8,9 @@
 	let { item, onResult, onDone } = $props();
 
 	const PASS = 0.75;
-	const MAX_MS = 10000;
+	// runaway backstop only — the real stop is the user tapping again. Long
+	// phrases (the Creed, the Cherubikon, the litany conclusions) need room.
+	const MAX_MS = 120000;
 
 	let phase = $state('idle'); // idle | rec | busy | result | error
 	let result = $state(null);

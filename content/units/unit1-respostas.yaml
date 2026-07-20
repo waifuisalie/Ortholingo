@@ -250,3 +250,72 @@ items:
     tags: [liturgia, hino, oracoes-diarias]
     voice: athina
     review: pending
+
+  - id: doxa-si-kyrie
+    kind: phrase
+    greek: "Δόξα σοι, Κύριε, δόξα σοι."
+    tts: "Δόξα σοι, Κύριε, δόξα σοι."
+    words:
+      - { el: "Δόξα",   tl: "Dóxa" }
+      - { el: "σοι,",   tl: "si," }
+      - { el: "Κύριε,", tl: "Kírie," }
+      - { el: "δόξα",   tl: "dóxa" }
+      - { el: "σοι.",   tl: "si." }
+    pt: "Glória a Ti, Senhor, glória a Ti."
+    gloss:
+      - { el: "δόξα",  pt: "glória" }
+      - { el: "σοι",   pt: "a ti" }
+    context_pt: >-
+      A aclamação do povo ao Evangelho — dita antes da leitura («Sabedoria!
+      De pé!») e de novo ao fim dela. Recebemos a Palavra com glória.
+    source: "Divina Liturgia (GOA), p. 13"
+    tags: [liturgia, evangelho, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: tis-panagias
+    kind: phrase
+    greek: "Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα."
+    tts: "Της παναγίας, αχράντου, υπερευλογημένης, ενδόξου, δεσποίνης ημών Θεοτόκου και αειπαρθένου Μαρίας μετά πάντων των αγίων μνημονεύσαντες, εαυτούς και αλλήλους και πάσαν την ζωήν ημών Χριστώ τω Θεώ παραθώμεθα."
+    words:
+      - { el: "Τῆς",              tl: "Tis" }
+      - { el: "παναγίας,",        tl: "panayías," }
+      - { el: "ἀχράντου,",        tl: "achrándu," }
+      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis," }
+      - { el: "ἐνδόξου,",         tl: "endóxu," }
+      - { el: "δεσποίνης",        tl: "despínis" }
+      - { el: "ἡμῶν",             tl: "imón" }
+      - { el: "Θεοτόκου",         tl: "Theotóku" }
+      - { el: "καὶ",              tl: "ke" }
+      - { el: "ἀειπαρθένου",      tl: "aiparthénu" }
+      - { el: "Μαρίας",           tl: "Marías" }
+      - { el: "μετὰ",             tl: "metá" }
+      - { el: "πάντων",           tl: "pándon" }
+      - { el: "τῶν",              tl: "ton" }
+      - { el: "ἁγίων",            tl: "ayíon" }
+      - { el: "μνημονεύσαντες,",  tl: "mnimonéfsandes," }
+      - { el: "ἑαυτοὺς",          tl: "eaftús" }
+      - { el: "καὶ",              tl: "ke" }
+      - { el: "ἀλλήλους",         tl: "allílus" }
+      - { el: "καὶ",              tl: "ke" }
+      - { el: "πᾶσαν",            tl: "pásan" }
+      - { el: "τὴν",              tl: "tin" }
+      - { el: "ζωὴν",             tl: "zoín" }
+      - { el: "ἡμῶν",             tl: "imón" }
+      - { el: "Χριστῷ",           tl: "Christó" }
+      - { el: "τῷ",               tl: "to" }
+      - { el: "Θεῷ",              tl: "Theó" }
+      - { el: "παραθώμεθα.",      tl: "parathómetha." }
+    pt: "Recordando a nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria, com todos os santos, entreguemo-nos a nós mesmos, uns aos outros, e toda a nossa vida a Cristo, nosso Deus."
+    gloss:
+      - { el: "μνημονεύσαντες", pt: "tendo recordado (dos santos)" }
+      - { el: "ἀειπαρθένου",    pt: "sempre-virgem (ἀεί + παρθένος)" }
+      - { el: "παραθώμεθα",     pt: "entreguemo-nos, confiemos" }
+    context_pt: >-
+      A conclusão que o diácono dá a cada litania — longa, mas você a ouvirá
+      muitas vezes. Termina pedindo que entreguemos tudo a Cristo; e o povo
+      responde com o «Σοί, Κύριε» que você já sabe.
+    source: "Divina Liturgia (GOA), p. 17"
+    tags: [liturgia, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending

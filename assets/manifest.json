@@ -57,14 +57,27 @@
     "ke-nin",
     "proschomen",
     "sofia-orthi",
-    "trisagion"
+    "trisagion",
+    "doxa-si-kyrie",
+    "tis-panagias"
+   ]
+  },
+  {
+   "id": "unit5-grande-entrada",
+   "title": "A Grande Entrada",
+   "section": "nave",
+   "order": 3,
+   "intro_pt": "O momento em que os dons — o pão e o vinho — são levados em procissão até o altar. O povo canta o Hino Querubínico, e o sacerdote, diante da porta do iconostásio, recorda a todos no Reino. Muitos se persignam. Aqui você aprende a cantar com o coro e a reconhecer o que o sacerdote proclama.",
+   "items": [
+    "cherubikon",
+    "panton-imon"
    ]
   },
   {
    "id": "unit2-credo",
    "title": "O Credo · Σύμβολον τῆς Πίστεως",
    "section": "nave",
-   "order": 3,
+   "order": 4,
    "intro_pt": "O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará. Traduções conforme o Devocional.",
    "items": [
     "credo-1",
@@ -85,7 +98,7 @@
    "id": "unit3-anafora",
    "title": "A Anáfora · o diálogo sagrado",
    "section": "nave",
-   "order": 4,
+   "order": 5,
    "intro_pt": "O coração da Liturgia. Aqui você aprende os dois lados do diálogo: o que o sacerdote e o diácono proclamam (voz masculina) e o que o povo — você — responde (voz feminina). Ouvir é metade da participação.",
    "items": [
     "anafora-stomen",
@@ -100,14 +113,16 @@
     "anafora-lavete",
     "anafora-piete",
     "anafora-ta-sa",
-    "anafora-se-ymnoumen"
+    "anafora-se-ymnoumen",
+    "anafora-exeretos",
+    "anafora-axion-estin"
    ]
   },
   {
    "id": "unit4-painosso-comunhao",
    "title": "Pai Nosso e Comunhão",
    "section": "nave",
-   "order": 5,
+   "order": 6,
    "intro_pt": "A oração que o próprio Cristo ensinou — na língua em que os Evangelhos a registraram — e as palavras que cercam o cálice. Com esta unidade, você acompanha a Liturgia do início à Comunhão.",
    "items": [
     "pater-1",
@@ -120,7 +135,8 @@
     "is-agios",
     "meta-fovou",
     "soson-o-theos",
-    "idomen"
+    "idomen",
+    "ii-to-onoma"
    ]
   }
  ],
@@ -1404,6 +1420,520 @@
     "αθανατοσ",
     "ελεησον",
     "ημασ"
+   ]
+  },
+  "doxa-si-kyrie": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Δόξα σοι, Κύριε, δόξα σοι.",
+   "words": [
+    {
+     "el": "Δόξα",
+     "tl": "Dóxa"
+    },
+    {
+     "el": "σοι,",
+     "tl": "si,"
+    },
+    {
+     "el": "Κύριε,",
+     "tl": "Kírie,"
+    },
+    {
+     "el": "δόξα",
+     "tl": "dóxa"
+    },
+    {
+     "el": "σοι.",
+     "tl": "si."
+    }
+   ],
+   "pt": "Glória a Ti, Senhor, glória a Ti.",
+   "gloss": [
+    {
+     "el": "δόξα",
+     "pt": "glória"
+    },
+    {
+     "el": "σοι",
+     "pt": "a ti"
+    }
+   ],
+   "context_pt": "A aclamação do povo ao Evangelho — dita antes da leitura («Sabedoria! De pé!») e de novo ao fim dela. Recebemos a Palavra com glória.",
+   "source": "Divina Liturgia (GOA), p. 13",
+   "tags": [
+    "liturgia",
+    "evangelho",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "6628104ba2ae4e10",
+   "wordkeys": [
+    "δοξα",
+    "σοι",
+    "κυριε",
+    "δοξα",
+    "σοι"
+   ]
+  },
+  "tis-panagias": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα.",
+   "words": [
+    {
+     "el": "Τῆς",
+     "tl": "Tis"
+    },
+    {
+     "el": "παναγίας,",
+     "tl": "panayías,"
+    },
+    {
+     "el": "ἀχράντου,",
+     "tl": "achrándu,"
+    },
+    {
+     "el": "ὑπερευλογημένης,",
+     "tl": "iperevloyiménis,"
+    },
+    {
+     "el": "ἐνδόξου,",
+     "tl": "endóxu,"
+    },
+    {
+     "el": "δεσποίνης",
+     "tl": "despínis"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "Θεοτόκου",
+     "tl": "Theotóku"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀειπαρθένου",
+     "tl": "aiparthénu"
+    },
+    {
+     "el": "Μαρίας",
+     "tl": "Marías"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "ἁγίων",
+     "tl": "ayíon"
+    },
+    {
+     "el": "μνημονεύσαντες,",
+     "tl": "mnimonéfsandes,"
+    },
+    {
+     "el": "ἑαυτοὺς",
+     "tl": "eaftús"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀλλήλους",
+     "tl": "allílus"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "πᾶσαν",
+     "tl": "pásan"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ζωὴν",
+     "tl": "zoín"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "Χριστῷ",
+     "tl": "Christó"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to"
+    },
+    {
+     "el": "Θεῷ",
+     "tl": "Theó"
+    },
+    {
+     "el": "παραθώμεθα.",
+     "tl": "parathómetha."
+    }
+   ],
+   "pt": "Recordando a nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria, com todos os santos, entreguemo-nos a nós mesmos, uns aos outros, e toda a nossa vida a Cristo, nosso Deus.",
+   "gloss": [
+    {
+     "el": "μνημονεύσαντες",
+     "pt": "tendo recordado (dos santos)"
+    },
+    {
+     "el": "ἀειπαρθένου",
+     "pt": "sempre-virgem (ἀεί + παρθένος)"
+    },
+    {
+     "el": "παραθώμεθα",
+     "pt": "entreguemo-nos, confiemos"
+    }
+   ],
+   "context_pt": "A conclusão que o diácono dá a cada litania — longa, mas você a ouvirá muitas vezes. Termina pedindo que entreguemos tudo a Cristo; e o povo responde com o «Σοί, Κύριε» que você já sabe.",
+   "source": "Divina Liturgia (GOA), p. 17",
+   "tags": [
+    "liturgia",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "60a33ed361540e57",
+   "wordkeys": [
+    "τησ",
+    "παναγιασ",
+    "αχραντου",
+    "υπερευλογημενησ",
+    "ενδοξου",
+    "δεσποινησ",
+    "ημων",
+    "θεοτοκου",
+    "και",
+    "αειπαρθενου",
+    "μαριασ",
+    "μετα",
+    "παντων",
+    "των",
+    "αγιων",
+    "μνημονευσαντεσ",
+    "εαυτουσ",
+    "και",
+    "αλληλουσ",
+    "και",
+    "πασαν",
+    "την",
+    "ζωην",
+    "ημων",
+    "χριστω",
+    "τω",
+    "θεω",
+    "παραθωμεθα"
+   ]
+  },
+  "cherubikon": {
+   "unit": "unit5-grande-entrada",
+   "kind": "phrase",
+   "greek": "Οἱ τὰ Χερουβεὶμ μυστικῶς εἰκονίζοντες καὶ τῇ ζωοποιῷ Τριάδι τὸν τρισάγιον ὕμνον προσᾴδοντες, πᾶσαν νῦν βιοτικὴν ἀποθώμεθα μέριμναν, ὡς τὸν βασιλέα τῶν ὅλων ὑποδεξόμενοι.",
+   "words": [
+    {
+     "el": "Οἱ",
+     "tl": "I"
+    },
+    {
+     "el": "τὰ",
+     "tl": "ta"
+    },
+    {
+     "el": "Χερουβεὶμ",
+     "tl": "Cheruvím"
+    },
+    {
+     "el": "μυστικῶς",
+     "tl": "mistikós"
+    },
+    {
+     "el": "εἰκονίζοντες",
+     "tl": "ikonízondes"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τῇ",
+     "tl": "ti"
+    },
+    {
+     "el": "ζωοποιῷ",
+     "tl": "zoopió"
+    },
+    {
+     "el": "Τριάδι",
+     "tl": "Triádi"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "τρισάγιον",
+     "tl": "trisáyion"
+    },
+    {
+     "el": "ὕμνον",
+     "tl": "ímnon"
+    },
+    {
+     "el": "προσᾴδοντες,",
+     "tl": "prosádondes,"
+    },
+    {
+     "el": "πᾶσαν",
+     "tl": "pásan"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "βιοτικὴν",
+     "tl": "viotikín"
+    },
+    {
+     "el": "ἀποθώμεθα",
+     "tl": "apothómetha"
+    },
+    {
+     "el": "μέριμναν,",
+     "tl": "mérimnan,"
+    },
+    {
+     "el": "ὡς",
+     "tl": "os"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "βασιλέα",
+     "tl": "vasiléa"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "ὅλων",
+     "tl": "ólon"
+    },
+    {
+     "el": "ὑποδεξόμενοι.",
+     "tl": "ipodexómeni."
+    }
+   ],
+   "pt": "Nós que misticamente representamos os querubins e cantamos à Trindade vivificante o hino trisságio, deixemos agora de lado toda preocupação mundana, para recebermos o Rei de todos.",
+   "gloss": [
+    {
+     "el": "μυστικῶς",
+     "pt": "misticamente"
+    },
+    {
+     "el": "βιοτικὴν μέριμναν",
+     "pt": "preocupação mundana, cuidado da vida"
+    },
+    {
+     "el": "ὑποδεξόμενοι",
+     "pt": "prestes a receber (como hóspede)"
+    }
+   ],
+   "context_pt": "O Hino Querubínico. Enquanto o coro o canta devagar, o sacerdote prepara a Grande Entrada. É um convite a largar tudo — «deixemos toda preocupação mundana» — para receber o Rei. Cante com o coro.",
+   "source": "Divina Liturgia (GOA), p. 15",
+   "tags": [
+    "entrada-grande",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "d15f8f149fddc588",
+   "wordkeys": [
+    "οι",
+    "τα",
+    "χερουβειμ",
+    "μυστικωσ",
+    "εικονιζοντεσ",
+    "και",
+    "τη",
+    "ζωοποιω",
+    "τριαδι",
+    "τον",
+    "τρισαγιον",
+    "υμνον",
+    "προσαδοντεσ",
+    "πασαν",
+    "νυν",
+    "βιοτικην",
+    "αποθωμεθα",
+    "μεριμναν",
+    "ωσ",
+    "τον",
+    "βασιλεα",
+    "των",
+    "ολων",
+    "υποδεξομενοι"
+   ]
+  },
+  "panton-imon": {
+   "unit": "unit5-grande-entrada",
+   "kind": "phrase",
+   "greek": "Πάντων ὑμῶν μνησθείη Κύριος ὁ Θεὸς ἐν τῇ βασιλείᾳ αὐτοῦ, πάντοτε, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+   "words": [
+    {
+     "el": "Πάντων",
+     "tl": "Pándon"
+    },
+    {
+     "el": "ὑμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "μνησθείη",
+     "tl": "mnisthíi"
+    },
+    {
+     "el": "Κύριος",
+     "tl": "Kírios"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "Θεὸς",
+     "tl": "Theós"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "τῇ",
+     "tl": "ti"
+    },
+    {
+     "el": "βασιλείᾳ",
+     "tl": "vasilía"
+    },
+    {
+     "el": "αὐτοῦ,",
+     "tl": "aftú,"
+    },
+    {
+     "el": "πάντοτε,",
+     "tl": "pándote,"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀεὶ",
+     "tl": "aí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "αἰῶνας",
+     "tl": "eónas"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων.",
+     "tl": "eónon."
+    }
+   ],
+   "pt": "A todos vós recorde o Senhor Deus no seu reino, sempre, agora e sempre e pelos séculos dos séculos.",
+   "gloss": [
+    {
+     "el": "μνησθείη",
+     "pt": "recorde, lembre-se de (optativo)"
+    },
+    {
+     "el": "βασιλείᾳ",
+     "pt": "reino"
+    }
+   ],
+   "context_pt": "É isto que o sacerdote (ou o diácono) proclama na Grande Entrada, de pé diante do povo com os dons sagrados nas mãos: «que o Senhor vos recorde no seu Reino». Por isso muitos se persignam. O povo responde «Ἀμήν».",
+   "source": "Divina Liturgia (GOA), p. 16",
+   "tags": [
+    "entrada-grande",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "fe7b1e6c2a5d6c88",
+   "wordkeys": [
+    "παντων",
+    "υμων",
+    "μνησθειη",
+    "κυριοσ",
+    "ο",
+    "θεοσ",
+    "εν",
+    "τη",
+    "βασιλεια",
+    "αυτου",
+    "παντοτε",
+    "νυν",
+    "και",
+    "αει",
+    "και",
+    "εισ",
+    "τουσ",
+    "αιωνασ",
+    "των",
+    "αιωνων"
    ]
   },
   "credo-1": {
@@ -3754,6 +4284,306 @@
     "ημων"
    ]
   },
+  "anafora-exeretos": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἐξαιρέτως τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας.",
+   "words": [
+    {
+     "el": "Ἐξαιρέτως",
+     "tl": "Exerétos"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "παναγίας,",
+     "tl": "panayías,"
+    },
+    {
+     "el": "ἀχράντου,",
+     "tl": "achrándu,"
+    },
+    {
+     "el": "ὑπερευλογημένης,",
+     "tl": "iperevloyiménis,"
+    },
+    {
+     "el": "ἐνδόξου,",
+     "tl": "endóxu,"
+    },
+    {
+     "el": "δεσποίνης",
+     "tl": "despínis"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "Θεοτόκου",
+     "tl": "Theotóku"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀειπαρθένου",
+     "tl": "aiparthénu"
+    },
+    {
+     "el": "Μαρίας.",
+     "tl": "Marías."
+    }
+   ],
+   "pt": "De modo especial pela nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria.",
+   "gloss": [
+    {
+     "el": "ἐξαιρέτως",
+     "pt": "de modo especial, sobretudo"
+    }
+   ],
+   "context_pt": "Logo após a invocação do Espírito, o sacerdote recorda todos os santos — «e de modo especial» a Theotokos. É a deixa: o povo responde cantando o «Ἄξιόν ἐστιν».",
+   "source": "Divina Liturgia (GOA), p. 23",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "b32ea34cd51c223f",
+   "wordkeys": [
+    "εξαιρετωσ",
+    "τησ",
+    "παναγιασ",
+    "αχραντου",
+    "υπερευλογημενησ",
+    "ενδοξου",
+    "δεσποινησ",
+    "ημων",
+    "θεοτοκου",
+    "και",
+    "αειπαρθενου",
+    "μαριασ"
+   ]
+  },
+  "anafora-axion-estin": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἄξιόν ἐστιν ὡς ἀληθῶς μακαρίζειν σε τὴν Θεοτόκον, τὴν ἀειμακάριστον καὶ παναμώμητον καὶ μητέρα τοῦ Θεοῦ ἡμῶν. Τὴν τιμιωτέραν τῶν Χερουβεὶμ καὶ ἐνδοξοτέραν ἀσυγκρίτως τῶν Σεραφείμ, τὴν ἀδιαφθόρως Θεὸν Λόγον τεκοῦσαν, τὴν ὄντως Θεοτόκον, σὲ μεγαλύνομεν.",
+   "words": [
+    {
+     "el": "Ἄξιόν",
+     "tl": "Áxión"
+    },
+    {
+     "el": "ἐστιν",
+     "tl": "estin"
+    },
+    {
+     "el": "ὡς",
+     "tl": "os"
+    },
+    {
+     "el": "ἀληθῶς",
+     "tl": "alithós"
+    },
+    {
+     "el": "μακαρίζειν",
+     "tl": "makarízin"
+    },
+    {
+     "el": "σε",
+     "tl": "se"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "Θεοτόκον,",
+     "tl": "Theotókon,"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ἀειμακάριστον",
+     "tl": "aimakáriston"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "παναμώμητον",
+     "tl": "panamómiton"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "μητέρα",
+     "tl": "mitéra"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "ἡμῶν.",
+     "tl": "imón."
+    },
+    {
+     "el": "Τὴν",
+     "tl": "Tin"
+    },
+    {
+     "el": "τιμιωτέραν",
+     "tl": "timiotéran"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "Χερουβεὶμ",
+     "tl": "Cheruvím"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἐνδοξοτέραν",
+     "tl": "endoxotéran"
+    },
+    {
+     "el": "ἀσυγκρίτως",
+     "tl": "asingrítos"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "Σεραφείμ,",
+     "tl": "Serafím,"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ἀδιαφθόρως",
+     "tl": "adiafthóros"
+    },
+    {
+     "el": "Θεὸν",
+     "tl": "Theón"
+    },
+    {
+     "el": "Λόγον",
+     "tl": "Lógon"
+    },
+    {
+     "el": "τεκοῦσαν,",
+     "tl": "tekúsan,"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ὄντως",
+     "tl": "óndos"
+    },
+    {
+     "el": "Θεοτόκον,",
+     "tl": "Theotókon,"
+    },
+    {
+     "el": "σὲ",
+     "tl": "se"
+    },
+    {
+     "el": "μεγαλύνομεν.",
+     "tl": "megalínomen."
+    }
+   ],
+   "pt": "Verdadeiramente é digno bendizer-te, ó Theotókos, sempre bem-aventurada e toda imaculada, e Mãe do nosso Deus. Mais honrosa que os querubins e incomparavelmente mais gloriosa que os serafins, tu que sem corrupção deste à luz o Deus Verbo, verdadeira Theotókos, nós te magnificamos.",
+   "gloss": [
+    {
+     "el": "τιμιωτέραν",
+     "pt": "mais honrosa"
+    },
+    {
+     "el": "ἀσυγκρίτως",
+     "pt": "incomparavelmente"
+    },
+    {
+     "el": "μεγαλύνομεν",
+     "pt": "magnificamos, engrandecemos"
+    }
+   ],
+   "context_pt": "O hino à Theotokos («É verdadeiramente digno») que o povo canta na resposta ao sacerdote — um dos mais amados de toda a Igreja. Aqui você canta com o coro.",
+   "source": "Divina Liturgia (GOA), p. 23",
+   "tags": [
+    "anafora",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "9fde1c3644231b7a",
+   "wordkeys": [
+    "αξιον",
+    "εστιν",
+    "ωσ",
+    "αληθωσ",
+    "μακαριζειν",
+    "σε",
+    "την",
+    "θεοτοκον",
+    "την",
+    "αειμακαριστον",
+    "και",
+    "παναμωμητον",
+    "και",
+    "μητερα",
+    "του",
+    "θεου",
+    "ημων",
+    "την",
+    "τιμιωτεραν",
+    "των",
+    "χερουβειμ",
+    "και",
+    "ενδοξοτεραν",
+    "ασυγκριτωσ",
+    "των",
+    "σεραφειμ",
+    "την",
+    "αδιαφθορωσ",
+    "θεον",
+    "λογον",
+    "τεκουσαν",
+    "την",
+    "οντωσ",
+    "θεοτοκον",
+    "σε",
+    "μεγαλυνομεν"
+   ]
+  },
   "pater-1": {
    "unit": "unit4-painosso-comunhao",
    "kind": "phrase",
@@ -4763,6 +5593,96 @@
     "ημασ",
     "εσωσεν"
    ]
+  },
+  "ii-to-onoma": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Εἴη τὸ ὄνομα Κυρίου εὐλογημένον ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος.",
+   "words": [
+    {
+     "el": "Εἴη",
+     "tl": "Íi"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ὄνομα",
+     "tl": "ónoma"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "εὐλογημένον",
+     "tl": "evloyiménon"
+    },
+    {
+     "el": "ἀπὸ",
+     "tl": "apó"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἕως",
+     "tl": "éos"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "αἰῶνος.",
+     "tl": "eónos."
+    }
+   ],
+   "pt": "Bendito seja o nome do Senhor, desde agora e para sempre.",
+   "gloss": [
+    {
+     "el": "εὐλογημένον",
+     "pt": "bendito, abençoado"
+    },
+    {
+     "el": "ἕως",
+     "pt": "até"
+    }
+   ],
+   "context_pt": "Cantado pelo povo três vezes ao fim da Liturgia, antes da despedida — é o Salmo 112 (LXX): a bênção com que voltamos ao mundo.",
+   "source": "Divina Liturgia (GOA), p. 33",
+   "tags": [
+    "despedida",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "3027c3cc8c295d24",
+   "wordkeys": [
+    "ειη",
+    "το",
+    "ονομα",
+    "κυριου",
+    "ευλογημενον",
+    "απο",
+    "του",
+    "νυν",
+    "και",
+    "εωσ",
+    "του",
+    "αιωνοσ"
+   ]
   }
  },
  "words": {
@@ -4776,8 +5696,12 @@
   "αγιοσ": "audio/words/αγιοσ.mp3",
   "αγιου": "audio/words/αγιου.mp3",
   "αγιω": "audio/words/αγιω.mp3",
+  "αγιων": "audio/words/αγιων.mp3",
   "αδιαιρετον": "audio/words/αδιαιρετον.mp3",
+  "αδιαφθορωσ": "audio/words/αδιαφθορωσ.mp3",
   "αει": "audio/words/αει.mp3",
+  "αειμακαριστον": "audio/words/αειμακαριστον.mp3",
+  "αειπαρθενου": "audio/words/αειπαρθενου.mp3",
   "αθανατοσ": "audio/words/αθανατοσ.mp3",
   "αιμα": "audio/words/αιμα.mp3",
   "αινεσεωσ": "audio/words/αινεσεωσ.mp3",
@@ -4787,7 +5711,9 @@
   "αληθη": "audio/words/αληθη.mp3",
   "αληθινον": "audio/words/αληθινον.mp3",
   "αληθινου": "audio/words/αληθινου.mp3",
+  "αληθωσ": "audio/words/αληθωσ.mp3",
   "αλλα": "audio/words/αλλα.mp3",
+  "αλληλουσ": "audio/words/αλληλουσ.mp3",
   "αλφα": "audio/words/αλφα.mp3",
   "αμαρτιων": "audio/words/αμαρτιων.mp3",
   "αμην": "audio/words/αμην.mp3",
@@ -4800,17 +5726,22 @@
   "αξιον": "audio/words/αξιον.mp3",
   "αορατων": "audio/words/αορατων.mp3",
   "απο": "audio/words/απο.mp3",
+  "αποθωμεθα": "audio/words/αποθωμεθα.mp3",
   "αποστολικην": "audio/words/αποστολικην.mp3",
   "αρτον": "audio/words/αρτον.mp3",
+  "ασυγκριτωσ": "audio/words/ασυγκριτωσ.mp3",
   "αυτη": "audio/words/αυτη.mp3",
   "αυτου": "audio/words/αυτου.mp3",
   "αφεσ": "audio/words/αφεσ.mp3",
   "αφεσιν": "audio/words/αφεσιν.mp3",
   "αφιεμεν": "audio/words/αφιεμεν.mp3",
+  "αχραντου": "audio/words/αχραντου.mp3",
   "βαπτισμα": "audio/words/βαπτισμα.mp3",
+  "βασιλεα": "audio/words/βασιλεα.mp3",
   "βασιλεια": "audio/words/βασιλεια.mp3",
   "βασιλειασ": "audio/words/βασιλειασ.mp3",
   "βητα": "audio/words/βητα.mp3",
+  "βιοτικην": "audio/words/βιοτικην.mp3",
   "γαμμα": "audio/words/γαμμα.mp3",
   "γαρ": "audio/words/γαρ.mp3",
   "γενηθητω": "audio/words/γενηθητω.mp3",
@@ -4822,6 +5753,7 @@
   "δελτα": "audio/words/δελτα.mp3",
   "δεξιων": "audio/words/δεξιων.mp3",
   "δεομεθα": "audio/words/δεομεθα.mp3",
+  "δεσποινησ": "audio/words/δεσποινησ.mp3",
   "δι": "audio/words/δι.mp3",
   "δια": "audio/words/δια.mp3",
   "διαθηκησ": "audio/words/διαθηκησ.mp3",
@@ -4831,9 +5763,11 @@
   "δοξησ": "audio/words/δοξησ.mp3",
   "δοσ": "audio/words/δοσ.mp3",
   "δυναμισ": "audio/words/δυναμισ.mp3",
+  "εαυτουσ": "audio/words/εαυτουσ.mp3",
   "εγενετο": "audio/words/εγενετο.mp3",
   "ειδομεν": "audio/words/ειδομεν.mp3",
   "ειη": "audio/words/ειη.mp3",
+  "εικονιζοντεσ": "audio/words/εικονιζοντεσ.mp3",
   "ειρηνη": "audio/words/ειρηνη.mp3",
   "ειρηνησ": "audio/words/ειρηνησ.mp3",
   "εισ": "audio/words/εισ.mp3",
@@ -4849,7 +5783,10 @@
   "εν": "audio/words/εν.mp3",
   "ενα": "audio/words/ενα.mp3",
   "ενανθρωπησαντα": "audio/words/ενανθρωπησαντα.mp3",
+  "ενδοξοτεραν": "audio/words/ενδοξοτεραν.mp3",
+  "ενδοξου": "audio/words/ενδοξου.mp3",
   "εξ": "audio/words/εξ.mp3",
+  "εξαιρετωσ": "audio/words/εξαιρετωσ.mp3",
   "επι": "audio/words/επι.mp3",
   "επιουσιον": "audio/words/επιουσιον.mp3",
   "επουρανιον": "audio/words/επουρανιον.mp3",
@@ -4859,6 +5796,7 @@
   "εστι": "audio/words/εστι.mp3",
   "εστιν": "audio/words/εστιν.mp3",
   "εσωσεν": "audio/words/εσωσεν.mp3",
+  "ευλογημενον": "audio/words/ευλογημενον.mp3",
   "ευλογημενοσ": "audio/words/ευλογημενοσ.mp3",
   "ευλογησον": "audio/words/ευλογησον.mp3",
   "ευλογουμεν": "audio/words/ευλογουμεν.mp3",
@@ -4867,10 +5805,12 @@
   "ευχαριστουμεν": "audio/words/ευχαριστουμεν.mp3",
   "εχομεν": "audio/words/εχομεν.mp3",
   "εψιλον": "audio/words/εψιλον.mp3",
+  "εωσ": "audio/words/εωσ.mp3",
   "ζητα": "audio/words/ζητα.mp3",
   "ζωην": "audio/words/ζωην.mp3",
   "ζωντασ": "audio/words/ζωντασ.mp3",
   "ζωοποιον": "audio/words/ζωοποιον.mp3",
+  "ζωοποιω": "audio/words/ζωοποιω.mp3",
   "η": "audio/words/η.mp3",
   "ημασ": "audio/words/ημασ.mp3",
   "ημεισ": "audio/words/ημεισ.mp3",
@@ -4882,7 +5822,10 @@
   "θελημα": "audio/words/θελημα.mp3",
   "θεον": "audio/words/θεον.mp3",
   "θεοσ": "audio/words/θεοσ.mp3",
+  "θεοτοκον": "audio/words/θεοτοκον.mp3",
+  "θεοτοκου": "audio/words/θεοτοκου.mp3",
   "θεου": "audio/words/θεου.mp3",
+  "θεω": "audio/words/θεω.mp3",
   "θητα": "audio/words/θητα.mp3",
   "θυσιαν": "audio/words/θυσιαν.mp3",
   "ιησου": "audio/words/ιησου.mp3",
@@ -4911,25 +5854,36 @@
   "λαλησαν": "audio/words/λαλησαν.mp3",
   "λαμδα": "audio/words/λαμδα.mp3",
   "λαον": "audio/words/λαον.mp3",
+  "λογον": "audio/words/λογον.mp3",
+  "μακαριζειν": "audio/words/μακαριζειν.mp3",
   "μαριασ": "audio/words/μαριασ.mp3",
+  "μεγαλυνομεν": "audio/words/μεγαλυνομεν.mp3",
   "μελλοντοσ": "audio/words/μελλοντοσ.mp3",
+  "μεριμναν": "audio/words/μεριμναν.mp3",
   "μετα": "audio/words/μετα.mp3",
   "μη": "audio/words/μη.mp3",
+  "μητερα": "audio/words/μητερα.mp3",
   "μι": "audio/words/μι.mp3",
   "μιαν": "audio/words/μιαν.mp3",
+  "μνημονευσαντεσ": "audio/words/μνημονευσαντεσ.mp3",
+  "μνησθειη": "audio/words/μνησθειη.mp3",
   "μονογενη": "audio/words/μονογενη.mp3",
   "μου": "audio/words/μου.mp3",
+  "μυστικωσ": "audio/words/μυστικωσ.mp3",
   "νεκρουσ": "audio/words/νεκρουσ.mp3",
   "νεκρων": "audio/words/νεκρων.mp3",
   "νι": "audio/words/νι.mp3",
   "νυν": "audio/words/νυν.mp3",
   "ξι": "audio/words/ξι.mp3",
   "ο": "audio/words/ο.mp3",
+  "οι": "audio/words/οι.mp3",
+  "ολων": "audio/words/ολων.mp3",
   "ομικρον": "audio/words/ομικρον.mp3",
   "ομολογω": "audio/words/ομολογω.mp3",
   "ομοουσιον": "audio/words/ομοουσιον.mp3",
   "ονομα": "audio/words/ονομα.mp3",
   "ονοματι": "audio/words/ονοματι.mp3",
+  "οντωσ": "audio/words/οντωσ.mp3",
   "ορατων": "audio/words/ορατων.mp3",
   "ορθοι": "audio/words/ορθοι.mp3",
   "οτι": "audio/words/οτι.mp3",
@@ -4945,12 +5899,17 @@
   "οφειληματα": "audio/words/οφειληματα.mp3",
   "παθοντα": "audio/words/παθοντα.mp3",
   "παλιν": "audio/words/παλιν.mp3",
+  "παναγιασ": "audio/words/παναγιασ.mp3",
+  "παναμωμητον": "audio/words/παναμωμητον.mp3",
   "παντα": "audio/words/παντα.mp3",
   "παντεσ": "audio/words/παντεσ.mp3",
   "παντοκρατορα": "audio/words/παντοκρατορα.mp3",
+  "παντοτε": "audio/words/παντοτε.mp3",
   "παντων": "audio/words/παντων.mp3",
+  "παραθωμεθα": "audio/words/παραθωμεθα.mp3",
   "παρασχου": "audio/words/παρασχου.mp3",
   "παρθενου": "audio/words/παρθενου.mp3",
+  "πασαν": "audio/words/πασαν.mp3",
   "πασι": "audio/words/πασι.mp3",
   "πατερ": "audio/words/πατερ.mp3",
   "πατερα": "audio/words/πατερα.mp3",
@@ -4974,6 +5933,7 @@
   "ποντιου": "audio/words/ποντιου.mp3",
   "προ": "audio/words/προ.mp3",
   "προσ": "audio/words/προσ.mp3",
+  "προσαδοντεσ": "audio/words/προσαδοντεσ.mp3",
   "προσδοκω": "audio/words/προσδοκω.mp3",
   "προσελθετε": "audio/words/προσελθετε.mp3",
   "προσκυνουντεσ": "audio/words/προσκυνουντεσ.mp3",
@@ -4987,6 +5947,7 @@
   "σαβαωθ": "audio/words/σαβαωθ.mp3",
   "σαρκωθεντα": "audio/words/σαρκωθεντα.mp3",
   "σε": "audio/words/σε.mp3",
+  "σεραφειμ": "audio/words/σεραφειμ.mp3",
   "σημερον": "audio/words/σημερον.mp3",
   "σιγμα": "audio/words/σιγμα.mp3",
   "σοι": "audio/words/σοι.mp3",
@@ -5007,10 +5968,12 @@
   "ταυ": "audio/words/ταυ.mp3",
   "ταφεντα": "audio/words/ταφεντα.mp3",
   "τε": "audio/words/τε.mp3",
+  "τεκουσαν": "audio/words/τεκουσαν.mp3",
   "τελοσ": "audio/words/τελοσ.mp3",
   "τη": "audio/words/τη.mp3",
   "την": "audio/words/την.mp3",
   "τησ": "audio/words/τησ.mp3",
+  "τιμιωτεραν": "audio/words/τιμιωτεραν.mp3",
   "το": "audio/words/το.mp3",
   "τοισ": "audio/words/τοισ.mp3",
   "τον": "audio/words/τον.mp3",
@@ -5018,15 +5981,20 @@
   "τουσ": "audio/words/τουσ.mp3",
   "τουτο": "audio/words/τουτο.mp3",
   "τριαδα": "audio/words/τριαδα.mp3",
+  "τριαδι": "audio/words/τριαδι.mp3",
+  "τρισαγιον": "audio/words/τρισαγιον.mp3",
   "τριτη": "audio/words/τριτη.mp3",
   "τω": "audio/words/τω.mp3",
   "των": "audio/words/των.mp3",
   "υιον": "audio/words/υιον.mp3",
   "υιου": "audio/words/υιου.mp3",
   "υιω": "audio/words/υιω.mp3",
+  "υμνον": "audio/words/υμνον.mp3",
   "υμνουμεν": "audio/words/υμνουμεν.mp3",
   "υμων": "audio/words/υμων.mp3",
   "υπερ": "audio/words/υπερ.mp3",
+  "υπερευλογημενησ": "audio/words/υπερευλογημενησ.mp3",
+  "υποδεξομενοι": "audio/words/υποδεξομενοι.mp3",
   "υψιλον": "audio/words/υψιλον.mp3",
   "υψιστοισ": "audio/words/υψιστοισ.mp3",
   "φαγετε": "audio/words/φαγετε.mp3",
@@ -5035,10 +6003,12 @@
   "φωσ": "audio/words/φωσ.mp3",
   "φωτοσ": "audio/words/φωτοσ.mp3",
   "χαρισ": "audio/words/χαρισ.mp3",
+  "χερουβειμ": "audio/words/χερουβειμ.mp3",
   "χι": "audio/words/χι.mp3",
   "χριστον": "audio/words/χριστον.mp3",
   "χριστοσ": "audio/words/χριστοσ.mp3",
   "χριστου": "audio/words/χριστου.mp3",
+  "χριστω": "audio/words/χριστω.mp3",
   "ψι": "audio/words/ψι.mp3",
   "ωμεγα": "audio/words/ωμεγα.mp3",
   "ωσ": "audio/words/ωσ.mp3",
