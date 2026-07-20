@@ -1,0 +1,333 @@
+unit:
+  id: unit4-painosso-comunhao
+  title: "Pai Nosso e Comunhão"
+  section: nave
+  order: 5
+  intro_pt: >-
+    A oração que o próprio Cristo ensinou — na língua em que os Evangelhos a
+    registraram — e as palavras que cercam o cálice. Com esta unidade, você
+    acompanha a Liturgia do início à Comunhão.
+
+items:
+  - id: pater-1
+    kind: phrase
+    greek: "Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου."
+    tts: "Πάτερ ημών ο εν τοις ουρανοίς, αγιασθήτω το όνομά σου."
+    words:
+      - { el: "Πάτερ", tl: "Páter" }
+      - { el: "ἡμῶν", tl: "imón" }
+      - { el: "ὁ", tl: "o" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "τοῖς", tl: "tis" }
+      - { el: "οὐρανοῖς,", tl: "uranís," }
+      - { el: "ἁγιασθήτω", tl: "ayiasthíto" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "ὄνομά", tl: "ónomá" }
+      - { el: "σου.", tl: "su." }
+    pt: "Pai nosso, que estás nos Céus, santificado seja o teu Nome."
+    gloss:
+      - { el: "Πάτερ", pt: "Pai (vocativo)" }
+      - { el: "ἁγιασθήτω", pt: "seja santificado — mesma raiz de ἅγιος" }
+    context_pt: >-
+      Mt 6:9, palavra por palavra. Na Liturgia, TODO o povo reza junto —
+      é a única oração que o sacerdote nos convida a «ousar» dizer.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, povo]
+    voice: athina
+    review: pending
+
+  - id: pater-2
+    kind: phrase
+    greek: "Ἐλθέτω ἡ βασιλεία σου. Γενηθήτω τὸ θέλημά σου, ὡς ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς."
+    tts: "Ελθέτω η βασιλεία σου. Γενηθήτω το θέλημά σου, ως εν ουρανώ και επί της γης."
+    words:
+      - { el: "Ἐλθέτω", tl: "Elthéto" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "βασιλεία", tl: "vasilía" }
+      - { el: "σου.", tl: "su." }
+      - { el: "Γενηθήτω", tl: "Yenithíto" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "θέλημά", tl: "thélimá" }
+      - { el: "σου,", tl: "su," }
+      - { el: "ὡς", tl: "os" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "οὐρανῷ", tl: "uranó" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἐπὶ", tl: "epí" }
+      - { el: "τῆς", tl: "tis" }
+      - { el: "γῆς.", tl: "yis." }
+    pt: "Venha a nós o teu Reino; seja feita a tua vontade, assim na terra como no céu."
+    gloss:
+      - { el: "βασιλεία", pt: "Reino" }
+      - { el: "θέλημα", pt: "vontade" }
+    context_pt: >-
+      «Βασιλεία» de novo — a palavra com que a Liturgia abre e que o Credo
+      diz não ter fim.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, povo]
+    voice: athina
+    review: pending
+
+  - id: pater-3
+    kind: phrase
+    greek: "Τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον."
+    tts: "Τον άρτον ημών τον επιούσιον δος ημίν σήμερον."
+    words:
+      - { el: "Τὸν", tl: "Ton" }
+      - { el: "ἄρτον", tl: "árton" }
+      - { el: "ἡμῶν", tl: "imón" }
+      - { el: "τὸν", tl: "ton" }
+      - { el: "ἐπιούσιον", tl: "epiúsion" }
+      - { el: "δὸς", tl: "dos" }
+      - { el: "ἡμῖν", tl: "imín" }
+      - { el: "σήμερον.", tl: "símeron." }
+    pt: "O pão nosso de cada dia dá-nos hoje."
+    gloss:
+      - { el: "ἄρτον", pt: "pão — o mesmo Ἄρτον do altar" }
+      - { el: "ἐπιούσιον", pt: "de cada dia / supersubstancial — palavra que só existe aqui" }
+    context_pt: >-
+      «Ἐπιούσιον» não aparece em nenhum outro texto grego antigo — os
+      Padres a leram também como o Pão da Eucaristia.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, povo]
+    voice: athina
+    review: pending
+
+  - id: pater-4
+    kind: phrase
+    greek: "Καὶ ἄφες ἡμῖν τὰ ὀφειλήματα ἡμῶν, ὡς καὶ ἡμεῖς ἀφίεμεν τοῖς ὀφειλέταις ἡμῶν."
+    tts: "Και άφες ημίν τα οφειλήματα ημών, ως και ημείς αφίεμεν τοις οφειλέταις ημών."
+    words:
+      - { el: "Καὶ", tl: "Ke" }
+      - { el: "ἄφες", tl: "áfes" }
+      - { el: "ἡμῖν", tl: "imín" }
+      - { el: "τὰ", tl: "ta" }
+      - { el: "ὀφειλήματα", tl: "ofilímata" }
+      - { el: "ἡμῶν,", tl: "imón," }
+      - { el: "ὡς", tl: "os" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡμεῖς", tl: "imís" }
+      - { el: "ἀφίεμεν", tl: "afíemen" }
+      - { el: "τοῖς", tl: "tis" }
+      - { el: "ὀφειλέταις", tl: "ofilétes" }
+      - { el: "ἡμῶν.", tl: "imón." }
+    pt: "E perdoa as nossas dívidas assim como nós perdoamos aos nossos devedores."
+    gloss:
+      - { el: "ἄφες", pt: "perdoa — a raiz de ἄφεσις, remissão" }
+      - { el: "ὀφειλήματα", pt: "dívidas" }
+    context_pt: >-
+      A raiz «ἀφ-» de perdoar você já viu três vezes: no Credo, na
+      instituição e aqui.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, povo]
+    voice: athina
+    review: pending
+
+  - id: pater-5
+    kind: phrase
+    greek: "Καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ."
+    tts: "Και μη εισενέγκης ημάς εις πειρασμόν, αλλά ρύσαι ημάς από του πονηρού."
+    words:
+      - { el: "Καὶ", tl: "Ke" }
+      - { el: "μὴ", tl: "mi" }
+      - { el: "εἰσενέγκῃς", tl: "isenéngis" }
+      - { el: "ἡμᾶς", tl: "imás" }
+      - { el: "εἰς", tl: "is" }
+      - { el: "πειρασμόν,", tl: "pirasmón," }
+      - { el: "ἀλλὰ", tl: "allá" }
+      - { el: "ῥῦσαι", tl: "ríse" }
+      - { el: "ἡμᾶς", tl: "imás" }
+      - { el: "ἀπὸ", tl: "apó" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "πονηροῦ.", tl: "ponirú." }
+    pt: "E não nos deixes cair em tentação, mas livra-nos do mal."
+    gloss:
+      - { el: "πειρασμόν", pt: "tentação, prova" }
+      - { el: "τοῦ πονηροῦ", pt: "do mal / do Maligno" }
+    context_pt: >-
+      O fim da oração do povo — a doxologia que segue pertence ao
+      sacerdote.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, povo]
+    voice: athina
+    review: pending
+
+  - id: pater-doxologia
+    kind: phrase
+    greek: "Ὅτι σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+    tts: "Ότι σου εστίν η βασιλεία και η δύναμις και η δόξα, του Πατρός και του Υιού και του αγίου Πνεύματος, νυν και αει και εις τους αιώνας των αιώνων."
+    words:
+      - { el: "Ὅτι", tl: "Óti" }
+      - { el: "σοῦ", tl: "su" }
+      - { el: "ἐστιν", tl: "estín" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "βασιλεία", tl: "vasilía" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "δύναμις", tl: "dínamis" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "δόξα,", tl: "dóxa," }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "Πατρὸς", tl: "Patrós" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "Υἱοῦ", tl: "Iiú" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "ἁγίου", tl: "ayíu" }
+      - { el: "Πνεύματος,", tl: "Pnévmatos," }
+      - { el: "νῦν", tl: "nin" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἀεὶ", tl: "aí" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "εἰς", tl: "is" }
+      - { el: "τοὺς", tl: "tus" }
+      - { el: "αἰῶνας", tl: "eónas" }
+      - { el: "τῶν", tl: "ton" }
+      - { el: "αἰώνων.", tl: "eónon." }
+    pt: "Porque teu é o Reino, o poder e a glória, do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos."
+    gloss:
+      - { el: "δύναμις", pt: "poder — daí «dínamo», «dinâmica»" }
+      - { el: "νῦν καὶ ἀεί", pt: "agora e sempre — você já sabe do «Καὶ νῦν»" }
+    context_pt: >-
+      A conclusão do sacerdote — e repare como termina igual a tantas
+      orações que você já conhece: «…τῶν αἰώνων». O povo sela: Ἀμήν.
+    source: "Devocional, p. 9; Divina Liturgia (GOA), p. 27"
+    tags: [pai-nosso, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: ta-agia
+    kind: phrase
+    greek: "Τὰ ἅγια τοῖς ἁγίοις."
+    tts: "Τα άγια τοις αγίοις."
+    words:
+      - { el: "Τὰ", tl: "Ta" }
+      - { el: "ἅγια", tl: "áyia" }
+      - { el: "τοῖς", tl: "tis" }
+      - { el: "ἁγίοις.", tl: "ayíis." }
+    pt: "As coisas santas para os santos."
+    gloss:
+      - { el: "τὰ ἅγια", pt: "as coisas santas — os Dons" }
+      - { el: "τοῖς ἁγίοις", pt: "para os santos — o povo batizado" }
+    context_pt: >-
+      O sacerdote eleva o Cordeiro. «Santos» aqui somos nós — não por
+      mérito, mas pelo batismo. A resposta do povo corrige a humildade:
+      «Εἷς ἅγιος…» — um só é santo.
+    source: "Divina Liturgia (GOA), p. 28"
+    tags: [comunhao, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: is-agios
+    kind: phrase
+    greek: "Εἷς ἅγιος, εἷς Κύριος, Ἰησοῦς Χριστός, εἰς δόξαν Θεοῦ Πατρός. Ἀμήν."
+    tts: "Εις άγιος, εις Κύριος, Ιησούς Χριστός, εις δόξαν Θεού Πατρός. Αμήν."
+    words:
+      - { el: "Εἷς", tl: "Is" }
+      - { el: "ἅγιος,", tl: "áyios," }
+      - { el: "εἷς", tl: "is" }
+      - { el: "Κύριος,", tl: "Kírios," }
+      - { el: "Ἰησοῦς", tl: "Iisús" }
+      - { el: "Χριστός,", tl: "Christós," }
+      - { el: "εἰς", tl: "is" }
+      - { el: "δόξαν", tl: "dóxan" }
+      - { el: "Θεοῦ", tl: "Theú" }
+      - { el: "Πατρός.", tl: "Patrós." }
+      - { el: "Ἀμήν.", tl: "Amín." }
+    pt: "Um só é santo, um só é Senhor: Jesus Cristo, para a glória de Deus Pai. Amém."
+    gloss:
+      - { el: "εἷς", pt: "um só (numeral)" }
+    context_pt: >-
+      A resposta do povo ao «Τὰ ἅγια τοῖς ἁγίοις» — de Filipenses 2:11.
+    source: "Divina Liturgia (GOA), p. 28"
+    tags: [comunhao, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: meta-fovou
+    kind: phrase
+    greek: "Μετὰ φόβου Θεοῦ, πίστεως καὶ ἀγάπης προσέλθετε."
+    tts: "Μετά φόβου Θεού, πίστεως και αγάπης προσέλθετε."
+    words:
+      - { el: "Μετὰ", tl: "Metá" }
+      - { el: "φόβου", tl: "fóvu" }
+      - { el: "Θεοῦ,", tl: "Theú," }
+      - { el: "πίστεως", tl: "písteos" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἀγάπης", tl: "agápis" }
+      - { el: "προσέλθετε.", tl: "prosélthete." }
+    pt: "Com temor de Deus, fé e amor, aproximai-vos."
+    gloss:
+      - { el: "φόβου", pt: "temor (reverente)" }
+      - { el: "προσέλθετε", pt: "aproximai-vos" }
+    context_pt: >-
+      O chamado à Comunhão. Quando você ouvir estas palavras, é a hora de
+      se aproximar do cálice.
+    source: "Divina Liturgia (GOA), p. 30"
+    tags: [comunhao, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: soson-o-theos
+    kind: phrase
+    greek: "Σῶσον, ὁ Θεός, τὸν λαόν σου καὶ εὐλόγησον τὴν κληρονομίαν σου."
+    tts: "Σώσον, ο Θεός, τον λαόν σου και ευλόγησον την κληρονομίαν σου."
+    words:
+      - { el: "Σῶσον,", tl: "Sóson," }
+      - { el: "ὁ", tl: "o" }
+      - { el: "Θεός,", tl: "Theós," }
+      - { el: "τὸν", tl: "ton" }
+      - { el: "λαόν", tl: "laón" }
+      - { el: "σου", tl: "su" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "εὐλόγησον", tl: "evlóyison" }
+      - { el: "τὴν", tl: "tin" }
+      - { el: "κληρονομίαν", tl: "klironomían" }
+      - { el: "σου.", tl: "su." }
+    pt: "Salva, ó Deus, o teu povo e abençoa a tua herança."
+    gloss:
+      - { el: "λαόν", pt: "povo — laós, como «leigo»" }
+      - { el: "κληρονομίαν", pt: "herança" }
+    context_pt: >-
+      Do Salmo 27, dito pelo sacerdote após a Comunhão, abençoando o povo.
+    source: "Divina Liturgia (GOA), p. 30"
+    tags: [comunhao, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: idomen
+    kind: phrase
+    greek: "Εἴδομεν τὸ φῶς τὸ ἀληθινόν, ἐλάβομεν Πνεῦμα ἐπουράνιον, εὕρομεν πίστιν ἀληθῆ, ἀδιαίρετον Τριάδα προσκυνοῦντες· αὕτη γὰρ ἡμᾶς ἔσωσεν."
+    tts: "Είδομεν το φως το αληθινόν, ελάβομεν Πνεύμα επουράνιον, εύρομεν πίστιν αληθή, αδιαίρετον Τριάδα προσκυνούντες. Αύτη γαρ ημάς έσωσεν."
+    words:
+      - { el: "Εἴδομεν", tl: "Ídomen" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "φῶς", tl: "fos" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "ἀληθινόν,", tl: "alithinón," }
+      - { el: "ἐλάβομεν", tl: "elávomen" }
+      - { el: "Πνεῦμα", tl: "Pnévma" }
+      - { el: "ἐπουράνιον,", tl: "epuránion," }
+      - { el: "εὕρομεν", tl: "évromen" }
+      - { el: "πίστιν", tl: "pístin" }
+      - { el: "ἀληθῆ,", tl: "alithí," }
+      - { el: "ἀδιαίρετον", tl: "adiéreton" }
+      - { el: "Τριάδα", tl: "Triáda" }
+      - { el: "προσκυνοῦντες·", tl: "proskinúndes;" }
+      - { el: "αὕτη", tl: "áfti" }
+      - { el: "γὰρ", tl: "gar" }
+      - { el: "ἡμᾶς", tl: "imás" }
+      - { el: "ἔσωσεν.", tl: "ésosen." }
+    pt: "Vimos a luz verdadeira, recebemos o Espírito celestial, encontramos a fé verdadeira, adorando a Trindade indivisível: pois ela nos salvou."
+    gloss:
+      - { el: "Εἴδομεν τὸ φῶς", pt: "vimos a luz — o hino de depois da Comunhão" }
+      - { el: "Τριάδα", pt: "Trindade" }
+    context_pt: >-
+      Cantado pelo povo logo depois da Comunhão — «Luz da Luz» do Credo,
+      agora vista, recebida, encontrada.
+    source: "Divina Liturgia (GOA), p. 31"
+    tags: [comunhao, hino, resposta-do-povo]
+    voice: athina
+    review: pending

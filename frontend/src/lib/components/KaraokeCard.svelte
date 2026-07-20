@@ -16,6 +16,15 @@
 
 	const faded = $derived(fadeTranslit(item.id) && !peek);
 
+	const speaker = $derived(
+		item.tags?.includes('sacerdote') ? 'O sacerdote diz'
+		: item.tags?.includes('diacono') ? 'O diácono diz'
+		: item.tags?.includes('hino') ? 'O povo canta'
+		: item.tags?.includes('resposta-do-povo') ? 'O povo responde'
+		: item.tags?.includes('povo') ? 'O povo diz'
+		: null
+	);
+
 	$effect(() => {
 		item.id; // re-fetch when the item changes
 		timings = null;
@@ -60,6 +69,9 @@
 <section>
 	<p class="eyebrow center">{item.kind === 'letter' ? 'Nova letra' : 'Nova frase'}</p>
 	<Mascot {mood} />
+	{#if speaker}
+		<p class="speaker">{speaker}</p>
+	{/if}
 
 	<div class="lines">
 		<div class="gr greek" class:big={item.kind === 'letter'}>
@@ -107,6 +119,11 @@
 
 <style>
 	.center { text-align: center; }
+	.speaker {
+		text-align: center; font-size: 11.5px; color: var(--gold2);
+		border: 1px solid var(--line); border-radius: 999px;
+		width: fit-content; margin: 10px auto 0; padding: 2px 12px;
+	}
 	.lines { margin: 14px 0 6px; }
 	.gr, .tl { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: center; }
 	.gr { font-size: 30px; }

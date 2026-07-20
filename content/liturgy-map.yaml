@@ -1,10 +1,10 @@
 # The Liturgy Map: the order of the Divine Liturgy of St. John Chrysostom,
 # with every teachable phrase placed where it lives and weighted by roughly
 # how many times it is said/sung in one typical Sunday Liturgy.
+# Chunked prayers (Credo, Pai Nosso) use fractional weights so the whole
+# prayer sums to its real liturgical weight.
 #
-# `ref` must exist in the corpus, OR carry `future: true` with labels —
-# future items appear dimmed on the map and count in the denominator, so the
-# "% da Liturgia" stays honest about what the corpus doesn't cover yet.
+# `ref` must exist in the corpus, OR carry `future: true` with labels.
 # Weights are estimates pending clergy review (like all content).
 
 liturgy:
@@ -38,24 +38,58 @@ sections:
       - { ref: ke-to-pnevmati-su, weight: 4 }
       - { ref: proschomen, weight: 3 }
 
+  - id: entrada-grande
+    title_pt: "A Grande Entrada"
+    items:
+      - { ref: cherubikon, weight: 1, future: true,
+          label_el: "Οἱ τὰ Χερουβεὶμ…", label_pt: "Hino Querubínico" }
+
   - id: credo
     title_pt: "O Credo"
     items:
-      - { ref: credo, weight: 2, future: true,
-          label_el: "Πιστεύω εἰς ἕνα Θεόν…", label_pt: "Símbolo da Fé" }
+      - { ref: credo-1, weight: 0.2 }
+      - { ref: credo-2, weight: 0.2 }
+      - { ref: credo-3, weight: 0.2 }
+      - { ref: credo-4, weight: 0.2 }
+      - { ref: credo-5, weight: 0.2 }
+      - { ref: credo-6, weight: 0.2 }
+      - { ref: credo-7, weight: 0.2 }
+      - { ref: credo-8, weight: 0.2 }
+      - { ref: credo-9, weight: 0.2 }
+      - { ref: credo-10, weight: 0.2 }
+      - { ref: credo-11, weight: 0.2 }
+      - { ref: credo-12, weight: 0.2 }
 
   - id: anafora
     title_pt: "A Anáfora"
     items:
-      - { ref: anafora-axion, weight: 2, future: true,
-          label_el: "Ἄξιον καὶ δίκαιον", label_pt: "É digno e justo" }
-      - { ref: anafora-agios, weight: 1, future: true,
-          label_el: "Ἅγιος, ἅγιος, ἅγιος…", label_pt: "Santo, santo, santo" }
+      - { ref: anafora-stomen, weight: 1 }
+      - { ref: anafora-eleon, weight: 1 }
+      - { ref: anafora-haris, weight: 1 }
+      - { ref: anafora-ke-meta, weight: 1 }
+      - { ref: anafora-ano, weight: 1 }
+      - { ref: anafora-echomen, weight: 1 }
+      - { ref: anafora-efcharistisomen, weight: 1 }
+      - { ref: anafora-axion, weight: 1 }
+      - { ref: anafora-agios, weight: 1 }
+      - { ref: anafora-lavete, weight: 1 }
+      - { ref: anafora-piete, weight: 1 }
+      - { ref: anafora-ta-sa, weight: 1 }
+      - { ref: anafora-se-ymnoumen, weight: 1 }
+      - { ref: axion-estin, weight: 1, future: true,
+          label_el: "Ἄξιόν ἐστιν…", label_pt: "Hino à Theotokos" }
 
   - id: pai-nosso
     title_pt: "Pai Nosso e Comunhão"
     items:
-      - { ref: pater-imon, weight: 2, future: true,
-          label_el: "Πάτερ ἡμῶν…", label_pt: "Pai Nosso" }
-      - { ref: metalipsi, weight: 2, future: true,
-          label_el: "Μετὰ φόβου Θεοῦ…", label_pt: "Com temor de Deus" }
+      - { ref: pater-1, weight: 0.4 }
+      - { ref: pater-2, weight: 0.4 }
+      - { ref: pater-3, weight: 0.4 }
+      - { ref: pater-4, weight: 0.4 }
+      - { ref: pater-5, weight: 0.4 }
+      - { ref: pater-doxologia, weight: 1 }
+      - { ref: ta-agia, weight: 1 }
+      - { ref: is-agios, weight: 1 }
+      - { ref: meta-fovou, weight: 1 }
+      - { ref: soson-o-theos, weight: 1 }
+      - { ref: idomen, weight: 1 }

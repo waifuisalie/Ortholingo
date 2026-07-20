@@ -85,7 +85,7 @@ items:
       ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».
     source: "Divina Liturgia de S. João Crisóstomo"
     tags: [liturgia, sacerdote, para-reconhecer]
-    voice: athina
+    voice: nestoras
     review: pending
 
   - id: si-kyrie
@@ -200,7 +200,7 @@ items:
       Liturgia pede a nossa atenção total.
     source: "Divina Liturgia de S. João Crisóstomo"
     tags: [liturgia, diacono, para-reconhecer]
-    voice: athina
+    voice: nestoras
     review: pending
 
   - id: sofia-orthi
@@ -218,8 +218,8 @@ items:
       Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» —
       levantamo-nos diante da Palavra.
     source: "Divina Liturgia de S. João Crisóstomo"
-    tags: [liturgia, entrada, para-reconhecer]
-    voice: athina
+    tags: [liturgia, entrada, diacono, para-reconhecer]
+    voice: nestoras
     review: pending
 
   - id: trisagion

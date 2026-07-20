@@ -58,7 +58,7 @@
 			const form = new FormData();
 			form.append('audio', blob, 'take.webm');
 			form.append('expected', item.wordkeys.join(' '));
-			form.append('lang', item.voice === 'athina' ? 'el' : 'en');
+			form.append('lang', item.voice === 'ava' ? 'en' : 'el');
 			const res = await fetch('/api/speech/score', { method: 'POST', body: form });
 			if (!res.ok) throw new Error();
 			result = await res.json();

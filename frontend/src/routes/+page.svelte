@@ -6,7 +6,13 @@
 	let { data } = $props();
 	const manifest = data.manifest;
 
-	const GLYPHS = { 'unit0-alfabeto': 'Α', 'unit1-respostas': 'Κ' };
+	const GLYPHS = {
+		'unit0-alfabeto': 'Α',
+		'unit1-respostas': 'Κ',
+		'unit2-credo': 'Σ',
+		'unit3-anafora': 'Ἄ',
+		'unit4-painosso-comunhao': 'Π'
+	};
 	const SECTION_PT = { nartex: 'Nártex', nave: 'Nave' };
 
 	const units = manifest.units.map((u) => ({

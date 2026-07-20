@@ -1,0 +1,377 @@
+unit:
+  id: unit3-anafora
+  title: "A Anáfora · o diálogo sagrado"
+  section: nave
+  order: 4
+  intro_pt: >-
+    O coração da Liturgia. Aqui você aprende os dois lados do diálogo: o que
+    o sacerdote e o diácono proclamam (voz masculina) e o que o povo — você —
+    responde (voz feminina). Ouvir é metade da participação.
+
+items:
+  - id: anafora-stomen
+    kind: phrase
+    greek: "Στῶμεν καλῶς· στῶμεν μετὰ φόβου· πρόσχωμεν τὴν ἁγίαν ἀναφορὰν ἐν εἰρήνῃ προσφέρειν."
+    tts: "Στώμεν καλώς. Στώμεν μετά φόβου. Πρόσχωμεν την αγίαν αναφοράν εν ειρήνη προσφέρειν."
+    words:
+      - { el: "Στῶμεν", tl: "Stómen" }
+      - { el: "καλῶς·", tl: "kalós;" }
+      - { el: "στῶμεν", tl: "stómen" }
+      - { el: "μετὰ", tl: "metá" }
+      - { el: "φόβου·", tl: "fóvu;" }
+      - { el: "πρόσχωμεν", tl: "próschomen" }
+      - { el: "τὴν", tl: "tin" }
+      - { el: "ἁγίαν", tl: "ayían" }
+      - { el: "ἀναφορὰν", tl: "anaforán" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "εἰρήνῃ", tl: "iríni" }
+      - { el: "προσφέρειν.", tl: "prosférin." }
+    pt: "Estejamos de pé, com reverência; estejamos com temor; atentos, para oferecer em paz a santa oblação."
+    gloss:
+      - { el: "στῶμεν", pt: "estejamos de pé" }
+      - { el: "ἀναφοράν", pt: "anáfora — a oferenda elevada (ana + phéro)" }
+    context_pt: >-
+      O chamado do diácono que abre a Anáfora: tudo o que vem agora pede o
+      nosso corpo de pé e o coração desperto.
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-eleon
+    kind: phrase
+    greek: "Ἔλεον εἰρήνης, θυσίαν αἰνέσεως."
+    tts: "Έλεον ειρήνης, θυσίαν αινέσεως."
+    words:
+      - { el: "Ἔλεον", tl: "Éleon" }
+      - { el: "εἰρήνης,", tl: "irínis," }
+      - { el: "θυσίαν", tl: "thisían" }
+      - { el: "αἰνέσεως.", tl: "enéseos." }
+    pt: "Misericórdia de paz, sacrifício de louvor."
+    gloss:
+      - { el: "ἔλεον", pt: "misericórdia — a raiz de «ἐλέησον»" }
+      - { el: "θυσίαν αἰνέσεως", pt: "sacrifício de louvor (Sl 49)" }
+    context_pt: >-
+      A resposta do povo ao chamado do diácono: o que trazemos ao altar é
+      louvor.
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-haris
+    kind: phrase
+    greek: "Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ καὶ ἡ ἀγάπη τοῦ Θεοῦ καὶ Πατρὸς καὶ ἡ κοινωνία τοῦ ἁγίου Πνεύματος εἴη μετὰ πάντων ὑμῶν."
+    tts: "Η χάρις του Κυρίου ημών Ιησού Χριστού και η αγάπη του Θεού και Πατρός και η κοινωνία του αγίου Πνεύματος είη μετά πάντων υμών."
+    words:
+      - { el: "Ἡ", tl: "I" }
+      - { el: "χάρις", tl: "cháris" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "Κυρίου", tl: "Kiríu" }
+      - { el: "ἡμῶν", tl: "imón" }
+      - { el: "Ἰησοῦ", tl: "Iisú" }
+      - { el: "Χριστοῦ", tl: "Christú" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "ἀγάπη", tl: "agápi" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "Θεοῦ", tl: "Theú" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "Πατρὸς", tl: "Patrós" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "κοινωνία", tl: "kinonía" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "ἁγίου", tl: "ayíu" }
+      - { el: "Πνεύματος", tl: "Pnévmatos" }
+      - { el: "εἴη", tl: "íi" }
+      - { el: "μετὰ", tl: "metá" }
+      - { el: "πάντων", tl: "pándon" }
+      - { el: "ὑμῶν.", tl: "imón." }
+    pt: "A graça de nosso Senhor Jesus Cristo, e o amor de Deus Pai, e a comunhão do Espírito Santo estejam com todos vós."
+    gloss:
+      - { el: "χάρις", pt: "graça" }
+      - { el: "ἀγάπη", pt: "amor" }
+      - { el: "κοινωνία", pt: "comunhão" }
+    context_pt: >-
+      A bênção trinitária — são as palavras de S. Paulo em 2Co 13:13,
+      ditas pelo sacerdote voltado para o povo.
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-ke-meta
+    kind: phrase
+    greek: "Καὶ μετὰ τοῦ πνεύματός σου."
+    tts: "Και μετά του πνεύματός σου."
+    words:
+      - { el: "Καὶ", tl: "Ke" }
+      - { el: "μετὰ", tl: "metá" }
+      - { el: "τοῦ", tl: "tu" }
+      - { el: "πνεύματός", tl: "pnévmatós" }
+      - { el: "σου.", tl: "su." }
+    pt: "E com o teu espírito."
+    gloss:
+      - { el: "μετὰ + genitivo", pt: "com — repare: aqui é «μετὰ τοῦ», não «τῷ»" }
+    context_pt: >-
+      Quase igual à resposta que você já sabe («Καὶ τῷ πνεύματί σου») —
+      mas na Anáfora a forma muda: «Καὶ μετὰ τοῦ πνεύματός σου».
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-ano
+    kind: phrase
+    greek: "Ἄνω σχῶμεν τὰς καρδίας."
+    tts: "Άνω σχώμεν τας καρδίας."
+    words:
+      - { el: "Ἄνω", tl: "Áno" }
+      - { el: "σχῶμεν", tl: "schómen" }
+      - { el: "τὰς", tl: "tas" }
+      - { el: "καρδίας.", tl: "kardías." }
+    pt: "Elevemos os corações."
+    gloss:
+      - { el: "ἄνω", pt: "para o alto" }
+      - { el: "καρδίας", pt: "corações — cardiologia vem daqui" }
+    context_pt: >-
+      O «sursum corda» das liturgias de todo o mundo cristão — aqui na
+      língua em que foi primeiro dito.
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-echomen
+    kind: phrase
+    greek: "Ἔχομεν πρὸς τὸν Κύριον."
+    tts: "Έχομεν προς τον Κύριον."
+    words:
+      - { el: "Ἔχομεν", tl: "Échomen" }
+      - { el: "πρὸς", tl: "pros" }
+      - { el: "τὸν", tl: "ton" }
+      - { el: "Κύριον.", tl: "Kírion." }
+    pt: "Já os temos junto ao Senhor."
+    gloss:
+      - { el: "ἔχομεν", pt: "temos (o coração já está lá)" }
+    context_pt: >-
+      A resposta mais ousada da Liturgia: não «vamos elevar», mas «já os
+      temos junto ao Senhor».
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-efcharistisomen
+    kind: phrase
+    greek: "Εὐχαριστήσωμεν τῷ Κυρίῳ."
+    tts: "Ευχαριστήσωμεν τω Κυρίω."
+    words:
+      - { el: "Εὐχαριστήσωμεν", tl: "Efcharistísomen" }
+      - { el: "τῷ", tl: "to" }
+      - { el: "Κυρίῳ.", tl: "Kirío." }
+    pt: "Demos graças ao Senhor."
+    gloss:
+      - { el: "εὐχαριστήσωμεν", pt: "demos graças — daí «Eucaristia»" }
+    context_pt: >-
+      A palavra que dá nome ao mistério: Eucaristia significa ação de
+      graças. (E o «obrigado» grego de hoje: «ευχαριστώ».)
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-axion
+    kind: phrase
+    greek: "Ἄξιον καὶ δίκαιον."
+    tts: "Άξιον και δίκαιον."
+    words:
+      - { el: "Ἄξιον", tl: "Áxion" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "δίκαιον.", tl: "díkeon." }
+    pt: "É digno e justo."
+    gloss:
+      - { el: "ἄξιον", pt: "digno — como no «Ἄξιος!» das ordenações" }
+      - { el: "δίκαιον", pt: "justo" }
+    context_pt: >-
+      A aclamação do povo que autoriza, por assim dizer, a grande oração
+      eucarística a começar.
+    source: "Divina Liturgia (GOA), p. 20"
+    tags: [anafora, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-agios
+    kind: phrase
+    greek: "Ἅγιος, ἅγιος, ἅγιος Κύριος Σαβαώθ· πλήρης ὁ οὐρανὸς καὶ ἡ γῆ τῆς δόξης σου. Ὡσαννὰ ἐν τοῖς ὑψίστοις· εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι Κυρίου. Ὡσαννὰ ὁ ἐν τοῖς ὑψίστοις."
+    tts: "Άγιος, άγιος, άγιος Κύριος Σαβαώθ. Πλήρης ο ουρανός και η γη της δόξης σου. Ωσαννά εν τοις υψίστοις. Ευλογημένος ο ερχόμενος εν ονόματι Κυρίου. Ωσαννά ο εν τοις υψίστοις."
+    words:
+      - { el: "Ἅγιος,", tl: "Áyios," }
+      - { el: "ἅγιος,", tl: "áyios," }
+      - { el: "ἅγιος", tl: "áyios" }
+      - { el: "Κύριος", tl: "Kírios" }
+      - { el: "Σαβαώθ·", tl: "Savaóth;" }
+      - { el: "πλήρης", tl: "plíris" }
+      - { el: "ὁ", tl: "o" }
+      - { el: "οὐρανὸς", tl: "uranós" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "ἡ", tl: "i" }
+      - { el: "γῆ", tl: "yi" }
+      - { el: "τῆς", tl: "tis" }
+      - { el: "δόξης", tl: "dóxis" }
+      - { el: "σου.", tl: "su." }
+      - { el: "Ὡσαννὰ", tl: "Osanná" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "τοῖς", tl: "tis" }
+      - { el: "ὑψίστοις·", tl: "ipsístis;" }
+      - { el: "εὐλογημένος", tl: "evloyiménos" }
+      - { el: "ὁ", tl: "o" }
+      - { el: "ἐρχόμενος", tl: "erchómenos" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "ὀνόματι", tl: "onómati" }
+      - { el: "Κυρίου.", tl: "Kiríu." }
+      - { el: "Ὡσαννὰ", tl: "Osanná" }
+      - { el: "ὁ", tl: "o" }
+      - { el: "ἐν", tl: "en" }
+      - { el: "τοῖς", tl: "tis" }
+      - { el: "ὑψίστοις.", tl: "ipsístis." }
+    pt: "Santo, santo, santo é o Senhor Sabaoth; cheios estão o céu e a terra da tua glória. Hosana nas alturas; bendito o que vem em nome do Senhor. Hosana nas alturas."
+    gloss:
+      - { el: "Σαβαώθ", pt: "dos Exércitos (hebraico Tsevaot)" }
+      - { el: "Ὡσαννά", pt: "Hosana — «salva, nós te pedimos»" }
+    context_pt: >-
+      O hino dos serafins de Isaías 6 unido ao grito do Domingo de Ramos —
+      céu e terra cantando juntos.
+    source: "Divina Liturgia (GOA), p. 21"
+    tags: [anafora, hino, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: anafora-lavete
+    kind: phrase
+    greek: "Λάβετε, φάγετε· τοῦτό μού ἐστι τὸ Σῶμα, τὸ ὑπὲρ ὑμῶν κλώμενον εἰς ἄφεσιν ἁμαρτιῶν."
+    tts: "Λάβετε, φάγετε. Τούτό μου εστί το Σώμα, το υπέρ υμών κλώμενον εις άφεσιν αμαρτιών."
+    words:
+      - { el: "Λάβετε,", tl: "Lávete," }
+      - { el: "φάγετε·", tl: "fáyete;" }
+      - { el: "τοῦτό", tl: "tutó" }
+      - { el: "μού", tl: "mu" }
+      - { el: "ἐστι", tl: "estí" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "Σῶμα,", tl: "Sóma," }
+      - { el: "τὸ", tl: "to" }
+      - { el: "ὑπὲρ", tl: "ipér" }
+      - { el: "ὑμῶν", tl: "imón" }
+      - { el: "κλώμενον", tl: "klómenon" }
+      - { el: "εἰς", tl: "is" }
+      - { el: "ἄφεσιν", tl: "áfesin" }
+      - { el: "ἁμαρτιῶν.", tl: "amartión." }
+    pt: "Tomai, comei: isto é o meu Corpo, que por vós é partido para a remissão dos pecados."
+    gloss:
+      - { el: "Λάβετε, φάγετε", pt: "tomai, comei" }
+      - { el: "Σῶμα", pt: "Corpo" }
+    context_pt: >-
+      As palavras do próprio Cristo na Última Ceia, ditas em voz alta pelo
+      sacerdote. O povo responde: Ἀμήν.
+    source: "Divina Liturgia (GOA), p. 21"
+    tags: [anafora, sacerdote, instituicao, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-piete
+    kind: phrase
+    greek: "Πίετε ἐξ αὐτοῦ πάντες· τοῦτό ἐστι τὸ Αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ ὑπὲρ ὑμῶν καὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν."
+    tts: "Πίετε εξ αυτού πάντες. Τούτό εστί το Αίμά μου, το της καινής διαθήκης, το υπέρ υμών και πολλών εκχυνόμενον εις άφεσιν αμαρτιών."
+    words:
+      - { el: "Πίετε", tl: "Píete" }
+      - { el: "ἐξ", tl: "ex" }
+      - { el: "αὐτοῦ", tl: "aftú" }
+      - { el: "πάντες·", tl: "pándes;" }
+      - { el: "τοῦτό", tl: "tutó" }
+      - { el: "ἐστι", tl: "estí" }
+      - { el: "τὸ", tl: "to" }
+      - { el: "Αἷμά", tl: "Émá" }
+      - { el: "μου,", tl: "mu," }
+      - { el: "τὸ", tl: "to" }
+      - { el: "τῆς", tl: "tis" }
+      - { el: "καινῆς", tl: "kenís" }
+      - { el: "διαθήκης,", tl: "diathíkis," }
+      - { el: "τὸ", tl: "to" }
+      - { el: "ὑπὲρ", tl: "ipér" }
+      - { el: "ὑμῶν", tl: "imón" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "πολλῶν", tl: "pollón" }
+      - { el: "ἐκχυνόμενον", tl: "ekchinómenon" }
+      - { el: "εἰς", tl: "is" }
+      - { el: "ἄφεσιν", tl: "áfesin" }
+      - { el: "ἁμαρτιῶν.", tl: "amartión." }
+    pt: "Bebei dele todos: isto é o meu Sangue, o da nova aliança, que por vós e por muitos é derramado para a remissão dos pecados."
+    gloss:
+      - { el: "Αἷμα", pt: "Sangue" }
+      - { el: "καινῆς διαθήκης", pt: "nova aliança" }
+    context_pt: >-
+      A segunda palavra da instituição. Repare como «εἰς ἄφεσιν ἁμαρτιῶν»
+      ecoa o Credo («um só batismo εἰς ἄφεσιν ἁμαρτιῶν»).
+    source: "Divina Liturgia (GOA), p. 21"
+    tags: [anafora, sacerdote, instituicao, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-ta-sa
+    kind: phrase
+    greek: "Τὰ σὰ ἐκ τῶν σῶν σοὶ προσφέρομεν κατὰ πάντα καὶ διὰ πάντα."
+    tts: "Τα σα εκ των σων σοι προσφέρομεν κατά πάντα και διά πάντα."
+    words:
+      - { el: "Τὰ", tl: "Ta" }
+      - { el: "σὰ", tl: "sa" }
+      - { el: "ἐκ", tl: "ek" }
+      - { el: "τῶν", tl: "ton" }
+      - { el: "σῶν", tl: "son" }
+      - { el: "σοὶ", tl: "si" }
+      - { el: "προσφέρομεν", tl: "prosféromen" }
+      - { el: "κατὰ", tl: "katá" }
+      - { el: "πάντα", tl: "pánda" }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "διὰ", tl: "diá" }
+      - { el: "πάντα.", tl: "pánda." }
+    pt: "O que é teu, do que é teu, nós te oferecemos, em tudo e por tudo."
+    gloss:
+      - { el: "τὰ σὰ ἐκ τῶν σῶν", pt: "o que é teu, do que é teu — nada oferecemos que já não seja de Deus" }
+    context_pt: >-
+      O ponto mais alto da Anáfora: o sacerdote eleva os dons. A resposta
+      do povo é o «Σὲ ὑμνοῦμεν».
+    source: "Divina Liturgia (GOA), p. 22"
+    tags: [anafora, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: anafora-se-ymnoumen
+    kind: phrase
+    greek: "Σὲ ὑμνοῦμεν, σὲ εὐλογοῦμεν, σοὶ εὐχαριστοῦμεν, Κύριε, καὶ δεόμεθά σου, ὁ Θεὸς ἡμῶν."
+    tts: "Σε υμνούμεν, σε ευλογούμεν, σοι ευχαριστούμεν, Κύριε, και δεόμεθά σου, ο Θεός ημών."
+    words:
+      - { el: "Σὲ", tl: "Se" }
+      - { el: "ὑμνοῦμεν,", tl: "imnúmen," }
+      - { el: "σὲ", tl: "se" }
+      - { el: "εὐλογοῦμεν,", tl: "evlogúmen," }
+      - { el: "σοὶ", tl: "si" }
+      - { el: "εὐχαριστοῦμεν,", tl: "efcharistúmen," }
+      - { el: "Κύριε,", tl: "Kírie," }
+      - { el: "καὶ", tl: "ke" }
+      - { el: "δεόμεθά", tl: "deómethá" }
+      - { el: "σου,", tl: "su," }
+      - { el: "ὁ", tl: "o" }
+      - { el: "Θεὸς", tl: "Theós" }
+      - { el: "ἡμῶν.", tl: "imón." }
+    pt: "Nós te louvamos, te bendizemos, te agradecemos, Senhor, e te suplicamos, ó nosso Deus."
+    gloss:
+      - { el: "ὑμνοῦμεν", pt: "louvamos — daí «hino»" }
+      - { el: "δεόμεθα", pt: "suplicamos" }
+    context_pt: >-
+      Cantado pelo povo enquanto o sacerdote invoca o Espírito Santo sobre
+      os dons — o momento mais sagrado da Liturgia.
+    source: "Divina Liturgia (GOA), p. 22"
+    tags: [anafora, hino, resposta-do-povo]
+    voice: athina
+    review: pending

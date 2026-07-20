@@ -44,7 +44,11 @@ WORDS_DIR = ASSETS / "audio" / "words"
 TIMINGS_DIR = ASSETS / "timings"
 MANIFEST = ASSETS / "manifest.json"
 
-VOICES = {"athina": "el-GR-AthinaNeural", "ava": "en-US-AvaMultilingualNeural"}
+VOICES = {
+    "athina": "el-GR-AthinaNeural",       # the people's voice (Greek)
+    "nestoras": "el-GR-NestorasNeural",   # priest/deacon lines (Greek, male)
+    "ava": "en-US-AvaMultilingualNeural", # the mascot (PT/EN)
+}
 NORMAL_RATE = "-15%"   # Athina's native pace is brisk; keep "normal" honest but calm
 SLOW_RATE = "-50%"     # study speed — user-picked, beyond the -40% ladder step
 WORD_RATE = "-20%"
@@ -117,19 +121,30 @@ def load_units(only=None):
 
 
 async def synth(text: str, voice: str, rate: str, path: pathlib.Path, want_bounds: bool):
-    """Generate one mp3; return word timings [[start,end],...] when requested."""
-    comm = edge_tts.Communicate(text, voice, rate=rate,
-                                boundary="WordBoundary" if want_bounds else "SentenceBoundary")
-    audio, bounds = b"", []
-    async for chunk in comm.stream():
-        if chunk["type"] == "audio":
-            audio += chunk["data"]
-        elif chunk["type"] == "WordBoundary" and want_bounds:
-            start = chunk["offset"] / 1e7
-            bounds.append([round(start, 3), round(start + chunk["duration"] / 1e7, 3)])
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_bytes(audio)
-    return bounds
+    """Generate one mp3 with pacing + backoff (edge throttles bulk runs);
+    return word timings [[start,end],...] when requested."""
+    last = None
+    for attempt in range(4):
+        await asyncio.sleep(0.3 if attempt == 0 else 3 * attempt**2)
+        if attempt:
+            print(f"    edge hiccup ({last}), retry {attempt}…")
+        try:
+            comm = edge_tts.Communicate(
+                text, voice, rate=rate,
+                boundary="WordBoundary" if want_bounds else "SentenceBoundary")
+            audio, bounds = b"", []
+            async for chunk in comm.stream():
+                if chunk["type"] == "audio":
+                    audio += chunk["data"]
+                elif chunk["type"] == "WordBoundary" and want_bounds:
+                    start = chunk["offset"] / 1e7
+                    bounds.append([round(start, 3), round(start + chunk["duration"] / 1e7, 3)])
+            path.parent.mkdir(parents=True, exist_ok=True)
+            path.write_bytes(audio)
+            return bounds
+        except Exception as e:  # NoAudioReceived, timeouts, connection resets
+            last = type(e).__name__
+    raise RuntimeError(f"edge failed 4x for {path.name} ({last})")
 
 
 async def gen_phrase_speed(item: dict, label: str, rate: str, qc_fn):
