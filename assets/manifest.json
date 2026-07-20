@@ -1,6 +1,7 @@
 {
  "voices": {
   "athina": "el-GR-AthinaNeural",
+  "nestoras": "el-GR-NestorasNeural",
   "ava": "en-US-AvaMultilingualNeural"
  },
  "normal_rate": "-15%",
@@ -57,6 +58,69 @@
     "proschomen",
     "sofia-orthi",
     "trisagion"
+   ]
+  },
+  {
+   "id": "unit2-credo",
+   "title": "O Credo · Σύμβολον τῆς Πίστεως",
+   "section": "nave",
+   "order": 3,
+   "intro_pt": "O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará. Traduções conforme o Devocional.",
+   "items": [
+    "credo-1",
+    "credo-2",
+    "credo-3",
+    "credo-4",
+    "credo-5",
+    "credo-6",
+    "credo-7",
+    "credo-8",
+    "credo-9",
+    "credo-10",
+    "credo-11",
+    "credo-12"
+   ]
+  },
+  {
+   "id": "unit3-anafora",
+   "title": "A Anáfora · o diálogo sagrado",
+   "section": "nave",
+   "order": 4,
+   "intro_pt": "O coração da Liturgia. Aqui você aprende os dois lados do diálogo: o que o sacerdote e o diácono proclamam (voz masculina) e o que o povo — você — responde (voz feminina). Ouvir é metade da participação.",
+   "items": [
+    "anafora-stomen",
+    "anafora-eleon",
+    "anafora-haris",
+    "anafora-ke-meta",
+    "anafora-ano",
+    "anafora-echomen",
+    "anafora-efcharistisomen",
+    "anafora-axion",
+    "anafora-agios",
+    "anafora-lavete",
+    "anafora-piete",
+    "anafora-ta-sa",
+    "anafora-se-ymnoumen"
+   ]
+  },
+  {
+   "id": "unit4-painosso-comunhao",
+   "title": "Pai Nosso e Comunhão",
+   "section": "nave",
+   "order": 5,
+   "intro_pt": "A oração que o próprio Cristo ensinou — na língua em que os Evangelhos a registraram — e as palavras que cercam o cálice. Com esta unidade, você acompanha a Liturgia do início à Comunhão.",
+   "items": [
+    "pater-1",
+    "pater-2",
+    "pater-3",
+    "pater-4",
+    "pater-5",
+    "pater-doxologia",
+    "ta-agia",
+    "is-agios",
+    "meta-fovou",
+    "soson-o-theos",
+    "idomen"
    ]
   }
  ],
@@ -921,9 +985,9 @@
     "sacerdote",
     "para-reconhecer"
    ],
-   "voice": "athina",
+   "voice": "nestoras",
    "review": "pending",
-   "hash": "8e7c8bebfcfcea12",
+   "hash": "3f8988134a9aa33c",
    "wordkeys": [
     "ειρηνη",
     "πασι"
@@ -1207,9 +1271,9 @@
     "diacono",
     "para-reconhecer"
    ],
-   "voice": "athina",
+   "voice": "nestoras",
    "review": "pending",
-   "hash": "2b8701a1262a0964",
+   "hash": "3ee6de8d3a421126",
    "wordkeys": [
     "προσχωμεν"
    ]
@@ -1244,11 +1308,12 @@
    "tags": [
     "liturgia",
     "entrada",
+    "diacono",
     "para-reconhecer"
    ],
-   "voice": "athina",
+   "voice": "nestoras",
    "review": "pending",
-   "hash": "2e5ba86992eba953",
+   "hash": "ca22a80735a416d6",
    "wordkeys": [
     "σοφια",
     "ορθοι"
@@ -1340,63 +1405,3643 @@
     "ελεησον",
     "ημασ"
    ]
+  },
+  "credo-1": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Πιστεύω εἰς ἕνα Θεόν, Πατέρα Παντοκράτορα, ποιητὴν οὐρανοῦ καὶ γῆς, ὁρατῶν τε πάντων καὶ ἀοράτων.",
+   "words": [
+    {
+     "el": "Πιστεύω",
+     "tl": "Pistévo"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "ἕνα",
+     "tl": "éna"
+    },
+    {
+     "el": "Θεόν,",
+     "tl": "Theón,"
+    },
+    {
+     "el": "Πατέρα",
+     "tl": "Patéra"
+    },
+    {
+     "el": "Παντοκράτορα,",
+     "tl": "Pandokrátora,"
+    },
+    {
+     "el": "ποιητὴν",
+     "tl": "piitín"
+    },
+    {
+     "el": "οὐρανοῦ",
+     "tl": "uranú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "γῆς,",
+     "tl": "yis,"
+    },
+    {
+     "el": "ὁρατῶν",
+     "tl": "oratón"
+    },
+    {
+     "el": "τε",
+     "tl": "te"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀοράτων.",
+     "tl": "aoráton."
+    }
+   ],
+   "pt": "Creio em um só Deus, Pai onipotente, Criador do Céu e da terra, de todas as coisas visíveis e invisíveis.",
+   "gloss": [
+    {
+     "el": "Πιστεύω",
+     "pt": "creio (a primeira palavra: fé pessoal)"
+    },
+    {
+     "el": "Παντοκράτορα",
+     "pt": "Pantocrator — que tudo governa"
+    },
+    {
+     "el": "ὁρατῶν / ἀοράτων",
+     "pt": "visíveis / invisíveis"
+    }
+   ],
+   "context_pt": "A palavra que abre o Credo, «Πιστεύω» — «creio» — é a mesma dos ícones do Pantocrator no teto das igrejas.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "bb9caa0763af0643",
+   "wordkeys": [
+    "πιστευω",
+    "εισ",
+    "ενα",
+    "θεον",
+    "πατερα",
+    "παντοκρατορα",
+    "ποιητην",
+    "ουρανου",
+    "και",
+    "γησ",
+    "ορατων",
+    "τε",
+    "παντων",
+    "και",
+    "αορατων"
+   ]
+  },
+  "credo-2": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Καὶ εἰς ἕνα Κύριον Ἰησοῦν Χριστόν, τὸν υἱὸν τοῦ Θεοῦ τὸν μονογενῆ, τὸν ἐκ τοῦ Πατρὸς γεννηθέντα πρὸ πάντων τῶν αἰώνων·",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "ἕνα",
+     "tl": "éna"
+    },
+    {
+     "el": "Κύριον",
+     "tl": "Kírion"
+    },
+    {
+     "el": "Ἰησοῦν",
+     "tl": "Iisún"
+    },
+    {
+     "el": "Χριστόν,",
+     "tl": "Christón,"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "υἱὸν",
+     "tl": "ión"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "μονογενῆ,",
+     "tl": "monoyení,"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "γεννηθέντα",
+     "tl": "yennithénda"
+    },
+    {
+     "el": "πρὸ",
+     "tl": "pro"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων·",
+     "tl": "eónon."
+    }
+   ],
+   "pt": "E em um só Senhor, Jesus Cristo, Filho unigênito de Deus, nascido do Pai antes de todos os séculos.",
+   "gloss": [
+    {
+     "el": "μονογενῆ",
+     "pt": "unigênito — único gerado"
+    },
+    {
+     "el": "πρὸ πάντων τῶν αἰώνων",
+     "pt": "antes de todos os séculos"
+    }
+   ],
+   "context_pt": "«Μονογενής» é a palavra de João 3:16 — o Filho único.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "bd9a49ff599911d2",
+   "wordkeys": [
+    "και",
+    "εισ",
+    "ενα",
+    "κυριον",
+    "ιησουν",
+    "χριστον",
+    "τον",
+    "υιον",
+    "του",
+    "θεου",
+    "τον",
+    "μονογενη",
+    "τον",
+    "εκ",
+    "του",
+    "πατροσ",
+    "γεννηθεντα",
+    "προ",
+    "παντων",
+    "των",
+    "αιωνων"
+   ]
+  },
+  "credo-3": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Φῶς ἐκ φωτός, Θεὸν ἀληθινὸν ἐκ Θεοῦ ἀληθινοῦ, γεννηθέντα οὐ ποιηθέντα, ὁμοούσιον τῷ Πατρί, δι' οὗ τὰ πάντα ἐγένετο.",
+   "words": [
+    {
+     "el": "Φῶς",
+     "tl": "Fos"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "φωτός,",
+     "tl": "fotós,"
+    },
+    {
+     "el": "Θεὸν",
+     "tl": "Theón"
+    },
+    {
+     "el": "ἀληθινὸν",
+     "tl": "alithinón"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "ἀληθινοῦ,",
+     "tl": "alithinú,"
+    },
+    {
+     "el": "γεννηθέντα",
+     "tl": "yennithénda"
+    },
+    {
+     "el": "οὐ",
+     "tl": "u"
+    },
+    {
+     "el": "ποιηθέντα,",
+     "tl": "piithénda,"
+    },
+    {
+     "el": "ὁμοούσιον",
+     "tl": "omoúsion"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to"
+    },
+    {
+     "el": "Πατρί,",
+     "tl": "Patrí,"
+    },
+    {
+     "el": "δι'",
+     "tl": "di"
+    },
+    {
+     "el": "οὗ",
+     "tl": "u"
+    },
+    {
+     "el": "τὰ",
+     "tl": "ta"
+    },
+    {
+     "el": "πάντα",
+     "tl": "pánda"
+    },
+    {
+     "el": "ἐγένετο.",
+     "tl": "eyéneto."
+    }
+   ],
+   "pt": "Luz da Luz, Deus verdadeiro do Deus verdadeiro, gerado não criado, consubstancial ao Pai, por ele todas as coisas foram feitas.",
+   "gloss": [
+    {
+     "el": "ὁμοούσιον",
+     "pt": "consubstancial — da MESMA essência; a palavra que decidiu Niceia"
+    },
+    {
+     "el": "γεννηθέντα οὐ ποιηθέντα",
+     "pt": "gerado, não criado"
+    }
+   ],
+   "context_pt": "«Ὁμοούσιον» é a palavra mais disputada da história da Igreja — uma letra a separava da heresia (ὁμοιούσιον, «semelhante»).",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "03837e8a169a82c3",
+   "wordkeys": [
+    "φωσ",
+    "εκ",
+    "φωτοσ",
+    "θεον",
+    "αληθινον",
+    "εκ",
+    "θεου",
+    "αληθινου",
+    "γεννηθεντα",
+    "ου",
+    "ποιηθεντα",
+    "ομοουσιον",
+    "τω",
+    "πατρι",
+    "δι",
+    "ου",
+    "τα",
+    "παντα",
+    "εγενετο"
+   ]
+  },
+  "credo-4": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Τὸν δι' ἡμᾶς τοὺς ἀνθρώπους καὶ διὰ τὴν ἡμετέραν σωτηρίαν κατελθόντα ἐκ τῶν οὐρανῶν καὶ σαρκωθέντα ἐκ Πνεύματος ἁγίου καὶ Μαρίας τῆς Παρθένου καὶ ἐνανθρωπήσαντα.",
+   "words": [
+    {
+     "el": "Τὸν",
+     "tl": "Ton"
+    },
+    {
+     "el": "δι'",
+     "tl": "di"
+    },
+    {
+     "el": "ἡμᾶς",
+     "tl": "imás"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "ἀνθρώπους",
+     "tl": "anthrópus"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "διὰ",
+     "tl": "diá"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ἡμετέραν",
+     "tl": "imetéran"
+    },
+    {
+     "el": "σωτηρίαν",
+     "tl": "sotirían"
+    },
+    {
+     "el": "κατελθόντα",
+     "tl": "katelthónda"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "οὐρανῶν",
+     "tl": "uranón"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "σαρκωθέντα",
+     "tl": "sarkothénda"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "Πνεύματος",
+     "tl": "Pnévmatos"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "Μαρίας",
+     "tl": "Marías"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "Παρθένου",
+     "tl": "Parthénu"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἐνανθρωπήσαντα.",
+     "tl": "enanthropísanda."
+    }
+   ],
+   "pt": "E, por nós, homens, e para a nossa salvação, desceu dos Céus e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem.",
+   "gloss": [
+    {
+     "el": "σωτηρίαν",
+     "pt": "salvação (soteriologia vem daqui)"
+    },
+    {
+     "el": "σαρκωθέντα",
+     "pt": "encarnado — fez-se carne (σάρξ)"
+    },
+    {
+     "el": "ἐνανθρωπήσαντα",
+     "pt": "fez-se homem — en + ánthropos"
+    }
+   ],
+   "context_pt": "Neste artigo, na tradição, inclinamos a cabeça — é a Encarnação.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "af9a9b50b31185ce",
+   "wordkeys": [
+    "τον",
+    "δι",
+    "ημασ",
+    "τουσ",
+    "ανθρωπουσ",
+    "και",
+    "δια",
+    "την",
+    "ημετεραν",
+    "σωτηριαν",
+    "κατελθοντα",
+    "εκ",
+    "των",
+    "ουρανων",
+    "και",
+    "σαρκωθεντα",
+    "εκ",
+    "πνευματοσ",
+    "αγιου",
+    "και",
+    "μαριασ",
+    "τησ",
+    "παρθενου",
+    "και",
+    "ενανθρωπησαντα"
+   ]
+  },
+  "credo-5": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Σταυρωθέντα τε ὑπὲρ ἡμῶν ἐπὶ Ποντίου Πιλάτου καὶ παθόντα καὶ ταφέντα.",
+   "words": [
+    {
+     "el": "Σταυρωθέντα",
+     "tl": "Stavrothénda"
+    },
+    {
+     "el": "τε",
+     "tl": "te"
+    },
+    {
+     "el": "ὑπὲρ",
+     "tl": "ipér"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "ἐπὶ",
+     "tl": "epí"
+    },
+    {
+     "el": "Ποντίου",
+     "tl": "Pondíu"
+    },
+    {
+     "el": "Πιλάτου",
+     "tl": "Pilátu"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "παθόντα",
+     "tl": "pathónda"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ταφέντα.",
+     "tl": "tafénda."
+    }
+   ],
+   "pt": "E por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado.",
+   "gloss": [
+    {
+     "el": "Σταυρωθέντα",
+     "pt": "crucificado — de σταυρός, cruz"
+    },
+    {
+     "el": "ὑπὲρ ἡμῶν",
+     "pt": "por nós, em nosso favor"
+    }
+   ],
+   "context_pt": "O único nome humano do Credo além de Maria: Pilatos — a fé ancorada na história.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "3318140ec671ba7c",
+   "wordkeys": [
+    "σταυρωθεντα",
+    "τε",
+    "υπερ",
+    "ημων",
+    "επι",
+    "ποντιου",
+    "πιλατου",
+    "και",
+    "παθοντα",
+    "και",
+    "ταφεντα"
+   ]
+  },
+  "credo-6": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Καὶ ἀναστάντα τῇ τρίτῃ ἡμέρᾳ, κατὰ τὰς Γραφάς.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "ἀναστάντα",
+     "tl": "anastánda"
+    },
+    {
+     "el": "τῇ",
+     "tl": "ti"
+    },
+    {
+     "el": "τρίτῃ",
+     "tl": "tríti"
+    },
+    {
+     "el": "ἡμέρᾳ,",
+     "tl": "iméra,"
+    },
+    {
+     "el": "κατὰ",
+     "tl": "katá"
+    },
+    {
+     "el": "τὰς",
+     "tl": "tas"
+    },
+    {
+     "el": "Γραφάς.",
+     "tl": "Grafás."
+    }
+   ],
+   "pt": "Ressuscitou ao terceiro dia, conforme as Escrituras.",
+   "gloss": [
+    {
+     "el": "ἀναστάντα",
+     "pt": "ressuscitou — a mesma raiz de «Ἀνέστη» da Páscoa"
+    },
+    {
+     "el": "Γραφάς",
+     "pt": "Escrituras"
+    }
+   ],
+   "context_pt": "A raiz de «ἀναστάντα» você já ouviu: «Χριστὸς ἀνέστη!» — Cristo ressuscitou!",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "2b929d8123ffd237",
+   "wordkeys": [
+    "και",
+    "ανασταντα",
+    "τη",
+    "τριτη",
+    "ημερα",
+    "κατα",
+    "τασ",
+    "γραφασ"
+   ]
+  },
+  "credo-7": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Καὶ ἀνελθόντα εἰς τοὺς οὐρανοὺς καὶ καθεζόμενον ἐκ δεξιῶν τοῦ Πατρός.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "ἀνελθόντα",
+     "tl": "anelthónda"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "οὐρανοὺς",
+     "tl": "uranús"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "καθεζόμενον",
+     "tl": "kathezómenon"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "δεξιῶν",
+     "tl": "dexión"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρός.",
+     "tl": "Patrós."
+    }
+   ],
+   "pt": "E subiu aos Céus, onde está sentado à direita do Pai.",
+   "gloss": [
+    {
+     "el": "ἐκ δεξιῶν",
+     "pt": "à direita — lugar de honra"
+    }
+   ],
+   "context_pt": "A Ascensão — quarenta dias depois da Páscoa.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "b2bb6f91ac757028",
+   "wordkeys": [
+    "και",
+    "ανελθοντα",
+    "εισ",
+    "τουσ",
+    "ουρανουσ",
+    "και",
+    "καθεζομενον",
+    "εκ",
+    "δεξιων",
+    "του",
+    "πατροσ"
+   ]
+  },
+  "credo-8": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Καὶ πάλιν ἐρχόμενον μετὰ δόξης, κρῖναι ζῶντας καὶ νεκρούς, οὗ τῆς βασιλείας οὐκ ἔσται τέλος.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "πάλιν",
+     "tl": "pálin"
+    },
+    {
+     "el": "ἐρχόμενον",
+     "tl": "erchómenon"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá"
+    },
+    {
+     "el": "δόξης,",
+     "tl": "dóxis,"
+    },
+    {
+     "el": "κρῖναι",
+     "tl": "kríne"
+    },
+    {
+     "el": "ζῶντας",
+     "tl": "zóndas"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "νεκρούς,",
+     "tl": "nekrús,"
+    },
+    {
+     "el": "οὗ",
+     "tl": "u"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "βασιλείας",
+     "tl": "vasilías"
+    },
+    {
+     "el": "οὐκ",
+     "tl": "uk"
+    },
+    {
+     "el": "ἔσται",
+     "tl": "éste"
+    },
+    {
+     "el": "τέλος.",
+     "tl": "télos."
+    }
+   ],
+   "pt": "E de novo há de vir em sua glória, para julgar os vivos e os mortos. E o seu Reino não terá fim.",
+   "gloss": [
+    {
+     "el": "κρῖναι",
+     "pt": "julgar"
+    },
+    {
+     "el": "οὐκ ἔσται τέλος",
+     "pt": "não terá fim"
+    }
+   ],
+   "context_pt": "«Βασιλεία» — o Reino — é a primeira palavra que o sacerdote abençoa na Liturgia: «Εὐλογημένη ἡ βασιλεία…».",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "cb27d255f6bc01ee",
+   "wordkeys": [
+    "και",
+    "παλιν",
+    "ερχομενον",
+    "μετα",
+    "δοξησ",
+    "κριναι",
+    "ζωντασ",
+    "και",
+    "νεκρουσ",
+    "ου",
+    "τησ",
+    "βασιλειασ",
+    "ουκ",
+    "εσται",
+    "τελοσ"
+   ]
+  },
+  "credo-9": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Καὶ εἰς τὸ Πνεῦμα τὸ ἅγιον, τὸ Κύριον, τὸ ζωοποιόν, τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον, τὸ σὺν Πατρὶ καὶ Υἱῷ συμπροσκυνούμενον καὶ συνδοξαζόμενον, τὸ λαλῆσαν διὰ τῶν προφητῶν.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "Πνεῦμα",
+     "tl": "Pnévma"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ἅγιον,",
+     "tl": "áyion,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "Κύριον,",
+     "tl": "Kírion,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ζωοποιόν,",
+     "tl": "zoopión,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "ἐκπορευόμενον,",
+     "tl": "ekporevómenon,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "σὺν",
+     "tl": "sin"
+    },
+    {
+     "el": "Πατρὶ",
+     "tl": "Patrí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "Υἱῷ",
+     "tl": "Ió"
+    },
+    {
+     "el": "συμπροσκυνούμενον",
+     "tl": "simbroskinúmenon"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "συνδοξαζόμενον,",
+     "tl": "sindoxazómenon,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "λαλῆσαν",
+     "tl": "lalísan"
+    },
+    {
+     "el": "διὰ",
+     "tl": "diá"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "προφητῶν.",
+     "tl": "profitón."
+    }
+   ],
+   "pt": "E no Espírito Santo, o Senhor que dá a Vida, que procede do Pai, e com o Pai e o Filho é adorado e glorificado, ele que falou pelos Profetas.",
+   "gloss": [
+    {
+     "el": "ζωοποιόν",
+     "pt": "que dá a vida — zoí + poiéo"
+    },
+    {
+     "el": "ἐκπορευόμενον",
+     "pt": "que procede (do Pai)"
+    }
+   ],
+   "context_pt": "Note: «ἐκ τοῦ Πατρὸς ἐκπορευόμενον» — procede DO PAI. O Credo ortodoxo não tem o «filioque».",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "c9cd9726a6c16d1b",
+   "wordkeys": [
+    "και",
+    "εισ",
+    "το",
+    "πνευμα",
+    "το",
+    "αγιον",
+    "το",
+    "κυριον",
+    "το",
+    "ζωοποιον",
+    "το",
+    "εκ",
+    "του",
+    "πατροσ",
+    "εκπορευομενον",
+    "το",
+    "συν",
+    "πατρι",
+    "και",
+    "υιω",
+    "συμπροσκυνουμενον",
+    "και",
+    "συνδοξαζομενον",
+    "το",
+    "λαλησαν",
+    "δια",
+    "των",
+    "προφητων"
+   ]
+  },
+  "credo-10": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Εἰς μίαν, ἁγίαν, καθολικὴν καὶ ἀποστολικὴν Ἐκκλησίαν.",
+   "words": [
+    {
+     "el": "Εἰς",
+     "tl": "Is"
+    },
+    {
+     "el": "μίαν,",
+     "tl": "mían,"
+    },
+    {
+     "el": "ἁγίαν,",
+     "tl": "ayían,"
+    },
+    {
+     "el": "καθολικὴν",
+     "tl": "katholikín"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀποστολικὴν",
+     "tl": "apostolikín"
+    },
+    {
+     "el": "Ἐκκλησίαν.",
+     "tl": "Ekklisían."
+    }
+   ],
+   "pt": "E na Igreja, Una, Santa, Católica e Apostólica.",
+   "gloss": [
+    {
+     "el": "καθολικὴν",
+     "pt": "católica = universal, íntegra (kath' hólou)"
+    },
+    {
+     "el": "Ἐκκλησίαν",
+     "pt": "Igreja — assembleia dos convocados"
+    }
+   ],
+   "context_pt": "As quatro marcas da Igreja. «Católica» aqui é o adjetivo grego antigo — universal — não uma denominação.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "0576031c605c4399",
+   "wordkeys": [
+    "εισ",
+    "μιαν",
+    "αγιαν",
+    "καθολικην",
+    "και",
+    "αποστολικην",
+    "εκκλησιαν"
+   ]
+  },
+  "credo-11": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Ὁμολογῶ ἓν βάπτισμα εἰς ἄφεσιν ἁμαρτιῶν.",
+   "words": [
+    {
+     "el": "Ὁμολογῶ",
+     "tl": "Omologó"
+    },
+    {
+     "el": "ἓν",
+     "tl": "en"
+    },
+    {
+     "el": "βάπτισμα",
+     "tl": "váptisma"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "ἄφεσιν",
+     "tl": "áfesin"
+    },
+    {
+     "el": "ἁμαρτιῶν.",
+     "tl": "amartión."
+    }
+   ],
+   "pt": "Professo um só batismo para remissão dos pecados.",
+   "gloss": [
+    {
+     "el": "Ὁμολογῶ",
+     "pt": "professo, confesso — homo + logos, dizer o mesmo"
+    },
+    {
+     "el": "ἄφεσιν",
+     "pt": "remissão, perdão"
+    }
+   ],
+   "context_pt": "«Ἄφεσιν ἁμαρτιῶν» você já conhece — são as mesmas palavras das palavras da instituição na Anáfora.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "e495bd83222e79bf",
+   "wordkeys": [
+    "ομολογω",
+    "εν",
+    "βαπτισμα",
+    "εισ",
+    "αφεσιν",
+    "αμαρτιων"
+   ]
+  },
+  "credo-12": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Προσδοκῶ ἀνάστασιν νεκρῶν. Καὶ ζωὴν τοῦ μέλλοντος αἰῶνος. Ἀμήν.",
+   "words": [
+    {
+     "el": "Προσδοκῶ",
+     "tl": "Prosdokó"
+    },
+    {
+     "el": "ἀνάστασιν",
+     "tl": "anástasin"
+    },
+    {
+     "el": "νεκρῶν.",
+     "tl": "nekrón."
+    },
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "ζωὴν",
+     "tl": "zoín"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "μέλλοντος",
+     "tl": "méllondos"
+    },
+    {
+     "el": "αἰῶνος.",
+     "tl": "eónos."
+    },
+    {
+     "el": "Ἀμήν.",
+     "tl": "Amín."
+    }
+   ],
+   "pt": "Espero a ressurreição dos mortos. E a vida do mundo que há de vir. Amém.",
+   "gloss": [
+    {
+     "el": "Προσδοκῶ",
+     "pt": "espero, aguardo com expectativa"
+    },
+    {
+     "el": "ἀνάστασιν",
+     "pt": "ressurreição — Anástasis"
+    }
+   ],
+   "context_pt": "O Credo termina como a fé vive: em expectativa. «Προσδοκῶ» — não um talvez, mas uma espera certa.",
+   "source": "Devocional, p. 7; Divina Liturgia (GOA)",
+   "tags": [
+    "credo",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "22c4e4f7edcffcc8",
+   "wordkeys": [
+    "προσδοκω",
+    "αναστασιν",
+    "νεκρων",
+    "και",
+    "ζωην",
+    "του",
+    "μελλοντοσ",
+    "αιωνοσ",
+    "αμην"
+   ]
+  },
+  "anafora-stomen": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Στῶμεν καλῶς· στῶμεν μετὰ φόβου· πρόσχωμεν τὴν ἁγίαν ἀναφορὰν ἐν εἰρήνῃ προσφέρειν.",
+   "words": [
+    {
+     "el": "Στῶμεν",
+     "tl": "Stómen"
+    },
+    {
+     "el": "καλῶς·",
+     "tl": "kalós;"
+    },
+    {
+     "el": "στῶμεν",
+     "tl": "stómen"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá"
+    },
+    {
+     "el": "φόβου·",
+     "tl": "fóvu;"
+    },
+    {
+     "el": "πρόσχωμεν",
+     "tl": "próschomen"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "ἁγίαν",
+     "tl": "ayían"
+    },
+    {
+     "el": "ἀναφορὰν",
+     "tl": "anaforán"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "εἰρήνῃ",
+     "tl": "iríni"
+    },
+    {
+     "el": "προσφέρειν.",
+     "tl": "prosférin."
+    }
+   ],
+   "pt": "Estejamos de pé, com reverência; estejamos com temor; atentos, para oferecer em paz a santa oblação.",
+   "gloss": [
+    {
+     "el": "στῶμεν",
+     "pt": "estejamos de pé"
+    },
+    {
+     "el": "ἀναφοράν",
+     "pt": "anáfora — a oferenda elevada (ana + phéro)"
+    }
+   ],
+   "context_pt": "O chamado do diácono que abre a Anáfora: tudo o que vem agora pede o nosso corpo de pé e o coração desperto.",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "73bb567864d7f7d4",
+   "wordkeys": [
+    "στωμεν",
+    "καλωσ",
+    "στωμεν",
+    "μετα",
+    "φοβου",
+    "προσχωμεν",
+    "την",
+    "αγιαν",
+    "αναφοραν",
+    "εν",
+    "ειρηνη",
+    "προσφερειν"
+   ]
+  },
+  "anafora-eleon": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἔλεον εἰρήνης, θυσίαν αἰνέσεως.",
+   "words": [
+    {
+     "el": "Ἔλεον",
+     "tl": "Éleon"
+    },
+    {
+     "el": "εἰρήνης,",
+     "tl": "irínis,"
+    },
+    {
+     "el": "θυσίαν",
+     "tl": "thisían"
+    },
+    {
+     "el": "αἰνέσεως.",
+     "tl": "enéseos."
+    }
+   ],
+   "pt": "Misericórdia de paz, sacrifício de louvor.",
+   "gloss": [
+    {
+     "el": "ἔλεον",
+     "pt": "misericórdia — a raiz de «ἐλέησον»"
+    },
+    {
+     "el": "θυσίαν αἰνέσεως",
+     "pt": "sacrifício de louvor (Sl 49)"
+    }
+   ],
+   "context_pt": "A resposta do povo ao chamado do diácono: o que trazemos ao altar é louvor.",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "c74c3326e80f418e",
+   "wordkeys": [
+    "ελεον",
+    "ειρηνησ",
+    "θυσιαν",
+    "αινεσεωσ"
+   ]
+  },
+  "anafora-haris": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ καὶ ἡ ἀγάπη τοῦ Θεοῦ καὶ Πατρὸς καὶ ἡ κοινωνία τοῦ ἁγίου Πνεύματος εἴη μετὰ πάντων ὑμῶν.",
+   "words": [
+    {
+     "el": "Ἡ",
+     "tl": "I"
+    },
+    {
+     "el": "χάρις",
+     "tl": "cháris"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "Ἰησοῦ",
+     "tl": "Iisú"
+    },
+    {
+     "el": "Χριστοῦ",
+     "tl": "Christú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "ἀγάπη",
+     "tl": "agápi"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "κοινωνία",
+     "tl": "kinonía"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu"
+    },
+    {
+     "el": "Πνεύματος",
+     "tl": "Pnévmatos"
+    },
+    {
+     "el": "εἴη",
+     "tl": "íi"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "ὑμῶν.",
+     "tl": "imón."
+    }
+   ],
+   "pt": "A graça de nosso Senhor Jesus Cristo, e o amor de Deus Pai, e a comunhão do Espírito Santo estejam com todos vós.",
+   "gloss": [
+    {
+     "el": "χάρις",
+     "pt": "graça"
+    },
+    {
+     "el": "ἀγάπη",
+     "pt": "amor"
+    },
+    {
+     "el": "κοινωνία",
+     "pt": "comunhão"
+    }
+   ],
+   "context_pt": "A bênção trinitária — são as palavras de S. Paulo em 2Co 13:13, ditas pelo sacerdote voltado para o povo.",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "e071b80177817e15",
+   "wordkeys": [
+    "η",
+    "χαρισ",
+    "του",
+    "κυριου",
+    "ημων",
+    "ιησου",
+    "χριστου",
+    "και",
+    "η",
+    "αγαπη",
+    "του",
+    "θεου",
+    "και",
+    "πατροσ",
+    "και",
+    "η",
+    "κοινωνια",
+    "του",
+    "αγιου",
+    "πνευματοσ",
+    "ειη",
+    "μετα",
+    "παντων",
+    "υμων"
+   ]
+  },
+  "anafora-ke-meta": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Καὶ μετὰ τοῦ πνεύματός σου.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "πνεύματός",
+     "tl": "pnévmatós"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    }
+   ],
+   "pt": "E com o teu espírito.",
+   "gloss": [
+    {
+     "el": "μετὰ + genitivo",
+     "pt": "com — repare: aqui é «μετὰ τοῦ», não «τῷ»"
+    }
+   ],
+   "context_pt": "Quase igual à resposta que você já sabe («Καὶ τῷ πνεύματί σου») — mas na Anáfora a forma muda: «Καὶ μετὰ τοῦ πνεύματός σου».",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "100aa860de60bd09",
+   "wordkeys": [
+    "και",
+    "μετα",
+    "του",
+    "πνευματοσ",
+    "σου"
+   ]
+  },
+  "anafora-ano": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἄνω σχῶμεν τὰς καρδίας.",
+   "words": [
+    {
+     "el": "Ἄνω",
+     "tl": "Áno"
+    },
+    {
+     "el": "σχῶμεν",
+     "tl": "schómen"
+    },
+    {
+     "el": "τὰς",
+     "tl": "tas"
+    },
+    {
+     "el": "καρδίας.",
+     "tl": "kardías."
+    }
+   ],
+   "pt": "Elevemos os corações.",
+   "gloss": [
+    {
+     "el": "ἄνω",
+     "pt": "para o alto"
+    },
+    {
+     "el": "καρδίας",
+     "pt": "corações — cardiologia vem daqui"
+    }
+   ],
+   "context_pt": "O «sursum corda» das liturgias de todo o mundo cristão — aqui na língua em que foi primeiro dito.",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "badcf2ea689a2543",
+   "wordkeys": [
+    "ανω",
+    "σχωμεν",
+    "τασ",
+    "καρδιασ"
+   ]
+  },
+  "anafora-echomen": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἔχομεν πρὸς τὸν Κύριον.",
+   "words": [
+    {
+     "el": "Ἔχομεν",
+     "tl": "Échomen"
+    },
+    {
+     "el": "πρὸς",
+     "tl": "pros"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "Κύριον.",
+     "tl": "Kírion."
+    }
+   ],
+   "pt": "Já os temos junto ao Senhor.",
+   "gloss": [
+    {
+     "el": "ἔχομεν",
+     "pt": "temos (o coração já está lá)"
+    }
+   ],
+   "context_pt": "A resposta mais ousada da Liturgia: não «vamos elevar», mas «já os temos junto ao Senhor».",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "3436f3b9e6bfb1fe",
+   "wordkeys": [
+    "εχομεν",
+    "προσ",
+    "τον",
+    "κυριον"
+   ]
+  },
+  "anafora-efcharistisomen": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Εὐχαριστήσωμεν τῷ Κυρίῳ.",
+   "words": [
+    {
+     "el": "Εὐχαριστήσωμεν",
+     "tl": "Efcharistísomen"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to"
+    },
+    {
+     "el": "Κυρίῳ.",
+     "tl": "Kirío."
+    }
+   ],
+   "pt": "Demos graças ao Senhor.",
+   "gloss": [
+    {
+     "el": "εὐχαριστήσωμεν",
+     "pt": "demos graças — daí «Eucaristia»"
+    }
+   ],
+   "context_pt": "A palavra que dá nome ao mistério: Eucaristia significa ação de graças. (E o «obrigado» grego de hoje: «ευχαριστώ».)",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "1dc7a0f41f45bb8b",
+   "wordkeys": [
+    "ευχαριστησωμεν",
+    "τω",
+    "κυριω"
+   ]
+  },
+  "anafora-axion": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἄξιον καὶ δίκαιον.",
+   "words": [
+    {
+     "el": "Ἄξιον",
+     "tl": "Áxion"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "δίκαιον.",
+     "tl": "díkeon."
+    }
+   ],
+   "pt": "É digno e justo.",
+   "gloss": [
+    {
+     "el": "ἄξιον",
+     "pt": "digno — como no «Ἄξιος!» das ordenações"
+    },
+    {
+     "el": "δίκαιον",
+     "pt": "justo"
+    }
+   ],
+   "context_pt": "A aclamação do povo que autoriza, por assim dizer, a grande oração eucarística a começar.",
+   "source": "Divina Liturgia (GOA), p. 20",
+   "tags": [
+    "anafora",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "11d04abaa2a0d1f5",
+   "wordkeys": [
+    "αξιον",
+    "και",
+    "δικαιον"
+   ]
+  },
+  "anafora-agios": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Ἅγιος, ἅγιος, ἅγιος Κύριος Σαβαώθ· πλήρης ὁ οὐρανὸς καὶ ἡ γῆ τῆς δόξης σου. Ὡσαννὰ ἐν τοῖς ὑψίστοις· εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι Κυρίου. Ὡσαννὰ ὁ ἐν τοῖς ὑψίστοις.",
+   "words": [
+    {
+     "el": "Ἅγιος,",
+     "tl": "Áyios,"
+    },
+    {
+     "el": "ἅγιος,",
+     "tl": "áyios,"
+    },
+    {
+     "el": "ἅγιος",
+     "tl": "áyios"
+    },
+    {
+     "el": "Κύριος",
+     "tl": "Kírios"
+    },
+    {
+     "el": "Σαβαώθ·",
+     "tl": "Savaóth;"
+    },
+    {
+     "el": "πλήρης",
+     "tl": "plíris"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "οὐρανὸς",
+     "tl": "uranós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "γῆ",
+     "tl": "yi"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "δόξης",
+     "tl": "dóxis"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    },
+    {
+     "el": "Ὡσαννὰ",
+     "tl": "Osanná"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "τοῖς",
+     "tl": "tis"
+    },
+    {
+     "el": "ὑψίστοις·",
+     "tl": "ipsístis;"
+    },
+    {
+     "el": "εὐλογημένος",
+     "tl": "evloyiménos"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "ἐρχόμενος",
+     "tl": "erchómenos"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "ὀνόματι",
+     "tl": "onómati"
+    },
+    {
+     "el": "Κυρίου.",
+     "tl": "Kiríu."
+    },
+    {
+     "el": "Ὡσαννὰ",
+     "tl": "Osanná"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "τοῖς",
+     "tl": "tis"
+    },
+    {
+     "el": "ὑψίστοις.",
+     "tl": "ipsístis."
+    }
+   ],
+   "pt": "Santo, santo, santo é o Senhor Sabaoth; cheios estão o céu e a terra da tua glória. Hosana nas alturas; bendito o que vem em nome do Senhor. Hosana nas alturas.",
+   "gloss": [
+    {
+     "el": "Σαβαώθ",
+     "pt": "dos Exércitos (hebraico Tsevaot)"
+    },
+    {
+     "el": "Ὡσαννά",
+     "pt": "Hosana — «salva, nós te pedimos»"
+    }
+   ],
+   "context_pt": "O hino dos serafins de Isaías 6 unido ao grito do Domingo de Ramos — céu e terra cantando juntos.",
+   "source": "Divina Liturgia (GOA), p. 21",
+   "tags": [
+    "anafora",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "fc9aa97084885f80",
+   "wordkeys": [
+    "αγιοσ",
+    "αγιοσ",
+    "αγιοσ",
+    "κυριοσ",
+    "σαβαωθ",
+    "πληρησ",
+    "ο",
+    "ουρανοσ",
+    "και",
+    "η",
+    "γη",
+    "τησ",
+    "δοξησ",
+    "σου",
+    "ωσαννα",
+    "εν",
+    "τοισ",
+    "υψιστοισ",
+    "ευλογημενοσ",
+    "ο",
+    "ερχομενοσ",
+    "εν",
+    "ονοματι",
+    "κυριου",
+    "ωσαννα",
+    "ο",
+    "εν",
+    "τοισ",
+    "υψιστοισ"
+   ]
+  },
+  "anafora-lavete": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Λάβετε, φάγετε· τοῦτό μού ἐστι τὸ Σῶμα, τὸ ὑπὲρ ὑμῶν κλώμενον εἰς ἄφεσιν ἁμαρτιῶν.",
+   "words": [
+    {
+     "el": "Λάβετε,",
+     "tl": "Lávete,"
+    },
+    {
+     "el": "φάγετε·",
+     "tl": "fáyete;"
+    },
+    {
+     "el": "τοῦτό",
+     "tl": "tutó"
+    },
+    {
+     "el": "μού",
+     "tl": "mu"
+    },
+    {
+     "el": "ἐστι",
+     "tl": "estí"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "Σῶμα,",
+     "tl": "Sóma,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ὑπὲρ",
+     "tl": "ipér"
+    },
+    {
+     "el": "ὑμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "κλώμενον",
+     "tl": "klómenon"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "ἄφεσιν",
+     "tl": "áfesin"
+    },
+    {
+     "el": "ἁμαρτιῶν.",
+     "tl": "amartión."
+    }
+   ],
+   "pt": "Tomai, comei: isto é o meu Corpo, que por vós é partido para a remissão dos pecados.",
+   "gloss": [
+    {
+     "el": "Λάβετε, φάγετε",
+     "pt": "tomai, comei"
+    },
+    {
+     "el": "Σῶμα",
+     "pt": "Corpo"
+    }
+   ],
+   "context_pt": "As palavras do próprio Cristo na Última Ceia, ditas em voz alta pelo sacerdote. O povo responde: Ἀμήν.",
+   "source": "Divina Liturgia (GOA), p. 21",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "instituicao",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "a9cf94d79250c69e",
+   "wordkeys": [
+    "λαβετε",
+    "φαγετε",
+    "τουτο",
+    "μου",
+    "εστι",
+    "το",
+    "σωμα",
+    "το",
+    "υπερ",
+    "υμων",
+    "κλωμενον",
+    "εισ",
+    "αφεσιν",
+    "αμαρτιων"
+   ]
+  },
+  "anafora-piete": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Πίετε ἐξ αὐτοῦ πάντες· τοῦτό ἐστι τὸ Αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ ὑπὲρ ὑμῶν καὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν.",
+   "words": [
+    {
+     "el": "Πίετε",
+     "tl": "Píete"
+    },
+    {
+     "el": "ἐξ",
+     "tl": "ex"
+    },
+    {
+     "el": "αὐτοῦ",
+     "tl": "aftú"
+    },
+    {
+     "el": "πάντες·",
+     "tl": "pándes;"
+    },
+    {
+     "el": "τοῦτό",
+     "tl": "tutó"
+    },
+    {
+     "el": "ἐστι",
+     "tl": "estí"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "Αἷμά",
+     "tl": "Émá"
+    },
+    {
+     "el": "μου,",
+     "tl": "mu,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "καινῆς",
+     "tl": "kenís"
+    },
+    {
+     "el": "διαθήκης,",
+     "tl": "diathíkis,"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ὑπὲρ",
+     "tl": "ipér"
+    },
+    {
+     "el": "ὑμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "πολλῶν",
+     "tl": "pollón"
+    },
+    {
+     "el": "ἐκχυνόμενον",
+     "tl": "ekchinómenon"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "ἄφεσιν",
+     "tl": "áfesin"
+    },
+    {
+     "el": "ἁμαρτιῶν.",
+     "tl": "amartión."
+    }
+   ],
+   "pt": "Bebei dele todos: isto é o meu Sangue, o da nova aliança, que por vós e por muitos é derramado para a remissão dos pecados.",
+   "gloss": [
+    {
+     "el": "Αἷμα",
+     "pt": "Sangue"
+    },
+    {
+     "el": "καινῆς διαθήκης",
+     "pt": "nova aliança"
+    }
+   ],
+   "context_pt": "A segunda palavra da instituição. Repare como «εἰς ἄφεσιν ἁμαρτιῶν» ecoa o Credo («um só batismo εἰς ἄφεσιν ἁμαρτιῶν»).",
+   "source": "Divina Liturgia (GOA), p. 21",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "instituicao",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "c6a1959a3ead1b27",
+   "wordkeys": [
+    "πιετε",
+    "εξ",
+    "αυτου",
+    "παντεσ",
+    "τουτο",
+    "εστι",
+    "το",
+    "αιμα",
+    "μου",
+    "το",
+    "τησ",
+    "καινησ",
+    "διαθηκησ",
+    "το",
+    "υπερ",
+    "υμων",
+    "και",
+    "πολλων",
+    "εκχυνομενον",
+    "εισ",
+    "αφεσιν",
+    "αμαρτιων"
+   ]
+  },
+  "anafora-ta-sa": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Τὰ σὰ ἐκ τῶν σῶν σοὶ προσφέρομεν κατὰ πάντα καὶ διὰ πάντα.",
+   "words": [
+    {
+     "el": "Τὰ",
+     "tl": "Ta"
+    },
+    {
+     "el": "σὰ",
+     "tl": "sa"
+    },
+    {
+     "el": "ἐκ",
+     "tl": "ek"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "σῶν",
+     "tl": "son"
+    },
+    {
+     "el": "σοὶ",
+     "tl": "si"
+    },
+    {
+     "el": "προσφέρομεν",
+     "tl": "prosféromen"
+    },
+    {
+     "el": "κατὰ",
+     "tl": "katá"
+    },
+    {
+     "el": "πάντα",
+     "tl": "pánda"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "διὰ",
+     "tl": "diá"
+    },
+    {
+     "el": "πάντα.",
+     "tl": "pánda."
+    }
+   ],
+   "pt": "O que é teu, do que é teu, nós te oferecemos, em tudo e por tudo.",
+   "gloss": [
+    {
+     "el": "τὰ σὰ ἐκ τῶν σῶν",
+     "pt": "o que é teu, do que é teu — nada oferecemos que já não seja de Deus"
+    }
+   ],
+   "context_pt": "O ponto mais alto da Anáfora: o sacerdote eleva os dons. A resposta do povo é o «Σὲ ὑμνοῦμεν».",
+   "source": "Divina Liturgia (GOA), p. 22",
+   "tags": [
+    "anafora",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "f80cf422cdd1b8ba",
+   "wordkeys": [
+    "τα",
+    "σα",
+    "εκ",
+    "των",
+    "σων",
+    "σοι",
+    "προσφερομεν",
+    "κατα",
+    "παντα",
+    "και",
+    "δια",
+    "παντα"
+   ]
+  },
+  "anafora-se-ymnoumen": {
+   "unit": "unit3-anafora",
+   "kind": "phrase",
+   "greek": "Σὲ ὑμνοῦμεν, σὲ εὐλογοῦμεν, σοὶ εὐχαριστοῦμεν, Κύριε, καὶ δεόμεθά σου, ὁ Θεὸς ἡμῶν.",
+   "words": [
+    {
+     "el": "Σὲ",
+     "tl": "Se"
+    },
+    {
+     "el": "ὑμνοῦμεν,",
+     "tl": "imnúmen,"
+    },
+    {
+     "el": "σὲ",
+     "tl": "se"
+    },
+    {
+     "el": "εὐλογοῦμεν,",
+     "tl": "evlogúmen,"
+    },
+    {
+     "el": "σοὶ",
+     "tl": "si"
+    },
+    {
+     "el": "εὐχαριστοῦμεν,",
+     "tl": "efcharistúmen,"
+    },
+    {
+     "el": "Κύριε,",
+     "tl": "Kírie,"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "δεόμεθά",
+     "tl": "deómethá"
+    },
+    {
+     "el": "σου,",
+     "tl": "su,"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "Θεὸς",
+     "tl": "Theós"
+    },
+    {
+     "el": "ἡμῶν.",
+     "tl": "imón."
+    }
+   ],
+   "pt": "Nós te louvamos, te bendizemos, te agradecemos, Senhor, e te suplicamos, ó nosso Deus.",
+   "gloss": [
+    {
+     "el": "ὑμνοῦμεν",
+     "pt": "louvamos — daí «hino»"
+    },
+    {
+     "el": "δεόμεθα",
+     "pt": "suplicamos"
+    }
+   ],
+   "context_pt": "Cantado pelo povo enquanto o sacerdote invoca o Espírito Santo sobre os dons — o momento mais sagrado da Liturgia.",
+   "source": "Divina Liturgia (GOA), p. 22",
+   "tags": [
+    "anafora",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "980ffec0452774b8",
+   "wordkeys": [
+    "σε",
+    "υμνουμεν",
+    "σε",
+    "ευλογουμεν",
+    "σοι",
+    "ευχαριστουμεν",
+    "κυριε",
+    "και",
+    "δεομεθα",
+    "σου",
+    "ο",
+    "θεοσ",
+    "ημων"
+   ]
+  },
+  "pater-1": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου.",
+   "words": [
+    {
+     "el": "Πάτερ",
+     "tl": "Páter"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "τοῖς",
+     "tl": "tis"
+    },
+    {
+     "el": "οὐρανοῖς,",
+     "tl": "uranís,"
+    },
+    {
+     "el": "ἁγιασθήτω",
+     "tl": "ayiasthíto"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ὄνομά",
+     "tl": "ónomá"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    }
+   ],
+   "pt": "Pai nosso, que estás nos Céus, santificado seja o teu Nome.",
+   "gloss": [
+    {
+     "el": "Πάτερ",
+     "pt": "Pai (vocativo)"
+    },
+    {
+     "el": "ἁγιασθήτω",
+     "pt": "seja santificado — mesma raiz de ἅγιος"
+    }
+   ],
+   "context_pt": "Mt 6:9, palavra por palavra. Na Liturgia, TODO o povo reza junto — é a única oração que o sacerdote nos convida a «ousar» dizer.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "b91305d9726424de",
+   "wordkeys": [
+    "πατερ",
+    "ημων",
+    "ο",
+    "εν",
+    "τοισ",
+    "ουρανοισ",
+    "αγιασθητω",
+    "το",
+    "ονομα",
+    "σου"
+   ]
+  },
+  "pater-2": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Ἐλθέτω ἡ βασιλεία σου. Γενηθήτω τὸ θέλημά σου, ὡς ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς.",
+   "words": [
+    {
+     "el": "Ἐλθέτω",
+     "tl": "Elthéto"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "βασιλεία",
+     "tl": "vasilía"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    },
+    {
+     "el": "Γενηθήτω",
+     "tl": "Yenithíto"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "θέλημά",
+     "tl": "thélimá"
+    },
+    {
+     "el": "σου,",
+     "tl": "su,"
+    },
+    {
+     "el": "ὡς",
+     "tl": "os"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en"
+    },
+    {
+     "el": "οὐρανῷ",
+     "tl": "uranó"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἐπὶ",
+     "tl": "epí"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "γῆς.",
+     "tl": "yis."
+    }
+   ],
+   "pt": "Venha a nós o teu Reino; seja feita a tua vontade, assim na terra como no céu.",
+   "gloss": [
+    {
+     "el": "βασιλεία",
+     "pt": "Reino"
+    },
+    {
+     "el": "θέλημα",
+     "pt": "vontade"
+    }
+   ],
+   "context_pt": "«Βασιλεία» de novo — a palavra com que a Liturgia abre e que o Credo diz não ter fim.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "4ef760199c74bf76",
+   "wordkeys": [
+    "ελθετω",
+    "η",
+    "βασιλεια",
+    "σου",
+    "γενηθητω",
+    "το",
+    "θελημα",
+    "σου",
+    "ωσ",
+    "εν",
+    "ουρανω",
+    "και",
+    "επι",
+    "τησ",
+    "γησ"
+   ]
+  },
+  "pater-3": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον.",
+   "words": [
+    {
+     "el": "Τὸν",
+     "tl": "Ton"
+    },
+    {
+     "el": "ἄρτον",
+     "tl": "árton"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "ἐπιούσιον",
+     "tl": "epiúsion"
+    },
+    {
+     "el": "δὸς",
+     "tl": "dos"
+    },
+    {
+     "el": "ἡμῖν",
+     "tl": "imín"
+    },
+    {
+     "el": "σήμερον.",
+     "tl": "símeron."
+    }
+   ],
+   "pt": "O pão nosso de cada dia dá-nos hoje.",
+   "gloss": [
+    {
+     "el": "ἄρτον",
+     "pt": "pão — o mesmo Ἄρτον do altar"
+    },
+    {
+     "el": "ἐπιούσιον",
+     "pt": "de cada dia / supersubstancial — palavra que só existe aqui"
+    }
+   ],
+   "context_pt": "«Ἐπιούσιον» não aparece em nenhum outro texto grego antigo — os Padres a leram também como o Pão da Eucaristia.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "fdc17e660997540f",
+   "wordkeys": [
+    "τον",
+    "αρτον",
+    "ημων",
+    "τον",
+    "επιουσιον",
+    "δοσ",
+    "ημιν",
+    "σημερον"
+   ]
+  },
+  "pater-4": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Καὶ ἄφες ἡμῖν τὰ ὀφειλήματα ἡμῶν, ὡς καὶ ἡμεῖς ἀφίεμεν τοῖς ὀφειλέταις ἡμῶν.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "ἄφες",
+     "tl": "áfes"
+    },
+    {
+     "el": "ἡμῖν",
+     "tl": "imín"
+    },
+    {
+     "el": "τὰ",
+     "tl": "ta"
+    },
+    {
+     "el": "ὀφειλήματα",
+     "tl": "ofilímata"
+    },
+    {
+     "el": "ἡμῶν,",
+     "tl": "imón,"
+    },
+    {
+     "el": "ὡς",
+     "tl": "os"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡμεῖς",
+     "tl": "imís"
+    },
+    {
+     "el": "ἀφίεμεν",
+     "tl": "afíemen"
+    },
+    {
+     "el": "τοῖς",
+     "tl": "tis"
+    },
+    {
+     "el": "ὀφειλέταις",
+     "tl": "ofilétes"
+    },
+    {
+     "el": "ἡμῶν.",
+     "tl": "imón."
+    }
+   ],
+   "pt": "E perdoa as nossas dívidas assim como nós perdoamos aos nossos devedores.",
+   "gloss": [
+    {
+     "el": "ἄφες",
+     "pt": "perdoa — a raiz de ἄφεσις, remissão"
+    },
+    {
+     "el": "ὀφειλήματα",
+     "pt": "dívidas"
+    }
+   ],
+   "context_pt": "A raiz «ἀφ-» de perdoar você já viu três vezes: no Credo, na instituição e aqui.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "316e2b7a22a47e40",
+   "wordkeys": [
+    "και",
+    "αφεσ",
+    "ημιν",
+    "τα",
+    "οφειληματα",
+    "ημων",
+    "ωσ",
+    "και",
+    "ημεισ",
+    "αφιεμεν",
+    "τοισ",
+    "οφειλεταισ",
+    "ημων"
+   ]
+  },
+  "pater-5": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "μὴ",
+     "tl": "mi"
+    },
+    {
+     "el": "εἰσενέγκῃς",
+     "tl": "isenéngis"
+    },
+    {
+     "el": "ἡμᾶς",
+     "tl": "imás"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "πειρασμόν,",
+     "tl": "pirasmón,"
+    },
+    {
+     "el": "ἀλλὰ",
+     "tl": "allá"
+    },
+    {
+     "el": "ῥῦσαι",
+     "tl": "ríse"
+    },
+    {
+     "el": "ἡμᾶς",
+     "tl": "imás"
+    },
+    {
+     "el": "ἀπὸ",
+     "tl": "apó"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "πονηροῦ.",
+     "tl": "ponirú."
+    }
+   ],
+   "pt": "E não nos deixes cair em tentação, mas livra-nos do mal.",
+   "gloss": [
+    {
+     "el": "πειρασμόν",
+     "pt": "tentação, prova"
+    },
+    {
+     "el": "τοῦ πονηροῦ",
+     "pt": "do mal / do Maligno"
+    }
+   ],
+   "context_pt": "O fim da oração do povo — a doxologia que segue pertence ao sacerdote.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "55d569de28d6e93c",
+   "wordkeys": [
+    "και",
+    "μη",
+    "εισενεγκησ",
+    "ημασ",
+    "εισ",
+    "πειρασμον",
+    "αλλα",
+    "ρυσαι",
+    "ημασ",
+    "απο",
+    "του",
+    "πονηρου"
+   ]
+  },
+  "pater-doxologia": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Ὅτι σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+   "words": [
+    {
+     "el": "Ὅτι",
+     "tl": "Óti"
+    },
+    {
+     "el": "σοῦ",
+     "tl": "su"
+    },
+    {
+     "el": "ἐστιν",
+     "tl": "estín"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "βασιλεία",
+     "tl": "vasilía"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "δύναμις",
+     "tl": "dínamis"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "δόξα,",
+     "tl": "dóxa,"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Υἱοῦ",
+     "tl": "Iiú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu"
+    },
+    {
+     "el": "Πνεύματος,",
+     "tl": "Pnévmatos,"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀεὶ",
+     "tl": "aí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "αἰῶνας",
+     "tl": "eónas"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων.",
+     "tl": "eónon."
+    }
+   ],
+   "pt": "Porque teu é o Reino, o poder e a glória, do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos.",
+   "gloss": [
+    {
+     "el": "δύναμις",
+     "pt": "poder — daí «dínamo», «dinâmica»"
+    },
+    {
+     "el": "νῦν καὶ ἀεί",
+     "pt": "agora e sempre — você já sabe do «Καὶ νῦν»"
+    }
+   ],
+   "context_pt": "A conclusão do sacerdote — e repare como termina igual a tantas orações que você já conhece: «…τῶν αἰώνων». O povo sela: Ἀμήν.",
+   "source": "Devocional, p. 9; Divina Liturgia (GOA), p. 27",
+   "tags": [
+    "pai-nosso",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "ad76518e78bc6d79",
+   "wordkeys": [
+    "οτι",
+    "σου",
+    "εστιν",
+    "η",
+    "βασιλεια",
+    "και",
+    "η",
+    "δυναμισ",
+    "και",
+    "η",
+    "δοξα",
+    "του",
+    "πατροσ",
+    "και",
+    "του",
+    "υιου",
+    "και",
+    "του",
+    "αγιου",
+    "πνευματοσ",
+    "νυν",
+    "και",
+    "αει",
+    "και",
+    "εισ",
+    "τουσ",
+    "αιωνασ",
+    "των",
+    "αιωνων"
+   ]
+  },
+  "ta-agia": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Τὰ ἅγια τοῖς ἁγίοις.",
+   "words": [
+    {
+     "el": "Τὰ",
+     "tl": "Ta"
+    },
+    {
+     "el": "ἅγια",
+     "tl": "áyia"
+    },
+    {
+     "el": "τοῖς",
+     "tl": "tis"
+    },
+    {
+     "el": "ἁγίοις.",
+     "tl": "ayíis."
+    }
+   ],
+   "pt": "As coisas santas para os santos.",
+   "gloss": [
+    {
+     "el": "τὰ ἅγια",
+     "pt": "as coisas santas — os Dons"
+    },
+    {
+     "el": "τοῖς ἁγίοις",
+     "pt": "para os santos — o povo batizado"
+    }
+   ],
+   "context_pt": "O sacerdote eleva o Cordeiro. «Santos» aqui somos nós — não por mérito, mas pelo batismo. A resposta do povo corrige a humildade: «Εἷς ἅγιος…» — um só é santo.",
+   "source": "Divina Liturgia (GOA), p. 28",
+   "tags": [
+    "comunhao",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "642fc64ed7e26baf",
+   "wordkeys": [
+    "τα",
+    "αγια",
+    "τοισ",
+    "αγιοισ"
+   ]
+  },
+  "is-agios": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Εἷς ἅγιος, εἷς Κύριος, Ἰησοῦς Χριστός, εἰς δόξαν Θεοῦ Πατρός. Ἀμήν.",
+   "words": [
+    {
+     "el": "Εἷς",
+     "tl": "Is"
+    },
+    {
+     "el": "ἅγιος,",
+     "tl": "áyios,"
+    },
+    {
+     "el": "εἷς",
+     "tl": "is"
+    },
+    {
+     "el": "Κύριος,",
+     "tl": "Kírios,"
+    },
+    {
+     "el": "Ἰησοῦς",
+     "tl": "Iisús"
+    },
+    {
+     "el": "Χριστός,",
+     "tl": "Christós,"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "δόξαν",
+     "tl": "dóxan"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "Πατρός.",
+     "tl": "Patrós."
+    },
+    {
+     "el": "Ἀμήν.",
+     "tl": "Amín."
+    }
+   ],
+   "pt": "Um só é santo, um só é Senhor: Jesus Cristo, para a glória de Deus Pai. Amém.",
+   "gloss": [
+    {
+     "el": "εἷς",
+     "pt": "um só (numeral)"
+    }
+   ],
+   "context_pt": "A resposta do povo ao «Τὰ ἅγια τοῖς ἁγίοις» — de Filipenses 2:11.",
+   "source": "Divina Liturgia (GOA), p. 28",
+   "tags": [
+    "comunhao",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "a3f489e9a31c54b5",
+   "wordkeys": [
+    "εισ",
+    "αγιοσ",
+    "εισ",
+    "κυριοσ",
+    "ιησουσ",
+    "χριστοσ",
+    "εισ",
+    "δοξαν",
+    "θεου",
+    "πατροσ",
+    "αμην"
+   ]
+  },
+  "meta-fovou": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Μετὰ φόβου Θεοῦ, πίστεως καὶ ἀγάπης προσέλθετε.",
+   "words": [
+    {
+     "el": "Μετὰ",
+     "tl": "Metá"
+    },
+    {
+     "el": "φόβου",
+     "tl": "fóvu"
+    },
+    {
+     "el": "Θεοῦ,",
+     "tl": "Theú,"
+    },
+    {
+     "el": "πίστεως",
+     "tl": "písteos"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀγάπης",
+     "tl": "agápis"
+    },
+    {
+     "el": "προσέλθετε.",
+     "tl": "prosélthete."
+    }
+   ],
+   "pt": "Com temor de Deus, fé e amor, aproximai-vos.",
+   "gloss": [
+    {
+     "el": "φόβου",
+     "pt": "temor (reverente)"
+    },
+    {
+     "el": "προσέλθετε",
+     "pt": "aproximai-vos"
+    }
+   ],
+   "context_pt": "O chamado à Comunhão. Quando você ouvir estas palavras, é a hora de se aproximar do cálice.",
+   "source": "Divina Liturgia (GOA), p. 30",
+   "tags": [
+    "comunhao",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "cc5b402f20c13d0b",
+   "wordkeys": [
+    "μετα",
+    "φοβου",
+    "θεου",
+    "πιστεωσ",
+    "και",
+    "αγαπησ",
+    "προσελθετε"
+   ]
+  },
+  "soson-o-theos": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Σῶσον, ὁ Θεός, τὸν λαόν σου καὶ εὐλόγησον τὴν κληρονομίαν σου.",
+   "words": [
+    {
+     "el": "Σῶσον,",
+     "tl": "Sóson,"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "Θεός,",
+     "tl": "Theós,"
+    },
+    {
+     "el": "τὸν",
+     "tl": "ton"
+    },
+    {
+     "el": "λαόν",
+     "tl": "laón"
+    },
+    {
+     "el": "σου",
+     "tl": "su"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εὐλόγησον",
+     "tl": "evlóyison"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin"
+    },
+    {
+     "el": "κληρονομίαν",
+     "tl": "klironomían"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    }
+   ],
+   "pt": "Salva, ó Deus, o teu povo e abençoa a tua herança.",
+   "gloss": [
+    {
+     "el": "λαόν",
+     "pt": "povo — laós, como «leigo»"
+    },
+    {
+     "el": "κληρονομίαν",
+     "pt": "herança"
+    }
+   ],
+   "context_pt": "Do Salmo 27, dito pelo sacerdote após a Comunhão, abençoando o povo.",
+   "source": "Divina Liturgia (GOA), p. 30",
+   "tags": [
+    "comunhao",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "23f677f753a7874f",
+   "wordkeys": [
+    "σωσον",
+    "ο",
+    "θεοσ",
+    "τον",
+    "λαον",
+    "σου",
+    "και",
+    "ευλογησον",
+    "την",
+    "κληρονομιαν",
+    "σου"
+   ]
+  },
+  "idomen": {
+   "unit": "unit4-painosso-comunhao",
+   "kind": "phrase",
+   "greek": "Εἴδομεν τὸ φῶς τὸ ἀληθινόν, ἐλάβομεν Πνεῦμα ἐπουράνιον, εὕρομεν πίστιν ἀληθῆ, ἀδιαίρετον Τριάδα προσκυνοῦντες· αὕτη γὰρ ἡμᾶς ἔσωσεν.",
+   "words": [
+    {
+     "el": "Εἴδομεν",
+     "tl": "Ídomen"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "φῶς",
+     "tl": "fos"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to"
+    },
+    {
+     "el": "ἀληθινόν,",
+     "tl": "alithinón,"
+    },
+    {
+     "el": "ἐλάβομεν",
+     "tl": "elávomen"
+    },
+    {
+     "el": "Πνεῦμα",
+     "tl": "Pnévma"
+    },
+    {
+     "el": "ἐπουράνιον,",
+     "tl": "epuránion,"
+    },
+    {
+     "el": "εὕρομεν",
+     "tl": "évromen"
+    },
+    {
+     "el": "πίστιν",
+     "tl": "pístin"
+    },
+    {
+     "el": "ἀληθῆ,",
+     "tl": "alithí,"
+    },
+    {
+     "el": "ἀδιαίρετον",
+     "tl": "adiéreton"
+    },
+    {
+     "el": "Τριάδα",
+     "tl": "Triáda"
+    },
+    {
+     "el": "προσκυνοῦντες·",
+     "tl": "proskinúndes;"
+    },
+    {
+     "el": "αὕτη",
+     "tl": "áfti"
+    },
+    {
+     "el": "γὰρ",
+     "tl": "gar"
+    },
+    {
+     "el": "ἡμᾶς",
+     "tl": "imás"
+    },
+    {
+     "el": "ἔσωσεν.",
+     "tl": "ésosen."
+    }
+   ],
+   "pt": "Vimos a luz verdadeira, recebemos o Espírito celestial, encontramos a fé verdadeira, adorando a Trindade indivisível: pois ela nos salvou.",
+   "gloss": [
+    {
+     "el": "Εἴδομεν τὸ φῶς",
+     "pt": "vimos a luz — o hino de depois da Comunhão"
+    },
+    {
+     "el": "Τριάδα",
+     "pt": "Trindade"
+    }
+   ],
+   "context_pt": "Cantado pelo povo logo depois da Comunhão — «Luz da Luz» do Credo, agora vista, recebida, encontrada.",
+   "source": "Divina Liturgia (GOA), p. 31",
+   "tags": [
+    "comunhao",
+    "hino",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "f540438ecb135235",
+   "wordkeys": [
+    "ειδομεν",
+    "το",
+    "φωσ",
+    "το",
+    "αληθινον",
+    "ελαβομεν",
+    "πνευμα",
+    "επουρανιον",
+    "ευρομεν",
+    "πιστιν",
+    "αληθη",
+    "αδιαιρετον",
+    "τριαδα",
+    "προσκυνουντεσ",
+    "αυτη",
+    "γαρ",
+    "ημασ",
+    "εσωσεν"
+   ]
   }
  },
  "words": {
+  "αγαπη": "audio/words/αγαπη.mp3",
+  "αγαπησ": "audio/words/αγαπησ.mp3",
+  "αγια": "audio/words/αγια.mp3",
+  "αγιαν": "audio/words/αγιαν.mp3",
+  "αγιασθητω": "audio/words/αγιασθητω.mp3",
+  "αγιοισ": "audio/words/αγιοισ.mp3",
+  "αγιον": "audio/words/αγιον.mp3",
   "αγιοσ": "audio/words/αγιοσ.mp3",
+  "αγιου": "audio/words/αγιου.mp3",
   "αγιω": "audio/words/αγιω.mp3",
+  "αδιαιρετον": "audio/words/αδιαιρετον.mp3",
   "αει": "audio/words/αει.mp3",
   "αθανατοσ": "audio/words/αθανατοσ.mp3",
+  "αιμα": "audio/words/αιμα.mp3",
+  "αινεσεωσ": "audio/words/αινεσεωσ.mp3",
   "αιωνασ": "audio/words/αιωνασ.mp3",
+  "αιωνοσ": "audio/words/αιωνοσ.mp3",
   "αιωνων": "audio/words/αιωνων.mp3",
+  "αληθη": "audio/words/αληθη.mp3",
+  "αληθινον": "audio/words/αληθινον.mp3",
+  "αληθινου": "audio/words/αληθινου.mp3",
+  "αλλα": "audio/words/αλλα.mp3",
   "αλφα": "audio/words/αλφα.mp3",
+  "αμαρτιων": "audio/words/αμαρτιων.mp3",
   "αμην": "audio/words/αμην.mp3",
+  "ανασταντα": "audio/words/ανασταντα.mp3",
+  "αναστασιν": "audio/words/αναστασιν.mp3",
+  "αναφοραν": "audio/words/αναφοραν.mp3",
+  "ανελθοντα": "audio/words/ανελθοντα.mp3",
+  "ανθρωπουσ": "audio/words/ανθρωπουσ.mp3",
+  "ανω": "audio/words/ανω.mp3",
+  "αξιον": "audio/words/αξιον.mp3",
+  "αορατων": "audio/words/αορατων.mp3",
+  "απο": "audio/words/απο.mp3",
+  "αποστολικην": "audio/words/αποστολικην.mp3",
+  "αρτον": "audio/words/αρτον.mp3",
+  "αυτη": "audio/words/αυτη.mp3",
+  "αυτου": "audio/words/αυτου.mp3",
+  "αφεσ": "audio/words/αφεσ.mp3",
+  "αφεσιν": "audio/words/αφεσιν.mp3",
+  "αφιεμεν": "audio/words/αφιεμεν.mp3",
+  "βαπτισμα": "audio/words/βαπτισμα.mp3",
+  "βασιλεια": "audio/words/βασιλεια.mp3",
+  "βασιλειασ": "audio/words/βασιλειασ.mp3",
   "βητα": "audio/words/βητα.mp3",
   "γαμμα": "audio/words/γαμμα.mp3",
+  "γαρ": "audio/words/γαρ.mp3",
+  "γενηθητω": "audio/words/γενηθητω.mp3",
+  "γεννηθεντα": "audio/words/γεννηθεντα.mp3",
+  "γη": "audio/words/γη.mp3",
+  "γησ": "audio/words/γησ.mp3",
   "γιωτα": "audio/words/γιωτα.mp3",
+  "γραφασ": "audio/words/γραφασ.mp3",
   "δελτα": "audio/words/δελτα.mp3",
+  "δεξιων": "audio/words/δεξιων.mp3",
+  "δεομεθα": "audio/words/δεομεθα.mp3",
+  "δι": "audio/words/δι.mp3",
+  "δια": "audio/words/δια.mp3",
+  "διαθηκησ": "audio/words/διαθηκησ.mp3",
+  "δικαιον": "audio/words/δικαιον.mp3",
   "δοξα": "audio/words/δοξα.mp3",
+  "δοξαν": "audio/words/δοξαν.mp3",
+  "δοξησ": "audio/words/δοξησ.mp3",
+  "δοσ": "audio/words/δοσ.mp3",
+  "δυναμισ": "audio/words/δυναμισ.mp3",
+  "εγενετο": "audio/words/εγενετο.mp3",
+  "ειδομεν": "audio/words/ειδομεν.mp3",
+  "ειη": "audio/words/ειη.mp3",
   "ειρηνη": "audio/words/ειρηνη.mp3",
+  "ειρηνησ": "audio/words/ειρηνησ.mp3",
   "εισ": "audio/words/εισ.mp3",
+  "εισενεγκησ": "audio/words/εισενεγκησ.mp3",
+  "εκ": "audio/words/εκ.mp3",
+  "εκκλησιαν": "audio/words/εκκλησιαν.mp3",
+  "εκπορευομενον": "audio/words/εκπορευομενον.mp3",
+  "εκχυνομενον": "audio/words/εκχυνομενον.mp3",
+  "ελαβομεν": "audio/words/ελαβομεν.mp3",
   "ελεησον": "audio/words/ελεησον.mp3",
+  "ελεον": "audio/words/ελεον.mp3",
+  "ελθετω": "audio/words/ελθετω.mp3",
+  "εν": "audio/words/εν.mp3",
+  "ενα": "audio/words/ενα.mp3",
+  "ενανθρωπησαντα": "audio/words/ενανθρωπησαντα.mp3",
+  "εξ": "audio/words/εξ.mp3",
+  "επι": "audio/words/επι.mp3",
+  "επιουσιον": "audio/words/επιουσιον.mp3",
+  "επουρανιον": "audio/words/επουρανιον.mp3",
+  "ερχομενον": "audio/words/ερχομενον.mp3",
+  "ερχομενοσ": "audio/words/ερχομενοσ.mp3",
+  "εσται": "audio/words/εσται.mp3",
+  "εστι": "audio/words/εστι.mp3",
+  "εστιν": "audio/words/εστιν.mp3",
+  "εσωσεν": "audio/words/εσωσεν.mp3",
+  "ευλογημενοσ": "audio/words/ευλογημενοσ.mp3",
+  "ευλογησον": "audio/words/ευλογησον.mp3",
+  "ευλογουμεν": "audio/words/ευλογουμεν.mp3",
+  "ευρομεν": "audio/words/ευρομεν.mp3",
+  "ευχαριστησωμεν": "audio/words/ευχαριστησωμεν.mp3",
+  "ευχαριστουμεν": "audio/words/ευχαριστουμεν.mp3",
+  "εχομεν": "audio/words/εχομεν.mp3",
   "εψιλον": "audio/words/εψιλον.mp3",
   "ζητα": "audio/words/ζητα.mp3",
+  "ζωην": "audio/words/ζωην.mp3",
+  "ζωντασ": "audio/words/ζωντασ.mp3",
+  "ζωοποιον": "audio/words/ζωοποιον.mp3",
+  "η": "audio/words/η.mp3",
   "ημασ": "audio/words/ημασ.mp3",
+  "ημεισ": "audio/words/ημεισ.mp3",
+  "ημερα": "audio/words/ημερα.mp3",
+  "ημετεραν": "audio/words/ημετεραν.mp3",
+  "ημιν": "audio/words/ημιν.mp3",
+  "ημων": "audio/words/ημων.mp3",
   "ητα": "audio/words/ητα.mp3",
+  "θελημα": "audio/words/θελημα.mp3",
+  "θεον": "audio/words/θεον.mp3",
   "θεοσ": "audio/words/θεοσ.mp3",
+  "θεου": "audio/words/θεου.mp3",
   "θητα": "audio/words/θητα.mp3",
+  "θυσιαν": "audio/words/θυσιαν.mp3",
+  "ιησου": "audio/words/ιησου.mp3",
+  "ιησουν": "audio/words/ιησουν.mp3",
+  "ιησουσ": "audio/words/ιησουσ.mp3",
   "ισχυροσ": "audio/words/ισχυροσ.mp3",
+  "καθεζομενον": "audio/words/καθεζομενον.mp3",
+  "καθολικην": "audio/words/καθολικην.mp3",
   "και": "audio/words/και.mp3",
+  "καινησ": "audio/words/καινησ.mp3",
+  "καλωσ": "audio/words/καλωσ.mp3",
   "καππα": "audio/words/καππα.mp3",
+  "καρδιασ": "audio/words/καρδιασ.mp3",
+  "κατα": "audio/words/κατα.mp3",
+  "κατελθοντα": "audio/words/κατελθοντα.mp3",
+  "κληρονομιαν": "audio/words/κληρονομιαν.mp3",
+  "κλωμενον": "audio/words/κλωμενον.mp3",
+  "κοινωνια": "audio/words/κοινωνια.mp3",
+  "κριναι": "audio/words/κριναι.mp3",
   "κυριε": "audio/words/κυριε.mp3",
+  "κυριον": "audio/words/κυριον.mp3",
+  "κυριοσ": "audio/words/κυριοσ.mp3",
+  "κυριου": "audio/words/κυριου.mp3",
+  "κυριω": "audio/words/κυριω.mp3",
+  "λαβετε": "audio/words/λαβετε.mp3",
+  "λαλησαν": "audio/words/λαλησαν.mp3",
   "λαμδα": "audio/words/λαμδα.mp3",
+  "λαον": "audio/words/λαον.mp3",
+  "μαριασ": "audio/words/μαριασ.mp3",
+  "μελλοντοσ": "audio/words/μελλοντοσ.mp3",
+  "μετα": "audio/words/μετα.mp3",
+  "μη": "audio/words/μη.mp3",
   "μι": "audio/words/μι.mp3",
+  "μιαν": "audio/words/μιαν.mp3",
+  "μονογενη": "audio/words/μονογενη.mp3",
+  "μου": "audio/words/μου.mp3",
+  "νεκρουσ": "audio/words/νεκρουσ.mp3",
+  "νεκρων": "audio/words/νεκρων.mp3",
   "νι": "audio/words/νι.mp3",
   "νυν": "audio/words/νυν.mp3",
   "ξι": "audio/words/ξι.mp3",
   "ο": "audio/words/ο.mp3",
   "ομικρον": "audio/words/ομικρον.mp3",
+  "ομολογω": "audio/words/ομολογω.mp3",
+  "ομοουσιον": "audio/words/ομοουσιον.mp3",
+  "ονομα": "audio/words/ονομα.mp3",
+  "ονοματι": "audio/words/ονοματι.mp3",
+  "ορατων": "audio/words/ορατων.mp3",
   "ορθοι": "audio/words/ορθοι.mp3",
+  "οτι": "audio/words/οτι.mp3",
+  "ου": "audio/words/ου.mp3",
+  "ουκ": "audio/words/ουκ.mp3",
+  "ουρανοισ": "audio/words/ουρανοισ.mp3",
+  "ουρανοσ": "audio/words/ουρανοσ.mp3",
+  "ουρανου": "audio/words/ουρανου.mp3",
+  "ουρανουσ": "audio/words/ουρανουσ.mp3",
+  "ουρανω": "audio/words/ουρανω.mp3",
+  "ουρανων": "audio/words/ουρανων.mp3",
+  "οφειλεταισ": "audio/words/οφειλεταισ.mp3",
+  "οφειληματα": "audio/words/οφειληματα.mp3",
+  "παθοντα": "audio/words/παθοντα.mp3",
+  "παλιν": "audio/words/παλιν.mp3",
+  "παντα": "audio/words/παντα.mp3",
+  "παντεσ": "audio/words/παντεσ.mp3",
+  "παντοκρατορα": "audio/words/παντοκρατορα.mp3",
+  "παντων": "audio/words/παντων.mp3",
   "παρασχου": "audio/words/παρασχου.mp3",
+  "παρθενου": "audio/words/παρθενου.mp3",
   "πασι": "audio/words/πασι.mp3",
+  "πατερ": "audio/words/πατερ.mp3",
+  "πατερα": "audio/words/πατερα.mp3",
   "πατρι": "audio/words/πατρι.mp3",
+  "πατροσ": "audio/words/πατροσ.mp3",
+  "πειρασμον": "audio/words/πειρασμον.mp3",
   "πι": "audio/words/πι.mp3",
+  "πιετε": "audio/words/πιετε.mp3",
+  "πιλατου": "audio/words/πιλατου.mp3",
+  "πιστευω": "audio/words/πιστευω.mp3",
+  "πιστεωσ": "audio/words/πιστεωσ.mp3",
+  "πιστιν": "audio/words/πιστιν.mp3",
+  "πληρησ": "audio/words/πληρησ.mp3",
+  "πνευμα": "audio/words/πνευμα.mp3",
   "πνευματι": "audio/words/πνευματι.mp3",
+  "πνευματοσ": "audio/words/πνευματοσ.mp3",
+  "ποιηθεντα": "audio/words/ποιηθεντα.mp3",
+  "ποιητην": "audio/words/ποιητην.mp3",
+  "πολλων": "audio/words/πολλων.mp3",
+  "πονηρου": "audio/words/πονηρου.mp3",
+  "ποντιου": "audio/words/ποντιου.mp3",
+  "προ": "audio/words/προ.mp3",
+  "προσ": "audio/words/προσ.mp3",
+  "προσδοκω": "audio/words/προσδοκω.mp3",
+  "προσελθετε": "audio/words/προσελθετε.mp3",
+  "προσκυνουντεσ": "audio/words/προσκυνουντεσ.mp3",
+  "προσφερειν": "audio/words/προσφερειν.mp3",
+  "προσφερομεν": "audio/words/προσφερομεν.mp3",
   "προσχωμεν": "audio/words/προσχωμεν.mp3",
+  "προφητων": "audio/words/προφητων.mp3",
   "ρο": "audio/words/ρο.mp3",
+  "ρυσαι": "audio/words/ρυσαι.mp3",
+  "σα": "audio/words/σα.mp3",
+  "σαβαωθ": "audio/words/σαβαωθ.mp3",
+  "σαρκωθεντα": "audio/words/σαρκωθεντα.mp3",
+  "σε": "audio/words/σε.mp3",
+  "σημερον": "audio/words/σημερον.mp3",
   "σιγμα": "audio/words/σιγμα.mp3",
   "σοι": "audio/words/σοι.mp3",
   "σου": "audio/words/σου.mp3",
   "σοφια": "audio/words/σοφια.mp3",
+  "σταυρωθεντα": "audio/words/σταυρωθεντα.mp3",
+  "στωμεν": "audio/words/στωμεν.mp3",
+  "συμπροσκυνουμενον": "audio/words/συμπροσκυνουμενον.mp3",
+  "συν": "audio/words/συν.mp3",
+  "συνδοξαζομενον": "audio/words/συνδοξαζομενον.mp3",
+  "σχωμεν": "audio/words/σχωμεν.mp3",
+  "σωμα": "audio/words/σωμα.mp3",
+  "σων": "audio/words/σων.mp3",
+  "σωσον": "audio/words/σωσον.mp3",
+  "σωτηριαν": "audio/words/σωτηριαν.mp3",
+  "τα": "audio/words/τα.mp3",
+  "τασ": "audio/words/τασ.mp3",
   "ταυ": "audio/words/ταυ.mp3",
+  "ταφεντα": "audio/words/ταφεντα.mp3",
+  "τε": "audio/words/τε.mp3",
+  "τελοσ": "audio/words/τελοσ.mp3",
+  "τη": "audio/words/τη.mp3",
+  "την": "audio/words/την.mp3",
+  "τησ": "audio/words/τησ.mp3",
+  "το": "audio/words/το.mp3",
+  "τοισ": "audio/words/τοισ.mp3",
+  "τον": "audio/words/τον.mp3",
+  "του": "audio/words/του.mp3",
   "τουσ": "audio/words/τουσ.mp3",
+  "τουτο": "audio/words/τουτο.mp3",
+  "τριαδα": "audio/words/τριαδα.mp3",
+  "τριτη": "audio/words/τριτη.mp3",
   "τω": "audio/words/τω.mp3",
   "των": "audio/words/των.mp3",
+  "υιον": "audio/words/υιον.mp3",
+  "υιου": "audio/words/υιου.mp3",
   "υιω": "audio/words/υιω.mp3",
+  "υμνουμεν": "audio/words/υμνουμεν.mp3",
+  "υμων": "audio/words/υμων.mp3",
+  "υπερ": "audio/words/υπερ.mp3",
   "υψιλον": "audio/words/υψιλον.mp3",
+  "υψιστοισ": "audio/words/υψιστοισ.mp3",
+  "φαγετε": "audio/words/φαγετε.mp3",
   "φι": "audio/words/φι.mp3",
+  "φοβου": "audio/words/φοβου.mp3",
+  "φωσ": "audio/words/φωσ.mp3",
+  "φωτοσ": "audio/words/φωτοσ.mp3",
+  "χαρισ": "audio/words/χαρισ.mp3",
   "χι": "audio/words/χι.mp3",
+  "χριστον": "audio/words/χριστον.mp3",
+  "χριστοσ": "audio/words/χριστοσ.mp3",
+  "χριστου": "audio/words/χριστου.mp3",
   "ψι": "audio/words/ψι.mp3",
-  "ωμεγα": "audio/words/ωμεγα.mp3"
+  "ωμεγα": "audio/words/ωμεγα.mp3",
+  "ωσ": "audio/words/ωσ.mp3",
+  "ωσαννα": "audio/words/ωσαννα.mp3"
  }
 }

@@ -72,15 +72,69 @@
    ]
   },
   {
+   "id": "entrada-grande",
+   "title_pt": "A Grande Entrada",
+   "items": [
+    {
+     "ref": "cherubikon",
+     "weight": 1,
+     "future": true,
+     "label_el": "Οἱ τὰ Χερουβεὶμ…",
+     "label_pt": "Hino Querubínico"
+    }
+   ]
+  },
+  {
    "id": "credo",
    "title_pt": "O Credo",
    "items": [
     {
-     "ref": "credo",
-     "weight": 2,
-     "future": true,
-     "label_el": "Πιστεύω εἰς ἕνα Θεόν…",
-     "label_pt": "Símbolo da Fé"
+     "ref": "credo-1",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-2",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-3",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-4",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-5",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-6",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-7",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-8",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-9",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-10",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-11",
+     "weight": 0.2
+    },
+    {
+     "ref": "credo-12",
+     "weight": 0.2
     }
    ]
   },
@@ -89,18 +143,63 @@
    "title_pt": "A Anáfora",
    "items": [
     {
+     "ref": "anafora-stomen",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-eleon",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-haris",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-ke-meta",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-ano",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-echomen",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-efcharistisomen",
+     "weight": 1
+    },
+    {
      "ref": "anafora-axion",
-     "weight": 2,
-     "future": true,
-     "label_el": "Ἄξιον καὶ δίκαιον",
-     "label_pt": "É digno e justo"
+     "weight": 1
     },
     {
      "ref": "anafora-agios",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-lavete",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-piete",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-ta-sa",
+     "weight": 1
+    },
+    {
+     "ref": "anafora-se-ymnoumen",
+     "weight": 1
+    },
+    {
+     "ref": "axion-estin",
      "weight": 1,
      "future": true,
-     "label_el": "Ἅγιος, ἅγιος, ἅγιος…",
-     "label_pt": "Santo, santo, santo"
+     "label_el": "Ἄξιόν ἐστιν…",
+     "label_pt": "Hino à Theotokos"
     }
    ]
   },
@@ -109,18 +208,48 @@
    "title_pt": "Pai Nosso e Comunhão",
    "items": [
     {
-     "ref": "pater-imon",
-     "weight": 2,
-     "future": true,
-     "label_el": "Πάτερ ἡμῶν…",
-     "label_pt": "Pai Nosso"
+     "ref": "pater-1",
+     "weight": 0.4
     },
     {
-     "ref": "metalipsi",
-     "weight": 2,
-     "future": true,
-     "label_el": "Μετὰ φόβου Θεοῦ…",
-     "label_pt": "Com temor de Deus"
+     "ref": "pater-2",
+     "weight": 0.4
+    },
+    {
+     "ref": "pater-3",
+     "weight": 0.4
+    },
+    {
+     "ref": "pater-4",
+     "weight": 0.4
+    },
+    {
+     "ref": "pater-5",
+     "weight": 0.4
+    },
+    {
+     "ref": "pater-doxologia",
+     "weight": 1
+    },
+    {
+     "ref": "ta-agia",
+     "weight": 1
+    },
+    {
+     "ref": "is-agios",
+     "weight": 1
+    },
+    {
+     "ref": "meta-fovou",
+     "weight": 1
+    },
+    {
+     "ref": "soson-o-theos",
+     "weight": 1
+    },
+    {
+     "ref": "idomen",
+     "weight": 1
     }
    ]
   }
