@@ -319,3 +319,135 @@ items:
     tags: [liturgia, litania, diacono, para-reconhecer]
     voice: nestoras
     review: pending
+
+  - id: evlogimeni-i-vasilia
+    kind: phrase
+    greek: "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
+    tts: "Ευλογημένη η βασιλεία του Πατρός και του Υιού και του αγίου Πνεύματος, νυν και αει και εις τους αιώνας των αιώνων."
+    words:
+      - { el: "Εὐλογημένη", tl: "Evloyiméni" }
+      - { el: "ἡ",          tl: "i" }
+      - { el: "βασιλεία",   tl: "vasilía" }
+      - { el: "τοῦ",        tl: "tu" }
+      - { el: "Πατρὸς",     tl: "Patrós" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "τοῦ",        tl: "tu" }
+      - { el: "Υἱοῦ",       tl: "Iú" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "τοῦ",        tl: "tu" }
+      - { el: "ἁγίου",      tl: "ayíu" }
+      - { el: "Πνεύματος,", tl: "Pnévmatos," }
+      - { el: "νῦν",        tl: "nin" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "ἀεὶ",        tl: "aí" }
+      - { el: "καὶ",        tl: "ke" }
+      - { el: "εἰς",        tl: "is" }
+      - { el: "τοὺς",       tl: "tus" }
+      - { el: "αἰῶνας",     tl: "eónas" }
+      - { el: "τῶν",        tl: "ton" }
+      - { el: "αἰώνων.",    tl: "eónon." }
+    pt: "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos."
+    gloss:
+      - { el: "εὐλογημένη", pt: "bendito, abençoado" }
+      - { el: "βασιλεία",   pt: "reino" }
+    context_pt: >-
+      As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o
+      povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já
+      conhece — e aqui é «Υἱοῦ» (do Filho, genitivo), não «Υἱῷ».
+    source: "Divina Liturgia (GOA), p. 1"
+    tags: [liturgia, enarxis, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: en-irini
+    kind: phrase
+    greek: "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν."
+    tts: "Εν ειρήνη του Κυρίου δεηθώμεν."
+    words:
+      - { el: "Ἐν",         tl: "En" }
+      - { el: "εἰρήνῃ",     tl: "iríni" }
+      - { el: "τοῦ",        tl: "tu" }
+      - { el: "Κυρίου",     tl: "Kiríu" }
+      - { el: "δεηθῶμεν.",  tl: "deithómen." }
+    pt: "Em paz, oremos ao Senhor."
+    gloss:
+      - { el: "ἐν εἰρήνῃ", pt: "em paz" }
+      - { el: "δεηθῶμεν",  pt: "oremos, roguemos" }
+    context_pt: >-
+      A primeira petição da Grande Litania — a «Litania da Paz» (Εἰρηνικά),
+      que leva o nome destas palavras. O diácono a proclama de pé, diante do
+      iconostásio, erguendo a estola; o povo responde «Κύριε, ἐλέησον». Toda
+      petição termina igual: «…τοῦ Κυρίου δεηθῶμεν».
+    source: "Divina Liturgia (GOA), p. 1"
+    tags: [liturgia, enarxis, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: iper-irinis-kosmou
+    kind: phrase
+    greek: "Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως τοῦ Κυρίου δεηθῶμεν."
+    tts: "Υπέρ της ειρήνης του σύμπαντος κόσμου, ευσταθείας των αγίων του Θεού Εκκλησιών και της των πάντων ενώσεως του Κυρίου δεηθώμεν."
+    words:
+      - { el: "Ὑπὲρ",        tl: "Ipér" }
+      - { el: "τῆς",         tl: "tis" }
+      - { el: "εἰρήνης",     tl: "irínis" }
+      - { el: "τοῦ",         tl: "tu" }
+      - { el: "σύμπαντος",   tl: "símbandos" }
+      - { el: "κόσμου,",     tl: "kósmu," }
+      - { el: "εὐσταθείας",  tl: "efstathías" }
+      - { el: "τῶν",         tl: "ton" }
+      - { el: "ἁγίων",       tl: "ayíon" }
+      - { el: "τοῦ",         tl: "tu" }
+      - { el: "Θεοῦ",        tl: "Theú" }
+      - { el: "Ἐκκλησιῶν",   tl: "Eklisión" }
+      - { el: "καὶ",         tl: "ke" }
+      - { el: "τῆς",         tl: "tis" }
+      - { el: "τῶν",         tl: "ton" }
+      - { el: "πάντων",      tl: "pándon" }
+      - { el: "ἑνώσεως",     tl: "enóseos" }
+      - { el: "τοῦ",         tl: "tu" }
+      - { el: "Κυρίου",      tl: "Kiríu" }
+      - { el: "δεηθῶμεν.",   tl: "deithómen." }
+    pt: "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor."
+    gloss:
+      - { el: "σύμπαντος κόσμου", pt: "do mundo inteiro" }
+      - { el: "ἑνώσεως",          pt: "união" }
+      - { el: "εὐσταθείας",       pt: "estabilidade, firmeza" }
+    context_pt: >-
+      Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]…
+      τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a
+      paz do mundo e a união de todos.
+    source: "Divina Liturgia (GOA), p. 2"
+    tags: [liturgia, enarxis, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: antilavou
+    kind: phrase
+    greek: "Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι."
+    tts: "Αντιλαβού, σώσον, ελέησον και διαφύλαξον ημάς, ο Θεός, τη ση χάριτι."
+    words:
+      - { el: "Ἀντιλαβοῦ,",  tl: "Andilavú," }
+      - { el: "σῶσον,",      tl: "sóson," }
+      - { el: "ἐλέησον",     tl: "eléison" }
+      - { el: "καὶ",         tl: "ke" }
+      - { el: "διαφύλαξον",  tl: "diafílaxon" }
+      - { el: "ἡμᾶς,",       tl: "imás," }
+      - { el: "ὁ",           tl: "o" }
+      - { el: "Θεός,",       tl: "Theós," }
+      - { el: "τῇ",          tl: "ti" }
+      - { el: "σῇ",          tl: "si" }
+      - { el: "χάριτι.",     tl: "cháriti." }
+    pt: "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça."
+    gloss:
+      - { el: "ἀντιλαβοῦ",   pt: "ampara, socorre" }
+      - { el: "διαφύλαξον",  pt: "guarda, protege" }
+      - { el: "τῇ σῇ χάριτι", pt: "pela tua graça" }
+    context_pt: >-
+      O refrão que fecha as petições de cada litania, logo antes do «Τῆς
+      παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no
+      «ἐλέησον» — a mesma palavra de «Κύριε, ἐλέησον».
+    source: "Divina Liturgia (GOA), p. 3"
+    tags: [liturgia, enarxis, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending

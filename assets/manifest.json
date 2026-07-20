@@ -59,7 +59,11 @@
     "sofia-orthi",
     "trisagion",
     "doxa-si-kyrie",
-    "tis-panagias"
+    "tis-panagias",
+    "evlogimeni-i-vasilia",
+    "en-irini",
+    "iper-irinis-kosmou",
+    "antilavou"
    ]
   },
   {
@@ -1650,6 +1654,426 @@
     "τω",
     "θεω",
     "παραθωμεθα"
+   ]
+  },
+  "evlogimeni-i-vasilia": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+   "words": [
+    {
+     "el": "Εὐλογημένη",
+     "tl": "Evloyiméni"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "βασιλεία",
+     "tl": "vasilía"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Υἱοῦ",
+     "tl": "Iú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu"
+    },
+    {
+     "el": "Πνεύματος,",
+     "tl": "Pnévmatos,"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀεὶ",
+     "tl": "aí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "αἰῶνας",
+     "tl": "eónas"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων.",
+     "tl": "eónon."
+    }
+   ],
+   "pt": "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos.",
+   "gloss": [
+    {
+     "el": "εὐλογημένη",
+     "pt": "bendito, abençoado"
+    },
+    {
+     "el": "βασιλεία",
+     "pt": "reino"
+    }
+   ],
+   "context_pt": "As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já conhece — e aqui é «Υἱοῦ» (do Filho, genitivo), não «Υἱῷ».",
+   "source": "Divina Liturgia (GOA), p. 1",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "5ec4795e7d4063cf",
+   "wordkeys": [
+    "ευλογημενη",
+    "η",
+    "βασιλεια",
+    "του",
+    "πατροσ",
+    "και",
+    "του",
+    "υιου",
+    "και",
+    "του",
+    "αγιου",
+    "πνευματοσ",
+    "νυν",
+    "και",
+    "αει",
+    "και",
+    "εισ",
+    "τουσ",
+    "αιωνασ",
+    "των",
+    "αιωνων"
+   ]
+  },
+  "en-irini": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.",
+   "words": [
+    {
+     "el": "Ἐν",
+     "tl": "En"
+    },
+    {
+     "el": "εἰρήνῃ",
+     "tl": "iríni"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "δεηθῶμεν.",
+     "tl": "deithómen."
+    }
+   ],
+   "pt": "Em paz, oremos ao Senhor.",
+   "gloss": [
+    {
+     "el": "ἐν εἰρήνῃ",
+     "pt": "em paz"
+    },
+    {
+     "el": "δεηθῶμεν",
+     "pt": "oremos, roguemos"
+    }
+   ],
+   "context_pt": "A primeira petição da Grande Litania — a «Litania da Paz» (Εἰρηνικά), que leva o nome destas palavras. O diácono a proclama de pé, diante do iconostásio, erguendo a estola; o povo responde «Κύριε, ἐλέησον». Toda petição termina igual: «…τοῦ Κυρίου δεηθῶμεν».",
+   "source": "Divina Liturgia (GOA), p. 1",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "a460667656b6aa08",
+   "wordkeys": [
+    "εν",
+    "ειρηνη",
+    "του",
+    "κυριου",
+    "δεηθωμεν"
+   ]
+  },
+  "iper-irinis-kosmou": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως τοῦ Κυρίου δεηθῶμεν.",
+   "words": [
+    {
+     "el": "Ὑπὲρ",
+     "tl": "Ipér"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "εἰρήνης",
+     "tl": "irínis"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "σύμπαντος",
+     "tl": "símbandos"
+    },
+    {
+     "el": "κόσμου,",
+     "tl": "kósmu,"
+    },
+    {
+     "el": "εὐσταθείας",
+     "tl": "efstathías"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "ἁγίων",
+     "tl": "ayíon"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "Ἐκκλησιῶν",
+     "tl": "Eklisión"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "ἑνώσεως",
+     "tl": "enóseos"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "δεηθῶμεν.",
+     "tl": "deithómen."
+    }
+   ],
+   "pt": "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor.",
+   "gloss": [
+    {
+     "el": "σύμπαντος κόσμου",
+     "pt": "do mundo inteiro"
+    },
+    {
+     "el": "ἑνώσεως",
+     "pt": "união"
+    },
+    {
+     "el": "εὐσταθείας",
+     "pt": "estabilidade, firmeza"
+    }
+   ],
+   "context_pt": "Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]… τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a paz do mundo e a união de todos.",
+   "source": "Divina Liturgia (GOA), p. 2",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "2f23aa4b843a7d28",
+   "wordkeys": [
+    "υπερ",
+    "τησ",
+    "ειρηνησ",
+    "του",
+    "συμπαντοσ",
+    "κοσμου",
+    "ευσταθειασ",
+    "των",
+    "αγιων",
+    "του",
+    "θεου",
+    "εκκλησιων",
+    "και",
+    "τησ",
+    "των",
+    "παντων",
+    "ενωσεωσ",
+    "του",
+    "κυριου",
+    "δεηθωμεν"
+   ]
+  },
+  "antilavou": {
+   "unit": "unit1-respostas",
+   "kind": "phrase",
+   "greek": "Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι.",
+   "words": [
+    {
+     "el": "Ἀντιλαβοῦ,",
+     "tl": "Andilavú,"
+    },
+    {
+     "el": "σῶσον,",
+     "tl": "sóson,"
+    },
+    {
+     "el": "ἐλέησον",
+     "tl": "eléison"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "διαφύλαξον",
+     "tl": "diafílaxon"
+    },
+    {
+     "el": "ἡμᾶς,",
+     "tl": "imás,"
+    },
+    {
+     "el": "ὁ",
+     "tl": "o"
+    },
+    {
+     "el": "Θεός,",
+     "tl": "Theós,"
+    },
+    {
+     "el": "τῇ",
+     "tl": "ti"
+    },
+    {
+     "el": "σῇ",
+     "tl": "si"
+    },
+    {
+     "el": "χάριτι.",
+     "tl": "cháriti."
+    }
+   ],
+   "pt": "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça.",
+   "gloss": [
+    {
+     "el": "ἀντιλαβοῦ",
+     "pt": "ampara, socorre"
+    },
+    {
+     "el": "διαφύλαξον",
+     "pt": "guarda, protege"
+    },
+    {
+     "el": "τῇ σῇ χάριτι",
+     "pt": "pela tua graça"
+    }
+   ],
+   "context_pt": "O refrão que fecha as petições de cada litania, logo antes do «Τῆς παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no «ἐλέησον» — a mesma palavra de «Κύριε, ἐλέησον».",
+   "source": "Divina Liturgia (GOA), p. 3",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "d698a4054c375cd6",
+   "wordkeys": [
+    "αντιλαβου",
+    "σωσον",
+    "ελεησον",
+    "και",
+    "διαφυλαξον",
+    "ημασ",
+    "ο",
+    "θεοσ",
+    "τη",
+    "ση",
+    "χαριτι"
    ]
   },
   "cherubikon": {
@@ -5722,6 +6146,7 @@
   "αναφοραν": "audio/words/αναφοραν.mp3",
   "ανελθοντα": "audio/words/ανελθοντα.mp3",
   "ανθρωπουσ": "audio/words/ανθρωπουσ.mp3",
+  "αντιλαβου": "audio/words/αντιλαβου.mp3",
   "ανω": "audio/words/ανω.mp3",
   "αξιον": "audio/words/αξιον.mp3",
   "αορατων": "audio/words/αορατων.mp3",
@@ -5750,6 +6175,7 @@
   "γησ": "audio/words/γησ.mp3",
   "γιωτα": "audio/words/γιωτα.mp3",
   "γραφασ": "audio/words/γραφασ.mp3",
+  "δεηθωμεν": "audio/words/δεηθωμεν.mp3",
   "δελτα": "audio/words/δελτα.mp3",
   "δεξιων": "audio/words/δεξιων.mp3",
   "δεομεθα": "audio/words/δεομεθα.mp3",
@@ -5757,6 +6183,7 @@
   "δι": "audio/words/δι.mp3",
   "δια": "audio/words/δια.mp3",
   "διαθηκησ": "audio/words/διαθηκησ.mp3",
+  "διαφυλαξον": "audio/words/διαφυλαξον.mp3",
   "δικαιον": "audio/words/δικαιον.mp3",
   "δοξα": "audio/words/δοξα.mp3",
   "δοξαν": "audio/words/δοξαν.mp3",
@@ -5774,6 +6201,7 @@
   "εισενεγκησ": "audio/words/εισενεγκησ.mp3",
   "εκ": "audio/words/εκ.mp3",
   "εκκλησιαν": "audio/words/εκκλησιαν.mp3",
+  "εκκλησιων": "audio/words/εκκλησιων.mp3",
   "εκπορευομενον": "audio/words/εκπορευομενον.mp3",
   "εκχυνομενον": "audio/words/εκχυνομενον.mp3",
   "ελαβομεν": "audio/words/ελαβομεν.mp3",
@@ -5785,6 +6213,7 @@
   "ενανθρωπησαντα": "audio/words/ενανθρωπησαντα.mp3",
   "ενδοξοτεραν": "audio/words/ενδοξοτεραν.mp3",
   "ενδοξου": "audio/words/ενδοξου.mp3",
+  "ενωσεωσ": "audio/words/ενωσεωσ.mp3",
   "εξ": "audio/words/εξ.mp3",
   "εξαιρετωσ": "audio/words/εξαιρετωσ.mp3",
   "επι": "audio/words/επι.mp3",
@@ -5796,11 +6225,13 @@
   "εστι": "audio/words/εστι.mp3",
   "εστιν": "audio/words/εστιν.mp3",
   "εσωσεν": "audio/words/εσωσεν.mp3",
+  "ευλογημενη": "audio/words/ευλογημενη.mp3",
   "ευλογημενον": "audio/words/ευλογημενον.mp3",
   "ευλογημενοσ": "audio/words/ευλογημενοσ.mp3",
   "ευλογησον": "audio/words/ευλογησον.mp3",
   "ευλογουμεν": "audio/words/ευλογουμεν.mp3",
   "ευρομεν": "audio/words/ευρομεν.mp3",
+  "ευσταθειασ": "audio/words/ευσταθειασ.mp3",
   "ευχαριστησωμεν": "audio/words/ευχαριστησωμεν.mp3",
   "ευχαριστουμεν": "audio/words/ευχαριστουμεν.mp3",
   "εχομεν": "audio/words/εχομεν.mp3",
@@ -5844,6 +6275,7 @@
   "κληρονομιαν": "audio/words/κληρονομιαν.mp3",
   "κλωμενον": "audio/words/κλωμενον.mp3",
   "κοινωνια": "audio/words/κοινωνια.mp3",
+  "κοσμου": "audio/words/κοσμου.mp3",
   "κριναι": "audio/words/κριναι.mp3",
   "κυριε": "audio/words/κυριε.mp3",
   "κυριον": "audio/words/κυριον.mp3",
@@ -5948,6 +6380,7 @@
   "σαρκωθεντα": "audio/words/σαρκωθεντα.mp3",
   "σε": "audio/words/σε.mp3",
   "σεραφειμ": "audio/words/σεραφειμ.mp3",
+  "ση": "audio/words/ση.mp3",
   "σημερον": "audio/words/σημερον.mp3",
   "σιγμα": "audio/words/σιγμα.mp3",
   "σοι": "audio/words/σοι.mp3",
@@ -5955,6 +6388,7 @@
   "σοφια": "audio/words/σοφια.mp3",
   "σταυρωθεντα": "audio/words/σταυρωθεντα.mp3",
   "στωμεν": "audio/words/στωμεν.mp3",
+  "συμπαντοσ": "audio/words/συμπαντοσ.mp3",
   "συμπροσκυνουμενον": "audio/words/συμπροσκυνουμενον.mp3",
   "συν": "audio/words/συν.mp3",
   "συνδοξαζομενον": "audio/words/συνδοξαζομενον.mp3",
@@ -6003,6 +6437,7 @@
   "φωσ": "audio/words/φωσ.mp3",
   "φωτοσ": "audio/words/φωτοσ.mp3",
   "χαρισ": "audio/words/χαρισ.mp3",
+  "χαριτι": "audio/words/χαριτι.mp3",
   "χερουβειμ": "audio/words/χερουβειμ.mp3",
   "χι": "audio/words/χι.mp3",
   "χριστον": "audio/words/χριστον.mp3",

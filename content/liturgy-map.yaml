@@ -14,6 +14,10 @@ sections:
   - id: enarxis
     title_pt: "Grande Litania"
     items:
+      - { ref: evlogimeni-i-vasilia, weight: 1 }
+      - { ref: en-irini, weight: 3 }
+      - { ref: iper-irinis-kosmou, weight: 1 }
+      - { ref: antilavou, weight: 5 }
       - { ref: kyrie-eleison, weight: 12 }
       - { ref: amin, weight: 10 }
       - { ref: tis-panagias, weight: 4 }
