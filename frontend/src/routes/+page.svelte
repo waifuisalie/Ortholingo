@@ -8,13 +8,20 @@
 
 	const GLYPHS = {
 		'unit0-alfabeto': 'Α',
-		'unit1-respostas': 'Κ',
+		abertura: 'Δ',
+		antifonas: 'Ψ',
+		leituras: 'Λ',
 		'unit5-grande-entrada': 'Χ',
 		'unit2-credo': 'Σ',
 		'unit3-anafora': 'Ἄ',
-		'unit4-painosso-comunhao': 'Π'
+		'unit4-painosso-comunhao': 'Π',
+		despedida: 'Ω'
 	};
-	const SECTION_PT = { nartex: 'Nártex', nave: 'Nave' };
+	const SECTION_PT = {
+		nartex: 'Nártex',
+		catecumenos: 'Liturgia dos Catecúmenos',
+		fieis: 'Liturgia dos Fiéis'
+	};
 
 	const units = manifest.units.map((u) => ({
 		...u,
@@ -85,8 +92,11 @@
 	<div class="continue arch"><b>Todas as lições concluídas — καλή δύναμη!</b></div>
 {/if}
 
-{#each units as unit}
-	<p class="section-label">{SECTION_PT[unit.section] ?? unit.section} · {unit.title}</p>
+{#each units as unit, ui}
+	{#if ui === 0 || units[ui - 1].section !== unit.section}
+		<h2 class="tier">{SECTION_PT[unit.section] ?? unit.section}</h2>
+	{/if}
+	<p class="section-label">{unit.title}</p>
 	<ul class="path">
 		{#each unit.lessons as l}
 			<li>
@@ -130,9 +140,15 @@
 	.sunday .meta { display: block; color: var(--dim); font-size: 12px; margin-top: 2px; }
 	.continue { display: block; text-decoration: none; color: inherit; margin-bottom: 20px; border-color: var(--gold); }
 	.continue b { font-size: 15px; }
+	.tier {
+		font-size: 13px; letter-spacing: 0.14em; text-transform: uppercase;
+		color: var(--gold); font-weight: 700; margin: 26px 0 2px 2px;
+		padding-top: 14px; border-top: 1px solid var(--line);
+	}
+	.tier:first-of-type { border-top: 0; padding-top: 0; margin-top: 10px; }
 	.section-label {
 		font-size: 11px; letter-spacing: 0.16em; text-transform: uppercase;
-		color: var(--dim); margin: 18px 0 6px 2px;
+		color: var(--dim); margin: 14px 0 6px 2px;
 	}
 	.path { list-style: none; margin: 0; padding: 0; position: relative; }
 	.path::before {

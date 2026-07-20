@@ -1,0 +1,120 @@
+unit:
+  id: leituras
+  title: "O Trisságio e as Leituras"
+  section: catecumenos
+  order: 4
+  intro_pt: >-
+    Cantamos o Hino Trisságio e ouvimos as Escrituras — a Epístola e o
+    Evangelho. Estas são as respostas que cercam a Palavra: a saudação da paz,
+    o chamado à atenção e a glória ao Senhor diante do Evangelho.
+
+items:
+  - id: trisagion
+    kind: phrase
+    greek: "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς."
+    tts: "Άγιος ο Θεός, Άγιος Ισχυρός, Άγιος Αθάνατος, ελέησον ημάς."
+    words:
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "ὁ",         tl: "o" }
+      - { el: "Θεός,",     tl: "Theós," }
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "Ἰσχυρός,",  tl: "Ischirós," }
+      - { el: "Ἅγιος",     tl: "Áyios" }
+      - { el: "Ἀθάνατος,", tl: "Athánatos," }
+      - { el: "ἐλέησον",   tl: "eléison" }
+      - { el: "ἡμᾶς.",     tl: "imás." }
+    pt: "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós."
+    gloss:
+      - { el: "ἅγιος",    pt: "santo" }
+      - { el: "ὁ Θεός",   pt: "Deus" }
+      - { el: "ἰσχυρός",  pt: "forte" }
+      - { el: "ἀθάνατος", pt: "imortal (a- + thánatos, morte)" }
+      - { el: "ἡμᾶς",     pt: "de nós" }
+    context_pt: >-
+      O Hino Trisságio («três vezes santo»), cantado antes das leituras e
+      rezado em toda regra de oração diária. Três títulos, uma só súplica.
+    source: "Devocional, p. 8"
+    tags: [liturgia, hino, oracoes-diarias]
+    voice: athina
+    review: pending
+
+  - id: irini-pasi
+    kind: phrase
+    greek: "Εἰρήνη πᾶσι."
+    tts: "Ειρήνη πάσι."
+    words:
+      - { el: "Εἰρήνη", tl: "Iríni" }
+      - { el: "πᾶσι.",  tl: "pási." }
+    pt: "Paz a todos."
+    gloss:
+      - { el: "εἰρήνη", pt: "paz (de onde vem o nome Irene)" }
+      - { el: "πᾶσι",   pt: "a todos" }
+    context_pt: >-
+      A saudação do sacerdote antes das leituras e em outros momentos. Você a
+      ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, sacerdote, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: ke-to-pnevmati-su
+    kind: phrase
+    greek: "Καὶ τῷ πνεύματί σου."
+    tts: "Και τω πνεύματί σου."
+    words:
+      - { el: "Καὶ",       tl: "Ke" }
+      - { el: "τῷ",        tl: "to" }
+      - { el: "πνεύματί",  tl: "pnevmatí" }
+      - { el: "σου.",      tl: "su." }
+    pt: "E ao teu espírito."
+    gloss:
+      - { el: "καί",     pt: "e" }
+      - { el: "τῷ",      pt: "ao (artigo dativo)" }
+      - { el: "πνεύματι", pt: "espírito" }
+      - { el: "σου",     pt: "teu" }
+    context_pt: >-
+      Quando o sacerdote diz «Εἰρήνη πᾶσι» (Paz a todos), o povo devolve a
+      bênção: «E ao teu espírito». Repare no ευ de «πνεύματί» soando /ev/.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, resposta-do-povo]
+    voice: athina
+    review: pending
+
+  - id: proschomen
+    kind: phrase
+    greek: "Πρόσχωμεν."
+    tts: "Πρόσχωμεν."
+    words:
+      - { el: "Πρόσχωμεν.", tl: "Próschomen." }
+    pt: "Estejamos atentos!"
+    gloss:
+      - { el: "πρόσχωμεν", pt: "prestemos atenção (exortação)" }
+    context_pt: >-
+      O chamado do diácono antes das leituras e dos momentos solenes: a
+      Liturgia pede a nossa atenção total.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: doxa-si-kyrie
+    kind: phrase
+    greek: "Δόξα σοι, Κύριε, δόξα σοι."
+    tts: "Δόξα σοι, Κύριε, δόξα σοι."
+    words:
+      - { el: "Δόξα",   tl: "Dóxa" }
+      - { el: "σοι,",   tl: "si," }
+      - { el: "Κύριε,", tl: "Kírie," }
+      - { el: "δόξα",   tl: "dóxa" }
+      - { el: "σοι.",   tl: "si." }
+    pt: "Glória a Ti, Senhor, glória a Ti."
+    gloss:
+      - { el: "δόξα",  pt: "glória" }
+      - { el: "σοι",   pt: "a ti" }
+    context_pt: >-
+      A aclamação do povo ao Evangelho — dita antes da leitura («Sabedoria!
+      De pé!») e de novo ao fim dela. Recebemos a Palavra com glória.
+    source: "Divina Liturgia (GOA), p. 13"
+    tags: [liturgia, evangelho, resposta-do-povo]
+    voice: athina
+    review: pending

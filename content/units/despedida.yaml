@@ -1,0 +1,41 @@
+unit:
+  id: despedida
+  title: "Bênção Final e Despedida"
+  section: fieis
+  order: 9
+  intro_pt: >-
+    O fim da Liturgia. Recebida a Comunhão e dada a bênção, o povo canta
+    «Bendito seja o nome do Senhor» e parte em paz — levando ao mundo o que
+    recebeu no altar.
+
+items:
+  - id: ii-to-onoma
+    kind: phrase
+    greek: "Εἴη τὸ ὄνομα Κυρίου εὐλογημένον ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος."
+    # tts respelling: accented "Εἴη" gets spell-read (like the αεί case); the
+    # accentless "Ειη" is pronounced normally.
+    tts: "Ειη το όνομα Κυρίου ευλογημένον από του νυν και έως του αιώνος."
+    words:
+      - { el: "Εἴη",          tl: "Íi" }
+      - { el: "τὸ",           tl: "to" }
+      - { el: "ὄνομα",        tl: "ónoma" }
+      - { el: "Κυρίου",       tl: "Kiríu" }
+      - { el: "εὐλογημένον",  tl: "evloyiménon" }
+      - { el: "ἀπὸ",          tl: "apó" }
+      - { el: "τοῦ",          tl: "tu" }
+      - { el: "νῦν",          tl: "nin" }
+      - { el: "καὶ",          tl: "ke" }
+      - { el: "ἕως",          tl: "éos" }
+      - { el: "τοῦ",          tl: "tu" }
+      - { el: "αἰῶνος.",      tl: "eónos." }
+    pt: "Bendito seja o nome do Senhor, desde agora e para sempre."
+    gloss:
+      - { el: "εὐλογημένον", pt: "bendito, abençoado" }
+      - { el: "ἕως",         pt: "até" }
+    context_pt: >-
+      Cantado pelo povo três vezes ao fim da Liturgia, antes da despedida —
+      é o Salmo 112 (LXX): a bênção com que voltamos ao mundo.
+    source: "Divina Liturgia (GOA), p. 33"
+    tags: [despedida, hino, resposta-do-povo]
+    voice: athina
+    review: pending

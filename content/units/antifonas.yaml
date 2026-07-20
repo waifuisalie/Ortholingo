@@ -1,0 +1,89 @@
+unit:
+  id: antifonas
+  title: "Antífonas e Pequena Entrada"
+  section: catecumenos
+  order: 3
+  intro_pt: >-
+    Entre os salmos das antífonas canta-se a pequena doxologia. Depois, o
+    Evangelho é erguido em procissão — a Pequena Entrada — e o diácono
+    proclama «Σοφία· ὀρθοί» («Sabedoria! De pé!»).
+
+items:
+  - id: doxa-patri
+    kind: phrase
+    greek: "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι."
+    tts: "Δόξα Πατρί και Υιώ και Αγίω Πνεύματι."
+    words:
+      - { el: "Δόξα",     tl: "Dóxa" }
+      - { el: "Πατρὶ",    tl: "Patrí" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "Υἱῷ",      tl: "Ió" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "Ἁγίῳ",     tl: "Ayío" }
+      - { el: "Πνεύματι.", tl: "Pnévmati." }
+    pt: "Glória ao Pai e ao Filho e ao Espírito Santo."
+    gloss:
+      - { el: "δόξα",     pt: "glória" }
+      - { el: "Πατρί",    pt: "ao Pai" }
+      - { el: "καί",      pt: "e" }
+      - { el: "Υἱῷ",      pt: "ao Filho" }
+      - { el: "Ἁγίῳ",     pt: "ao Santo" }
+      - { el: "Πνεύματι", pt: "Espírito" }
+    context_pt: >-
+      A pequena doxologia — dita incontáveis vezes na Liturgia e nas orações
+      diárias. Sempre seguida de «Καὶ νῦν…».
+    source: "Devocional, p. 8"
+    tags: [liturgia, doxologia, oracoes-diarias]
+    voice: athina
+    review: pending
+
+  - id: ke-nin
+    kind: phrase
+    greek: "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν."
+    # tts respelling: accented "αεί" makes the TTS voice spell-read the word
+    # aloud ("...me tono"); the accentless form is pronounced normally.
+    tts: "Και νυν και αει και εις τους αιώνας των αιώνων. Αμήν."
+    words:
+      - { el: "Καὶ",      tl: "Ke" }
+      - { el: "νῦν",      tl: "nin" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "ἀεὶ",      tl: "aí" }
+      - { el: "καὶ",      tl: "ke" }
+      - { el: "εἰς",      tl: "is" }
+      - { el: "τοὺς",     tl: "tus" }
+      - { el: "αἰῶνας",   tl: "eónas" }
+      - { el: "τῶν",      tl: "ton" }
+      - { el: "αἰώνων.",  tl: "eónon." }
+      - { el: "Ἀμήν.",    tl: "Amín." }
+    pt: "Agora e sempre e pelos séculos dos séculos. Amém."
+    gloss:
+      - { el: "νῦν",    pt: "agora" }
+      - { el: "ἀεί",    pt: "sempre" }
+      - { el: "εἰς",    pt: "para/até" }
+      - { el: "αἰῶνας", pt: "séculos, eras" }
+    context_pt: >-
+      A segunda metade da doxologia — completa o «Δόξα Πατρί». O αι soa /e/:
+      «eónas». Ouvida em cada ofício, da manhã à noite.
+    source: "Devocional, p. 8"
+    tags: [liturgia, doxologia, oracoes-diarias]
+    voice: athina
+    review: pending
+
+  - id: sofia-orthi
+    kind: phrase
+    greek: "Σοφία· ὀρθοί."
+    tts: "Σοφία. Ορθοί."
+    words:
+      - { el: "Σοφία·", tl: "Sofía;" }
+      - { el: "ὀρθοί.", tl: "orthí." }
+    pt: "Sabedoria! De pé!"
+    gloss:
+      - { el: "σοφία", pt: "sabedoria" }
+      - { el: "ὀρθοί", pt: "de pé, eretos — mesma raiz ὀρθός (reto) de «ortodoxo», a reta glória" }
+    context_pt: >-
+      Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» —
+      levantamo-nos diante da Palavra.
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, entrada, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending

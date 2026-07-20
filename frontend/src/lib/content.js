@@ -1,6 +1,6 @@
 /** Manifest loading and content helpers. */
 
-export const LESSON_SIZE = { nartex: 6, nave: 3 };
+export const LESSON_SIZE = { nartex: 6, catecumenos: 3, fieis: 3 };
 
 export async function loadManifest(fetchFn = fetch) {
 	const res = await fetchFn('/assets/manifest.json');

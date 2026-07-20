@@ -41,47 +41,65 @@
    ]
   },
   {
-   "id": "unit1-respostas",
-   "title": "As respostas do povo",
-   "section": "nave",
+   "id": "abertura",
+   "title": "A Abertura · Bênção e Grande Litania",
+   "section": "catecumenos",
    "order": 2,
-   "intro_pt": "A Divina Liturgia é um diálogo: o sacerdote e o diácono oram, e o povo — você — responde. Estas são as respostas que você dirá já no próximo domingo. Começamos pela mais frequente de todas.",
+   "intro_pt": "A Liturgia começa. O sacerdote bendiz o Reino, e o diácono — de estola erguida, diante do iconostásio — entoa a Grande Litania: uma petição após a outra, cada uma terminando «…oremos ao Senhor». O povo responde «Κύριε, ἐλέησον» e se persigna. Aqui você reconhece a abertura e aprende a responder.",
    "items": [
-    "kyrie-eleison",
+    "evlogimeni-i-vasilia",
     "amin",
-    "ke-to-pnevmati-su",
-    "irini-pasi",
-    "si-kyrie",
-    "paraschu-kyrie",
+    "en-irini",
+    "kyrie-eleison",
+    "iper-irinis-kosmou",
+    "antilavou",
+    "tis-panagias",
+    "si-kyrie"
+   ]
+  },
+  {
+   "id": "antifonas",
+   "title": "Antífonas e Pequena Entrada",
+   "section": "catecumenos",
+   "order": 3,
+   "intro_pt": "Entre os salmos das antífonas canta-se a pequena doxologia. Depois, o Evangelho é erguido em procissão — a Pequena Entrada — e o diácono proclama «Σοφία· ὀρθοί» («Sabedoria! De pé!»).",
+   "items": [
     "doxa-patri",
     "ke-nin",
-    "proschomen",
-    "sofia-orthi",
+    "sofia-orthi"
+   ]
+  },
+  {
+   "id": "leituras",
+   "title": "O Trisságio e as Leituras",
+   "section": "catecumenos",
+   "order": 4,
+   "intro_pt": "Cantamos o Hino Trisságio e ouvimos as Escrituras — a Epístola e o Evangelho. Estas são as respostas que cercam a Palavra: a saudação da paz, o chamado à atenção e a glória ao Senhor diante do Evangelho.",
+   "items": [
     "trisagion",
-    "doxa-si-kyrie",
-    "tis-panagias",
-    "evlogimeni-i-vasilia",
-    "en-irini",
-    "iper-irinis-kosmou",
-    "antilavou"
+    "irini-pasi",
+    "ke-to-pnevmati-su",
+    "proschomen",
+    "doxa-si-kyrie"
    ]
   },
   {
    "id": "unit5-grande-entrada",
    "title": "A Grande Entrada",
-   "section": "nave",
-   "order": 3,
+   "section": "fieis",
+   "order": 5,
    "intro_pt": "O momento em que os dons — o pão e o vinho — são levados em procissão até o altar. O povo canta o Hino Querubínico, e o sacerdote, diante da porta do iconostásio, recorda a todos no Reino. Muitos se persignam. Aqui você aprende a cantar com o coro e a reconhecer o que o sacerdote proclama.",
    "items": [
     "cherubikon",
-    "panton-imon"
+    "panton-imon",
+    "paraschu-kyrie"
    ]
   },
   {
    "id": "unit2-credo",
    "title": "O Credo · Σύμβολον τῆς Πίστεως",
-   "section": "nave",
-   "order": 4,
+   "section": "fieis",
+   "order": 6,
    "intro_pt": "O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará. Traduções conforme o Devocional.",
    "items": [
     "credo-1",
@@ -101,8 +119,8 @@
   {
    "id": "unit3-anafora",
    "title": "A Anáfora · o diálogo sagrado",
-   "section": "nave",
-   "order": 5,
+   "section": "fieis",
+   "order": 7,
    "intro_pt": "O coração da Liturgia. Aqui você aprende os dois lados do diálogo: o que o sacerdote e o diácono proclamam (voz masculina) e o que o povo — você — responde (voz feminina). Ouvir é metade da participação.",
    "items": [
     "anafora-stomen",
@@ -125,8 +143,8 @@
   {
    "id": "unit4-painosso-comunhao",
    "title": "Pai Nosso e Comunhão",
-   "section": "nave",
-   "order": 6,
+   "section": "fieis",
+   "order": 8,
    "intro_pt": "A oração que o próprio Cristo ensinou — na língua em que os Evangelhos a registraram — e as palavras que cercam o cálice. Com esta unidade, você acompanha a Liturgia do início à Comunhão.",
    "items": [
     "pater-1",
@@ -139,7 +157,16 @@
     "is-agios",
     "meta-fovou",
     "soson-o-theos",
-    "idomen",
+    "idomen"
+   ]
+  },
+  {
+   "id": "despedida",
+   "title": "Bênção Final e Despedida",
+   "section": "fieis",
+   "order": 9,
+   "intro_pt": "O fim da Liturgia. Recebida a Comunhão e dada a bênção, o povo canta «Bendito seja o nome do Senhor» e parte em paz — levando ao mundo o que recebeu no altar.",
+   "items": [
     "ii-to-onoma"
    ]
   }
@@ -846,8 +873,231 @@
     "ωμεγα"
    ]
   },
+  "evlogimeni-i-vasilia": {
+   "unit": "abertura",
+   "kind": "phrase",
+   "greek": "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+   "words": [
+    {
+     "el": "Εὐλογημένη",
+     "tl": "Evloyiméni"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i"
+    },
+    {
+     "el": "βασιλεία",
+     "tl": "vasilía"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Υἱοῦ",
+     "tl": "Iú"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu"
+    },
+    {
+     "el": "Πνεύματος,",
+     "tl": "Pnévmatos,"
+    },
+    {
+     "el": "νῦν",
+     "tl": "nin"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "ἀεὶ",
+     "tl": "aí"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is"
+    },
+    {
+     "el": "τοὺς",
+     "tl": "tus"
+    },
+    {
+     "el": "αἰῶνας",
+     "tl": "eónas"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "αἰώνων.",
+     "tl": "eónon."
+    }
+   ],
+   "pt": "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos.",
+   "gloss": [
+    {
+     "el": "εὐλογημένη",
+     "pt": "bendito, abençoado"
+    },
+    {
+     "el": "βασιλεία",
+     "pt": "reino"
+    }
+   ],
+   "context_pt": "As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já conhece — e aqui é «Υἱοῦ» (do Filho, genitivo), não «Υἱῷ».",
+   "source": "Divina Liturgia (GOA), p. 1",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "5ec4795e7d4063cf",
+   "wordkeys": [
+    "ευλογημενη",
+    "η",
+    "βασιλεια",
+    "του",
+    "πατροσ",
+    "και",
+    "του",
+    "υιου",
+    "και",
+    "του",
+    "αγιου",
+    "πνευματοσ",
+    "νυν",
+    "και",
+    "αει",
+    "και",
+    "εισ",
+    "τουσ",
+    "αιωνασ",
+    "των",
+    "αιωνων"
+   ]
+  },
+  "amin": {
+   "unit": "abertura",
+   "kind": "phrase",
+   "greek": "Ἀμήν.",
+   "words": [
+    {
+     "el": "Ἀμήν.",
+     "tl": "Amín."
+    }
+   ],
+   "pt": "Amém.",
+   "gloss": [
+    {
+     "el": "Ἀμήν",
+     "pt": "assim seja (do hebraico)"
+    }
+   ],
+   "context_pt": "O selo de toda oração. Em grego soa «Amín» — com i. O povo o diz ao fim de cada doxologia do sacerdote.",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "b7dac6e08d1b145c",
+   "wordkeys": [
+    "αμην"
+   ]
+  },
+  "en-irini": {
+   "unit": "abertura",
+   "kind": "phrase",
+   "greek": "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.",
+   "words": [
+    {
+     "el": "Ἐν",
+     "tl": "En"
+    },
+    {
+     "el": "εἰρήνῃ",
+     "tl": "iríni"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "δεηθῶμεν.",
+     "tl": "deithómen."
+    }
+   ],
+   "pt": "Em paz, oremos ao Senhor.",
+   "gloss": [
+    {
+     "el": "ἐν εἰρήνῃ",
+     "pt": "em paz"
+    },
+    {
+     "el": "δεηθῶμεν",
+     "pt": "oremos, roguemos"
+    }
+   ],
+   "context_pt": "A primeira petição da Grande Litania — a «Litania da Paz» (Εἰρηνικά), que leva o nome destas palavras. O diácono a proclama de pé, diante do iconostásio, erguendo a estola; o povo responde «Κύριε, ἐλέησον». Toda petição termina igual: «…τοῦ Κυρίου δεηθῶμεν».",
+   "source": "Divina Liturgia (GOA), p. 1",
+   "tags": [
+    "liturgia",
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "a460667656b6aa08",
+   "wordkeys": [
+    "εν",
+    "ειρηνη",
+    "του",
+    "κυριου",
+    "δεηθωμεν"
+   ]
+  },
   "kyrie-eleison": {
-   "unit": "unit1-respostas",
+   "unit": "abertura",
    "kind": "phrase",
    "greek": "Κύριε, ἐλέησον.",
    "words": [
@@ -886,467 +1136,170 @@
     "ελεησον"
    ]
   },
-  "amin": {
-   "unit": "unit1-respostas",
+  "iper-irinis-kosmou": {
+   "unit": "abertura",
    "kind": "phrase",
-   "greek": "Ἀμήν.",
+   "greek": "Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως τοῦ Κυρίου δεηθῶμεν.",
    "words": [
     {
-     "el": "Ἀμήν.",
-     "tl": "Amín."
-    }
-   ],
-   "pt": "Amém.",
-   "gloss": [
-    {
-     "el": "Ἀμήν",
-     "pt": "assim seja (do hebraico)"
-    }
-   ],
-   "context_pt": "O selo de toda oração. Em grego soa «Amín» — com i. O povo o diz ao fim de cada doxologia do sacerdote.",
-   "source": "Devocional, p. 8",
-   "tags": [
-    "liturgia",
-    "resposta-do-povo"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "b7dac6e08d1b145c",
-   "wordkeys": [
-    "αμην"
-   ]
-  },
-  "ke-to-pnevmati-su": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Καὶ τῷ πνεύματί σου.",
-   "words": [
-    {
-     "el": "Καὶ",
-     "tl": "Ke"
+     "el": "Ὑπὲρ",
+     "tl": "Ipér"
     },
     {
-     "el": "τῷ",
-     "tl": "to"
+     "el": "τῆς",
+     "tl": "tis"
     },
     {
-     "el": "πνεύματί",
-     "tl": "pnevmatí"
+     "el": "εἰρήνης",
+     "tl": "irínis"
     },
     {
-     "el": "σου.",
-     "tl": "su."
-    }
-   ],
-   "pt": "E ao teu espírito.",
-   "gloss": [
-    {
-     "el": "καί",
-     "pt": "e"
+     "el": "τοῦ",
+     "tl": "tu"
     },
     {
-     "el": "τῷ",
-     "pt": "ao (artigo dativo)"
+     "el": "σύμπαντος",
+     "tl": "símbandos"
     },
     {
-     "el": "πνεύματι",
-     "pt": "espírito"
+     "el": "κόσμου,",
+     "tl": "kósmu,"
     },
     {
-     "el": "σου",
-     "pt": "teu"
-    }
-   ],
-   "context_pt": "Quando o sacerdote diz «Εἰρήνη πᾶσι» (Paz a todos), o povo devolve a bênção: «E ao teu espírito». Repare no ευ de «πνεύματί» soando /ev/.",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "resposta-do-povo"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "357bde2acb496e76",
-   "wordkeys": [
-    "και",
-    "τω",
-    "πνευματι",
-    "σου"
-   ]
-  },
-  "irini-pasi": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Εἰρήνη πᾶσι.",
-   "words": [
-    {
-     "el": "Εἰρήνη",
-     "tl": "Iríni"
-    },
-    {
-     "el": "πᾶσι.",
-     "tl": "pási."
-    }
-   ],
-   "pt": "Paz a todos.",
-   "gloss": [
-    {
-     "el": "εἰρήνη",
-     "pt": "paz (de onde vem o nome Irene)"
-    },
-    {
-     "el": "πᾶσι",
-     "pt": "a todos"
-    }
-   ],
-   "context_pt": "A saudação do sacerdote antes das leituras e em outros momentos. Você a ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "sacerdote",
-    "para-reconhecer"
-   ],
-   "voice": "nestoras",
-   "review": "pending",
-   "hash": "3f8988134a9aa33c",
-   "wordkeys": [
-    "ειρηνη",
-    "πασι"
-   ]
-  },
-  "si-kyrie": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Σοί, Κύριε.",
-   "words": [
-    {
-     "el": "Σοί,",
-     "tl": "Si,"
-    },
-    {
-     "el": "Κύριε.",
-     "tl": "Kírie."
-    }
-   ],
-   "pt": "A Ti, Senhor.",
-   "gloss": [
-    {
-     "el": "σοί",
-     "pt": "a ti (dativo)"
-    },
-    {
-     "el": "Κύριε",
-     "pt": "Senhor"
-    }
-   ],
-   "context_pt": "Resposta do povo quando o diácono conclui «…entreguemos toda a nossa vida a Cristo Deus»: entregamos «a Ti, Senhor».",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "litania",
-    "resposta-do-povo"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "fbbdaa8e0431f2ab",
-   "wordkeys": [
-    "σοι",
-    "κυριε"
-   ]
-  },
-  "paraschu-kyrie": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Παράσχου, Κύριε.",
-   "words": [
-    {
-     "el": "Παράσχου,",
-     "tl": "Paráschu,"
-    },
-    {
-     "el": "Κύριε.",
-     "tl": "Kírie."
-    }
-   ],
-   "pt": "Concede, Senhor.",
-   "gloss": [
-    {
-     "el": "παράσχου",
-     "pt": "concede (imperativo)"
-    },
-    {
-     "el": "Κύριε",
-     "pt": "Senhor"
-    }
-   ],
-   "context_pt": "Resposta às petições da litania da súplica («Um dia todo perfeito, santo, pacífico e sem pecado…»). O ου soa /u/: «Paráschu».",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "litania",
-    "resposta-do-povo"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "a0079d9665bf7c7b",
-   "wordkeys": [
-    "παρασχου",
-    "κυριε"
-   ]
-  },
-  "doxa-patri": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι.",
-   "words": [
-    {
-     "el": "Δόξα",
-     "tl": "Dóxa"
-    },
-    {
-     "el": "Πατρὶ",
-     "tl": "Patrí"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "Υἱῷ",
-     "tl": "Ió"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "Ἁγίῳ",
-     "tl": "Ayío"
-    },
-    {
-     "el": "Πνεύματι.",
-     "tl": "Pnévmati."
-    }
-   ],
-   "pt": "Glória ao Pai e ao Filho e ao Espírito Santo.",
-   "gloss": [
-    {
-     "el": "δόξα",
-     "pt": "glória"
-    },
-    {
-     "el": "Πατρί",
-     "pt": "ao Pai"
-    },
-    {
-     "el": "καί",
-     "pt": "e"
-    },
-    {
-     "el": "Υἱῷ",
-     "pt": "ao Filho"
-    },
-    {
-     "el": "Ἁγίῳ",
-     "pt": "ao Santo"
-    },
-    {
-     "el": "Πνεύματι",
-     "pt": "Espírito"
-    }
-   ],
-   "context_pt": "A pequena doxologia — dita incontáveis vezes na Liturgia e nas orações diárias. Sempre seguida de «Καὶ νῦν…».",
-   "source": "Devocional, p. 8",
-   "tags": [
-    "liturgia",
-    "doxologia",
-    "oracoes-diarias"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "f9520d3330d19a0e",
-   "wordkeys": [
-    "δοξα",
-    "πατρι",
-    "και",
-    "υιω",
-    "και",
-    "αγιω",
-    "πνευματι"
-   ]
-  },
-  "ke-nin": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
-   "words": [
-    {
-     "el": "Καὶ",
-     "tl": "Ke"
-    },
-    {
-     "el": "νῦν",
-     "tl": "nin"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "ἀεὶ",
-     "tl": "aí"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "εἰς",
-     "tl": "is"
-    },
-    {
-     "el": "τοὺς",
-     "tl": "tus"
-    },
-    {
-     "el": "αἰῶνας",
-     "tl": "eónas"
+     "el": "εὐσταθείας",
+     "tl": "efstathías"
     },
     {
      "el": "τῶν",
      "tl": "ton"
     },
     {
-     "el": "αἰώνων.",
-     "tl": "eónon."
+     "el": "ἁγίων",
+     "tl": "ayíon"
     },
     {
-     "el": "Ἀμήν.",
-     "tl": "Amín."
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú"
+    },
+    {
+     "el": "Ἐκκλησιῶν",
+     "tl": "Eklisión"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon"
+    },
+    {
+     "el": "ἑνώσεως",
+     "tl": "enóseos"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu"
+    },
+    {
+     "el": "δεηθῶμεν.",
+     "tl": "deithómen."
     }
    ],
-   "pt": "Agora e sempre e pelos séculos dos séculos. Amém.",
+   "pt": "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor.",
    "gloss": [
     {
-     "el": "νῦν",
-     "pt": "agora"
+     "el": "σύμπαντος κόσμου",
+     "pt": "do mundo inteiro"
     },
     {
-     "el": "ἀεί",
-     "pt": "sempre"
+     "el": "ἑνώσεως",
+     "pt": "união"
     },
     {
-     "el": "εἰς",
-     "pt": "para/até"
-    },
-    {
-     "el": "αἰῶνας",
-     "pt": "séculos, eras"
+     "el": "εὐσταθείας",
+     "pt": "estabilidade, firmeza"
     }
    ],
-   "context_pt": "A segunda metade da doxologia — completa o «Δόξα Πατρί». O αι soa /e/: «eónas». Ouvida em cada ofício, da manhã à noite.",
-   "source": "Devocional, p. 8",
+   "context_pt": "Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]… τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a paz do mundo e a união de todos.",
+   "source": "Divina Liturgia (GOA), p. 2",
    "tags": [
     "liturgia",
-    "doxologia",
-    "oracoes-diarias"
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
    ],
-   "voice": "athina",
+   "voice": "nestoras",
    "review": "pending",
-   "hash": "9510b5a0f5ee54e4",
+   "hash": "2f23aa4b843a7d28",
    "wordkeys": [
-    "και",
-    "νυν",
-    "και",
-    "αει",
-    "και",
-    "εισ",
-    "τουσ",
-    "αιωνασ",
+    "υπερ",
+    "τησ",
+    "ειρηνησ",
+    "του",
+    "συμπαντοσ",
+    "κοσμου",
+    "ευσταθειασ",
     "των",
-    "αιωνων",
-    "αμην"
+    "αγιων",
+    "του",
+    "θεου",
+    "εκκλησιων",
+    "και",
+    "τησ",
+    "των",
+    "παντων",
+    "ενωσεωσ",
+    "του",
+    "κυριου",
+    "δεηθωμεν"
    ]
   },
-  "proschomen": {
-   "unit": "unit1-respostas",
+  "antilavou": {
+   "unit": "abertura",
    "kind": "phrase",
-   "greek": "Πρόσχωμεν.",
+   "greek": "Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι.",
    "words": [
     {
-     "el": "Πρόσχωμεν.",
-     "tl": "Próschomen."
-    }
-   ],
-   "pt": "Estejamos atentos!",
-   "gloss": [
-    {
-     "el": "πρόσχωμεν",
-     "pt": "prestemos atenção (exortação)"
-    }
-   ],
-   "context_pt": "O chamado do diácono antes das leituras e dos momentos solenes: a Liturgia pede a nossa atenção total.",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "diacono",
-    "para-reconhecer"
-   ],
-   "voice": "nestoras",
-   "review": "pending",
-   "hash": "3ee6de8d3a421126",
-   "wordkeys": [
-    "προσχωμεν"
-   ]
-  },
-  "sofia-orthi": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Σοφία· ὀρθοί.",
-   "words": [
-    {
-     "el": "Σοφία·",
-     "tl": "Sofía;"
+     "el": "Ἀντιλαβοῦ,",
+     "tl": "Andilavú,"
     },
     {
-     "el": "ὀρθοί.",
-     "tl": "orthí."
-    }
-   ],
-   "pt": "Sabedoria! De pé!",
-   "gloss": [
-    {
-     "el": "σοφία",
-     "pt": "sabedoria"
+     "el": "σῶσον,",
+     "tl": "sóson,"
     },
     {
-     "el": "ὀρθοί",
-     "pt": "de pé, eretos — mesma raiz ὀρθός (reto) de «ortodoxo», a reta glória"
-    }
-   ],
-   "context_pt": "Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» — levantamo-nos diante da Palavra.",
-   "source": "Divina Liturgia de S. João Crisóstomo",
-   "tags": [
-    "liturgia",
-    "entrada",
-    "diacono",
-    "para-reconhecer"
-   ],
-   "voice": "nestoras",
-   "review": "pending",
-   "hash": "ca22a80735a416d6",
-   "wordkeys": [
-    "σοφια",
-    "ορθοι"
-   ]
-  },
-  "trisagion": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς.",
-   "words": [
+     "el": "ἐλέησον",
+     "tl": "eléison"
+    },
     {
-     "el": "Ἅγιος",
-     "tl": "Áyios"
+     "el": "καὶ",
+     "tl": "ke"
+    },
+    {
+     "el": "διαφύλαξον",
+     "tl": "diafílaxon"
+    },
+    {
+     "el": "ἡμᾶς,",
+     "tl": "imás,"
     },
     {
      "el": "ὁ",
@@ -1357,132 +1310,61 @@
      "tl": "Theós,"
     },
     {
-     "el": "Ἅγιος",
-     "tl": "Áyios"
+     "el": "τῇ",
+     "tl": "ti"
     },
     {
-     "el": "Ἰσχυρός,",
-     "tl": "Ischirós,"
+     "el": "σῇ",
+     "tl": "si"
     },
     {
-     "el": "Ἅγιος",
-     "tl": "Áyios"
-    },
-    {
-     "el": "Ἀθάνατος,",
-     "tl": "Athánatos,"
-    },
-    {
-     "el": "ἐλέησον",
-     "tl": "eléison"
-    },
-    {
-     "el": "ἡμᾶς.",
-     "tl": "imás."
+     "el": "χάριτι.",
+     "tl": "cháriti."
     }
    ],
-   "pt": "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós.",
+   "pt": "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça.",
    "gloss": [
     {
-     "el": "ἅγιος",
-     "pt": "santo"
+     "el": "ἀντιλαβοῦ",
+     "pt": "ampara, socorre"
     },
     {
-     "el": "ὁ Θεός",
-     "pt": "Deus"
+     "el": "διαφύλαξον",
+     "pt": "guarda, protege"
     },
     {
-     "el": "ἰσχυρός",
-     "pt": "forte"
-    },
-    {
-     "el": "ἀθάνατος",
-     "pt": "imortal (a- + thánatos, morte)"
-    },
-    {
-     "el": "ἡμᾶς",
-     "pt": "de nós"
+     "el": "τῇ σῇ χάριτι",
+     "pt": "pela tua graça"
     }
    ],
-   "context_pt": "O Hino Trisságio («três vezes santo»), cantado antes das leituras e rezado em toda regra de oração diária. Três títulos, uma só súplica.",
-   "source": "Devocional, p. 8",
+   "context_pt": "O refrão que fecha as petições de cada litania, logo antes do «Τῆς παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no «ἐλέησον» — a mesma palavra de «Κύριε, ἐλέησον».",
+   "source": "Divina Liturgia (GOA), p. 3",
    "tags": [
     "liturgia",
-    "hino",
-    "oracoes-diarias"
+    "enarxis",
+    "litania",
+    "diacono",
+    "para-reconhecer"
    ],
-   "voice": "athina",
+   "voice": "nestoras",
    "review": "pending",
-   "hash": "ab0261515652d5b7",
+   "hash": "d698a4054c375cd6",
    "wordkeys": [
-    "αγιοσ",
+    "αντιλαβου",
+    "σωσον",
+    "ελεησον",
+    "και",
+    "διαφυλαξον",
+    "ημασ",
     "ο",
     "θεοσ",
-    "αγιοσ",
-    "ισχυροσ",
-    "αγιοσ",
-    "αθανατοσ",
-    "ελεησον",
-    "ημασ"
-   ]
-  },
-  "doxa-si-kyrie": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Δόξα σοι, Κύριε, δόξα σοι.",
-   "words": [
-    {
-     "el": "Δόξα",
-     "tl": "Dóxa"
-    },
-    {
-     "el": "σοι,",
-     "tl": "si,"
-    },
-    {
-     "el": "Κύριε,",
-     "tl": "Kírie,"
-    },
-    {
-     "el": "δόξα",
-     "tl": "dóxa"
-    },
-    {
-     "el": "σοι.",
-     "tl": "si."
-    }
-   ],
-   "pt": "Glória a Ti, Senhor, glória a Ti.",
-   "gloss": [
-    {
-     "el": "δόξα",
-     "pt": "glória"
-    },
-    {
-     "el": "σοι",
-     "pt": "a ti"
-    }
-   ],
-   "context_pt": "A aclamação do povo ao Evangelho — dita antes da leitura («Sabedoria! De pé!») e de novo ao fim dela. Recebemos a Palavra com glória.",
-   "source": "Divina Liturgia (GOA), p. 13",
-   "tags": [
-    "liturgia",
-    "evangelho",
-    "resposta-do-povo"
-   ],
-   "voice": "athina",
-   "review": "pending",
-   "hash": "6628104ba2ae4e10",
-   "wordkeys": [
-    "δοξα",
-    "σοι",
-    "κυριε",
-    "δοξα",
-    "σοι"
+    "τη",
+    "ση",
+    "χαριτι"
    ]
   },
   "tis-panagias": {
-   "unit": "unit1-respostas",
+   "unit": "abertura",
    "kind": "phrase",
    "greek": "Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα.",
    "words": [
@@ -1656,58 +1538,135 @@
     "παραθωμεθα"
    ]
   },
-  "evlogimeni-i-vasilia": {
-   "unit": "unit1-respostas",
+  "si-kyrie": {
+   "unit": "abertura",
    "kind": "phrase",
-   "greek": "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων.",
+   "greek": "Σοί, Κύριε.",
    "words": [
     {
-     "el": "Εὐλογημένη",
-     "tl": "Evloyiméni"
+     "el": "Σοί,",
+     "tl": "Si,"
     },
     {
-     "el": "ἡ",
-     "tl": "i"
+     "el": "Κύριε.",
+     "tl": "Kírie."
+    }
+   ],
+   "pt": "A Ti, Senhor.",
+   "gloss": [
+    {
+     "el": "σοί",
+     "pt": "a ti (dativo)"
     },
     {
-     "el": "βασιλεία",
-     "tl": "vasilía"
+     "el": "Κύριε",
+     "pt": "Senhor"
+    }
+   ],
+   "context_pt": "Resposta do povo quando o diácono conclui «…entreguemos toda a nossa vida a Cristo Deus»: entregamos «a Ti, Senhor».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "litania",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "fbbdaa8e0431f2ab",
+   "wordkeys": [
+    "σοι",
+    "κυριε"
+   ]
+  },
+  "doxa-patri": {
+   "unit": "antifonas",
+   "kind": "phrase",
+   "greek": "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι.",
+   "words": [
+    {
+     "el": "Δόξα",
+     "tl": "Dóxa"
     },
     {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Πατρὸς",
-     "tl": "Patrós"
+     "el": "Πατρὶ",
+     "tl": "Patrí"
     },
     {
      "el": "καὶ",
      "tl": "ke"
     },
     {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Υἱοῦ",
-     "tl": "Iú"
+     "el": "Υἱῷ",
+     "tl": "Ió"
     },
     {
      "el": "καὶ",
      "tl": "ke"
     },
     {
-     "el": "τοῦ",
-     "tl": "tu"
+     "el": "Ἁγίῳ",
+     "tl": "Ayío"
     },
     {
-     "el": "ἁγίου",
-     "tl": "ayíu"
+     "el": "Πνεύματι.",
+     "tl": "Pnévmati."
+    }
+   ],
+   "pt": "Glória ao Pai e ao Filho e ao Espírito Santo.",
+   "gloss": [
+    {
+     "el": "δόξα",
+     "pt": "glória"
     },
     {
-     "el": "Πνεύματος,",
-     "tl": "Pnévmatos,"
+     "el": "Πατρί",
+     "pt": "ao Pai"
+    },
+    {
+     "el": "καί",
+     "pt": "e"
+    },
+    {
+     "el": "Υἱῷ",
+     "pt": "ao Filho"
+    },
+    {
+     "el": "Ἁγίῳ",
+     "pt": "ao Santo"
+    },
+    {
+     "el": "Πνεύματι",
+     "pt": "Espírito"
+    }
+   ],
+   "context_pt": "A pequena doxologia — dita incontáveis vezes na Liturgia e nas orações diárias. Sempre seguida de «Καὶ νῦν…».",
+   "source": "Devocional, p. 8",
+   "tags": [
+    "liturgia",
+    "doxologia",
+    "oracoes-diarias"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "f9520d3330d19a0e",
+   "wordkeys": [
+    "δοξα",
+    "πατρι",
+    "και",
+    "υιω",
+    "και",
+    "αγιω",
+    "πνευματι"
+   ]
+  },
+  "ke-nin": {
+   "unit": "antifonas",
+   "kind": "phrase",
+   "greek": "Καὶ νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων. Ἀμήν.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
     },
     {
      "el": "νῦν",
@@ -1744,43 +1703,43 @@
     {
      "el": "αἰώνων.",
      "tl": "eónon."
-    }
-   ],
-   "pt": "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos.",
-   "gloss": [
-    {
-     "el": "εὐλογημένη",
-     "pt": "bendito, abençoado"
     },
     {
-     "el": "βασιλεία",
-     "pt": "reino"
+     "el": "Ἀμήν.",
+     "tl": "Amín."
     }
    ],
-   "context_pt": "As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já conhece — e aqui é «Υἱοῦ» (do Filho, genitivo), não «Υἱῷ».",
-   "source": "Divina Liturgia (GOA), p. 1",
+   "pt": "Agora e sempre e pelos séculos dos séculos. Amém.",
+   "gloss": [
+    {
+     "el": "νῦν",
+     "pt": "agora"
+    },
+    {
+     "el": "ἀεί",
+     "pt": "sempre"
+    },
+    {
+     "el": "εἰς",
+     "pt": "para/até"
+    },
+    {
+     "el": "αἰῶνας",
+     "pt": "séculos, eras"
+    }
+   ],
+   "context_pt": "A segunda metade da doxologia — completa o «Δόξα Πατρί». O αι soa /e/: «eónas». Ouvida em cada ofício, da manhã à noite.",
+   "source": "Devocional, p. 8",
    "tags": [
     "liturgia",
-    "enarxis",
-    "sacerdote",
-    "para-reconhecer"
+    "doxologia",
+    "oracoes-diarias"
    ],
-   "voice": "nestoras",
+   "voice": "athina",
    "review": "pending",
-   "hash": "5ec4795e7d4063cf",
+   "hash": "9510b5a0f5ee54e4",
    "wordkeys": [
-    "ευλογημενη",
-    "η",
-    "βασιλεια",
-    "του",
-    "πατροσ",
     "και",
-    "του",
-    "υιου",
-    "και",
-    "του",
-    "αγιου",
-    "πνευματοσ",
     "νυν",
     "και",
     "αει",
@@ -1789,230 +1748,59 @@
     "τουσ",
     "αιωνασ",
     "των",
-    "αιωνων"
+    "αιωνων",
+    "αμην"
    ]
   },
-  "en-irini": {
-   "unit": "unit1-respostas",
+  "sofia-orthi": {
+   "unit": "antifonas",
    "kind": "phrase",
-   "greek": "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν.",
+   "greek": "Σοφία· ὀρθοί.",
    "words": [
     {
-     "el": "Ἐν",
-     "tl": "En"
+     "el": "Σοφία·",
+     "tl": "Sofía;"
     },
     {
-     "el": "εἰρήνῃ",
-     "tl": "iríni"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Κυρίου",
-     "tl": "Kiríu"
-    },
-    {
-     "el": "δεηθῶμεν.",
-     "tl": "deithómen."
+     "el": "ὀρθοί.",
+     "tl": "orthí."
     }
    ],
-   "pt": "Em paz, oremos ao Senhor.",
+   "pt": "Sabedoria! De pé!",
    "gloss": [
     {
-     "el": "ἐν εἰρήνῃ",
-     "pt": "em paz"
+     "el": "σοφία",
+     "pt": "sabedoria"
     },
     {
-     "el": "δεηθῶμεν",
-     "pt": "oremos, roguemos"
+     "el": "ὀρθοί",
+     "pt": "de pé, eretos — mesma raiz ὀρθός (reto) de «ortodoxo», a reta glória"
     }
    ],
-   "context_pt": "A primeira petição da Grande Litania — a «Litania da Paz» (Εἰρηνικά), que leva o nome destas palavras. O diácono a proclama de pé, diante do iconostásio, erguendo a estola; o povo responde «Κύριε, ἐλέησον». Toda petição termina igual: «…τοῦ Κυρίου δεηθῶμεν».",
-   "source": "Divina Liturgia (GOA), p. 1",
+   "context_pt": "Na Pequena Entrada, com o Evangelho erguido: «Sabedoria! De pé!» — levantamo-nos diante da Palavra.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
    "tags": [
     "liturgia",
-    "enarxis",
-    "litania",
+    "entrada",
     "diacono",
     "para-reconhecer"
    ],
    "voice": "nestoras",
    "review": "pending",
-   "hash": "a460667656b6aa08",
+   "hash": "ca22a80735a416d6",
    "wordkeys": [
-    "εν",
-    "ειρηνη",
-    "του",
-    "κυριου",
-    "δεηθωμεν"
+    "σοφια",
+    "ορθοι"
    ]
   },
-  "iper-irinis-kosmou": {
-   "unit": "unit1-respostas",
+  "trisagion": {
+   "unit": "leituras",
    "kind": "phrase",
-   "greek": "Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως τοῦ Κυρίου δεηθῶμεν.",
+   "greek": "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς.",
    "words": [
     {
-     "el": "Ὑπὲρ",
-     "tl": "Ipér"
-    },
-    {
-     "el": "τῆς",
-     "tl": "tis"
-    },
-    {
-     "el": "εἰρήνης",
-     "tl": "irínis"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "σύμπαντος",
-     "tl": "símbandos"
-    },
-    {
-     "el": "κόσμου,",
-     "tl": "kósmu,"
-    },
-    {
-     "el": "εὐσταθείας",
-     "tl": "efstathías"
-    },
-    {
-     "el": "τῶν",
-     "tl": "ton"
-    },
-    {
-     "el": "ἁγίων",
-     "tl": "ayíon"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Θεοῦ",
-     "tl": "Theú"
-    },
-    {
-     "el": "Ἐκκλησιῶν",
-     "tl": "Eklisión"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "τῆς",
-     "tl": "tis"
-    },
-    {
-     "el": "τῶν",
-     "tl": "ton"
-    },
-    {
-     "el": "πάντων",
-     "tl": "pándon"
-    },
-    {
-     "el": "ἑνώσεως",
-     "tl": "enóseos"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Κυρίου",
-     "tl": "Kiríu"
-    },
-    {
-     "el": "δεηθῶμεν.",
-     "tl": "deithómen."
-    }
-   ],
-   "pt": "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor.",
-   "gloss": [
-    {
-     "el": "σύμπαντος κόσμου",
-     "pt": "do mundo inteiro"
-    },
-    {
-     "el": "ἑνώσεως",
-     "pt": "união"
-    },
-    {
-     "el": "εὐσταθείας",
-     "pt": "estabilidade, firmeza"
-    }
-   ],
-   "context_pt": "Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]… τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a paz do mundo e a união de todos.",
-   "source": "Divina Liturgia (GOA), p. 2",
-   "tags": [
-    "liturgia",
-    "enarxis",
-    "litania",
-    "diacono",
-    "para-reconhecer"
-   ],
-   "voice": "nestoras",
-   "review": "pending",
-   "hash": "2f23aa4b843a7d28",
-   "wordkeys": [
-    "υπερ",
-    "τησ",
-    "ειρηνησ",
-    "του",
-    "συμπαντοσ",
-    "κοσμου",
-    "ευσταθειασ",
-    "των",
-    "αγιων",
-    "του",
-    "θεου",
-    "εκκλησιων",
-    "και",
-    "τησ",
-    "των",
-    "παντων",
-    "ενωσεωσ",
-    "του",
-    "κυριου",
-    "δεηθωμεν"
-   ]
-  },
-  "antilavou": {
-   "unit": "unit1-respostas",
-   "kind": "phrase",
-   "greek": "Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι.",
-   "words": [
-    {
-     "el": "Ἀντιλαβοῦ,",
-     "tl": "Andilavú,"
-    },
-    {
-     "el": "σῶσον,",
-     "tl": "sóson,"
-    },
-    {
-     "el": "ἐλέησον",
-     "tl": "eléison"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "διαφύλαξον",
-     "tl": "diafílaxon"
-    },
-    {
-     "el": "ἡμᾶς,",
-     "tl": "imás,"
+     "el": "Ἅγιος",
+     "tl": "Áyios"
     },
     {
      "el": "ὁ",
@@ -2023,57 +1811,256 @@
      "tl": "Theós,"
     },
     {
-     "el": "τῇ",
-     "tl": "ti"
+     "el": "Ἅγιος",
+     "tl": "Áyios"
     },
     {
-     "el": "σῇ",
-     "tl": "si"
+     "el": "Ἰσχυρός,",
+     "tl": "Ischirós,"
     },
     {
-     "el": "χάριτι.",
-     "tl": "cháriti."
+     "el": "Ἅγιος",
+     "tl": "Áyios"
+    },
+    {
+     "el": "Ἀθάνατος,",
+     "tl": "Athánatos,"
+    },
+    {
+     "el": "ἐλέησον",
+     "tl": "eléison"
+    },
+    {
+     "el": "ἡμᾶς.",
+     "tl": "imás."
     }
    ],
-   "pt": "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça.",
+   "pt": "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós.",
    "gloss": [
     {
-     "el": "ἀντιλαβοῦ",
-     "pt": "ampara, socorre"
+     "el": "ἅγιος",
+     "pt": "santo"
     },
     {
-     "el": "διαφύλαξον",
-     "pt": "guarda, protege"
+     "el": "ὁ Θεός",
+     "pt": "Deus"
     },
     {
-     "el": "τῇ σῇ χάριτι",
-     "pt": "pela tua graça"
+     "el": "ἰσχυρός",
+     "pt": "forte"
+    },
+    {
+     "el": "ἀθάνατος",
+     "pt": "imortal (a- + thánatos, morte)"
+    },
+    {
+     "el": "ἡμᾶς",
+     "pt": "de nós"
     }
    ],
-   "context_pt": "O refrão que fecha as petições de cada litania, logo antes do «Τῆς παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no «ἐλέησον» — a mesma palavra de «Κύριε, ἐλέησον».",
-   "source": "Divina Liturgia (GOA), p. 3",
+   "context_pt": "O Hino Trisságio («três vezes santo»), cantado antes das leituras e rezado em toda regra de oração diária. Três títulos, uma só súplica.",
+   "source": "Devocional, p. 8",
    "tags": [
     "liturgia",
-    "enarxis",
-    "litania",
+    "hino",
+    "oracoes-diarias"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "ab0261515652d5b7",
+   "wordkeys": [
+    "αγιοσ",
+    "ο",
+    "θεοσ",
+    "αγιοσ",
+    "ισχυροσ",
+    "αγιοσ",
+    "αθανατοσ",
+    "ελεησον",
+    "ημασ"
+   ]
+  },
+  "irini-pasi": {
+   "unit": "leituras",
+   "kind": "phrase",
+   "greek": "Εἰρήνη πᾶσι.",
+   "words": [
+    {
+     "el": "Εἰρήνη",
+     "tl": "Iríni"
+    },
+    {
+     "el": "πᾶσι.",
+     "tl": "pási."
+    }
+   ],
+   "pt": "Paz a todos.",
+   "gloss": [
+    {
+     "el": "εἰρήνη",
+     "pt": "paz (de onde vem o nome Irene)"
+    },
+    {
+     "el": "πᾶσι",
+     "pt": "a todos"
+    }
+   ],
+   "context_pt": "A saudação do sacerdote antes das leituras e em outros momentos. Você a ouvirá — e responderá «Καὶ τῷ πνεύματί σου». O ει soa /i/: «Iríni».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "sacerdote",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "3f8988134a9aa33c",
+   "wordkeys": [
+    "ειρηνη",
+    "πασι"
+   ]
+  },
+  "ke-to-pnevmati-su": {
+   "unit": "leituras",
+   "kind": "phrase",
+   "greek": "Καὶ τῷ πνεύματί σου.",
+   "words": [
+    {
+     "el": "Καὶ",
+     "tl": "Ke"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to"
+    },
+    {
+     "el": "πνεύματί",
+     "tl": "pnevmatí"
+    },
+    {
+     "el": "σου.",
+     "tl": "su."
+    }
+   ],
+   "pt": "E ao teu espírito.",
+   "gloss": [
+    {
+     "el": "καί",
+     "pt": "e"
+    },
+    {
+     "el": "τῷ",
+     "pt": "ao (artigo dativo)"
+    },
+    {
+     "el": "πνεύματι",
+     "pt": "espírito"
+    },
+    {
+     "el": "σου",
+     "pt": "teu"
+    }
+   ],
+   "context_pt": "Quando o sacerdote diz «Εἰρήνη πᾶσι» (Paz a todos), o povo devolve a bênção: «E ao teu espírito». Repare no ευ de «πνεύματί» soando /ev/.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "357bde2acb496e76",
+   "wordkeys": [
+    "και",
+    "τω",
+    "πνευματι",
+    "σου"
+   ]
+  },
+  "proschomen": {
+   "unit": "leituras",
+   "kind": "phrase",
+   "greek": "Πρόσχωμεν.",
+   "words": [
+    {
+     "el": "Πρόσχωμεν.",
+     "tl": "Próschomen."
+    }
+   ],
+   "pt": "Estejamos atentos!",
+   "gloss": [
+    {
+     "el": "πρόσχωμεν",
+     "pt": "prestemos atenção (exortação)"
+    }
+   ],
+   "context_pt": "O chamado do diácono antes das leituras e dos momentos solenes: a Liturgia pede a nossa atenção total.",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
     "diacono",
     "para-reconhecer"
    ],
    "voice": "nestoras",
    "review": "pending",
-   "hash": "d698a4054c375cd6",
+   "hash": "3ee6de8d3a421126",
    "wordkeys": [
-    "αντιλαβου",
-    "σωσον",
-    "ελεησον",
-    "και",
-    "διαφυλαξον",
-    "ημασ",
-    "ο",
-    "θεοσ",
-    "τη",
-    "ση",
-    "χαριτι"
+    "προσχωμεν"
+   ]
+  },
+  "doxa-si-kyrie": {
+   "unit": "leituras",
+   "kind": "phrase",
+   "greek": "Δόξα σοι, Κύριε, δόξα σοι.",
+   "words": [
+    {
+     "el": "Δόξα",
+     "tl": "Dóxa"
+    },
+    {
+     "el": "σοι,",
+     "tl": "si,"
+    },
+    {
+     "el": "Κύριε,",
+     "tl": "Kírie,"
+    },
+    {
+     "el": "δόξα",
+     "tl": "dóxa"
+    },
+    {
+     "el": "σοι.",
+     "tl": "si."
+    }
+   ],
+   "pt": "Glória a Ti, Senhor, glória a Ti.",
+   "gloss": [
+    {
+     "el": "δόξα",
+     "pt": "glória"
+    },
+    {
+     "el": "σοι",
+     "pt": "a ti"
+    }
+   ],
+   "context_pt": "A aclamação do povo ao Evangelho — dita antes da leitura («Sabedoria! De pé!») e de novo ao fim dela. Recebemos a Palavra com glória.",
+   "source": "Divina Liturgia (GOA), p. 13",
+   "tags": [
+    "liturgia",
+    "evangelho",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "6628104ba2ae4e10",
+   "wordkeys": [
+    "δοξα",
+    "σοι",
+    "κυριε",
+    "δοξα",
+    "σοι"
    ]
   },
   "cherubikon": {
@@ -2358,6 +2345,46 @@
     "αιωνασ",
     "των",
     "αιωνων"
+   ]
+  },
+  "paraschu-kyrie": {
+   "unit": "unit5-grande-entrada",
+   "kind": "phrase",
+   "greek": "Παράσχου, Κύριε.",
+   "words": [
+    {
+     "el": "Παράσχου,",
+     "tl": "Paráschu,"
+    },
+    {
+     "el": "Κύριε.",
+     "tl": "Kírie."
+    }
+   ],
+   "pt": "Concede, Senhor.",
+   "gloss": [
+    {
+     "el": "παράσχου",
+     "pt": "concede (imperativo)"
+    },
+    {
+     "el": "Κύριε",
+     "pt": "Senhor"
+    }
+   ],
+   "context_pt": "Resposta às petições da litania da súplica («Um dia todo perfeito, santo, pacífico e sem pecado…»). O ου soa /u/: «Paráschu».",
+   "source": "Divina Liturgia de S. João Crisóstomo",
+   "tags": [
+    "liturgia",
+    "litania",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "a0079d9665bf7c7b",
+   "wordkeys": [
+    "παρασχου",
+    "κυριε"
    ]
   },
   "credo-1": {
@@ -6019,7 +6046,7 @@
    ]
   },
   "ii-to-onoma": {
-   "unit": "unit4-painosso-comunhao",
+   "unit": "despedida",
    "kind": "phrase",
    "greek": "Εἴη τὸ ὄνομα Κυρίου εὐλογημένον ἀπὸ τοῦ νῦν καὶ ἕως τοῦ αἰῶνος.",
    "words": [

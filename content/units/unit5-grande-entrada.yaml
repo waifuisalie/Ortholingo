@@ -1,8 +1,8 @@
 unit:
   id: unit5-grande-entrada
   title: "A Grande Entrada"
-  section: nave
-  order: 3
+  section: fieis
+  order: 5
   intro_pt: >-
     O momento em que os dons — o pão e o vinho — são levados em procissão até
     o altar. O povo canta o Hino Querubínico, e o sacerdote, diante da porta
@@ -89,4 +89,23 @@ items:
     source: "Divina Liturgia (GOA), p. 16"
     tags: [entrada-grande, sacerdote, para-reconhecer]
     voice: nestoras
+    review: pending
+
+  - id: paraschu-kyrie
+    kind: phrase
+    greek: "Παράσχου, Κύριε."
+    tts: "Παράσχου, Κύριε."
+    words:
+      - { el: "Παράσχου,", tl: "Paráschu," }
+      - { el: "Κύριε.",    tl: "Kírie." }
+    pt: "Concede, Senhor."
+    gloss:
+      - { el: "παράσχου", pt: "concede (imperativo)" }
+      - { el: "Κύριε",    pt: "Senhor" }
+    context_pt: >-
+      Resposta às petições da litania da súplica («Um dia todo perfeito,
+      santo, pacífico e sem pecado…»). O ου soa /u/: «Paráschu».
+    source: "Divina Liturgia de S. João Crisóstomo"
+    tags: [liturgia, litania, resposta-do-povo]
+    voice: athina
     review: pending
