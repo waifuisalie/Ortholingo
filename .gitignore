@@ -17,6 +17,9 @@ frontend/static/assets/
 # Bake-off laboratory outputs (regenerable experiments)
 bakeoff/out/
 
+# dev.sh runtime logs
+.dev-logs/
+
 # OS / editor noise
 .DS_Store
 *.swp
