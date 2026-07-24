@@ -9,12 +9,13 @@ Built by a catechumen, for catechumens and converts: instead of "general Greek f
 
 > …θυσίαν ζώσαν, αγίαν, ευάρεστον τω Θεώ, την λογικήν λατρείαν υμών. (Rm 12:1)
 
-*Written in English to reach the wider Church and the wider web; the app itself teaches in Brazilian Portuguese, for its first learners — Orthodox catechumens and converts in Brazil. Portuguese is the app's first teaching language exactly as Greek is its first target language: a starting point, not a ceiling.*
+*The app itself teaches in Brazilian Portuguese, for its first learners — Orthodox catechumens and converts in Brazil. Portuguese is the app's first teaching language exactly as Greek is its first target language: a starting point, not a ceiling.*
 
 ## Why this exists
 
+- **Everything in one place, one step at a time.** Instead of piecing the Liturgy's Greek together yourself — a prayer text here, a chant recording there, a transliteration in a third place — Ortholingo walks you through the passages, prayers, and hymns on one guided, Duolingo-style path: read each phrase, hear it, say it, and keep it.
 - **Byzantine pronunciation, always.** Liturgical Greek is pronounced the Modern Greek way in church — never the classroom "Erasmian" way. Every audio asset and every pronunciation check in this project follows the pronunciation you'll actually hear on Sunday.
-- **A closed corpus, hand-curated.** The Liturgy is a fixed text. Every phrase is curated in versioned YAML with source citations — no runtime AI generation of doctrine. Content is written to be reviewable (and, God willing, blessed) by clergy.
+- **A closed corpus, hand-curated.** The Liturgy is a fixed text. Every phrase is curated in versioned YAML with source citations. Content is written to be reviewable (and, God willing, blessed) by clergy.
 - **Learn to *participate*, not just translate.** The goal metric is "how much of this Sunday's Liturgy did you understand?"
 
 ## Features (building toward)
@@ -52,7 +53,7 @@ docs/       architecture and decision log
 pictures/   mascot art
 ```
 
-## Tech stack (decided by benchmark, not vibes — see `bakeoff/`)
+## Tech stack (decided by benchmark, see `bakeoff/`)
 
 | Concern | Choice |
 |---|---|
