@@ -7,7 +7,7 @@ __pycache__/
 .venv/
 venv/
 
-# Node (phase 3+)
+# Node
 node_modules/
 .svelte-kit/
 build/
