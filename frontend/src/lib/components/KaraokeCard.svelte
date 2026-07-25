@@ -151,7 +151,9 @@
 		<p class="src">{item.source}</p>
 	{/if}
 
-	<button class="btn" onclick={onDone}>Continuar</button>
+	<div class="continue">
+		<button class="btn" onclick={onDone}>Continuar</button>
+	</div>
 </section>
 
 <style>
@@ -237,4 +239,11 @@
 	}
 	.ctx { font-size: 12px; color: var(--dim); text-align: center; margin: 0 0 4px; line-height: 1.4; }
 	.src { font-size: 11px; color: var(--dim); text-align: center; opacity: 0.7; margin: 0 0 10px; }
+	/* pin Continuar to the bottom so it's reachable on any phrase length; the
+	   card content scrolls under a fade of the page background */
+	.continue {
+		position: sticky; bottom: 0; margin-top: 12px;
+		padding: 10px 0 max(6px, env(safe-area-inset-bottom));
+		background: linear-gradient(to top, var(--night) 62%, transparent);
+	}
 </style>
