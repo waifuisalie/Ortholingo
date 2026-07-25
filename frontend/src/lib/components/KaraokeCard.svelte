@@ -92,7 +92,7 @@
 
 <section>
 	<p class="eyebrow center">{item.kind === 'letter' ? 'Nova letra' : 'Nova frase'}</p>
-	<Mascot {mood} />
+	<Mascot {mood} size={64} />
 	{#if speaker}
 		<p class="speaker">{speaker}</p>
 	{/if}
@@ -159,20 +159,20 @@
 	.speaker {
 		text-align: center; font-size: 11.5px; color: var(--gold2);
 		border: 1px solid var(--line); border-radius: 999px;
-		width: fit-content; margin: 10px auto 0; padding: 2px 12px;
+		width: fit-content; margin: 6px auto 0; padding: 2px 12px;
 	}
-	.lines { margin: 14px 0 6px; }
+	.lines { margin: 10px 0 4px; }
 	/* each word is a column: Greek with its reading tucked beneath, so the two
 	   fuse into one block instead of two separate wrapping rows */
-	.words { display: flex; flex-wrap: wrap; gap: 2px 5px; justify-content: center; align-items: flex-start; }
+	.words { display: flex; flex-wrap: wrap; gap: 1px 4px; justify-content: center; align-items: flex-start; }
 	.wcol {
 		display: inline-flex; flex-direction: column; align-items: center;
 		background: none; border: 0; color: inherit; font: inherit;
-		cursor: pointer; border-radius: 8px; padding: 2px 5px 3px;
+		cursor: pointer; border-radius: 8px; padding: 1px 4px 2px;
 		transition: background 0.12s, color 0.12s;
 	}
-	.wcol .el { font-size: 30px; line-height: 1.1; }
-	.words.big .wcol .el { font-size: 44px; }
+	.wcol .el { font-size: 23px; line-height: 1.12; }
+	.words.big .wcol .el { font-size: 42px; }
 	.wcol .tl { font-size: 11px; font-style: italic; color: var(--dim); line-height: 1.05; margin-top: 1px; }
 	.wcol:hover { background: var(--raised); }
 	.wcol.hot { background: var(--gold); color: #241c08; }
@@ -213,10 +213,10 @@
 		padding: 4px 9px;
 	}
 	.g b { color: var(--parch); font-weight: 500; font-size: 13px; }
-	.controls { display: flex; gap: 12px; justify-content: center; align-items: center; margin: 16px 0; }
+	.controls { display: flex; gap: 12px; justify-content: center; align-items: center; margin: 12px 0; }
 	.playbtn {
-		width: 54px;
-		height: 54px;
+		width: 48px;
+		height: 48px;
 		border-radius: 50%;
 		border: 0;
 		background: var(--gold);
@@ -235,6 +235,6 @@
 		padding: 5px 12px;
 		cursor: pointer;
 	}
-	.ctx { font-size: 13px; color: var(--dim); text-align: center; margin: 0 0 4px; }
-	.src { font-size: 11px; color: var(--dim); text-align: center; opacity: 0.7; margin: 0 0 14px; }
+	.ctx { font-size: 12px; color: var(--dim); text-align: center; margin: 0 0 4px; line-height: 1.4; }
+	.src { font-size: 11px; color: var(--dim); text-align: center; opacity: 0.7; margin: 0 0 10px; }
 </style>

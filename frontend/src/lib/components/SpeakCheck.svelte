@@ -102,21 +102,17 @@
 
 <section>
 	<p class="eyebrow center">Agora você</p>
-	<Mascot {mood} size={96} />
+	<Mascot {mood} size={72} />
 
 	<div class="target">
-		<div class="gr greek">
+		<div class="words">
 			{#each item.words as w, i}
-				<button type="button" class="w" class:hot={hot === i}
+				<button type="button" class="wcol" class:hot={hot === i}
 					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
-					onclick={() => playWord(i)}>{w.el}</button>
-			{/each}
-		</div>
-		<div class="tl">
-			{#each item.words as w, i}
-				<button type="button" class="w" class:hot={hot === i}
-					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
-					onclick={() => playWord(i)}>{w.tl}</button>
+					onclick={() => playWord(i)}>
+					<span class="el greek">{w.el}</span>
+					<span class="tl">{w.tl}</span>
+				</button>
 			{/each}
 		</div>
 		{#if phase !== 'rec'}
@@ -153,19 +149,22 @@
 
 <style>
 	.center { text-align: center; }
-	.target { margin: 14px 0 4px; }
-	.gr, .tl { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: center; }
-	.gr { font-size: 27px; }
-	.tl { font-size: 13.5px; font-style: italic; color: var(--dim); margin-top: 2px; }
-	.w {
+	.target { margin: 12px 0 4px; }
+	/* words as columns: Greek with its reading beneath (matches the karaoke card) */
+	.words { display: flex; flex-wrap: wrap; gap: 1px 4px; justify-content: center; align-items: flex-start; }
+	.wcol {
+		display: inline-flex; flex-direction: column; align-items: center;
 		background: none; border: 0; color: inherit; font: inherit;
-		cursor: pointer; border-radius: 8px; padding: 1px 6px;
+		cursor: pointer; border-radius: 8px; padding: 1px 4px 2px;
 		transition: background 0.12s, color 0.12s;
 	}
-	.w:hover { background: var(--raised); }
-	.w.ok { background: #82a85c26; box-shadow: inset 0 0 0 1.5px var(--good); }
-	.w.err { background: #c05a4426; box-shadow: inset 0 0 0 1.5px var(--bad); }
-	.w.hot { background: var(--gold); color: #241c08; box-shadow: none; }
+	.wcol .el { font-size: 23px; line-height: 1.12; }
+	.wcol .tl { font-size: 11px; font-style: italic; color: var(--dim); line-height: 1.05; margin-top: 1px; }
+	.wcol:hover { background: var(--raised); }
+	.wcol.ok { background: #82a85c26; box-shadow: inset 0 0 0 1.5px var(--good); }
+	.wcol.err { background: #c05a4426; box-shadow: inset 0 0 0 1.5px var(--bad); }
+	.wcol.hot { background: var(--gold); color: #241c08; box-shadow: none; }
+	.wcol.hot .tl { color: #241c08; }
 	.taphint { text-align: center; font-size: 11.5px; color: var(--dim); margin: 8px 0 0; }
 	.hearbtn {
 		display: block; margin: 10px auto 0; font-size: 12px; background: none;
