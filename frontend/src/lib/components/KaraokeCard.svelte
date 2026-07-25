@@ -22,6 +22,8 @@
 	const hotSeg = $derived.by(() =>
 		hot < 0 || !segs.length ? -1 : segs.findIndex((s) => hot >= s.words[0] && hot <= s.words[1])
 	);
+	/** word indices a part covers, e.g. [3,4,…,11] */
+	const segWords = (s) => Array.from({ length: s.words[1] - s.words[0] + 1 }, (_, k) => s.words[0] + k);
 
 	const speaker = $derived(
 		item.tags?.includes('sacerdote') ? 'O sacerdote diz'
@@ -113,9 +115,16 @@
 		{/if}
 		{#if segs.length}
 			<div class="parts">
-				{#each segs as s, i}
-					<button class="part" class:hot={hotSeg === i} onclick={() => playSegment(i)}
-						title="Ouvir esta parte">{s.pt}</button>
+				{#each segs as s, si}
+					<div class="part" class:hot={hotSeg === si}>
+						<button class="partplay" onclick={() => playSegment(si)} aria-label="Ouvir esta parte">
+							<svg width="9" height="11" viewBox="0 0 9 11"><path d="M0 0 L9 5.5 L0 11 Z" fill="currentColor" /></svg>
+						</button>
+						{#each segWords(s) as wi}
+							<button class="pw" class:hot={hot === wi} onclick={() => playWord(wi)}
+								title="Ouvir a palavra grega">{item.words[wi].pt}</button>
+						{/each}
+					</div>
 				{/each}
 			</div>
 		{:else}
@@ -123,7 +132,7 @@
 		{/if}
 	</div>
 
-	{#if item.gloss?.length && item.kind !== 'letter'}
+	{#if item.gloss?.length && item.kind !== 'letter' && !segs.length}
 		<div class="gloss">
 			{#each item.gloss as g}
 				<span class="g"><b class="greek">{g.el}</b> · {g.pt}</span>
@@ -177,13 +186,23 @@
 	   translation line is dropped as redundant) */
 	.parts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 0; }
 	.part {
-		font-size: 13px; color: var(--parch);
+		display: inline-flex; align-items: center; gap: 1px;
 		background: var(--raised); border: 1px solid var(--line);
-		border-radius: 10px; padding: 3px 10px; cursor: pointer;
-		transition: background 0.12s, color 0.12s, border-color 0.12s;
+		border-radius: 10px; padding: 2px 6px 2px 4px;
+		transition: border-color 0.12s;
 	}
-	.part:hover { border-color: var(--gold2); }
-	.part.hot { background: var(--gold); color: #241c08; border-color: var(--gold); }
+	.part.hot { border-color: var(--gold2); }
+	.partplay {
+		display: inline-grid; place-items: center; width: 18px; height: 18px;
+		border: 0; background: none; color: var(--gold2); cursor: pointer; padding: 0;
+	}
+	.pw {
+		background: none; border: 0; color: var(--parch); font: inherit; font-size: 13px;
+		cursor: pointer; border-radius: 6px; padding: 1px 5px;
+		transition: background 0.12s, color 0.12s;
+	}
+	.pw:hover { background: var(--nave); }
+	.pw.hot { background: var(--gold); color: #241c08; }
 	.peek {
 		display: block; margin: 6px auto 0; font-size: 11px; background: none;
 		border: 1px dashed var(--line); color: var(--dim); border-radius: 999px;

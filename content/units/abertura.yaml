@@ -15,35 +15,32 @@ items:
     greek: "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
     tts: "Ευλογημένη η βασιλεία του Πατρός και του Υιού και του αγίου Πνεύματος, νυν και αει και εις τους αιώνας των αιώνων."
     words:
-      - { el: "Εὐλογημένη", tl: "Evloyiméni" }
-      - { el: "ἡ",          tl: "i" }
-      - { el: "βασιλεία",   tl: "vasilía" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Πατρὸς",     tl: "Patrós" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Υἱοῦ",       tl: "Iú" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "ἁγίου",      tl: "ayíu" }
-      - { el: "Πνεύματος,", tl: "Pnévmatos," }
-      - { el: "νῦν",        tl: "nin" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "ἀεὶ",        tl: "aí" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "εἰς",        tl: "is" }
-      - { el: "τοὺς",       tl: "tus" }
-      - { el: "αἰῶνας",     tl: "eónas" }
-      - { el: "τῶν",        tl: "ton" }
-      - { el: "αἰώνων.",    tl: "eónon." }
+      - { el: "Εὐλογημένη", tl: "Evloyiméni", pt: "bendito" }
+      - { el: "ἡ",          tl: "i",          pt: "o" }
+      - { el: "βασιλεία",   tl: "vasilía",    pt: "reino" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "Πατρὸς",     tl: "Patrós",     pt: "Pai" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "Υἱοῦ",       tl: "Iú",         pt: "Filho" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "ἁγίου",      tl: "ayíu",       pt: "santo" }
+      - { el: "Πνεύματος,", tl: "Pnévmatos,", pt: "Espírito" }
+      - { el: "νῦν",        tl: "nin",        pt: "agora" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "ἀεὶ",        tl: "aí",         pt: "sempre" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "εἰς",        tl: "is",         pt: "para" }
+      - { el: "τοὺς",       tl: "tus",        pt: "os" }
+      - { el: "αἰῶνας",     tl: "eónas",      pt: "séculos" }
+      - { el: "τῶν",        tl: "ton",        pt: "dos" }
+      - { el: "αἰώνων.",    tl: "eónon.",     pt: "séculos" }
     pt: "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos."
     segments:
-      - { words: "0-2",   pt: "Bendito seja o reino" }
-      - { words: "3-11",  pt: "do Pai e do Filho e do Espírito Santo" }
-      - { words: "12-20", pt: "agora e sempre e pelos séculos dos séculos" }
-    gloss:
-      - { el: "εὐλογημένη", pt: "bendito, abençoado" }
-      - { el: "βασιλεία",   pt: "reino" }
+      - { words: "0-2" }
+      - { words: "3-11" }
+      - { words: "12-20" }
     context_pt: >-
       As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o
       povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já

@@ -17,15 +17,15 @@ items:
     greek: "Κύριε, ἐλέησον."   # polytonic — DISPLAY ONLY
     tts: "Κύριε, ελέησον."     # monotonic — what TTS engines receive
     words:                     # 1:1 aligned tokens; len == len(tts tokens)
-      - { el: "Κύριε,",   tl: "Kírie," }
-      - { el: "ἐλέησον.", tl: "eléison." }
-    pt: "Senhor, tem piedade."           # translation (Devocional wording when available)
-    segments:                             # OPTIONAL — only for long phrases; see below
-      - { words: "0",   pt: "Senhor" }
-      - { words: "1",   pt: "tem piedade" }
-    gloss:                                # word-by-word meaning for tap-to-reveal
-      - { el: "Κύριε",   pt: "Senhor (vocativo)" }
-      - { el: "ἐλέησον", pt: "tem piedade (imperativo)" }
+      - { el: "Κύριε,",   tl: "Kírie,",   pt: "Senhor" }      # pt: per-word gloss,
+      - { el: "ἐλέησον.", tl: "eléison.", pt: "tem piedade" } #   Greek word-order
+    pt: "Senhor, tem piedade."           # flowing translation; shown when NOT segmented
+    segments:                             # OPTIONAL — long phrases only; see below
+      - { words: "0" }                    # a part is just a range of word indices
+      - { words: "1" }
+    gloss:                                # legacy tap-to-reveal tags; superseded by
+      - { el: "Κύριε",   pt: "Senhor (vocativo)" }        # per-word pt on segmented
+      - { el: "ἐλέησον", pt: "tem piedade (imperativo)" } # phrases (drop when segmented)
     context_pt: >-                        # liturgical/theological context card
       A resposta mais frequente do povo…
     source: "Devocional, p. 8"            # citation; "Divina Liturgia" if not in the books
@@ -41,6 +41,8 @@ Rules enforced by the pipeline:
 4. Item ids are unique repo-wide (asset filenames derive from them).
 5. `segments` (when present) tile `words[]` exactly: contiguous, non-overlapping,
    in order, covering index 0 through the last with no gaps.
+6. When `segments` are present, every `words[i]` carries `pt` — the per-word gloss
+   the parts are rendered from.
 
 ## Segments (optional) — breaking a long phrase into learnable parts
 
@@ -50,22 +52,24 @@ the learner hears, sees the meaning of, and speaks one at a time — then assemb
 the whole. Short phrases omit `segments` entirely and behave as before.
 
 ```yaml
-segments:
-  - { words: "0-2",   pt: "Bendito seja o reino" }
-  - { words: "3-11",  pt: "do Pai e do Filho e do Espírito Santo" }
-  - { words: "12-20", pt: "agora e sempre e pelos séculos dos séculos" }
+segments:              # each part is just a range of word indices…
+  - { words: "0-2" }
+  - { words: "3-11" }
+  - { words: "12-20" }
 ```
 
+The translation of a segmented phrase is carried **per word** on `words[i].pt`
+(Greek word-order), so each Portuguese word can be tapped to hear and highlight
+its Greek word across all three lines. A chip renders as the tappable per-word
+`pt`s of its range; the flowing `pt` line is dropped as redundant.
+
 - `words`: an inclusive index range into `words[]` — `"a-b"`, or a single `"a"`.
-- `pt`: the part's meaning. **This is authored translation text**, so it inherits
-  the item's `review: pending` — it is NOT auto-derived and must be blessed like
-  any content. It is *not* required to be a slice of the item's `pt`: Portuguese
-  word order and articles rarely line up 1:1 with Greek (e.g. «ἡμᾶς» → "-nos"
-  smeared across several verbs), so segment `pt` is written to mean the part
-  faithfully. The full `pt` stays the card's canonical translation line; segment
-  `pt` is the highlight layer surfaced as each part plays.
-- Audio is a **slice of the existing recording** (resolved from per-word timings by
-  the pipeline into `[start,end]` per speed) — no new audio is generated.
+- `words[i].pt` is **authored translation text**: it inherits the item's
+  `review: pending` and must be blessed like any content. Function words with no
+  Greek token (a copula "seja", some articles) simply aren't shown.
+- Audio: the pipeline cuts each part into its own clip
+  `assets/audio/segments/{id}_{i}_{speed}.mp3` (a sample-accurate slice of the
+  phrase recording — mobile browsers can't seek a shared element).
 
 Transliteration conventions (Byzantine values, PT-friendly):
 η/ι/υ/ει/οι → i · αι → e · β → v · ου → u · ευ → ev/ef · αυ → av/af ·

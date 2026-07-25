@@ -140,15 +140,18 @@ def load_units(only=None):
             # segments (optional) must tile words[] exactly, in order, no gaps
             expect = 0
             for seg in item.get("segments") or []:
-                if not str(seg.get("pt", "")).strip():
-                    die(f"{item['id']}: segment missing pt: {seg}")
                 i0, i1 = seg_range(seg["words"], nwords, item["id"])
                 if i0 != expect:
                     die(f"{item['id']}: segments must tile words[] with no gap/overlap "
                         f"(expected next start {expect}, got {i0})")
                 expect = i1 + 1
-            if item.get("segments") and expect != nwords:
-                die(f"{item['id']}: segments cover 0..{expect - 1} but phrase has {nwords} words")
+            if item.get("segments"):
+                if expect != nwords:
+                    die(f"{item['id']}: segments cover 0..{expect - 1} but phrase has {nwords} words")
+                for wi, w in enumerate(item["words"]):  # parts render from per-word pt
+                    if not str(w.get("pt", "")).strip():
+                        die(f"{item['id']}: segmented phrase needs pt on every word "
+                            f"(word {wi}: {w['el']})")
             if item["voice"] not in VOICES:
                 die(f"{item['id']}: unknown voice {item['voice']}")
         units.append((unit, items))
@@ -284,7 +287,7 @@ async def main():
                 entry["segments"] = []
                 for si, seg in enumerate(item["segments"]):
                     i0, i1 = seg_range(seg["words"], len(item["words"]), item["id"])
-                    part = {"words": [i0, i1], "pt": seg["pt"]}
+                    part = {"words": [i0, i1]}
                     for speed in ("normal", "slow"):
                         s, e = tdata[speed][i0][0], tdata[speed][i1][1]
                         part[speed] = [s, e]  # kept for word-highlight offset
