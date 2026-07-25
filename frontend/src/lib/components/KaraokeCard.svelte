@@ -98,18 +98,15 @@
 	{/if}
 
 	<div class="lines">
-		<div class="gr greek" class:big={item.kind === 'letter'}>
+		<div class="words" class:big={item.kind === 'letter'}>
 			{#each item.words as w, i}
-				<button class="w" class:hot={hot === i} onclick={() => playWord(i)}>{w.el}</button>
+				<button class="wcol" class:hot={hot === i} onclick={() => playWord(i)}>
+					<span class="el greek">{w.el}</span>
+					{#if !faded}<span class="tl">{w.tl}</span>{/if}
+				</button>
 			{/each}
 		</div>
-		{#if !faded}
-			<div class="tl">
-				{#each item.words as w, i}
-					<button class="w" class:hot={hot === i} onclick={() => playWord(i)}>{w.tl}</button>
-				{/each}
-			</div>
-		{:else}
+		{#if faded}
 			<button class="peek" onclick={() => (peek = true)}
 				title="Você já domina esta frase — a transliteração se despediu. Toque para espiar.">Aa</button>
 		{/if}
@@ -165,22 +162,21 @@
 		width: fit-content; margin: 10px auto 0; padding: 2px 12px;
 	}
 	.lines { margin: 14px 0 6px; }
-	.gr, .tl { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: center; }
-	.gr { font-size: 30px; }
-	.gr.big { font-size: 44px; }
-	.tl { font-size: 14px; font-style: italic; color: var(--dim); margin-top: 2px; }
-	.w {
-		background: none;
-		border: 0;
-		color: inherit;
-		font: inherit;
-		cursor: pointer;
-		border-radius: 8px;
-		padding: 1px 6px;
+	/* each word is a column: Greek with its reading tucked beneath, so the two
+	   fuse into one block instead of two separate wrapping rows */
+	.words { display: flex; flex-wrap: wrap; gap: 2px 5px; justify-content: center; align-items: flex-start; }
+	.wcol {
+		display: inline-flex; flex-direction: column; align-items: center;
+		background: none; border: 0; color: inherit; font: inherit;
+		cursor: pointer; border-radius: 8px; padding: 2px 5px 3px;
 		transition: background 0.12s, color 0.12s;
 	}
-	.w:hover { background: var(--raised); }
-	.w.hot { background: var(--gold); color: #241c08; }
+	.wcol .el { font-size: 30px; line-height: 1.1; }
+	.words.big .wcol .el { font-size: 44px; }
+	.wcol .tl { font-size: 11px; font-style: italic; color: var(--dim); line-height: 1.05; margin-top: 1px; }
+	.wcol:hover { background: var(--raised); }
+	.wcol.hot { background: var(--gold); color: #241c08; }
+	.wcol.hot .tl { color: #241c08; }
 	.pt { text-align: center; font-size: 15px; margin: 10px 0 0; }
 	/* when a phrase is broken into parts, the parts carry the meaning (the full
 	   translation line is dropped as redundant) */
