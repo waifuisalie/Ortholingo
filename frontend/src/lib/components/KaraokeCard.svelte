@@ -1,7 +1,7 @@
 <script>
 	import { onDestroy } from 'svelte';
 	import Mascot from './Mascot.svelte';
-	import { play, stop } from '$lib/audio.js';
+	import { play, playRange, stop } from '$lib/audio.js';
 	import { phraseAudio, wordAudio, loadTimings } from '$lib/content.js';
 	import { ensureCard, fadeTranslit } from '$lib/srs.svelte.js';
 
@@ -15,6 +15,13 @@
 	let raf = null;
 
 	const faded = $derived(fadeTranslit(item.id) && !peek);
+
+	/** long phrases carry sense-parts; short ones don't (empty = behaves as before) */
+	const segs = $derived(item.segments ?? []);
+	/** which part the currently-highlighted word belongs to (-1 = none playing) */
+	const hotSeg = $derived.by(() =>
+		hot < 0 || !segs.length ? -1 : segs.findIndex((s) => hot >= s.words[0] && hot <= s.words[1])
+	);
 
 	const speaker = $derived(
 		item.tags?.includes('sacerdote') ? 'O sacerdote diz'
@@ -33,18 +40,33 @@
 		loadTimings(item.id).then((t) => (timings = t));
 	});
 
+	/** highlight the word under the playhead until paused/ended (or past `end`) */
+	function runTick(a, marks, end) {
+		const tick = () => {
+			const t = a.currentTime;
+			hot = marks.findIndex(([s, e]) => t >= s && t <= e + 0.05);
+			if (!a.paused && !a.ended && (end == null || t < end)) raf = requestAnimationFrame(tick);
+			else hot = -1;
+		};
+		raf = requestAnimationFrame(tick);
+	}
+
 	function playPhrase(speed) {
 		clearHL();
 		const a = play(phraseAudio(item.id, speed));
 		const marks = timings?.[speed];
-		if (!marks) return;
-		const tick = () => {
-			const t = a.currentTime;
-			hot = marks.findIndex(([s, e]) => t >= s && t <= e + 0.05);
-			if (!a.paused && !a.ended) raf = requestAnimationFrame(tick);
-			else hot = -1;
-		};
-		raf = requestAnimationFrame(tick);
+		if (marks) runTick(a, marks, null);
+	}
+
+	/** play one sense-part: a slice of the same recording, words highlighting within */
+	function playSegment(i, speed = 'normal') {
+		clearHL();
+		const s = segs[i];
+		const marks = timings?.[speed];
+		if (!s || !marks) return;
+		const [start, end] = s[speed];
+		const a = playRange(phraseAudio(item.id, speed), start, end);
+		runTick(a, marks, end);
 	}
 
 	function playWord(i) {
@@ -89,7 +111,15 @@
 			<button class="peek" onclick={() => (peek = true)}
 				title="Você já domina esta frase — a transliteração se despediu. Toque para espiar.">Aa</button>
 		{/if}
-		<p class="pt">{item.pt}</p>
+		{#if segs.length}
+			<div class="parts">
+				{#each segs as s, i}
+					<button class="part" class:hot={hotSeg === i} onclick={() => playSegment(i)}
+						title="Ouvir esta parte">{s.pt}</button>
+				{/each}
+			</div>
+		{/if}
+		<p class="pt" class:full={segs.length}>{item.pt}</p>
 	</div>
 
 	{#if item.gloss?.length && item.kind !== 'letter'}
@@ -142,6 +172,18 @@
 	.w:hover { background: var(--raised); }
 	.w.hot { background: var(--gold); color: #241c08; }
 	.pt { text-align: center; font-size: 15px; margin: 10px 0 0; }
+	/* when a phrase is broken into parts, the parts carry the meaning; the full
+	   line becomes a quieter reference beneath them */
+	.pt.full { font-size: 13px; color: var(--dim); margin-top: 8px; }
+	.parts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 0; }
+	.part {
+		font-size: 13px; color: var(--parch);
+		background: var(--raised); border: 1px solid var(--line);
+		border-radius: 10px; padding: 3px 10px; cursor: pointer;
+		transition: background 0.12s, color 0.12s, border-color 0.12s;
+	}
+	.part:hover { border-color: var(--gold2); }
+	.part.hot { background: var(--gold); color: #241c08; border-color: var(--gold); }
 	.peek {
 		display: block; margin: 6px auto 0; font-size: 11px; background: none;
 		border: 1px dashed var(--line); color: var(--dim); border-radius: 999px;
