@@ -1007,6 +1007,53 @@
     "αιωνασ",
     "των",
     "αιωνων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      2
+     ],
+     "pt": "Bendito seja o reino",
+     "normal": [
+      0.1,
+      1.409
+     ],
+     "slow": [
+      0.1,
+      2.325
+     ]
+    },
+    {
+     "words": [
+      3,
+      11
+     ],
+     "pt": "do Pai e do Filho e do Espírito Santo",
+     "normal": [
+      1.409,
+      3.674
+     ],
+     "slow": [
+      2.325,
+      6.175
+     ]
+    },
+    {
+     "words": [
+      12,
+      20
+     ],
+     "pt": "agora e sempre e pelos séculos dos séculos",
+     "normal": [
+      3.865,
+      6.174
+     ],
+     "slow": [
+      6.5,
+      10.425
+     ]
+    }
    ]
   },
   "amin": {

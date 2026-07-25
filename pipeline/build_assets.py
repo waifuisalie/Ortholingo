@@ -75,6 +75,18 @@ def letters(text: str) -> int:
     return sum(c.isalpha() for c in text)
 
 
+def seg_range(spec, nwords: int, item_id: str):
+    """Parse a segment 'words' spec ('a-b' or 'a') into inclusive (i0, i1)."""
+    s = str(spec)
+    try:
+        i0, i1 = (int(x) for x in s.split("-", 1)) if "-" in s else (int(s), int(s))
+    except ValueError:
+        die(f"{item_id}: bad segment range {spec!r} (want 'a-b' or 'a')")
+    if not (0 <= i0 <= i1 < nwords):
+        die(f"{item_id}: segment range {spec!r} out of bounds 0..{nwords - 1}")
+    return i0, i1
+
+
 def item_hash(item: dict) -> str:
     key = f"{item['tts']}|{item['voice']}|{NORMAL_RATE}|{SLOW_RATE}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
@@ -112,6 +124,18 @@ def load_units(only=None):
             for w in item["words"]:
                 if not w.get("el") or not w.get("tl"):
                     die(f"{item['id']}: words[] entry missing el or tl: {w}")
+            # segments (optional) must tile words[] exactly, in order, no gaps
+            expect = 0
+            for seg in item.get("segments") or []:
+                if not str(seg.get("pt", "")).strip():
+                    die(f"{item['id']}: segment missing pt: {seg}")
+                i0, i1 = seg_range(seg["words"], nwords, item["id"])
+                if i0 != expect:
+                    die(f"{item['id']}: segments must tile words[] with no gap/overlap "
+                        f"(expected next start {expect}, got {i0})")
+                expect = i1 + 1
+            if item.get("segments") and expect != nwords:
+                die(f"{item['id']}: segments cover 0..{expect - 1} but phrase has {nwords} words")
             if item["voice"] not in VOICES:
                 die(f"{item['id']}: unknown voice {item['voice']}")
         units.append((unit, items))
@@ -232,13 +256,25 @@ async def main():
                      and timings_path.exists())
             if fresh:
                 n_skip += 1
+                tdata = json.loads(timings_path.read_text())
             else:
                 t_normal = await gen_phrase_speed(item, "normal", NORMAL_RATE, qc_fn)
                 t_slow = await gen_phrase_speed(item, "slow", SLOW_RATE, qc_fn)
+                tdata = {"normal": t_normal, "slow": t_slow}
                 timings_path.parent.mkdir(parents=True, exist_ok=True)
-                timings_path.write_text(json.dumps({"normal": t_normal, "slow": t_slow}))
+                timings_path.write_text(json.dumps(tdata))
                 n_gen += 1
                 print(f"  {item['id']}")
+            # segments: carry pt + resolve each part's audio [start,end] per speed
+            if item.get("segments"):
+                entry["segments"] = []
+                for seg in item["segments"]:
+                    i0, i1 = seg_range(seg["words"], len(item["words"]), item["id"])
+                    entry["segments"].append({
+                        "words": [i0, i1], "pt": seg["pt"],
+                        "normal": [tdata["normal"][i0][0], tdata["normal"][i1][1]],
+                        "slow": [tdata["slow"][i0][0], tdata["slow"][i1][1]],
+                    })
             # word clips (deduped by normalized key)
             for token, key in zip(item["tts"].split(), entry["wordkeys"]):
                 if key in wordfiles or not key:
