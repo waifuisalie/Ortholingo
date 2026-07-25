@@ -41,6 +41,7 @@ CONTENT = REPO / "content" / "units"
 ASSETS = REPO / "assets"
 PHRASES_DIR = ASSETS / "audio" / "phrases"
 WORDS_DIR = ASSETS / "audio" / "words"
+SEGMENTS_DIR = ASSETS / "audio" / "segments"
 TIMINGS_DIR = ASSETS / "timings"
 MANIFEST = ASSETS / "manifest.json"
 
@@ -90,6 +91,18 @@ def seg_range(spec, nwords: int, item_id: str):
 def item_hash(item: dict) -> str:
     key = f"{item['tts']}|{item['voice']}|{NORMAL_RATE}|{SLOW_RATE}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
+
+
+def slice_audio(src: pathlib.Path, start: float, end: float, dst: pathlib.Path):
+    """Cut [start,end] of an mp3 into its own file (sample-accurate re-encode, so
+    parts play as discrete clips — mobile browsers can't seek a shared element)."""
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
+         "-ss", f"{start:.3f}", "-to", f"{end:.3f}",
+         "-c:a", "libmp3lame", "-q:a", "4", str(dst)],
+        check=True,
+    )
 
 
 def mp3_duration(path: pathlib.Path) -> float:
@@ -265,16 +278,19 @@ async def main():
                 timings_path.write_text(json.dumps(tdata))
                 n_gen += 1
                 print(f"  {item['id']}")
-            # segments: carry pt + resolve each part's audio [start,end] per speed
+            # segments: resolve each part's [start,end] per speed AND cut a discrete
+            # clip (the phone can't seek a slice, so parts are their own files)
             if item.get("segments"):
                 entry["segments"] = []
-                for seg in item["segments"]:
+                for si, seg in enumerate(item["segments"]):
                     i0, i1 = seg_range(seg["words"], len(item["words"]), item["id"])
-                    entry["segments"].append({
-                        "words": [i0, i1], "pt": seg["pt"],
-                        "normal": [tdata["normal"][i0][0], tdata["normal"][i1][1]],
-                        "slow": [tdata["slow"][i0][0], tdata["slow"][i1][1]],
-                    })
+                    part = {"words": [i0, i1], "pt": seg["pt"]}
+                    for speed in ("normal", "slow"):
+                        s, e = tdata[speed][i0][0], tdata[speed][i1][1]
+                        part[speed] = [s, e]  # kept for word-highlight offset
+                        slice_audio(PHRASES_DIR / f"{item['id']}_{speed}.mp3", s, e,
+                                    SEGMENTS_DIR / f"{item['id']}_{si}_{speed}.mp3")
+                    entry["segments"].append(part)
             # word clips (deduped by normalized key)
             for token, key in zip(item["tts"].split(), entry["wordkeys"]):
                 if key in wordfiles or not key:

@@ -1,8 +1,8 @@
 <script>
 	import { onDestroy } from 'svelte';
 	import Mascot from './Mascot.svelte';
-	import { play, playRange, stop } from '$lib/audio.js';
-	import { phraseAudio, wordAudio, loadTimings } from '$lib/content.js';
+	import { play, stop } from '$lib/audio.js';
+	import { phraseAudio, wordAudio, segmentAudio, loadTimings } from '$lib/content.js';
 	import { ensureCard, fadeTranslit } from '$lib/srs.svelte.js';
 
 	/** @type {{ item: any, onDone: () => void }} */
@@ -40,12 +40,13 @@
 		loadTimings(item.id).then((t) => (timings = t));
 	});
 
-	/** highlight the word under the playhead until paused/ended (or past `end`) */
-	function runTick(a, marks, end) {
+	/** highlight the word under the playhead until paused/ended. `offset` maps a
+	    part clip's local time back onto the phrase timeline (parts start at 0). */
+	function runTick(a, marks, offset = 0) {
 		const tick = () => {
-			const t = a.currentTime;
+			const t = a.currentTime + offset;
 			hot = marks.findIndex(([s, e]) => t >= s && t <= e + 0.05);
-			if (!a.paused && !a.ended && (end == null || t < end)) raf = requestAnimationFrame(tick);
+			if (!a.paused && !a.ended) raf = requestAnimationFrame(tick);
 			else hot = -1;
 		};
 		raf = requestAnimationFrame(tick);
@@ -55,18 +56,17 @@
 		clearHL();
 		const a = play(phraseAudio(item.id, speed));
 		const marks = timings?.[speed];
-		if (marks) runTick(a, marks, null);
+		if (marks) runTick(a, marks);
 	}
 
-	/** play one sense-part: a slice of the same recording, words highlighting within */
+	/** play one sense-part: its own clip, words still highlighting within */
 	function playSegment(i, speed = 'normal') {
 		clearHL();
 		const s = segs[i];
 		const marks = timings?.[speed];
 		if (!s || !marks) return;
-		const [start, end] = s[speed];
-		const a = playRange(phraseAudio(item.id, speed), start, end);
-		runTick(a, marks, end);
+		const a = play(segmentAudio(item.id, i, speed));
+		runTick(a, marks, s[speed][0]);
 	}
 
 	function playWord(i) {
@@ -118,8 +118,9 @@
 						title="Ouvir esta parte">{s.pt}</button>
 				{/each}
 			</div>
+		{:else}
+			<p class="pt">{item.pt}</p>
 		{/if}
-		<p class="pt" class:full={segs.length}>{item.pt}</p>
 	</div>
 
 	{#if item.gloss?.length && item.kind !== 'letter'}
@@ -172,9 +173,8 @@
 	.w:hover { background: var(--raised); }
 	.w.hot { background: var(--gold); color: #241c08; }
 	.pt { text-align: center; font-size: 15px; margin: 10px 0 0; }
-	/* when a phrase is broken into parts, the parts carry the meaning; the full
-	   line becomes a quieter reference beneath them */
-	.pt.full { font-size: 13px; color: var(--dim); margin-top: 8px; }
+	/* when a phrase is broken into parts, the parts carry the meaning (the full
+	   translation line is dropped as redundant) */
 	.parts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 0; }
 	.part {
 		font-size: 13px; color: var(--parch);
