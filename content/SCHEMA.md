@@ -51,6 +51,10 @@ big to meet and to *speak* all at once. `segments` cuts a phrase into sense-part
 the learner hears, sees the meaning of, and speaks one at a time — then assembles
 the whole. Short phrases omit `segments` entirely and behave as before.
 
+A segmented phrase also carries a short `title` (e.g. `title: "a bênção de
+abertura"`), shown as «parte 1 de 3 · {title}» while the learner works the parts
+and «a frase completa · {title}» on the assembled whole.
+
 ```yaml
 segments:              # each part is just a range of word indices…
   - { words: "0-2" }

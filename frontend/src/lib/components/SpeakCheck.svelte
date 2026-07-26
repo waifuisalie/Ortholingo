@@ -2,10 +2,10 @@
 	import { onDestroy } from 'svelte';
 	import Mascot from './Mascot.svelte';
 	import { play, stop } from '$lib/audio.js';
-	import { phraseAudio, wordAudio } from '$lib/content.js';
+	import { phraseAudio, wordAudio, segmentAudio } from '$lib/content.js';
 
-	/** @type {{ item: any, onResult: (ok: boolean) => void, onDone: () => void }} */
-	let { item, onResult, onDone } = $props();
+	/** @type {{ item: any, onResult: (ok: boolean) => void, onDone: () => void, seg?: number|null }} */
+	let { item, onResult, onDone, seg = null } = $props();
 
 	const PASS = 0.75;
 	// runaway backstop only — the real stop is the user tapping again. Long
@@ -20,6 +20,17 @@
 	let recorder = null;
 	let chunks = [];
 	let timer = null;
+
+	// part mode: speak just one segment; whole mode: the full phrase
+	const segs = $derived(item.segments ?? []);
+	const part = $derived(seg != null && segs.length ? segs[seg] : null);
+	const wrange = $derived(
+		part
+			? Array.from({ length: part.words[1] - part.words[0] + 1 }, (_, k) => part.words[0] + k)
+			: item.words.map((_, i) => i)
+	);
+	/** result.words is aligned to the expected tokens, which are part-relative */
+	const wordOk = (i) => result?.words?.[part ? i - part.words[0] : i];
 
 	$effect(() => {
 		item.id;
@@ -70,7 +81,9 @@
 		try {
 			const form = new FormData();
 			form.append('audio', blob, 'take.webm');
-			form.append('expected', item.wordkeys.join(' '));
+			form.append('expected',
+				part ? item.wordkeys.slice(part.words[0], part.words[1] + 1).join(' ')
+				: item.wordkeys.join(' '));
 			form.append('lang', item.voice === 'ava' ? 'en' : 'el');
 			const res = await fetch('/api/speech/score', { method: 'POST', body: form });
 			if (!res.ok) throw new Error();
@@ -102,23 +115,26 @@
 
 <section>
 	<p class="eyebrow center">Agora você</p>
+	{#if part}
+		<p class="crumb center">Fale a parte {seg + 1} de {segs.length}{item.title ? ` · ${item.title}` : ''}</p>
+	{/if}
 	<Mascot {mood} size={72} />
 
 	<div class="target">
 		<div class="words">
-			{#each item.words as w, i}
+			{#each wrange as i}
 				<button type="button" class="wcol" class:hot={hot === i}
-					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
+					class:ok={result && wordOk(i)} class:err={result && !wordOk(i)}
 					onclick={() => playWord(i)}>
-					<span class="el greek">{w.el}</span>
-					<span class="tl">{w.tl}</span>
+					<span class="el greek">{item.words[i].el}</span>
+					<span class="tl">{item.words[i].tl}</span>
 				</button>
 			{/each}
 		</div>
 		{#if phase !== 'rec'}
 			<p class="taphint">Toque numa palavra para ouvi-la</p>
 		{/if}
-		<button class="hearbtn" onclick={() => play(phraseAudio(item.id, 'slow'))}>ouvir a frase (lento)</button>
+		<button class="hearbtn" onclick={() => play(part ? segmentAudio(item.id, seg, 'slow') : phraseAudio(item.id, 'slow'))}>ouvir {part ? 'a parte' : 'a frase'} (lento)</button>
 	</div>
 
 	{#if phase === 'idle' || phase === 'rec'}
@@ -149,6 +165,7 @@
 
 <style>
 	.center { text-align: center; }
+	.crumb { font-size: 12px; color: var(--gold2); letter-spacing: 0.02em; margin: 0 0 6px; }
 	.target { margin: 12px 0 4px; }
 	/* words as columns: Greek with its reading beneath (matches the karaoke card) */
 	.words { display: flex; flex-wrap: wrap; gap: 1px 4px; justify-content: center; align-items: flex-start; }

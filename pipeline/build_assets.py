@@ -259,6 +259,7 @@ async def main():
             entry = {
                 "unit": unit["id"], "kind": item["kind"], "greek": item["greek"],
                 "words": item["words"], "pt": item["pt"], "gloss": item.get("gloss", []),
+                "title": item.get("title", ""),  # short name for "parte 1 de 3 · …"
                 "context_pt": item.get("context_pt", ""), "source": item.get("source", ""),
                 "tags": item.get("tags", []), "voice": item["voice"],
                 "review": item.get("review", "pending"), "hash": h,

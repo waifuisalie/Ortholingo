@@ -5,8 +5,8 @@
 	import { phraseAudio, wordAudio, segmentAudio, loadTimings } from '$lib/content.js';
 	import { ensureCard, fadeTranslit } from '$lib/srs.svelte.js';
 
-	/** @type {{ item: any, onDone: () => void }} */
-	let { item, onDone } = $props();
+	/** @type {{ item: any, onDone: () => void, seg?: number|null }} */
+	let { item, onDone, seg = null } = $props();
 
 	let timings = $state(null);
 	let hot = $state(-1);
@@ -24,6 +24,9 @@
 	);
 	/** word indices a part covers, e.g. [3,4,…,11] */
 	const segWords = (s) => Array.from({ length: s.words[1] - s.words[0] + 1 }, (_, k) => s.words[0] + k);
+	/** part mode renders just this segment; whole mode renders the assembled phrase */
+	const part = $derived(seg != null && segs.length ? segs[seg] : null);
+	const wrange = $derived(part ? segWords(part) : item.words.map((_, i) => i));
 
 	const speaker = $derived(
 		item.tags?.includes('sacerdote') ? 'O sacerdote diz'
@@ -91,7 +94,11 @@
 </script>
 
 <section>
-	<p class="eyebrow center">{item.kind === 'letter' ? 'Nova letra' : 'Nova frase'}</p>
+	{#if segs.length}
+		<p class="crumb center">{part ? `Parte ${seg + 1} de ${segs.length}` : 'A frase completa'}{item.title ? ` · ${item.title}` : ''}</p>
+	{:else}
+		<p class="eyebrow center">{item.kind === 'letter' ? 'Nova letra' : 'Nova frase'}</p>
+	{/if}
 	<Mascot {mood} size={64} />
 	{#if speaker}
 		<p class="speaker">{speaker}</p>
@@ -99,10 +106,10 @@
 
 	<div class="lines">
 		<div class="words" class:big={item.kind === 'letter'}>
-			{#each item.words as w, i}
+			{#each wrange as i}
 				<button class="wcol" class:hot={hot === i} onclick={() => playWord(i)}>
-					<span class="el greek">{w.el}</span>
-					{#if !faded}<span class="tl">{w.tl}</span>{/if}
+					<span class="el greek">{item.words[i].el}</span>
+					{#if !faded}<span class="tl">{item.words[i].tl}</span>{/if}
 				</button>
 			{/each}
 		</div>
@@ -110,7 +117,14 @@
 			<button class="peek" onclick={() => (peek = true)}
 				title="Você já domina esta frase — a transliteração se despediu. Toque para espiar.">Aa</button>
 		{/if}
-		{#if segs.length}
+		{#if part}
+			<div class="ptrow">
+				{#each wrange as wi}
+					<button class="pw" class:hot={hot === wi} onclick={() => playWord(wi)}
+						title="Ouvir a palavra grega">{item.words[wi].pt}</button>
+				{/each}
+			</div>
+		{:else if segs.length}
 			<div class="parts">
 				{#each segs as s, si}
 					<div class="part" class:hot={hotSeg === si}>
@@ -138,16 +152,16 @@
 	{/if}
 
 	<div class="controls">
-		<button class="playbtn" onclick={() => playPhrase('normal')} aria-label="Ouvir">
+		<button class="playbtn" onclick={() => (part ? playSegment(seg) : playPhrase('normal'))} aria-label="Ouvir">
 			<svg width="18" height="20" viewBox="0 0 20 22"><path d="M2 2 L18 11 L2 20 Z" fill="#241c08" /></svg>
 		</button>
-		<button class="slowbtn" onclick={() => playPhrase('slow')}>lento</button>
+		<button class="slowbtn" onclick={() => (part ? playSegment(seg, 'slow') : playPhrase('slow'))}>lento</button>
 	</div>
 
-	{#if item.context_pt}
+	{#if item.context_pt && !part}
 		<p class="ctx">{item.context_pt}</p>
 	{/if}
-	{#if item.source}
+	{#if item.source && !part}
 		<p class="src">{item.source}</p>
 	{/if}
 
@@ -158,6 +172,8 @@
 
 <style>
 	.center { text-align: center; }
+	/* breadcrumb for a segmented phrase: "Parte 1 de 3 · a bênção de abertura" */
+	.crumb { font-size: 12px; color: var(--gold2); letter-spacing: 0.02em; margin: 0 0 6px; }
 	.speaker {
 		text-align: center; font-size: 11.5px; color: var(--gold2);
 		border: 1px solid var(--line); border-radius: 999px;
@@ -182,6 +198,8 @@
 	.pt { text-align: center; font-size: 15px; margin: 10px 0 0; }
 	/* when a phrase is broken into parts, the parts carry the meaning (the full
 	   translation line is dropped as redundant) */
+	/* part mode: the single part's per-word pt, tappable (no chip container) */
+	.ptrow { display: flex; flex-wrap: wrap; gap: 2px 4px; justify-content: center; margin: 12px 0 0; }
 	.parts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 0; }
 	.part {
 		display: inline-flex; align-items: center; gap: 1px;

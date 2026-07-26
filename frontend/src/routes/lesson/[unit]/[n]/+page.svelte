@@ -21,12 +21,16 @@
 	let done = $state(false);
 
 	const total = lesson ? lesson.steps.length : 0;
+	// graded exercises = recognition + match; speaks are optional practice, never counted
+	const scored = lesson
+		? lesson.steps.filter((s) => s.type !== 'karaoke' && s.type !== 'speak').length
+		: 0;
 	const step = $derived(lesson?.steps[idx]);
 	const pct = $derived(done ? 100 : Math.round((idx / total) * 100));
 
 	function onResult(ok) {
-		if (ok) hits += 1;
 		const s = lesson.steps[idx];
+		if (ok && s.type !== 'speak') hits += 1; // speaks are optional, not graded
 		if (s.type === 'match') for (const p of s.pairs) rate(p.id, ok);
 		else if (s.item) rate(s.item.id, ok);
 	}
@@ -56,7 +60,7 @@
 		<p class="eyebrow">Lição concluída</p>
 		<Mascot mood="wave" size={130} />
 		<p class="xp">+20 <small>XP · vela acesa: {progress.streak.count} {progress.streak.count === 1 ? 'dia' : 'dias'}</small></p>
-		<p class="score">Você acertou {hits} de {lesson.items.length + (lesson.steps.some((s) => s.type === 'match') ? 1 : 0)} exercícios.</p>
+		<p class="score">Você acertou {hits} de {scored} exercícios.</p>
 		<button class="btn" onclick={exit}>Voltar ao caminho</button>
 	</section>
 {:else}
@@ -67,9 +71,9 @@
 
 	{#key idx}
 		{#if step.type === 'karaoke'}
-			<KaraokeCard item={step.item} onDone={advance} />
+			<KaraokeCard item={step.item} seg={step.seg} onDone={advance} />
 		{:else if step.type === 'speak'}
-			<SpeakCheck item={step.item} {onResult} onDone={advance} />
+			<SpeakCheck item={step.item} seg={step.seg} {onResult} onDone={advance} />
 		{:else if step.type === 'match'}
 			<MatchPairs {step} {onResult} onDone={advance} />
 		{:else}
