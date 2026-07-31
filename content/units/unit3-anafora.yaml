@@ -235,7 +235,9 @@ items:
       - { el: "ὀνόματι", tl: "onómati", pt: "nome" }
       - { el: "Κυρίου.", tl: "Kiríu.", pt: "do Senhor" }
       - { el: "Ὡσαννὰ", tl: "Osanná", pt: "hosana" }
-      - { el: "ὁ", tl: "o", pt: "o" }
+      # substantive article: «ὁ ἐν τοῖς ὑψίστοις» = "aquele que está nas alturas".
+      # The flowing pt drops it, so a bare "o" here would read as a typo.
+      - { el: "ὁ", tl: "o", pt: "aquele que está" }
       - { el: "ἐν", tl: "en", pt: "em" }
       - { el: "τοῖς", tl: "tis", pt: "as" }
       - { el: "ὑψίστοις.", tl: "ipsístis.", pt: "alturas" }

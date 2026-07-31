@@ -86,6 +86,12 @@ Two further constraints, both about the learner's time and voice:
   and lessons hold 3 items. Aim for **≤ 9 speaks in a lesson**; when a chunk runs
   over, cut segments on the phrases *in that chunk* rather than spreading evenly.
 
+  One accepted exception: **anáfora, lição 5** runs to 11 speaks (se-ymnoumen,
+  exeretos and axion-estin all land together). Those three genuinely need their
+  parts — axion-estin alone is 15.6s — so the cap yields here. The real fix is
+  item *ordering* within the unit, not fewer parts. Every speak is skippable,
+  so a heavy lesson is tiring, never blocking.
+
 A segmented phrase also carries a short `title` (e.g. `title: "a bênção de
 abertura"`), shown as «parte 1 de 3 · {title}» while the learner works the parts
 and «a frase completa · {title}» on the assembled whole.
