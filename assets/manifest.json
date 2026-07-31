@@ -1097,7 +1097,8 @@
    "words": [
     {
      "el": "Ἀμήν.",
-     "tl": "Amín."
+     "tl": "Amín.",
+     "pt": "amém"
     }
    ],
    "pt": "Amém.",
@@ -1128,23 +1129,28 @@
    "words": [
     {
      "el": "Ἐν",
-     "tl": "En"
+     "tl": "En",
+     "pt": "em"
     },
     {
      "el": "εἰρήνῃ",
-     "tl": "iríni"
+     "tl": "iríni",
+     "pt": "paz"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "ao"
     },
     {
      "el": "Κυρίου",
-     "tl": "Kiríu"
+     "tl": "Kiríu",
+     "pt": "Senhor"
     },
     {
      "el": "δεηθῶμεν.",
-     "tl": "deithómen."
+     "tl": "deithómen.",
+     "pt": "oremos"
     }
    ],
    "pt": "Em paz, oremos ao Senhor.",
@@ -1186,11 +1192,13 @@
    "words": [
     {
      "el": "Κύριε,",
-     "tl": "Kírie,"
+     "tl": "Kírie,",
+     "pt": "Senhor"
     },
     {
      "el": "ἐλέησον.",
-     "tl": "eléison."
+     "tl": "eléison.",
+     "pt": "tem piedade"
     }
    ],
    "pt": "Senhor, tem piedade.",
@@ -1784,11 +1792,13 @@
    "words": [
     {
      "el": "Σοί,",
-     "tl": "Si,"
+     "tl": "Si,",
+     "pt": "a Ti"
     },
     {
      "el": "Κύριε.",
-     "tl": "Kírie."
+     "tl": "Kírie.",
+     "pt": "Senhor"
     }
    ],
    "pt": "A Ti, Senhor.",

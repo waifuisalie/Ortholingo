@@ -27,6 +27,9 @@
 	/** part mode renders just this segment; whole mode renders the assembled phrase */
 	const part = $derived(seg != null && segs.length ? segs[seg] : null);
 	const wrange = $derived(part ? segWords(part) : item.words.map((_, i) => i));
+	/** short phrases carry per-word pt too, so any Portuguese word taps to its
+	    Greek everywhere — letters have no gloss and keep the plain line */
+	const hasWordPt = $derived(item.words.some((w) => w.pt));
 
 	const speaker = $derived(
 		item.tags?.includes('sacerdote') ? 'O sacerdote diz'
@@ -136,6 +139,13 @@
 								title="Ouvir a palavra grega">{item.words[wi].pt}</button>
 						{/each}
 					</div>
+				{/each}
+			</div>
+		{:else if hasWordPt}
+			<div class="ptrow">
+				{#each wrange as wi}
+					<button class="pw" class:hot={hot === wi} onclick={() => playWord(wi)}
+						title="Ouvir a palavra grega">{item.words[wi].pt}</button>
 				{/each}
 			</div>
 		{:else}

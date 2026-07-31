@@ -56,7 +56,7 @@ items:
     greek: "Ἀμήν."
     tts: "Αμήν."
     words:
-      - { el: "Ἀμήν.", tl: "Amín." }
+      - { el: "Ἀμήν.", tl: "Amín.", pt: "amém" }
     pt: "Amém."
     gloss:
       - { el: "Ἀμήν", pt: "assim seja (do hebraico)" }
@@ -73,11 +73,11 @@ items:
     greek: "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν."
     tts: "Εν ειρήνη του Κυρίου δεηθώμεν."
     words:
-      - { el: "Ἐν",         tl: "En" }
-      - { el: "εἰρήνῃ",     tl: "iríni" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Κυρίου",     tl: "Kiríu" }
-      - { el: "δεηθῶμεν.",  tl: "deithómen." }
+      - { el: "Ἐν",         tl: "En",         pt: "em" }
+      - { el: "εἰρήνῃ",     tl: "iríni",      pt: "paz" }
+      - { el: "τοῦ",        tl: "tu",         pt: "ao" }
+      - { el: "Κυρίου",     tl: "Kiríu",      pt: "Senhor" }
+      - { el: "δεηθῶμεν.",  tl: "deithómen.", pt: "oremos" }
     pt: "Em paz, oremos ao Senhor."
     gloss:
       - { el: "ἐν εἰρήνῃ", pt: "em paz" }
@@ -97,8 +97,8 @@ items:
     greek: "Κύριε, ἐλέησον."
     tts: "Κύριε, ελέησον."
     words:
-      - { el: "Κύριε,",   tl: "Kírie," }
-      - { el: "ἐλέησον.", tl: "eléison." }
+      - { el: "Κύριε,",   tl: "Kírie,",   pt: "Senhor" }
+      - { el: "ἐλέησον.", tl: "eléison.", pt: "tem piedade" }
     pt: "Senhor, tem piedade."
     gloss:
       - { el: "Κύριε",   pt: "Senhor (vocativo — chamando)" }
@@ -236,8 +236,8 @@ items:
     greek: "Σοί, Κύριε."
     tts: "Σοι, Κύριε."
     words:
-      - { el: "Σοί,",    tl: "Si," }
-      - { el: "Κύριε.",  tl: "Kírie." }
+      - { el: "Σοί,",    tl: "Si,",     pt: "a Ti" }
+      - { el: "Κύριε.",  tl: "Kírie.",  pt: "Senhor" }
     pt: "A Ti, Senhor."
     gloss:
       - { el: "σοί",   pt: "a ti (dativo)" }
