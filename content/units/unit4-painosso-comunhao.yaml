@@ -14,16 +14,16 @@ items:
     greek: "Πάτερ ἡμῶν ὁ ἐν τοῖς οὐρανοῖς, ἁγιασθήτω τὸ ὄνομά σου."
     tts: "Πάτερ ημών ο εν τοις ουρανοίς, αγιασθήτω το όνομά σου."
     words:
-      - { el: "Πάτερ", tl: "Páter" }
-      - { el: "ἡμῶν", tl: "imón" }
-      - { el: "ὁ", tl: "o" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "τοῖς", tl: "tis" }
-      - { el: "οὐρανοῖς,", tl: "uranís," }
-      - { el: "ἁγιασθήτω", tl: "ayiasthíto" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ὄνομά", tl: "ónomá" }
-      - { el: "σου.", tl: "su." }
+      - { el: "Πάτερ", tl: "Páter", pt: "Pai" }
+      - { el: "ἡμῶν", tl: "imón", pt: "nosso" }
+      - { el: "ὁ", tl: "o", pt: "que estás" }
+      - { el: "ἐν", tl: "en", pt: "em" }
+      - { el: "τοῖς", tl: "tis", pt: "os" }
+      - { el: "οὐρανοῖς,", tl: "uranís,", pt: "Céus" }
+      - { el: "ἁγιασθήτω", tl: "ayiasthíto", pt: "santificado seja" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "ὄνομά", tl: "ónomá", pt: "Nome" }
+      - { el: "σου.", tl: "su.", pt: "teu" }
     pt: "Pai nosso, que estás nos Céus, santificado seja o teu Nome."
     gloss:
       - { el: "Πάτερ", pt: "Pai (vocativo)" }
@@ -38,28 +38,29 @@ items:
 
   - id: pater-2
     kind: phrase
+    title: "venha o teu Reino"
     greek: "Ἐλθέτω ἡ βασιλεία σου. Γενηθήτω τὸ θέλημά σου, ὡς ἐν οὐρανῷ καὶ ἐπὶ τῆς γῆς."
     tts: "Ελθέτω η βασιλεία σου. Γενηθήτω το θέλημά σου, ως εν ουρανώ και επί της γης."
     words:
-      - { el: "Ἐλθέτω", tl: "Elthéto" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "βασιλεία", tl: "vasilía" }
-      - { el: "σου.", tl: "su." }
-      - { el: "Γενηθήτω", tl: "Yenithíto" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "θέλημά", tl: "thélimá" }
-      - { el: "σου,", tl: "su," }
-      - { el: "ὡς", tl: "os" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "οὐρανῷ", tl: "uranó" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἐπὶ", tl: "epí" }
-      - { el: "τῆς", tl: "tis" }
-      - { el: "γῆς.", tl: "yis." }
+      - { el: "Ἐλθέτω", tl: "Elthéto", pt: "venha" }
+      - { el: "ἡ", tl: "i", pt: "o" }
+      - { el: "βασιλεία", tl: "vasilía", pt: "Reino" }
+      - { el: "σου.", tl: "su.", pt: "teu" }
+      - { el: "Γενηθήτω", tl: "Yenithíto", pt: "seja feita" }
+      - { el: "τὸ", tl: "to", pt: "a" }
+      - { el: "θέλημά", tl: "thélimá", pt: "vontade" }
+      - { el: "σου,", tl: "su,", pt: "tua" }
+      - { el: "ὡς", tl: "os", pt: "assim" }
+      - { el: "ἐν", tl: "en", pt: "no" }
+      - { el: "οὐρανῷ", tl: "uranó", pt: "céu" }
+      - { el: "καὶ", tl: "ke", pt: "como" }
+      - { el: "ἐπὶ", tl: "epí", pt: "em" }
+      - { el: "τῆς", tl: "tis", pt: "a" }
+      - { el: "γῆς.", tl: "yis.", pt: "terra" }
     pt: "Venha a nós o teu Reino; seja feita a tua vontade, assim na terra como no céu."
-    gloss:
-      - { el: "βασιλεία", pt: "Reino" }
-      - { el: "θέλημα", pt: "vontade" }
+    segments:
+      - { words: "0-3" }
+      - { words: "4-14" }
     context_pt: >-
       «Βασιλεία» de novo — a palavra com que a Liturgia abre e que o Credo
       diz não ter fim.
@@ -73,14 +74,14 @@ items:
     greek: "Τὸν ἄρτον ἡμῶν τὸν ἐπιούσιον δὸς ἡμῖν σήμερον."
     tts: "Τον άρτον ημών τον επιούσιον δος ημίν σήμερον."
     words:
-      - { el: "Τὸν", tl: "Ton" }
-      - { el: "ἄρτον", tl: "árton" }
-      - { el: "ἡμῶν", tl: "imón" }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "ἐπιούσιον", tl: "epiúsion" }
-      - { el: "δὸς", tl: "dos" }
-      - { el: "ἡμῖν", tl: "imín" }
-      - { el: "σήμερον.", tl: "símeron." }
+      - { el: "Τὸν", tl: "Ton", pt: "o" }
+      - { el: "ἄρτον", tl: "árton", pt: "pão" }
+      - { el: "ἡμῶν", tl: "imón", pt: "nosso" }
+      - { el: "τὸν", tl: "ton", pt: "de" }
+      - { el: "ἐπιούσιον", tl: "epiúsion", pt: "cada dia" }
+      - { el: "δὸς", tl: "dos", pt: "dá" }
+      - { el: "ἡμῖν", tl: "imín", pt: "nos" }
+      - { el: "σήμερον.", tl: "símeron.", pt: "hoje" }
     pt: "O pão nosso de cada dia dá-nos hoje."
     gloss:
       - { el: "ἄρτον", pt: "pão — o mesmo Ἄρτον do altar" }
@@ -98,19 +99,19 @@ items:
     greek: "Καὶ ἄφες ἡμῖν τὰ ὀφειλήματα ἡμῶν, ὡς καὶ ἡμεῖς ἀφίεμεν τοῖς ὀφειλέταις ἡμῶν."
     tts: "Και άφες ημίν τα οφειλήματα ημών, ως και ημείς αφίεμεν τοις οφειλέταις ημών."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "ἄφες", tl: "áfes" }
-      - { el: "ἡμῖν", tl: "imín" }
-      - { el: "τὰ", tl: "ta" }
-      - { el: "ὀφειλήματα", tl: "ofilímata" }
-      - { el: "ἡμῶν,", tl: "imón," }
-      - { el: "ὡς", tl: "os" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡμεῖς", tl: "imís" }
-      - { el: "ἀφίεμεν", tl: "afíemen" }
-      - { el: "τοῖς", tl: "tis" }
-      - { el: "ὀφειλέταις", tl: "ofilétes" }
-      - { el: "ἡμῶν.", tl: "imón." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "ἄφες", tl: "áfes", pt: "perdoa" }
+      - { el: "ἡμῖν", tl: "imín", pt: "nos" }
+      - { el: "τὰ", tl: "ta", pt: "as" }
+      - { el: "ὀφειλήματα", tl: "ofilímata", pt: "dívidas" }
+      - { el: "ἡμῶν,", tl: "imón,", pt: "nossas" }
+      - { el: "ὡς", tl: "os", pt: "assim" }
+      - { el: "καὶ", tl: "ke", pt: "como" }
+      - { el: "ἡμεῖς", tl: "imís", pt: "nós" }
+      - { el: "ἀφίεμεν", tl: "afíemen", pt: "perdoamos" }
+      - { el: "τοῖς", tl: "tis", pt: "aos" }
+      - { el: "ὀφειλέταις", tl: "ofilétes", pt: "devedores" }
+      - { el: "ἡμῶν.", tl: "imón.", pt: "nossos" }
     pt: "E perdoa as nossas dívidas assim como nós perdoamos aos nossos devedores."
     gloss:
       - { el: "ἄφες", pt: "perdoa — a raiz de ἄφεσις, remissão" }
@@ -128,18 +129,18 @@ items:
     greek: "Καὶ μὴ εἰσενέγκῃς ἡμᾶς εἰς πειρασμόν, ἀλλὰ ῥῦσαι ἡμᾶς ἀπὸ τοῦ πονηροῦ."
     tts: "Και μη εισενέγκης ημάς εις πειρασμόν, αλλά ρύσαι ημάς από του πονηρού."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "μὴ", tl: "mi" }
-      - { el: "εἰσενέγκῃς", tl: "isenéngis" }
-      - { el: "ἡμᾶς", tl: "imás" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "πειρασμόν,", tl: "pirasmón," }
-      - { el: "ἀλλὰ", tl: "allá" }
-      - { el: "ῥῦσαι", tl: "ríse" }
-      - { el: "ἡμᾶς", tl: "imás" }
-      - { el: "ἀπὸ", tl: "apó" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "πονηροῦ.", tl: "ponirú." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "μὴ", tl: "mi", pt: "não" }
+      - { el: "εἰσενέγκῃς", tl: "isenéngis", pt: "deixes cair" }
+      - { el: "ἡμᾶς", tl: "imás", pt: "nos" }
+      - { el: "εἰς", tl: "is", pt: "em" }
+      - { el: "πειρασμόν,", tl: "pirasmón,", pt: "tentação" }
+      - { el: "ἀλλὰ", tl: "allá", pt: "mas" }
+      - { el: "ῥῦσαι", tl: "ríse", pt: "livra" }
+      - { el: "ἡμᾶς", tl: "imás", pt: "nos" }
+      - { el: "ἀπὸ", tl: "apó", pt: "do" }
+      - { el: "τοῦ", tl: "tu", pt: "o" }
+      - { el: "πονηροῦ.", tl: "ponirú.", pt: "mal" }
     pt: "E não nos deixes cair em tentação, mas livra-nos do mal."
     gloss:
       - { el: "πειρασμόν", pt: "tentação, prova" }
@@ -154,42 +155,44 @@ items:
 
   - id: pater-doxologia
     kind: phrase
+    title: "porque teu é o Reino"
     greek: "Ὅτι σοῦ ἐστιν ἡ βασιλεία καὶ ἡ δύναμις καὶ ἡ δόξα, τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
     tts: "Ότι σου εστίν η βασιλεία και η δύναμις και η δόξα, του Πατρός και του Υιού και του αγίου Πνεύματος, νυν και αει και εις τους αιώνας των αιώνων."
     words:
-      - { el: "Ὅτι", tl: "Óti" }
-      - { el: "σοῦ", tl: "su" }
-      - { el: "ἐστιν", tl: "estín" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "βασιλεία", tl: "vasilía" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "δύναμις", tl: "dínamis" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "δόξα,", tl: "dóxa," }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Πατρὸς", tl: "Patrós" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Υἱοῦ", tl: "Iiú" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "ἁγίου", tl: "ayíu" }
-      - { el: "Πνεύματος,", tl: "Pnévmatos," }
-      - { el: "νῦν", tl: "nin" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἀεὶ", tl: "aí" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "τοὺς", tl: "tus" }
-      - { el: "αἰῶνας", tl: "eónas" }
-      - { el: "τῶν", tl: "ton" }
-      - { el: "αἰώνων.", tl: "eónon." }
+      - { el: "Ὅτι", tl: "Óti", pt: "porque" }
+      - { el: "σοῦ", tl: "su", pt: "teu" }
+      - { el: "ἐστιν", tl: "estín", pt: "é" }
+      - { el: "ἡ", tl: "i", pt: "o" }
+      - { el: "βασιλεία", tl: "vasilía", pt: "Reino" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἡ", tl: "i", pt: "o" }
+      - { el: "δύναμις", tl: "dínamis", pt: "poder" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἡ", tl: "i", pt: "a" }
+      - { el: "δόξα,", tl: "dóxa,", pt: "glória" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "Πατρὸς", tl: "Patrós", pt: "Pai" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "Υἱοῦ", tl: "Iiú", pt: "Filho" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "ἁγίου", tl: "ayíu", pt: "santo" }
+      - { el: "Πνεύματος,", tl: "Pnévmatos,", pt: "Espírito" }
+      - { el: "νῦν", tl: "nin", pt: "agora" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἀεὶ", tl: "aí", pt: "sempre" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "εἰς", tl: "is", pt: "para" }
+      - { el: "τοὺς", tl: "tus", pt: "os" }
+      - { el: "αἰῶνας", tl: "eónas", pt: "séculos" }
+      - { el: "τῶν", tl: "ton", pt: "dos" }
+      - { el: "αἰώνων.", tl: "eónon.", pt: "séculos" }
     pt: "Porque teu é o Reino, o poder e a glória, do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos."
-    gloss:
-      - { el: "δύναμις", pt: "poder — daí «dínamo», «dinâmica»" }
-      - { el: "νῦν καὶ ἀεί", pt: "agora e sempre — você já sabe do «Καὶ νῦν»" }
+    segments:
+      - { words: "0-10" }
+      - { words: "11-19" }
+      - { words: "20-28" }
     context_pt: >-
       A conclusão do sacerdote — e repare como termina igual a tantas
       orações que você já conhece: «…τῶν αἰώνων». O povo sela: Ἀμήν.
@@ -203,10 +206,10 @@ items:
     greek: "Τὰ ἅγια τοῖς ἁγίοις."
     tts: "Τα άγια τοις αγίοις."
     words:
-      - { el: "Τὰ", tl: "Ta" }
-      - { el: "ἅγια", tl: "áyia" }
-      - { el: "τοῖς", tl: "tis" }
-      - { el: "ἁγίοις.", tl: "ayíis." }
+      - { el: "Τὰ", tl: "Ta", pt: "as coisas" }
+      - { el: "ἅγια", tl: "áyia", pt: "santas" }
+      - { el: "τοῖς", tl: "tis", pt: "para os" }
+      - { el: "ἁγίοις.", tl: "ayíis.", pt: "santos" }
     pt: "As coisas santas para os santos."
     gloss:
       - { el: "τὰ ἅγια", pt: "as coisas santas — os Dons" }
@@ -222,23 +225,25 @@ items:
 
   - id: is-agios
     kind: phrase
+    title: "um só é santo"
     greek: "Εἷς ἅγιος, εἷς Κύριος, Ἰησοῦς Χριστός, εἰς δόξαν Θεοῦ Πατρός. Ἀμήν."
     tts: "Εις άγιος, εις Κύριος, Ιησούς Χριστός, εις δόξαν Θεού Πατρός. Αμήν."
     words:
-      - { el: "Εἷς", tl: "Is" }
-      - { el: "ἅγιος,", tl: "áyios," }
-      - { el: "εἷς", tl: "is" }
-      - { el: "Κύριος,", tl: "Kírios," }
-      - { el: "Ἰησοῦς", tl: "Iisús" }
-      - { el: "Χριστός,", tl: "Christós," }
-      - { el: "εἰς", tl: "is" }
-      - { el: "δόξαν", tl: "dóxan" }
-      - { el: "Θεοῦ", tl: "Theú" }
-      - { el: "Πατρός.", tl: "Patrós." }
-      - { el: "Ἀμήν.", tl: "Amín." }
+      - { el: "Εἷς", tl: "Is", pt: "um só" }
+      - { el: "ἅγιος,", tl: "áyios,", pt: "é santo" }
+      - { el: "εἷς", tl: "is", pt: "um só" }
+      - { el: "Κύριος,", tl: "Kírios,", pt: "é Senhor" }
+      - { el: "Ἰησοῦς", tl: "Iisús", pt: "Jesus" }
+      - { el: "Χριστός,", tl: "Christós,", pt: "Cristo" }
+      - { el: "εἰς", tl: "is", pt: "para" }
+      - { el: "δόξαν", tl: "dóxan", pt: "glória" }
+      - { el: "Θεοῦ", tl: "Theú", pt: "de Deus" }
+      - { el: "Πατρός.", tl: "Patrós.", pt: "Pai" }
+      - { el: "Ἀμήν.", tl: "Amín.", pt: "amém" }
     pt: "Um só é santo, um só é Senhor: Jesus Cristo, para a glória de Deus Pai. Amém."
-    gloss:
-      - { el: "εἷς", pt: "um só (numeral)" }
+    segments:
+      - { words: "0-5" }
+      - { words: "6-10" }
     context_pt: >-
       A resposta do povo ao «Τὰ ἅγια τοῖς ἁγίοις» — de Filipenses 2:11.
     source: "Divina Liturgia (GOA), p. 28"
@@ -251,13 +256,13 @@ items:
     greek: "Μετὰ φόβου Θεοῦ, πίστεως καὶ ἀγάπης προσέλθετε."
     tts: "Μετά φόβου Θεού, πίστεως και αγάπης προσέλθετε."
     words:
-      - { el: "Μετὰ", tl: "Metá" }
-      - { el: "φόβου", tl: "fóvu" }
-      - { el: "Θεοῦ,", tl: "Theú," }
-      - { el: "πίστεως", tl: "písteos" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἀγάπης", tl: "agápis" }
-      - { el: "προσέλθετε.", tl: "prosélthete." }
+      - { el: "Μετὰ", tl: "Metá", pt: "com" }
+      - { el: "φόβου", tl: "fóvu", pt: "temor" }
+      - { el: "Θεοῦ,", tl: "Theú,", pt: "de Deus" }
+      - { el: "πίστεως", tl: "písteos", pt: "fé" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἀγάπης", tl: "agápis", pt: "amor" }
+      - { el: "προσέλθετε.", tl: "prosélthete.", pt: "aproximai-vos" }
     pt: "Com temor de Deus, fé e amor, aproximai-vos."
     gloss:
       - { el: "φόβου", pt: "temor (reverente)" }
@@ -275,17 +280,17 @@ items:
     greek: "Σῶσον, ὁ Θεός, τὸν λαόν σου καὶ εὐλόγησον τὴν κληρονομίαν σου."
     tts: "Σώσον, ο Θεός, τον λαόν σου και ευλόγησον την κληρονομίαν σου."
     words:
-      - { el: "Σῶσον,", tl: "Sóson," }
-      - { el: "ὁ", tl: "o" }
-      - { el: "Θεός,", tl: "Theós," }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "λαόν", tl: "laón" }
-      - { el: "σου", tl: "su" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "εὐλόγησον", tl: "evlóyison" }
-      - { el: "τὴν", tl: "tin" }
-      - { el: "κληρονομίαν", tl: "klironomían" }
-      - { el: "σου.", tl: "su." }
+      - { el: "Σῶσον,", tl: "Sóson,", pt: "salva" }
+      - { el: "ὁ", tl: "o", pt: "ó" }
+      - { el: "Θεός,", tl: "Theós,", pt: "Deus" }
+      - { el: "τὸν", tl: "ton", pt: "o" }
+      - { el: "λαόν", tl: "laón", pt: "povo" }
+      - { el: "σου", tl: "su", pt: "teu" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "εὐλόγησον", tl: "evlóyison", pt: "abençoa" }
+      - { el: "τὴν", tl: "tin", pt: "a" }
+      - { el: "κληρονομίαν", tl: "klironomían", pt: "herança" }
+      - { el: "σου.", tl: "su.", pt: "tua" }
     pt: "Salva, ó Deus, o teu povo e abençoa a tua herança."
     gloss:
       - { el: "λαόν", pt: "povo — laós, como «leigo»" }
@@ -299,31 +304,33 @@ items:
 
   - id: idomen
     kind: phrase
+    title: "vimos a luz verdadeira"
     greek: "Εἴδομεν τὸ φῶς τὸ ἀληθινόν, ἐλάβομεν Πνεῦμα ἐπουράνιον, εὕρομεν πίστιν ἀληθῆ, ἀδιαίρετον Τριάδα προσκυνοῦντες· αὕτη γὰρ ἡμᾶς ἔσωσεν."
     tts: "Είδομεν το φως το αληθινόν, ελάβομεν Πνεύμα επουράνιον, εύρομεν πίστιν αληθή, αδιαίρετον Τριάδα προσκυνούντες. Αύτη γαρ ημάς έσωσεν."
     words:
-      - { el: "Εἴδομεν", tl: "Ídomen" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "φῶς", tl: "fos" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ἀληθινόν,", tl: "alithinón," }
-      - { el: "ἐλάβομεν", tl: "elávomen" }
-      - { el: "Πνεῦμα", tl: "Pnévma" }
-      - { el: "ἐπουράνιον,", tl: "epuránion," }
-      - { el: "εὕρομεν", tl: "évromen" }
-      - { el: "πίστιν", tl: "pístin" }
-      - { el: "ἀληθῆ,", tl: "alithí," }
-      - { el: "ἀδιαίρετον", tl: "adiéreton" }
-      - { el: "Τριάδα", tl: "Triáda" }
-      - { el: "προσκυνοῦντες·", tl: "proskinúndes;" }
-      - { el: "αὕτη", tl: "áfti" }
-      - { el: "γὰρ", tl: "gar" }
-      - { el: "ἡμᾶς", tl: "imás" }
-      - { el: "ἔσωσεν.", tl: "ésosen." }
+      - { el: "Εἴδομεν", tl: "Ídomen", pt: "vimos" }
+      - { el: "τὸ", tl: "to", pt: "a" }
+      - { el: "φῶς", tl: "fos", pt: "luz" }
+      - { el: "τὸ", tl: "to", pt: "a" }
+      - { el: "ἀληθινόν,", tl: "alithinón,", pt: "verdadeira" }
+      - { el: "ἐλάβομεν", tl: "elávomen", pt: "recebemos" }
+      - { el: "Πνεῦμα", tl: "Pnévma", pt: "Espírito" }
+      - { el: "ἐπουράνιον,", tl: "epuránion,", pt: "celestial" }
+      - { el: "εὕρομεν", tl: "évromen", pt: "encontramos" }
+      - { el: "πίστιν", tl: "pístin", pt: "fé" }
+      - { el: "ἀληθῆ,", tl: "alithí,", pt: "verdadeira" }
+      - { el: "ἀδιαίρετον", tl: "adiéreton", pt: "indivisível" }
+      - { el: "Τριάδα", tl: "Triáda", pt: "Trindade" }
+      - { el: "προσκυνοῦντες·", tl: "proskinúndes;", pt: "adorando" }
+      - { el: "αὕτη", tl: "áfti", pt: "ela" }
+      - { el: "γὰρ", tl: "gar", pt: "pois" }
+      - { el: "ἡμᾶς", tl: "imás", pt: "nos" }
+      - { el: "ἔσωσεν.", tl: "ésosen.", pt: "salvou" }
     pt: "Vimos a luz verdadeira, recebemos o Espírito celestial, encontramos a fé verdadeira, adorando a Trindade indivisível: pois ela nos salvou."
-    gloss:
-      - { el: "Εἴδομεν τὸ φῶς", pt: "vimos a luz — o hino de depois da Comunhão" }
-      - { el: "Τριάδα", pt: "Trindade" }
+    segments:
+      - { words: "0-4" }
+      - { words: "5-10" }
+      - { words: "11-17" }
     context_pt: >-
       Cantado pelo povo logo depois da Comunhão — «Luz da Luz» do Credo,
       agora vista, recebida, encontrada.

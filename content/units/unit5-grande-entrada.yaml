@@ -12,38 +12,39 @@ unit:
 items:
   - id: cherubikon
     kind: phrase
+    title: "o hino dos querubins"
     greek: "Οἱ τὰ Χερουβεὶμ μυστικῶς εἰκονίζοντες καὶ τῇ ζωοποιῷ Τριάδι τὸν τρισάγιον ὕμνον προσᾴδοντες, πᾶσαν νῦν βιοτικὴν ἀποθώμεθα μέριμναν, ὡς τὸν βασιλέα τῶν ὅλων ὑποδεξόμενοι."
     tts: "Οι τα Χερουβείμ μυστικώς εικονίζοντες και τη ζωοποιώ Τριάδι τον τρισάγιον ύμνον προσάδοντες, πάσαν νυν βιοτικήν αποθώμεθα μέριμναν, ως τον βασιλέα των όλων υποδεξόμενοι."
     words:
-      - { el: "Οἱ",            tl: "I" }
-      - { el: "τὰ",            tl: "ta" }
-      - { el: "Χερουβεὶμ",     tl: "Cheruvím" }
-      - { el: "μυστικῶς",      tl: "mistikós" }
-      - { el: "εἰκονίζοντες",  tl: "ikonízondes" }
-      - { el: "καὶ",           tl: "ke" }
-      - { el: "τῇ",            tl: "ti" }
-      - { el: "ζωοποιῷ",       tl: "zoopió" }
-      - { el: "Τριάδι",        tl: "Triádi" }
-      - { el: "τὸν",           tl: "ton" }
-      - { el: "τρισάγιον",     tl: "trisáyion" }
-      - { el: "ὕμνον",         tl: "ímnon" }
-      - { el: "προσᾴδοντες,",  tl: "prosádondes," }
-      - { el: "πᾶσαν",         tl: "pásan" }
-      - { el: "νῦν",           tl: "nin" }
-      - { el: "βιοτικὴν",      tl: "viotikín" }
-      - { el: "ἀποθώμεθα",     tl: "apothómetha" }
-      - { el: "μέριμναν,",     tl: "mérimnan," }
-      - { el: "ὡς",            tl: "os" }
-      - { el: "τὸν",           tl: "ton" }
-      - { el: "βασιλέα",       tl: "vasiléa" }
-      - { el: "τῶν",           tl: "ton" }
-      - { el: "ὅλων",          tl: "ólon" }
-      - { el: "ὑποδεξόμενοι.", tl: "ipodexómeni." }
+      - { el: "Οἱ",            tl: "I", pt: "nós que" }
+      - { el: "τὰ",            tl: "ta", pt: "os" }
+      - { el: "Χερουβεὶμ",     tl: "Cheruvím", pt: "querubins" }
+      - { el: "μυστικῶς",      tl: "mistikós", pt: "misticamente" }
+      - { el: "εἰκονίζοντες",  tl: "ikonízondes", pt: "representamos" }
+      - { el: "καὶ",           tl: "ke", pt: "e" }
+      - { el: "τῇ",            tl: "ti", pt: "à" }
+      - { el: "ζωοποιῷ",       tl: "zoopió", pt: "vivificante" }
+      - { el: "Τριάδι",        tl: "Triádi", pt: "Trindade" }
+      - { el: "τὸν",           tl: "ton", pt: "o" }
+      - { el: "τρισάγιον",     tl: "trisáyion", pt: "trisságio" }
+      - { el: "ὕμνον",         tl: "ímnon", pt: "hino" }
+      - { el: "προσᾴδοντες,",  tl: "prosádondes,", pt: "cantamos" }
+      - { el: "πᾶσαν",         tl: "pásan", pt: "toda" }
+      - { el: "νῦν",           tl: "nin", pt: "agora" }
+      - { el: "βιοτικὴν",      tl: "viotikín", pt: "mundana" }
+      - { el: "ἀποθώμεθα",     tl: "apothómetha", pt: "deixemos de lado" }
+      - { el: "μέριμναν,",     tl: "mérimnan,", pt: "preocupação" }
+      - { el: "ὡς",            tl: "os", pt: "para" }
+      - { el: "τὸν",           tl: "ton", pt: "o" }
+      - { el: "βασιλέα",       tl: "vasiléa", pt: "Rei" }
+      - { el: "τῶν",           tl: "ton", pt: "de" }
+      - { el: "ὅλων",          tl: "ólon", pt: "todos" }
+      - { el: "ὑποδεξόμενοι.", tl: "ipodexómeni.", pt: "recebermos" }
     pt: "Nós que misticamente representamos os querubins e cantamos à Trindade vivificante o hino trisságio, deixemos agora de lado toda preocupação mundana, para recebermos o Rei de todos."
-    gloss:
-      - { el: "μυστικῶς",         pt: "misticamente" }
-      - { el: "βιοτικὴν μέριμναν", pt: "preocupação mundana, cuidado da vida" }
-      - { el: "ὑποδεξόμενοι",     pt: "prestes a receber (como hóspede)" }
+    segments:
+      - { words: "0-4" }
+      - { words: "5-12" }
+      - { words: "13-23" }
     context_pt: >-
       O Hino Querubínico. Enquanto o coro o canta devagar, o sacerdote prepara
       a Grande Entrada. É um convite a largar tudo — «deixemos toda preocupação
@@ -55,33 +56,34 @@ items:
 
   - id: panton-imon
     kind: phrase
+    title: "a todos vós recorde o Senhor"
     greek: "Πάντων ὑμῶν μνησθείη Κύριος ὁ Θεὸς ἐν τῇ βασιλείᾳ αὐτοῦ, πάντοτε, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
     tts: "Πάντων υμών μνησθείη Κύριος ο Θεός εν τη βασιλεία αυτού, πάντοτε, νυν και αει και εις τους αιώνας των αιώνων."
     words:
-      - { el: "Πάντων",     tl: "Pándon" }
-      - { el: "ὑμῶν",       tl: "imón" }
-      - { el: "μνησθείη",   tl: "mnisthíi" }
-      - { el: "Κύριος",     tl: "Kírios" }
-      - { el: "ὁ",          tl: "o" }
-      - { el: "Θεὸς",       tl: "Theós" }
-      - { el: "ἐν",         tl: "en" }
-      - { el: "τῇ",         tl: "ti" }
-      - { el: "βασιλείᾳ",   tl: "vasilía" }
-      - { el: "αὐτοῦ,",     tl: "aftú," }
-      - { el: "πάντοτε,",   tl: "pándote," }
-      - { el: "νῦν",        tl: "nin" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "ἀεὶ",        tl: "aí" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "εἰς",        tl: "is" }
-      - { el: "τοὺς",       tl: "tus" }
-      - { el: "αἰῶνας",     tl: "eónas" }
-      - { el: "τῶν",        tl: "ton" }
-      - { el: "αἰώνων.",    tl: "eónon." }
+      - { el: "Πάντων",     tl: "Pándon", pt: "a todos" }
+      - { el: "ὑμῶν",       tl: "imón", pt: "vós" }
+      - { el: "μνησθείη",   tl: "mnisthíi", pt: "recorde" }
+      - { el: "Κύριος",     tl: "Kírios", pt: "Senhor" }
+      - { el: "ὁ",          tl: "o", pt: "o" }
+      - { el: "Θεὸς",       tl: "Theós", pt: "Deus" }
+      - { el: "ἐν",         tl: "en", pt: "em" }
+      - { el: "τῇ",         tl: "ti", pt: "o" }
+      - { el: "βασιλείᾳ",   tl: "vasilía", pt: "reino" }
+      - { el: "αὐτοῦ,",     tl: "aftú,", pt: "seu" }
+      - { el: "πάντοτε,",   tl: "pándote,", pt: "sempre" }
+      - { el: "νῦν",        tl: "nin", pt: "agora" }
+      - { el: "καὶ",        tl: "ke", pt: "e" }
+      - { el: "ἀεὶ",        tl: "aí", pt: "sempre" }
+      - { el: "καὶ",        tl: "ke", pt: "e" }
+      - { el: "εἰς",        tl: "is", pt: "para" }
+      - { el: "τοὺς",       tl: "tus", pt: "os" }
+      - { el: "αἰῶνας",     tl: "eónas", pt: "séculos" }
+      - { el: "τῶν",        tl: "ton", pt: "dos" }
+      - { el: "αἰώνων.",    tl: "eónon.", pt: "séculos" }
     pt: "A todos vós recorde o Senhor Deus no seu reino, sempre, agora e sempre e pelos séculos dos séculos."
-    gloss:
-      - { el: "μνησθείη", pt: "recorde, lembre-se de (optativo)" }
-      - { el: "βασιλείᾳ", pt: "reino" }
+    segments:
+      - { words: "0-10" }
+      - { words: "11-19" }
     context_pt: >-
       É isto que o sacerdote (ou o diácono) proclama na Grande Entrada, de pé
       diante do povo com os dons sagrados nas mãos: «que o Senhor vos recorde
@@ -96,8 +98,8 @@ items:
     greek: "Παράσχου, Κύριε."
     tts: "Παράσχου, Κύριε."
     words:
-      - { el: "Παράσχου,", tl: "Paráschu," }
-      - { el: "Κύριε.",    tl: "Kírie." }
+      - { el: "Παράσχου,", tl: "Paráschu,", pt: "concede" }
+      - { el: "Κύριε.",    tl: "Kírie.", pt: "Senhor" }
     pt: "Concede, Senhor."
     gloss:
       - { el: "παράσχου", pt: "concede (imperativo)" }
