@@ -11,25 +11,26 @@ unit:
 items:
   - id: anafora-stomen
     kind: phrase
+    title: "estejamos de pé"
     greek: "Στῶμεν καλῶς· στῶμεν μετὰ φόβου· πρόσχωμεν τὴν ἁγίαν ἀναφορὰν ἐν εἰρήνῃ προσφέρειν."
     tts: "Στώμεν καλώς. Στώμεν μετά φόβου. Πρόσχωμεν την αγίαν αναφοράν εν ειρήνη προσφέρειν."
     words:
-      - { el: "Στῶμεν", tl: "Stómen" }
-      - { el: "καλῶς·", tl: "kalós;" }
-      - { el: "στῶμεν", tl: "stómen" }
-      - { el: "μετὰ", tl: "metá" }
-      - { el: "φόβου·", tl: "fóvu;" }
-      - { el: "πρόσχωμεν", tl: "próschomen" }
-      - { el: "τὴν", tl: "tin" }
-      - { el: "ἁγίαν", tl: "ayían" }
-      - { el: "ἀναφορὰν", tl: "anaforán" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "εἰρήνῃ", tl: "iríni" }
-      - { el: "προσφέρειν.", tl: "prosférin." }
+      - { el: "Στῶμεν", tl: "Stómen", pt: "estejamos de pé" }
+      - { el: "καλῶς·", tl: "kalós;", pt: "com reverência" }
+      - { el: "στῶμεν", tl: "stómen", pt: "estejamos" }
+      - { el: "μετὰ", tl: "metá", pt: "com" }
+      - { el: "φόβου·", tl: "fóvu;", pt: "temor" }
+      - { el: "πρόσχωμεν", tl: "próschomen", pt: "atentos" }
+      - { el: "τὴν", tl: "tin", pt: "a" }
+      - { el: "ἁγίαν", tl: "ayían", pt: "santa" }
+      - { el: "ἀναφορὰν", tl: "anaforán", pt: "oblação" }
+      - { el: "ἐν", tl: "en", pt: "em" }
+      - { el: "εἰρήνῃ", tl: "iríni", pt: "paz" }
+      - { el: "προσφέρειν.", tl: "prosférin.", pt: "para oferecer" }
     pt: "Estejamos de pé, com reverência; estejamos com temor; atentos, para oferecer em paz a santa oblação."
-    gloss:
-      - { el: "στῶμεν", pt: "estejamos de pé" }
-      - { el: "ἀναφοράν", pt: "anáfora — a oferenda elevada (ana + phéro)" }
+    segments:
+      - { words: "0-4" }
+      - { words: "5-11" }
     context_pt: >-
       O chamado do diácono que abre a Anáfora: tudo o que vem agora pede o
       nosso corpo de pé e o coração desperto.
@@ -43,10 +44,10 @@ items:
     greek: "Ἔλεον εἰρήνης, θυσίαν αἰνέσεως."
     tts: "Έλεον ειρήνης, θυσίαν αινέσεως."
     words:
-      - { el: "Ἔλεον", tl: "Éleon" }
-      - { el: "εἰρήνης,", tl: "irínis," }
-      - { el: "θυσίαν", tl: "thisían" }
-      - { el: "αἰνέσεως.", tl: "enéseos." }
+      - { el: "Ἔλεον", tl: "Éleon", pt: "misericórdia" }
+      - { el: "εἰρήνης,", tl: "irínis,", pt: "de paz" }
+      - { el: "θυσίαν", tl: "thisían", pt: "sacrifício" }
+      - { el: "αἰνέσεως.", tl: "enéseos.", pt: "de louvor" }
     pt: "Misericórdia de paz, sacrifício de louvor."
     gloss:
       - { el: "ἔλεον", pt: "misericórdia — a raiz de «ἐλέησον»" }
@@ -61,38 +62,39 @@ items:
 
   - id: anafora-haris
     kind: phrase
+    title: "a graça de nosso Senhor"
     greek: "Ἡ χάρις τοῦ Κυρίου ἡμῶν Ἰησοῦ Χριστοῦ καὶ ἡ ἀγάπη τοῦ Θεοῦ καὶ Πατρὸς καὶ ἡ κοινωνία τοῦ ἁγίου Πνεύματος εἴη μετὰ πάντων ὑμῶν."
     tts: "Η χάρις του Κυρίου ημών Ιησού Χριστού και η αγάπη του Θεού και Πατρός και η κοινωνία του αγίου Πνεύματος είη μετά πάντων υμών."
     words:
-      - { el: "Ἡ", tl: "I" }
-      - { el: "χάρις", tl: "cháris" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Κυρίου", tl: "Kiríu" }
-      - { el: "ἡμῶν", tl: "imón" }
-      - { el: "Ἰησοῦ", tl: "Iisú" }
-      - { el: "Χριστοῦ", tl: "Christú" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "ἀγάπη", tl: "agápi" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Θεοῦ", tl: "Theú" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "Πατρὸς", tl: "Patrós" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "κοινωνία", tl: "kinonía" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "ἁγίου", tl: "ayíu" }
-      - { el: "Πνεύματος", tl: "Pnévmatos" }
-      - { el: "εἴη", tl: "íi" }
-      - { el: "μετὰ", tl: "metá" }
-      - { el: "πάντων", tl: "pándon" }
-      - { el: "ὑμῶν.", tl: "imón." }
+      - { el: "Ἡ", tl: "I", pt: "a" }
+      - { el: "χάρις", tl: "cháris", pt: "graça" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "Κυρίου", tl: "Kiríu", pt: "Senhor" }
+      - { el: "ἡμῶν", tl: "imón", pt: "nosso" }
+      - { el: "Ἰησοῦ", tl: "Iisú", pt: "Jesus" }
+      - { el: "Χριστοῦ", tl: "Christú", pt: "Cristo" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἡ", tl: "i", pt: "o" }
+      - { el: "ἀγάπη", tl: "agápi", pt: "amor" }
+      - { el: "τοῦ", tl: "tu", pt: "de" }
+      - { el: "Θεοῦ", tl: "Theú", pt: "Deus" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "Πατρὸς", tl: "Patrós", pt: "Pai" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἡ", tl: "i", pt: "a" }
+      - { el: "κοινωνία", tl: "kinonía", pt: "comunhão" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "ἁγίου", tl: "ayíu", pt: "Santo" }
+      - { el: "Πνεύματος", tl: "Pnévmatos", pt: "Espírito" }
+      - { el: "εἴη", tl: "íi", pt: "estejam" }
+      - { el: "μετὰ", tl: "metá", pt: "com" }
+      - { el: "πάντων", tl: "pándon", pt: "todos" }
+      - { el: "ὑμῶν.", tl: "imón.", pt: "vós" }
     pt: "A graça de nosso Senhor Jesus Cristo, e o amor de Deus Pai, e a comunhão do Espírito Santo estejam com todos vós."
-    gloss:
-      - { el: "χάρις", pt: "graça" }
-      - { el: "ἀγάπη", pt: "amor" }
-      - { el: "κοινωνία", pt: "comunhão" }
+    segments:
+      - { words: "0-6" }
+      - { words: "7-13" }
+      - { words: "14-23" }
     context_pt: >-
       A bênção trinitária — são as palavras de S. Paulo em 2Co 13:13,
       ditas pelo sacerdote voltado para o povo.
@@ -106,11 +108,11 @@ items:
     greek: "Καὶ μετὰ τοῦ πνεύματός σου."
     tts: "Και μετά του πνεύματός σου."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "μετὰ", tl: "metá" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "πνεύματός", tl: "pnévmatós" }
-      - { el: "σου.", tl: "su." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "μετὰ", tl: "metá", pt: "com" }
+      - { el: "τοῦ", tl: "tu", pt: "o" }
+      - { el: "πνεύματός", tl: "pnévmatós", pt: "espírito" }
+      - { el: "σου.", tl: "su.", pt: "teu" }
     pt: "E com o teu espírito."
     gloss:
       - { el: "μετὰ + genitivo", pt: "com — repare: aqui é «μετὰ τοῦ», não «τῷ»" }
@@ -127,10 +129,10 @@ items:
     greek: "Ἄνω σχῶμεν τὰς καρδίας."
     tts: "Άνω σχώμεν τας καρδίας."
     words:
-      - { el: "Ἄνω", tl: "Áno" }
-      - { el: "σχῶμεν", tl: "schómen" }
-      - { el: "τὰς", tl: "tas" }
-      - { el: "καρδίας.", tl: "kardías." }
+      - { el: "Ἄνω", tl: "Áno", pt: "ao alto" }
+      - { el: "σχῶμεν", tl: "schómen", pt: "elevemos" }
+      - { el: "τὰς", tl: "tas", pt: "os" }
+      - { el: "καρδίας.", tl: "kardías.", pt: "corações" }
     pt: "Elevemos os corações."
     gloss:
       - { el: "ἄνω", pt: "para o alto" }
@@ -148,10 +150,10 @@ items:
     greek: "Ἔχομεν πρὸς τὸν Κύριον."
     tts: "Έχομεν προς τον Κύριον."
     words:
-      - { el: "Ἔχομεν", tl: "Échomen" }
-      - { el: "πρὸς", tl: "pros" }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "Κύριον.", tl: "Kírion." }
+      - { el: "Ἔχομεν", tl: "Échomen", pt: "já os temos" }
+      - { el: "πρὸς", tl: "pros", pt: "junto a" }
+      - { el: "τὸν", tl: "ton", pt: "o" }
+      - { el: "Κύριον.", tl: "Kírion.", pt: "Senhor" }
     pt: "Já os temos junto ao Senhor."
     gloss:
       - { el: "ἔχομεν", pt: "temos (o coração já está lá)" }
@@ -168,9 +170,9 @@ items:
     greek: "Εὐχαριστήσωμεν τῷ Κυρίῳ."
     tts: "Ευχαριστήσωμεν τω Κυρίω."
     words:
-      - { el: "Εὐχαριστήσωμεν", tl: "Efcharistísomen" }
-      - { el: "τῷ", tl: "to" }
-      - { el: "Κυρίῳ.", tl: "Kirío." }
+      - { el: "Εὐχαριστήσωμεν", tl: "Efcharistísomen", pt: "demos graças" }
+      - { el: "τῷ", tl: "to", pt: "ao" }
+      - { el: "Κυρίῳ.", tl: "Kirío.", pt: "Senhor" }
     pt: "Demos graças ao Senhor."
     gloss:
       - { el: "εὐχαριστήσωμεν", pt: "demos graças — daí «Eucaristia»" }
@@ -187,9 +189,9 @@ items:
     greek: "Ἄξιον καὶ δίκαιον."
     tts: "Άξιον και δίκαιον."
     words:
-      - { el: "Ἄξιον", tl: "Áxion" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "δίκαιον.", tl: "díkeon." }
+      - { el: "Ἄξιον", tl: "Áxion", pt: "é digno" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "δίκαιον.", tl: "díkeon.", pt: "justo" }
     pt: "É digno e justo."
     gloss:
       - { el: "ἄξιον", pt: "digno — como no «Ἄξιος!» das ordenações" }
@@ -204,42 +206,45 @@ items:
 
   - id: anafora-agios
     kind: phrase
+    title: "santo, santo, santo"
     greek: "Ἅγιος, ἅγιος, ἅγιος Κύριος Σαβαώθ· πλήρης ὁ οὐρανὸς καὶ ἡ γῆ τῆς δόξης σου. Ὡσαννὰ ἐν τοῖς ὑψίστοις· εὐλογημένος ὁ ἐρχόμενος ἐν ὀνόματι Κυρίου. Ὡσαννὰ ὁ ἐν τοῖς ὑψίστοις."
     tts: "Άγιος, άγιος, άγιος Κύριος Σαβαώθ. Πλήρης ο ουρανός και η γη της δόξης σου. Ωσαννά εν τοις υψίστοις. Ευλογημένος ο ερχόμενος εν ονόματι Κυρίου. Ωσαννά ο εν τοις υψίστοις."
     words:
-      - { el: "Ἅγιος,", tl: "Áyios," }
-      - { el: "ἅγιος,", tl: "áyios," }
-      - { el: "ἅγιος", tl: "áyios" }
-      - { el: "Κύριος", tl: "Kírios" }
-      - { el: "Σαβαώθ·", tl: "Savaóth;" }
-      - { el: "πλήρης", tl: "plíris" }
-      - { el: "ὁ", tl: "o" }
-      - { el: "οὐρανὸς", tl: "uranós" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἡ", tl: "i" }
-      - { el: "γῆ", tl: "yi" }
-      - { el: "τῆς", tl: "tis" }
-      - { el: "δόξης", tl: "dóxis" }
-      - { el: "σου.", tl: "su." }
-      - { el: "Ὡσαννὰ", tl: "Osanná" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "τοῖς", tl: "tis" }
-      - { el: "ὑψίστοις·", tl: "ipsístis;" }
-      - { el: "εὐλογημένος", tl: "evloyiménos" }
-      - { el: "ὁ", tl: "o" }
-      - { el: "ἐρχόμενος", tl: "erchómenos" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "ὀνόματι", tl: "onómati" }
-      - { el: "Κυρίου.", tl: "Kiríu." }
-      - { el: "Ὡσαννὰ", tl: "Osanná" }
-      - { el: "ὁ", tl: "o" }
-      - { el: "ἐν", tl: "en" }
-      - { el: "τοῖς", tl: "tis" }
-      - { el: "ὑψίστοις.", tl: "ipsístis." }
+      - { el: "Ἅγιος,", tl: "Áyios,", pt: "santo" }
+      - { el: "ἅγιος,", tl: "áyios,", pt: "santo" }
+      - { el: "ἅγιος", tl: "áyios", pt: "santo" }
+      - { el: "Κύριος", tl: "Kírios", pt: "é o Senhor" }
+      - { el: "Σαβαώθ·", tl: "Savaóth;", pt: "Sabaoth" }
+      - { el: "πλήρης", tl: "plíris", pt: "cheios estão" }
+      - { el: "ὁ", tl: "o", pt: "o" }
+      - { el: "οὐρανὸς", tl: "uranós", pt: "céu" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἡ", tl: "i", pt: "a" }
+      - { el: "γῆ", tl: "yi", pt: "terra" }
+      - { el: "τῆς", tl: "tis", pt: "da" }
+      - { el: "δόξης", tl: "dóxis", pt: "glória" }
+      - { el: "σου.", tl: "su.", pt: "tua" }
+      - { el: "Ὡσαννὰ", tl: "Osanná", pt: "hosana" }
+      - { el: "ἐν", tl: "en", pt: "em" }
+      - { el: "τοῖς", tl: "tis", pt: "as" }
+      - { el: "ὑψίστοις·", tl: "ipsístis;", pt: "alturas" }
+      - { el: "εὐλογημένος", tl: "evloyiménos", pt: "bendito" }
+      - { el: "ὁ", tl: "o", pt: "o" }
+      - { el: "ἐρχόμενος", tl: "erchómenos", pt: "que vem" }
+      - { el: "ἐν", tl: "en", pt: "em" }
+      - { el: "ὀνόματι", tl: "onómati", pt: "nome" }
+      - { el: "Κυρίου.", tl: "Kiríu.", pt: "do Senhor" }
+      - { el: "Ὡσαννὰ", tl: "Osanná", pt: "hosana" }
+      - { el: "ὁ", tl: "o", pt: "o" }
+      - { el: "ἐν", tl: "en", pt: "em" }
+      - { el: "τοῖς", tl: "tis", pt: "as" }
+      - { el: "ὑψίστοις.", tl: "ipsístis.", pt: "alturas" }
     pt: "Santo, santo, santo é o Senhor Sabaoth; cheios estão o céu e a terra da tua glória. Hosana nas alturas; bendito o que vem em nome do Senhor. Hosana nas alturas."
-    gloss:
-      - { el: "Σαβαώθ", pt: "dos Exércitos (hebraico Tsevaot)" }
-      - { el: "Ὡσαννά", pt: "Hosana — «salva, nós te pedimos»" }
+    segments:
+      - { words: "0-4" }
+      - { words: "5-13" }
+      - { words: "14-23" }
+      - { words: "24-28" }
     context_pt: >-
       O hino dos serafins de Isaías 6 unido ao grito do Domingo de Ramos —
       céu e terra cantando juntos.
@@ -250,27 +255,28 @@ items:
 
   - id: anafora-lavete
     kind: phrase
+    title: "tomai, comei"
     greek: "Λάβετε, φάγετε· τοῦτό μού ἐστι τὸ Σῶμα, τὸ ὑπὲρ ὑμῶν κλώμενον εἰς ἄφεσιν ἁμαρτιῶν."
     tts: "Λάβετε, φάγετε. Τούτό μου εστί το Σώμα, το υπέρ υμών κλώμενον εις άφεσιν αμαρτιών."
     words:
-      - { el: "Λάβετε,", tl: "Lávete," }
-      - { el: "φάγετε·", tl: "fáyete;" }
-      - { el: "τοῦτό", tl: "tutó" }
-      - { el: "μού", tl: "mu" }
-      - { el: "ἐστι", tl: "estí" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "Σῶμα,", tl: "Sóma," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ὑπὲρ", tl: "ipér" }
-      - { el: "ὑμῶν", tl: "imón" }
-      - { el: "κλώμενον", tl: "klómenon" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "ἄφεσιν", tl: "áfesin" }
-      - { el: "ἁμαρτιῶν.", tl: "amartión." }
+      - { el: "Λάβετε,", tl: "Lávete,", pt: "tomai" }
+      - { el: "φάγετε·", tl: "fáyete;", pt: "comei" }
+      - { el: "τοῦτό", tl: "tutó", pt: "isto" }
+      - { el: "μού", tl: "mu", pt: "meu" }
+      - { el: "ἐστι", tl: "estí", pt: "é" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "Σῶμα,", tl: "Sóma,", pt: "Corpo" }
+      - { el: "τὸ", tl: "to", pt: "que" }
+      - { el: "ὑπὲρ", tl: "ipér", pt: "por" }
+      - { el: "ὑμῶν", tl: "imón", pt: "vós" }
+      - { el: "κλώμενον", tl: "klómenon", pt: "é partido" }
+      - { el: "εἰς", tl: "is", pt: "para" }
+      - { el: "ἄφεσιν", tl: "áfesin", pt: "remissão" }
+      - { el: "ἁμαρτιῶν.", tl: "amartión.", pt: "dos pecados" }
     pt: "Tomai, comei: isto é o meu Corpo, que por vós é partido para a remissão dos pecados."
-    gloss:
-      - { el: "Λάβετε, φάγετε", pt: "tomai, comei" }
-      - { el: "Σῶμα", pt: "Corpo" }
+    segments:
+      - { words: "0-6" }
+      - { words: "7-13" }
     context_pt: >-
       As palavras do próprio Cristo na Última Ceia, ditas em voz alta pelo
       sacerdote. O povo responde: Ἀμήν.
@@ -281,35 +287,37 @@ items:
 
   - id: anafora-piete
     kind: phrase
+    title: "bebei dele todos"
     greek: "Πίετε ἐξ αὐτοῦ πάντες· τοῦτό ἐστι τὸ Αἷμά μου, τὸ τῆς καινῆς διαθήκης, τὸ ὑπὲρ ὑμῶν καὶ πολλῶν ἐκχυνόμενον εἰς ἄφεσιν ἁμαρτιῶν."
     tts: "Πίετε εξ αυτού πάντες. Τούτό εστί το Αίμά μου, το της καινής διαθήκης, το υπέρ υμών και πολλών εκχυνόμενον εις άφεσιν αμαρτιών."
     words:
-      - { el: "Πίετε", tl: "Píete" }
-      - { el: "ἐξ", tl: "ex" }
-      - { el: "αὐτοῦ", tl: "aftú" }
-      - { el: "πάντες·", tl: "pándes;" }
-      - { el: "τοῦτό", tl: "tutó" }
-      - { el: "ἐστι", tl: "estí" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "Αἷμά", tl: "Émá" }
-      - { el: "μου,", tl: "mu," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "τῆς", tl: "tis" }
-      - { el: "καινῆς", tl: "kenís" }
-      - { el: "διαθήκης,", tl: "diathíkis," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ὑπὲρ", tl: "ipér" }
-      - { el: "ὑμῶν", tl: "imón" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "πολλῶν", tl: "pollón" }
-      - { el: "ἐκχυνόμενον", tl: "ekchinómenon" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "ἄφεσιν", tl: "áfesin" }
-      - { el: "ἁμαρτιῶν.", tl: "amartión." }
+      - { el: "Πίετε", tl: "Píete", pt: "bebei" }
+      - { el: "ἐξ", tl: "ex", pt: "de" }
+      - { el: "αὐτοῦ", tl: "aftú", pt: "ele" }
+      - { el: "πάντες·", tl: "pándes;", pt: "todos" }
+      - { el: "τοῦτό", tl: "tutó", pt: "isto" }
+      - { el: "ἐστι", tl: "estí", pt: "é" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "Αἷμά", tl: "Émá", pt: "Sangue" }
+      - { el: "μου,", tl: "mu,", pt: "meu" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "τῆς", tl: "tis", pt: "da" }
+      - { el: "καινῆς", tl: "kenís", pt: "nova" }
+      - { el: "διαθήκης,", tl: "diathíkis,", pt: "aliança" }
+      - { el: "τὸ", tl: "to", pt: "que" }
+      - { el: "ὑπὲρ", tl: "ipér", pt: "por" }
+      - { el: "ὑμῶν", tl: "imón", pt: "vós" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "πολλῶν", tl: "pollón", pt: "por muitos" }
+      - { el: "ἐκχυνόμενον", tl: "ekchinómenon", pt: "é derramado" }
+      - { el: "εἰς", tl: "is", pt: "para" }
+      - { el: "ἄφεσιν", tl: "áfesin", pt: "remissão" }
+      - { el: "ἁμαρτιῶν.", tl: "amartión.", pt: "dos pecados" }
     pt: "Bebei dele todos: isto é o meu Sangue, o da nova aliança, que por vós e por muitos é derramado para a remissão dos pecados."
-    gloss:
-      - { el: "Αἷμα", pt: "Sangue" }
-      - { el: "καινῆς διαθήκης", pt: "nova aliança" }
+    segments:
+      - { words: "0-3" }
+      - { words: "4-12" }
+      - { words: "13-21" }
     context_pt: >-
       A segunda palavra da instituição. Repare como «εἰς ἄφεσιν ἁμαρτιῶν»
       ecoa o Credo («um só batismo εἰς ἄφεσιν ἁμαρτιῶν»).
@@ -323,18 +331,18 @@ items:
     greek: "Τὰ σὰ ἐκ τῶν σῶν σοὶ προσφέρομεν κατὰ πάντα καὶ διὰ πάντα."
     tts: "Τα σα εκ των σων σοι προσφέρομεν κατά πάντα και διά πάντα."
     words:
-      - { el: "Τὰ", tl: "Ta" }
-      - { el: "σὰ", tl: "sa" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "τῶν", tl: "ton" }
-      - { el: "σῶν", tl: "son" }
-      - { el: "σοὶ", tl: "si" }
-      - { el: "προσφέρομεν", tl: "prosféromen" }
-      - { el: "κατὰ", tl: "katá" }
-      - { el: "πάντα", tl: "pánda" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "διὰ", tl: "diá" }
-      - { el: "πάντα.", tl: "pánda." }
+      - { el: "Τὰ", tl: "Ta", pt: "o que é" }
+      - { el: "σὰ", tl: "sa", pt: "teu" }
+      - { el: "ἐκ", tl: "ek", pt: "do" }
+      - { el: "τῶν", tl: "ton", pt: "que" }
+      - { el: "σῶν", tl: "son", pt: "é teu" }
+      - { el: "σοὶ", tl: "si", pt: "a ti" }
+      - { el: "προσφέρομεν", tl: "prosféromen", pt: "oferecemos" }
+      - { el: "κατὰ", tl: "katá", pt: "em" }
+      - { el: "πάντα", tl: "pánda", pt: "tudo" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "διὰ", tl: "diá", pt: "por" }
+      - { el: "πάντα.", tl: "pánda.", pt: "tudo" }
     pt: "O que é teu, do que é teu, nós te oferecemos, em tudo e por tudo."
     gloss:
       - { el: "τὰ σὰ ἐκ τῶν σῶν", pt: "o que é teu, do que é teu — nada oferecemos que já não seja de Deus" }
@@ -348,26 +356,27 @@ items:
 
   - id: anafora-se-ymnoumen
     kind: phrase
+    title: "nós te louvamos"
     greek: "Σὲ ὑμνοῦμεν, σὲ εὐλογοῦμεν, σοὶ εὐχαριστοῦμεν, Κύριε, καὶ δεόμεθά σου, ὁ Θεὸς ἡμῶν."
     tts: "Σε υμνούμεν, σε ευλογούμεν, σοι ευχαριστούμεν, Κύριε, και δεόμεθά σου, ο Θεός ημών."
     words:
-      - { el: "Σὲ", tl: "Se" }
-      - { el: "ὑμνοῦμεν,", tl: "imnúmen," }
-      - { el: "σὲ", tl: "se" }
-      - { el: "εὐλογοῦμεν,", tl: "evlogúmen," }
-      - { el: "σοὶ", tl: "si" }
-      - { el: "εὐχαριστοῦμεν,", tl: "efcharistúmen," }
-      - { el: "Κύριε,", tl: "Kírie," }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "δεόμεθά", tl: "deómethá" }
-      - { el: "σου,", tl: "su," }
-      - { el: "ὁ", tl: "o" }
-      - { el: "Θεὸς", tl: "Theós" }
-      - { el: "ἡμῶν.", tl: "imón." }
+      - { el: "Σὲ", tl: "Se", pt: "te" }
+      - { el: "ὑμνοῦμεν,", tl: "imnúmen,", pt: "louvamos" }
+      - { el: "σὲ", tl: "se", pt: "te" }
+      - { el: "εὐλογοῦμεν,", tl: "evlogúmen,", pt: "bendizemos" }
+      - { el: "σοὶ", tl: "si", pt: "te" }
+      - { el: "εὐχαριστοῦμεν,", tl: "efcharistúmen,", pt: "agradecemos" }
+      - { el: "Κύριε,", tl: "Kírie,", pt: "Senhor" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "δεόμεθά", tl: "deómethá", pt: "suplicamos" }
+      - { el: "σου,", tl: "su,", pt: "te" }
+      - { el: "ὁ", tl: "o", pt: "ó" }
+      - { el: "Θεὸς", tl: "Theós", pt: "Deus" }
+      - { el: "ἡμῶν.", tl: "imón.", pt: "nosso" }
     pt: "Nós te louvamos, te bendizemos, te agradecemos, Senhor, e te suplicamos, ó nosso Deus."
-    gloss:
-      - { el: "ὑμνοῦμεν", pt: "louvamos — daí «hino»" }
-      - { el: "δεόμεθα", pt: "suplicamos" }
+    segments:
+      - { words: "0-6" }
+      - { words: "7-12" }
     context_pt: >-
       Cantado pelo povo enquanto o sacerdote invoca o Espírito Santo sobre
       os dons — o momento mais sagrado da Liturgia.
@@ -378,24 +387,26 @@ items:
 
   - id: anafora-exeretos
     kind: phrase
+    title: "de modo especial"
     greek: "Ἐξαιρέτως τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας."
     tts: "Εξαιρέτως της παναγίας, αχράντου, υπερευλογημένης, ενδόξου, δεσποίνης ημών Θεοτόκου και αειπαρθένου Μαρίας."
     words:
-      - { el: "Ἐξαιρέτως",        tl: "Exerétos" }
-      - { el: "τῆς",              tl: "tis" }
-      - { el: "παναγίας,",        tl: "panayías," }
-      - { el: "ἀχράντου,",        tl: "achrándu," }
-      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis," }
-      - { el: "ἐνδόξου,",         tl: "endóxu," }
-      - { el: "δεσποίνης",        tl: "despínis" }
-      - { el: "ἡμῶν",             tl: "imón" }
-      - { el: "Θεοτόκου",         tl: "Theotóku" }
-      - { el: "καὶ",              tl: "ke" }
-      - { el: "ἀειπαρθένου",      tl: "aiparthénu" }
-      - { el: "Μαρίας.",          tl: "Marías." }
+      - { el: "Ἐξαιρέτως",        tl: "Exerétos", pt: "de modo especial" }
+      - { el: "τῆς",              tl: "tis", pt: "pela" }
+      - { el: "παναγίας,",        tl: "panayías,", pt: "toda-santa" }
+      - { el: "ἀχράντου,",        tl: "achrándu,", pt: "imaculada" }
+      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis,", pt: "sobremaneira bendita" }
+      - { el: "ἐνδόξου,",         tl: "endóxu,", pt: "gloriosa" }
+      - { el: "δεσποίνης",        tl: "despínis", pt: "Senhora" }
+      - { el: "ἡμῶν",             tl: "imón", pt: "nossa" }
+      - { el: "Θεοτόκου",         tl: "Theotóku", pt: "Theotókos" }
+      - { el: "καὶ",              tl: "ke", pt: "e" }
+      - { el: "ἀειπαρθένου",      tl: "aiparthénu", pt: "sempre-virgem" }
+      - { el: "Μαρίας.",          tl: "Marías.", pt: "Maria" }
     pt: "De modo especial pela nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria."
-    gloss:
-      - { el: "ἐξαιρέτως", pt: "de modo especial, sobretudo" }
+    segments:
+      - { words: "0-5" }
+      - { words: "6-11" }
     context_pt: >-
       Logo após a invocação do Espírito, o sacerdote recorda todos os santos
       — «e de modo especial» a Theotokos. É a deixa: o povo responde cantando
@@ -407,50 +418,52 @@ items:
 
   - id: anafora-axion-estin
     kind: phrase
+    title: "verdadeiramente é digno"
     greek: "Ἄξιόν ἐστιν ὡς ἀληθῶς μακαρίζειν σε τὴν Θεοτόκον, τὴν ἀειμακάριστον καὶ παναμώμητον καὶ μητέρα τοῦ Θεοῦ ἡμῶν. Τὴν τιμιωτέραν τῶν Χερουβεὶμ καὶ ἐνδοξοτέραν ἀσυγκρίτως τῶν Σεραφείμ, τὴν ἀδιαφθόρως Θεὸν Λόγον τεκοῦσαν, τὴν ὄντως Θεοτόκον, σὲ μεγαλύνομεν."
     tts: "Άξιόν εστιν ως αληθώς μακαρίζειν σε την Θεοτόκον, την αειμακάριστον και παναμώμητον και μητέρα του Θεού ημών. Την τιμιωτέραν των Χερουβείμ και ενδοξοτέραν ασυγκρίτως των Σεραφείμ, την αδιαφθόρως Θεόν Λόγον τεκούσαν, την όντως Θεοτόκον, σε μεγαλύνομεν."
     words:
-      - { el: "Ἄξιόν",         tl: "Áxión" }
-      - { el: "ἐστιν",         tl: "estin" }
-      - { el: "ὡς",            tl: "os" }
-      - { el: "ἀληθῶς",        tl: "alithós" }
-      - { el: "μακαρίζειν",    tl: "makarízin" }
-      - { el: "σε",            tl: "se" }
-      - { el: "τὴν",           tl: "tin" }
-      - { el: "Θεοτόκον,",     tl: "Theotókon," }
-      - { el: "τὴν",           tl: "tin" }
-      - { el: "ἀειμακάριστον", tl: "aimakáriston" }
-      - { el: "καὶ",           tl: "ke" }
-      - { el: "παναμώμητον",   tl: "panamómiton" }
-      - { el: "καὶ",           tl: "ke" }
-      - { el: "μητέρα",        tl: "mitéra" }
-      - { el: "τοῦ",           tl: "tu" }
-      - { el: "Θεοῦ",          tl: "Theú" }
-      - { el: "ἡμῶν.",         tl: "imón." }
-      - { el: "Τὴν",           tl: "Tin" }
-      - { el: "τιμιωτέραν",    tl: "timiotéran" }
-      - { el: "τῶν",           tl: "ton" }
-      - { el: "Χερουβεὶμ",     tl: "Cheruvím" }
-      - { el: "καὶ",           tl: "ke" }
-      - { el: "ἐνδοξοτέραν",   tl: "endoxotéran" }
-      - { el: "ἀσυγκρίτως",    tl: "asingrítos" }
-      - { el: "τῶν",           tl: "ton" }
-      - { el: "Σεραφείμ,",     tl: "Serafím," }
-      - { el: "τὴν",           tl: "tin" }
-      - { el: "ἀδιαφθόρως",    tl: "adiafthóros" }
-      - { el: "Θεὸν",          tl: "Theón" }
-      - { el: "Λόγον",         tl: "Lógon" }
-      - { el: "τεκοῦσαν,",     tl: "tekúsan," }
-      - { el: "τὴν",           tl: "tin" }
-      - { el: "ὄντως",         tl: "óndos" }
-      - { el: "Θεοτόκον,",     tl: "Theotókon," }
-      - { el: "σὲ",            tl: "se" }
-      - { el: "μεγαλύνομεν.",  tl: "megalínomen." }
+      - { el: "Ἄξιόν",         tl: "Áxión", pt: "digno" }
+      - { el: "ἐστιν",         tl: "estin", pt: "é" }
+      - { el: "ὡς",            tl: "os", pt: "de" }
+      - { el: "ἀληθῶς",        tl: "alithós", pt: "verdade" }
+      - { el: "μακαρίζειν",    tl: "makarízin", pt: "bendizer" }
+      - { el: "σε",            tl: "se", pt: "te" }
+      - { el: "τὴν",           tl: "tin", pt: "a" }
+      - { el: "Θεοτόκον,",     tl: "Theotókon,", pt: "Theotókos" }
+      - { el: "τὴν",           tl: "tin", pt: "a" }
+      - { el: "ἀειμακάριστον", tl: "aimakáriston", pt: "sempre bem-aventurada" }
+      - { el: "καὶ",           tl: "ke", pt: "e" }
+      - { el: "παναμώμητον",   tl: "panamómiton", pt: "toda imaculada" }
+      - { el: "καὶ",           tl: "ke", pt: "e" }
+      - { el: "μητέρα",        tl: "mitéra", pt: "Mãe" }
+      - { el: "τοῦ",           tl: "tu", pt: "do" }
+      - { el: "Θεοῦ",          tl: "Theú", pt: "Deus" }
+      - { el: "ἡμῶν.",         tl: "imón.", pt: "nosso" }
+      - { el: "Τὴν",           tl: "Tin", pt: "a" }
+      - { el: "τιμιωτέραν",    tl: "timiotéran", pt: "mais honrosa" }
+      - { el: "τῶν",           tl: "ton", pt: "que os" }
+      - { el: "Χερουβεὶμ",     tl: "Cheruvím", pt: "querubins" }
+      - { el: "καὶ",           tl: "ke", pt: "e" }
+      - { el: "ἐνδοξοτέραν",   tl: "endoxotéran", pt: "mais gloriosa" }
+      - { el: "ἀσυγκρίτως",    tl: "asingrítos", pt: "incomparavelmente" }
+      - { el: "τῶν",           tl: "ton", pt: "que os" }
+      - { el: "Σεραφείμ,",     tl: "Serafím,", pt: "serafins" }
+      - { el: "τὴν",           tl: "tin", pt: "tu que" }
+      - { el: "ἀδιαφθόρως",    tl: "adiafthóros", pt: "sem corrupção" }
+      - { el: "Θεὸν",          tl: "Theón", pt: "Deus" }
+      - { el: "Λόγον",         tl: "Lógon", pt: "Verbo" }
+      - { el: "τεκοῦσαν,",     tl: "tekúsan,", pt: "deste à luz" }
+      - { el: "τὴν",           tl: "tin", pt: "a" }
+      - { el: "ὄντως",         tl: "óndos", pt: "verdadeira" }
+      - { el: "Θεοτόκον,",     tl: "Theotókon,", pt: "Theotókos" }
+      - { el: "σὲ",            tl: "se", pt: "te" }
+      - { el: "μεγαλύνομεν.",  tl: "megalínomen.", pt: "magnificamos" }
     pt: "Verdadeiramente é digno bendizer-te, ó Theotókos, sempre bem-aventurada e toda imaculada, e Mãe do nosso Deus. Mais honrosa que os querubins e incomparavelmente mais gloriosa que os serafins, tu que sem corrupção deste à luz o Deus Verbo, verdadeira Theotókos, nós te magnificamos."
-    gloss:
-      - { el: "τιμιωτέραν",  pt: "mais honrosa" }
-      - { el: "ἀσυγκρίτως",  pt: "incomparavelmente" }
-      - { el: "μεγαλύνομεν", pt: "magnificamos, engrandecemos" }
+    segments:
+      - { words: "0-7" }
+      - { words: "8-16" }
+      - { words: "17-25" }
+      - { words: "26-35" }
     context_pt: >-
       O hino à Theotokos («É verdadeiramente digno») que o povo canta na
       resposta ao sacerdote — um dos mais amados de toda a Igreja. Aqui você

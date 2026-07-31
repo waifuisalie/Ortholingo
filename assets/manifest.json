@@ -4277,65 +4277,68 @@
    "words": [
     {
      "el": "Στῶμεν",
-     "tl": "Stómen"
-    },
-    {
-     "el": "καλῶς·",
-     "tl": "kalós;"
-    },
-    {
-     "el": "στῶμεν",
-     "tl": "stómen"
-    },
-    {
-     "el": "μετὰ",
-     "tl": "metá"
-    },
-    {
-     "el": "φόβου·",
-     "tl": "fóvu;"
-    },
-    {
-     "el": "πρόσχωμεν",
-     "tl": "próschomen"
-    },
-    {
-     "el": "τὴν",
-     "tl": "tin"
-    },
-    {
-     "el": "ἁγίαν",
-     "tl": "ayían"
-    },
-    {
-     "el": "ἀναφορὰν",
-     "tl": "anaforán"
-    },
-    {
-     "el": "ἐν",
-     "tl": "en"
-    },
-    {
-     "el": "εἰρήνῃ",
-     "tl": "iríni"
-    },
-    {
-     "el": "προσφέρειν.",
-     "tl": "prosférin."
-    }
-   ],
-   "pt": "Estejamos de pé, com reverência; estejamos com temor; atentos, para oferecer em paz a santa oblação.",
-   "gloss": [
-    {
-     "el": "στῶμεν",
+     "tl": "Stómen",
      "pt": "estejamos de pé"
     },
     {
-     "el": "ἀναφοράν",
-     "pt": "anáfora — a oferenda elevada (ana + phéro)"
+     "el": "καλῶς·",
+     "tl": "kalós;",
+     "pt": "com reverência"
+    },
+    {
+     "el": "στῶμεν",
+     "tl": "stómen",
+     "pt": "estejamos"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá",
+     "pt": "com"
+    },
+    {
+     "el": "φόβου·",
+     "tl": "fóvu;",
+     "pt": "temor"
+    },
+    {
+     "el": "πρόσχωμεν",
+     "tl": "próschomen",
+     "pt": "atentos"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin",
+     "pt": "a"
+    },
+    {
+     "el": "ἁγίαν",
+     "tl": "ayían",
+     "pt": "santa"
+    },
+    {
+     "el": "ἀναφορὰν",
+     "tl": "anaforán",
+     "pt": "oblação"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en",
+     "pt": "em"
+    },
+    {
+     "el": "εἰρήνῃ",
+     "tl": "iríni",
+     "pt": "paz"
+    },
+    {
+     "el": "προσφέρειν.",
+     "tl": "prosférin.",
+     "pt": "para oferecer"
     }
    ],
-   "title": "",
+   "pt": "Estejamos de pé, com reverência; estejamos com temor; atentos, para oferecer em paz a santa oblação.",
+   "gloss": [],
+   "title": "estejamos de pé",
    "context_pt": "O chamado do diácono que abre a Anáfora: tudo o que vem agora pede o nosso corpo de pé e o coração desperto.",
    "source": "Divina Liturgia (GOA), p. 20",
    "tags": [
@@ -4359,6 +4362,36 @@
     "εν",
     "ειρηνη",
     "προσφερειν"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      4
+     ],
+     "normal": [
+      0.1,
+      3.947
+     ],
+     "slow": [
+      0.1,
+      6.675
+     ]
+    },
+    {
+     "words": [
+      5,
+      11
+     ],
+     "normal": [
+      4.932,
+      7.888
+     ],
+     "slow": [
+      8.35,
+      13.375
+     ]
+    }
    ]
   },
   "anafora-eleon": {
@@ -4368,19 +4401,23 @@
    "words": [
     {
      "el": "Ἔλεον",
-     "tl": "Éleon"
+     "tl": "Éleon",
+     "pt": "misericórdia"
     },
     {
      "el": "εἰρήνης,",
-     "tl": "irínis,"
+     "tl": "irínis,",
+     "pt": "de paz"
     },
     {
      "el": "θυσίαν",
-     "tl": "thisían"
+     "tl": "thisían",
+     "pt": "sacrifício"
     },
     {
      "el": "αἰνέσεως.",
-     "tl": "enéseos."
+     "tl": "enéseos.",
+     "pt": "de louvor"
     }
    ],
    "pt": "Misericórdia de paz, sacrifício de louvor.",
@@ -4418,117 +4455,128 @@
    "words": [
     {
      "el": "Ἡ",
-     "tl": "I"
+     "tl": "I",
+     "pt": "a"
     },
     {
      "el": "χάρις",
-     "tl": "cháris"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Κυρίου",
-     "tl": "Kiríu"
-    },
-    {
-     "el": "ἡμῶν",
-     "tl": "imón"
-    },
-    {
-     "el": "Ἰησοῦ",
-     "tl": "Iisú"
-    },
-    {
-     "el": "Χριστοῦ",
-     "tl": "Christú"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "ἡ",
-     "tl": "i"
-    },
-    {
-     "el": "ἀγάπη",
-     "tl": "agápi"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Θεοῦ",
-     "tl": "Theú"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "Πατρὸς",
-     "tl": "Patrós"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "ἡ",
-     "tl": "i"
-    },
-    {
-     "el": "κοινωνία",
-     "tl": "kinonía"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "ἁγίου",
-     "tl": "ayíu"
-    },
-    {
-     "el": "Πνεύματος",
-     "tl": "Pnévmatos"
-    },
-    {
-     "el": "εἴη",
-     "tl": "íi"
-    },
-    {
-     "el": "μετὰ",
-     "tl": "metá"
-    },
-    {
-     "el": "πάντων",
-     "tl": "pándon"
-    },
-    {
-     "el": "ὑμῶν.",
-     "tl": "imón."
-    }
-   ],
-   "pt": "A graça de nosso Senhor Jesus Cristo, e o amor de Deus Pai, e a comunhão do Espírito Santo estejam com todos vós.",
-   "gloss": [
-    {
-     "el": "χάρις",
+     "tl": "cháris",
      "pt": "graça"
     },
     {
+     "el": "τοῦ",
+     "tl": "tu",
+     "pt": "do"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu",
+     "pt": "Senhor"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón",
+     "pt": "nosso"
+    },
+    {
+     "el": "Ἰησοῦ",
+     "tl": "Iisú",
+     "pt": "Jesus"
+    },
+    {
+     "el": "Χριστοῦ",
+     "tl": "Christú",
+     "pt": "Cristo"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i",
+     "pt": "o"
+    },
+    {
      "el": "ἀγάπη",
+     "tl": "agápi",
      "pt": "amor"
     },
     {
+     "el": "τοῦ",
+     "tl": "tu",
+     "pt": "de"
+    },
+    {
+     "el": "Θεοῦ",
+     "tl": "Theú",
+     "pt": "Deus"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "Πατρὸς",
+     "tl": "Patrós",
+     "pt": "Pai"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "ἡ",
+     "tl": "i",
+     "pt": "a"
+    },
+    {
      "el": "κοινωνία",
+     "tl": "kinonía",
      "pt": "comunhão"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu",
+     "pt": "do"
+    },
+    {
+     "el": "ἁγίου",
+     "tl": "ayíu",
+     "pt": "Santo"
+    },
+    {
+     "el": "Πνεύματος",
+     "tl": "Pnévmatos",
+     "pt": "Espírito"
+    },
+    {
+     "el": "εἴη",
+     "tl": "íi",
+     "pt": "estejam"
+    },
+    {
+     "el": "μετὰ",
+     "tl": "metá",
+     "pt": "com"
+    },
+    {
+     "el": "πάντων",
+     "tl": "pándon",
+     "pt": "todos"
+    },
+    {
+     "el": "ὑμῶν.",
+     "tl": "imón.",
+     "pt": "vós"
     }
    ],
-   "title": "",
+   "pt": "A graça de nosso Senhor Jesus Cristo, e o amor de Deus Pai, e a comunhão do Espírito Santo estejam com todos vós.",
+   "gloss": [],
+   "title": "a graça de nosso Senhor",
    "context_pt": "A bênção trinitária — são as palavras de S. Paulo em 2Co 13:13, ditas pelo sacerdote voltado para o povo.",
    "source": "Divina Liturgia (GOA), p. 20",
    "tags": [
@@ -4564,6 +4612,50 @@
     "μετα",
     "παντων",
     "υμων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      6
+     ],
+     "normal": [
+      0.1,
+      2.306
+     ],
+     "slow": [
+      0.1,
+      3.85
+     ]
+    },
+    {
+     "words": [
+      7,
+      13
+     ],
+     "normal": [
+      2.306,
+      3.791
+     ],
+     "slow": [
+      3.85,
+      6.375
+     ]
+    },
+    {
+     "words": [
+      14,
+      23
+     ],
+     "normal": [
+      3.791,
+      7.806
+     ],
+     "slow": [
+      6.375,
+      13.2
+     ]
+    }
    ]
   },
   "anafora-ke-meta": {
@@ -4573,23 +4665,28 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "μετὰ",
-     "tl": "metá"
+     "tl": "metá",
+     "pt": "com"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "o"
     },
     {
      "el": "πνεύματός",
-     "tl": "pnévmatós"
+     "tl": "pnévmatós",
+     "pt": "espírito"
     },
     {
      "el": "σου.",
-     "tl": "su."
+     "tl": "su.",
+     "pt": "teu"
     }
    ],
    "pt": "E com o teu espírito.",
@@ -4624,19 +4721,23 @@
    "words": [
     {
      "el": "Ἄνω",
-     "tl": "Áno"
+     "tl": "Áno",
+     "pt": "ao alto"
     },
     {
      "el": "σχῶμεν",
-     "tl": "schómen"
+     "tl": "schómen",
+     "pt": "elevemos"
     },
     {
      "el": "τὰς",
-     "tl": "tas"
+     "tl": "tas",
+     "pt": "os"
     },
     {
      "el": "καρδίας.",
-     "tl": "kardías."
+     "tl": "kardías.",
+     "pt": "corações"
     }
    ],
    "pt": "Elevemos os corações.",
@@ -4675,19 +4776,23 @@
    "words": [
     {
      "el": "Ἔχομεν",
-     "tl": "Échomen"
+     "tl": "Échomen",
+     "pt": "já os temos"
     },
     {
      "el": "πρὸς",
-     "tl": "pros"
+     "tl": "pros",
+     "pt": "junto a"
     },
     {
      "el": "τὸν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "o"
     },
     {
      "el": "Κύριον.",
-     "tl": "Kírion."
+     "tl": "Kírion.",
+     "pt": "Senhor"
     }
    ],
    "pt": "Já os temos junto ao Senhor.",
@@ -4721,15 +4826,18 @@
    "words": [
     {
      "el": "Εὐχαριστήσωμεν",
-     "tl": "Efcharistísomen"
+     "tl": "Efcharistísomen",
+     "pt": "demos graças"
     },
     {
      "el": "τῷ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "ao"
     },
     {
      "el": "Κυρίῳ.",
-     "tl": "Kirío."
+     "tl": "Kirío.",
+     "pt": "Senhor"
     }
    ],
    "pt": "Demos graças ao Senhor.",
@@ -4763,15 +4871,18 @@
    "words": [
     {
      "el": "Ἄξιον",
-     "tl": "Áxion"
+     "tl": "Áxion",
+     "pt": "é digno"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "δίκαιον.",
-     "tl": "díkeon."
+     "tl": "díkeon.",
+     "pt": "justo"
     }
    ],
    "pt": "É digno e justo.",
@@ -4808,133 +4919,153 @@
    "words": [
     {
      "el": "Ἅγιος,",
-     "tl": "Áyios,"
+     "tl": "Áyios,",
+     "pt": "santo"
     },
     {
      "el": "ἅγιος,",
-     "tl": "áyios,"
+     "tl": "áyios,",
+     "pt": "santo"
     },
     {
      "el": "ἅγιος",
-     "tl": "áyios"
+     "tl": "áyios",
+     "pt": "santo"
     },
     {
      "el": "Κύριος",
-     "tl": "Kírios"
+     "tl": "Kírios",
+     "pt": "é o Senhor"
     },
     {
      "el": "Σαβαώθ·",
-     "tl": "Savaóth;"
+     "tl": "Savaóth;",
+     "pt": "Sabaoth"
     },
     {
      "el": "πλήρης",
-     "tl": "plíris"
+     "tl": "plíris",
+     "pt": "cheios estão"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "o"
     },
     {
      "el": "οὐρανὸς",
-     "tl": "uranós"
+     "tl": "uranós",
+     "pt": "céu"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἡ",
-     "tl": "i"
+     "tl": "i",
+     "pt": "a"
     },
     {
      "el": "γῆ",
-     "tl": "yi"
+     "tl": "yi",
+     "pt": "terra"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "da"
     },
     {
      "el": "δόξης",
-     "tl": "dóxis"
+     "tl": "dóxis",
+     "pt": "glória"
     },
     {
      "el": "σου.",
-     "tl": "su."
+     "tl": "su.",
+     "pt": "tua"
     },
     {
      "el": "Ὡσαννὰ",
-     "tl": "Osanná"
+     "tl": "Osanná",
+     "pt": "hosana"
     },
     {
      "el": "ἐν",
-     "tl": "en"
+     "tl": "en",
+     "pt": "em"
     },
     {
      "el": "τοῖς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "as"
     },
     {
      "el": "ὑψίστοις·",
-     "tl": "ipsístis;"
+     "tl": "ipsístis;",
+     "pt": "alturas"
     },
     {
      "el": "εὐλογημένος",
-     "tl": "evloyiménos"
+     "tl": "evloyiménos",
+     "pt": "bendito"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "o"
     },
     {
      "el": "ἐρχόμενος",
-     "tl": "erchómenos"
+     "tl": "erchómenos",
+     "pt": "que vem"
     },
     {
      "el": "ἐν",
-     "tl": "en"
+     "tl": "en",
+     "pt": "em"
     },
     {
      "el": "ὀνόματι",
-     "tl": "onómati"
+     "tl": "onómati",
+     "pt": "nome"
     },
     {
      "el": "Κυρίου.",
-     "tl": "Kiríu."
+     "tl": "Kiríu.",
+     "pt": "do Senhor"
     },
     {
      "el": "Ὡσαννὰ",
-     "tl": "Osanná"
+     "tl": "Osanná",
+     "pt": "hosana"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "o"
     },
     {
      "el": "ἐν",
-     "tl": "en"
+     "tl": "en",
+     "pt": "em"
     },
     {
      "el": "τοῖς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "as"
     },
     {
      "el": "ὑψίστοις.",
-     "tl": "ipsístis."
+     "tl": "ipsístis.",
+     "pt": "alturas"
     }
    ],
    "pt": "Santo, santo, santo é o Senhor Sabaoth; cheios estão o céu e a terra da tua glória. Hosana nas alturas; bendito o que vem em nome do Senhor. Hosana nas alturas.",
-   "gloss": [
-    {
-     "el": "Σαβαώθ",
-     "pt": "dos Exércitos (hebraico Tsevaot)"
-    },
-    {
-     "el": "Ὡσαννά",
-     "pt": "Hosana — «salva, nós te pedimos»"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "santo, santo, santo",
    "context_pt": "O hino dos serafins de Isaías 6 unido ao grito do Domingo de Ramos — céu e terra cantando juntos.",
    "source": "Divina Liturgia (GOA), p. 21",
    "tags": [
@@ -4975,6 +5106,64 @@
     "εν",
     "τοισ",
     "υψιστοισ"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      4
+     ],
+     "normal": [
+      0.1,
+      3.615
+     ],
+     "slow": [
+      0.1,
+      6.075
+     ]
+    },
+    {
+     "words": [
+      5,
+      13
+     ],
+     "normal": [
+      4.609,
+      6.962
+     ],
+     "slow": [
+      7.8,
+      11.8
+     ]
+    },
+    {
+     "words": [
+      14,
+      23
+     ],
+     "normal": [
+      7.947,
+      13.241
+     ],
+     "slow": [
+      13.475,
+      22.475
+     ]
+    },
+    {
+     "words": [
+      24,
+      28
+     ],
+     "normal": [
+      14.226,
+      15.991
+     ],
+     "slow": [
+      24.15,
+      27.15
+     ]
+    }
    ]
   },
   "anafora-lavete": {
@@ -4984,73 +5173,78 @@
    "words": [
     {
      "el": "Λάβετε,",
-     "tl": "Lávete,"
+     "tl": "Lávete,",
+     "pt": "tomai"
     },
     {
      "el": "φάγετε·",
-     "tl": "fáyete;"
+     "tl": "fáyete;",
+     "pt": "comei"
     },
     {
      "el": "τοῦτό",
-     "tl": "tutó"
+     "tl": "tutó",
+     "pt": "isto"
     },
     {
      "el": "μού",
-     "tl": "mu"
+     "tl": "mu",
+     "pt": "meu"
     },
     {
      "el": "ἐστι",
-     "tl": "estí"
+     "tl": "estí",
+     "pt": "é"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "Σῶμα,",
-     "tl": "Sóma,"
+     "tl": "Sóma,",
+     "pt": "Corpo"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "que"
     },
     {
      "el": "ὑπὲρ",
-     "tl": "ipér"
+     "tl": "ipér",
+     "pt": "por"
     },
     {
      "el": "ὑμῶν",
-     "tl": "imón"
+     "tl": "imón",
+     "pt": "vós"
     },
     {
      "el": "κλώμενον",
-     "tl": "klómenon"
+     "tl": "klómenon",
+     "pt": "é partido"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "para"
     },
     {
      "el": "ἄφεσιν",
-     "tl": "áfesin"
+     "tl": "áfesin",
+     "pt": "remissão"
     },
     {
      "el": "ἁμαρτιῶν.",
-     "tl": "amartión."
+     "tl": "amartión.",
+     "pt": "dos pecados"
     }
    ],
    "pt": "Tomai, comei: isto é o meu Corpo, que por vós é partido para a remissão dos pecados.",
-   "gloss": [
-    {
-     "el": "Λάβετε, φάγετε",
-     "pt": "tomai, comei"
-    },
-    {
-     "el": "Σῶμα",
-     "pt": "Corpo"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "tomai, comei",
    "context_pt": "As palavras do próprio Cristo na Última Ceia, ditas em voz alta pelo sacerdote. O povo responde: Ἀμήν.",
    "source": "Divina Liturgia (GOA), p. 21",
    "tags": [
@@ -5077,6 +5271,36 @@
     "εισ",
     "αφεσιν",
     "αμαρτιων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      6
+     ],
+     "normal": [
+      0.1,
+      4.491
+     ],
+     "slow": [
+      0.1,
+      7.6
+     ]
+    },
+    {
+     "words": [
+      7,
+      13
+     ],
+     "normal": [
+      4.653,
+      7.197
+     ],
+     "slow": [
+      7.875,
+      12.2
+     ]
+    }
    ]
   },
   "anafora-piete": {
@@ -5086,105 +5310,118 @@
    "words": [
     {
      "el": "Πίετε",
-     "tl": "Píete"
+     "tl": "Píete",
+     "pt": "bebei"
     },
     {
      "el": "ἐξ",
-     "tl": "ex"
+     "tl": "ex",
+     "pt": "de"
     },
     {
      "el": "αὐτοῦ",
-     "tl": "aftú"
+     "tl": "aftú",
+     "pt": "ele"
     },
     {
      "el": "πάντες·",
-     "tl": "pándes;"
+     "tl": "pándes;",
+     "pt": "todos"
     },
     {
      "el": "τοῦτό",
-     "tl": "tutó"
+     "tl": "tutó",
+     "pt": "isto"
     },
     {
      "el": "ἐστι",
-     "tl": "estí"
+     "tl": "estí",
+     "pt": "é"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "Αἷμά",
-     "tl": "Émá"
-    },
-    {
-     "el": "μου,",
-     "tl": "mu,"
-    },
-    {
-     "el": "τὸ",
-     "tl": "to"
-    },
-    {
-     "el": "τῆς",
-     "tl": "tis"
-    },
-    {
-     "el": "καινῆς",
-     "tl": "kenís"
-    },
-    {
-     "el": "διαθήκης,",
-     "tl": "diathíkis,"
-    },
-    {
-     "el": "τὸ",
-     "tl": "to"
-    },
-    {
-     "el": "ὑπὲρ",
-     "tl": "ipér"
-    },
-    {
-     "el": "ὑμῶν",
-     "tl": "imón"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "πολλῶν",
-     "tl": "pollón"
-    },
-    {
-     "el": "ἐκχυνόμενον",
-     "tl": "ekchinómenon"
-    },
-    {
-     "el": "εἰς",
-     "tl": "is"
-    },
-    {
-     "el": "ἄφεσιν",
-     "tl": "áfesin"
-    },
-    {
-     "el": "ἁμαρτιῶν.",
-     "tl": "amartión."
-    }
-   ],
-   "pt": "Bebei dele todos: isto é o meu Sangue, o da nova aliança, que por vós e por muitos é derramado para a remissão dos pecados.",
-   "gloss": [
-    {
-     "el": "Αἷμα",
+     "tl": "Émá",
      "pt": "Sangue"
     },
     {
-     "el": "καινῆς διαθήκης",
-     "pt": "nova aliança"
+     "el": "μου,",
+     "tl": "mu,",
+     "pt": "meu"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to",
+     "pt": "o"
+    },
+    {
+     "el": "τῆς",
+     "tl": "tis",
+     "pt": "da"
+    },
+    {
+     "el": "καινῆς",
+     "tl": "kenís",
+     "pt": "nova"
+    },
+    {
+     "el": "διαθήκης,",
+     "tl": "diathíkis,",
+     "pt": "aliança"
+    },
+    {
+     "el": "τὸ",
+     "tl": "to",
+     "pt": "que"
+    },
+    {
+     "el": "ὑπὲρ",
+     "tl": "ipér",
+     "pt": "por"
+    },
+    {
+     "el": "ὑμῶν",
+     "tl": "imón",
+     "pt": "vós"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "πολλῶν",
+     "tl": "pollón",
+     "pt": "por muitos"
+    },
+    {
+     "el": "ἐκχυνόμενον",
+     "tl": "ekchinómenon",
+     "pt": "é derramado"
+    },
+    {
+     "el": "εἰς",
+     "tl": "is",
+     "pt": "para"
+    },
+    {
+     "el": "ἄφεσιν",
+     "tl": "áfesin",
+     "pt": "remissão"
+    },
+    {
+     "el": "ἁμαρτιῶν.",
+     "tl": "amartión.",
+     "pt": "dos pecados"
     }
    ],
-   "title": "",
+   "pt": "Bebei dele todos: isto é o meu Sangue, o da nova aliança, que por vós e por muitos é derramado para a remissão dos pecados.",
+   "gloss": [],
+   "title": "bebei dele todos",
    "context_pt": "A segunda palavra da instituição. Repare como «εἰς ἄφεσιν ἁμαρτιῶν» ecoa o Credo («um só batismo εἰς ἄφεσιν ἁμαρτιῶν»).",
    "source": "Divina Liturgia (GOA), p. 21",
    "tags": [
@@ -5219,6 +5456,50 @@
     "εισ",
     "αφεσιν",
     "αμαρτιων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      3
+     ],
+     "normal": [
+      0.1,
+      1.6
+     ],
+     "slow": [
+      0.1,
+      2.65
+     ]
+    },
+    {
+     "words": [
+      4,
+      12
+     ],
+     "normal": [
+      2.594,
+      5.565
+     ],
+     "slow": [
+      4.375,
+      9.425
+     ]
+    },
+    {
+     "words": [
+      13,
+      21
+     ],
+     "normal": [
+      5.741,
+      8.874
+     ],
+     "slow": [
+      9.725,
+      15.05
+     ]
+    }
    ]
   },
   "anafora-ta-sa": {
@@ -5228,51 +5509,63 @@
    "words": [
     {
      "el": "Τὰ",
-     "tl": "Ta"
+     "tl": "Ta",
+     "pt": "o que é"
     },
     {
      "el": "σὰ",
-     "tl": "sa"
+     "tl": "sa",
+     "pt": "teu"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "do"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "que"
     },
     {
      "el": "σῶν",
-     "tl": "son"
+     "tl": "son",
+     "pt": "é teu"
     },
     {
      "el": "σοὶ",
-     "tl": "si"
+     "tl": "si",
+     "pt": "a ti"
     },
     {
      "el": "προσφέρομεν",
-     "tl": "prosféromen"
+     "tl": "prosféromen",
+     "pt": "oferecemos"
     },
     {
      "el": "κατὰ",
-     "tl": "katá"
+     "tl": "katá",
+     "pt": "em"
     },
     {
      "el": "πάντα",
-     "tl": "pánda"
+     "tl": "pánda",
+     "pt": "tudo"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "διὰ",
-     "tl": "diá"
+     "tl": "diá",
+     "pt": "por"
     },
     {
      "el": "πάντα.",
-     "tl": "pánda."
+     "tl": "pánda.",
+     "pt": "tudo"
     }
    ],
    "pt": "O que é teu, do que é teu, nós te oferecemos, em tudo e por tudo.",
@@ -5315,69 +5608,73 @@
    "words": [
     {
      "el": "Σὲ",
-     "tl": "Se"
+     "tl": "Se",
+     "pt": "te"
     },
     {
      "el": "ὑμνοῦμεν,",
-     "tl": "imnúmen,"
+     "tl": "imnúmen,",
+     "pt": "louvamos"
     },
     {
      "el": "σὲ",
-     "tl": "se"
+     "tl": "se",
+     "pt": "te"
     },
     {
      "el": "εὐλογοῦμεν,",
-     "tl": "evlogúmen,"
+     "tl": "evlogúmen,",
+     "pt": "bendizemos"
     },
     {
      "el": "σοὶ",
-     "tl": "si"
+     "tl": "si",
+     "pt": "te"
     },
     {
      "el": "εὐχαριστοῦμεν,",
-     "tl": "efcharistúmen,"
+     "tl": "efcharistúmen,",
+     "pt": "agradecemos"
     },
     {
      "el": "Κύριε,",
-     "tl": "Kírie,"
+     "tl": "Kírie,",
+     "pt": "Senhor"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "δεόμεθά",
-     "tl": "deómethá"
+     "tl": "deómethá",
+     "pt": "suplicamos"
     },
     {
      "el": "σου,",
-     "tl": "su,"
+     "tl": "su,",
+     "pt": "te"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "ó"
     },
     {
      "el": "Θεὸς",
-     "tl": "Theós"
+     "tl": "Theós",
+     "pt": "Deus"
     },
     {
      "el": "ἡμῶν.",
-     "tl": "imón."
+     "tl": "imón.",
+     "pt": "nosso"
     }
    ],
    "pt": "Nós te louvamos, te bendizemos, te agradecemos, Senhor, e te suplicamos, ó nosso Deus.",
-   "gloss": [
-    {
-     "el": "ὑμνοῦμεν",
-     "pt": "louvamos — daí «hino»"
-    },
-    {
-     "el": "δεόμεθα",
-     "pt": "suplicamos"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "nós te louvamos",
    "context_pt": "Cantado pelo povo enquanto o sacerdote invoca o Espírito Santo sobre os dons — o momento mais sagrado da Liturgia.",
    "source": "Divina Liturgia (GOA), p. 22",
    "tags": [
@@ -5402,6 +5699,36 @@
     "ο",
     "θεοσ",
     "ημων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      6
+     ],
+     "normal": [
+      0.1,
+      4.306
+     ],
+     "slow": [
+      0.1,
+      7.25
+     ]
+    },
+    {
+     "words": [
+      7,
+      12
+     ],
+     "normal": [
+      4.541,
+      6.791
+     ],
+     "slow": [
+      7.65,
+      11.475
+     ]
+    }
    ]
   },
   "anafora-exeretos": {
@@ -5411,61 +5738,68 @@
    "words": [
     {
      "el": "Ἐξαιρέτως",
-     "tl": "Exerétos"
+     "tl": "Exerétos",
+     "pt": "de modo especial"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "pela"
     },
     {
      "el": "παναγίας,",
-     "tl": "panayías,"
+     "tl": "panayías,",
+     "pt": "toda-santa"
     },
     {
      "el": "ἀχράντου,",
-     "tl": "achrándu,"
+     "tl": "achrándu,",
+     "pt": "imaculada"
     },
     {
      "el": "ὑπερευλογημένης,",
-     "tl": "iperevloyiménis,"
+     "tl": "iperevloyiménis,",
+     "pt": "sobremaneira bendita"
     },
     {
      "el": "ἐνδόξου,",
-     "tl": "endóxu,"
+     "tl": "endóxu,",
+     "pt": "gloriosa"
     },
     {
      "el": "δεσποίνης",
-     "tl": "despínis"
+     "tl": "despínis",
+     "pt": "Senhora"
     },
     {
      "el": "ἡμῶν",
-     "tl": "imón"
+     "tl": "imón",
+     "pt": "nossa"
     },
     {
      "el": "Θεοτόκου",
-     "tl": "Theotóku"
+     "tl": "Theotóku",
+     "pt": "Theotókos"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀειπαρθένου",
-     "tl": "aiparthénu"
+     "tl": "aiparthénu",
+     "pt": "sempre-virgem"
     },
     {
      "el": "Μαρίας.",
-     "tl": "Marías."
+     "tl": "Marías.",
+     "pt": "Maria"
     }
    ],
    "pt": "De modo especial pela nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria.",
-   "gloss": [
-    {
-     "el": "ἐξαιρέτως",
-     "pt": "de modo especial, sobretudo"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "de modo especial",
    "context_pt": "Logo após a invocação do Espírito, o sacerdote recorda todos os santos — «e de modo especial» a Theotokos. É a deixa: o povo responde cantando o «Ἄξιόν ἐστιν».",
    "source": "Divina Liturgia (GOA), p. 23",
    "tags": [
@@ -5489,6 +5823,36 @@
     "και",
     "αειπαρθενου",
     "μαριασ"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      5
+     ],
+     "normal": [
+      0.1,
+      5.277
+     ],
+     "slow": [
+      0.1,
+      8.9
+     ]
+    },
+    {
+     "words": [
+      6,
+      11
+     ],
+     "normal": [
+      5.468,
+      8.232
+     ],
+     "slow": [
+      9.225,
+      13.925
+     ]
+    }
    ]
   },
   "anafora-axion-estin": {
@@ -5498,165 +5862,188 @@
    "words": [
     {
      "el": "Ἄξιόν",
-     "tl": "Áxión"
+     "tl": "Áxión",
+     "pt": "digno"
     },
     {
      "el": "ἐστιν",
-     "tl": "estin"
+     "tl": "estin",
+     "pt": "é"
     },
     {
      "el": "ὡς",
-     "tl": "os"
+     "tl": "os",
+     "pt": "de"
     },
     {
      "el": "ἀληθῶς",
-     "tl": "alithós"
+     "tl": "alithós",
+     "pt": "verdade"
     },
     {
      "el": "μακαρίζειν",
-     "tl": "makarízin"
+     "tl": "makarízin",
+     "pt": "bendizer"
     },
     {
      "el": "σε",
-     "tl": "se"
+     "tl": "se",
+     "pt": "te"
     },
     {
      "el": "τὴν",
-     "tl": "tin"
+     "tl": "tin",
+     "pt": "a"
     },
     {
      "el": "Θεοτόκον,",
-     "tl": "Theotókon,"
+     "tl": "Theotókon,",
+     "pt": "Theotókos"
     },
     {
      "el": "τὴν",
-     "tl": "tin"
+     "tl": "tin",
+     "pt": "a"
     },
     {
      "el": "ἀειμακάριστον",
-     "tl": "aimakáriston"
+     "tl": "aimakáriston",
+     "pt": "sempre bem-aventurada"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "παναμώμητον",
-     "tl": "panamómiton"
+     "tl": "panamómiton",
+     "pt": "toda imaculada"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "μητέρα",
-     "tl": "mitéra"
+     "tl": "mitéra",
+     "pt": "Mãe"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "do"
     },
     {
      "el": "Θεοῦ",
-     "tl": "Theú"
+     "tl": "Theú",
+     "pt": "Deus"
     },
     {
      "el": "ἡμῶν.",
-     "tl": "imón."
+     "tl": "imón.",
+     "pt": "nosso"
     },
     {
      "el": "Τὴν",
-     "tl": "Tin"
+     "tl": "Tin",
+     "pt": "a"
     },
     {
      "el": "τιμιωτέραν",
-     "tl": "timiotéran"
-    },
-    {
-     "el": "τῶν",
-     "tl": "ton"
-    },
-    {
-     "el": "Χερουβεὶμ",
-     "tl": "Cheruvím"
-    },
-    {
-     "el": "καὶ",
-     "tl": "ke"
-    },
-    {
-     "el": "ἐνδοξοτέραν",
-     "tl": "endoxotéran"
-    },
-    {
-     "el": "ἀσυγκρίτως",
-     "tl": "asingrítos"
-    },
-    {
-     "el": "τῶν",
-     "tl": "ton"
-    },
-    {
-     "el": "Σεραφείμ,",
-     "tl": "Serafím,"
-    },
-    {
-     "el": "τὴν",
-     "tl": "tin"
-    },
-    {
-     "el": "ἀδιαφθόρως",
-     "tl": "adiafthóros"
-    },
-    {
-     "el": "Θεὸν",
-     "tl": "Theón"
-    },
-    {
-     "el": "Λόγον",
-     "tl": "Lógon"
-    },
-    {
-     "el": "τεκοῦσαν,",
-     "tl": "tekúsan,"
-    },
-    {
-     "el": "τὴν",
-     "tl": "tin"
-    },
-    {
-     "el": "ὄντως",
-     "tl": "óndos"
-    },
-    {
-     "el": "Θεοτόκον,",
-     "tl": "Theotókon,"
-    },
-    {
-     "el": "σὲ",
-     "tl": "se"
-    },
-    {
-     "el": "μεγαλύνομεν.",
-     "tl": "megalínomen."
-    }
-   ],
-   "pt": "Verdadeiramente é digno bendizer-te, ó Theotókos, sempre bem-aventurada e toda imaculada, e Mãe do nosso Deus. Mais honrosa que os querubins e incomparavelmente mais gloriosa que os serafins, tu que sem corrupção deste à luz o Deus Verbo, verdadeira Theotókos, nós te magnificamos.",
-   "gloss": [
-    {
-     "el": "τιμιωτέραν",
+     "tl": "timiotéran",
      "pt": "mais honrosa"
     },
     {
+     "el": "τῶν",
+     "tl": "ton",
+     "pt": "que os"
+    },
+    {
+     "el": "Χερουβεὶμ",
+     "tl": "Cheruvím",
+     "pt": "querubins"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "ἐνδοξοτέραν",
+     "tl": "endoxotéran",
+     "pt": "mais gloriosa"
+    },
+    {
      "el": "ἀσυγκρίτως",
+     "tl": "asingrítos",
      "pt": "incomparavelmente"
     },
     {
-     "el": "μεγαλύνομεν",
-     "pt": "magnificamos, engrandecemos"
+     "el": "τῶν",
+     "tl": "ton",
+     "pt": "que os"
+    },
+    {
+     "el": "Σεραφείμ,",
+     "tl": "Serafím,",
+     "pt": "serafins"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin",
+     "pt": "tu que"
+    },
+    {
+     "el": "ἀδιαφθόρως",
+     "tl": "adiafthóros",
+     "pt": "sem corrupção"
+    },
+    {
+     "el": "Θεὸν",
+     "tl": "Theón",
+     "pt": "Deus"
+    },
+    {
+     "el": "Λόγον",
+     "tl": "Lógon",
+     "pt": "Verbo"
+    },
+    {
+     "el": "τεκοῦσαν,",
+     "tl": "tekúsan,",
+     "pt": "deste à luz"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin",
+     "pt": "a"
+    },
+    {
+     "el": "ὄντως",
+     "tl": "óndos",
+     "pt": "verdadeira"
+    },
+    {
+     "el": "Θεοτόκον,",
+     "tl": "Theotókon,",
+     "pt": "Theotókos"
+    },
+    {
+     "el": "σὲ",
+     "tl": "se",
+     "pt": "te"
+    },
+    {
+     "el": "μεγαλύνομεν.",
+     "tl": "megalínomen.",
+     "pt": "magnificamos"
     }
    ],
-   "title": "",
+   "pt": "Verdadeiramente é digno bendizer-te, ó Theotókos, sempre bem-aventurada e toda imaculada, e Mãe do nosso Deus. Mais honrosa que os querubins e incomparavelmente mais gloriosa que os serafins, tu que sem corrupção deste à luz o Deus Verbo, verdadeira Theotókos, nós te magnificamos.",
+   "gloss": [],
+   "title": "verdadeiramente é digno",
    "context_pt": "O hino à Theotokos («É verdadeiramente digno») que o povo canta na resposta ao sacerdote — um dos mais amados de toda a Igreja. Aqui você canta com o coro.",
    "source": "Divina Liturgia (GOA), p. 23",
    "tags": [
@@ -5704,6 +6091,64 @@
     "θεοτοκον",
     "σε",
     "μεγαλυνομεν"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      7
+     ],
+     "normal": [
+      0.1,
+      2.938
+     ],
+     "slow": [
+      0.1,
+      4.925
+     ]
+    },
+    {
+     "words": [
+      8,
+      16
+     ],
+     "normal": [
+      3.159,
+      6.335
+     ],
+     "slow": [
+      5.3,
+      10.7
+     ]
+    },
+    {
+     "words": [
+      17,
+      25
+     ],
+     "normal": [
+      7.329,
+      10.668
+     ],
+     "slow": [
+      12.425,
+      18.1
+     ]
+    },
+    {
+     "words": [
+      26,
+      35
+     ],
+     "normal": [
+      10.903,
+      15.638
+     ],
+     "slow": [
+      18.5,
+      26.55
+     ]
+    }
    ]
   },
   "pater-1": {
