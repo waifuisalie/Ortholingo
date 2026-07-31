@@ -1835,31 +1835,38 @@
    "words": [
     {
      "el": "Δόξα",
-     "tl": "Dóxa"
+     "tl": "Dóxa",
+     "pt": "glória"
     },
     {
      "el": "Πατρὶ",
-     "tl": "Patrí"
+     "tl": "Patrí",
+     "pt": "ao Pai"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "Υἱῷ",
-     "tl": "Ió"
+     "tl": "Ió",
+     "pt": "ao Filho"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "Ἁγίῳ",
-     "tl": "Ayío"
+     "tl": "Ayío",
+     "pt": "Santo"
     },
     {
      "el": "Πνεύματι.",
-     "tl": "Pnévmati."
+     "tl": "Pnévmati.",
+     "pt": "ao Espírito"
     }
    ],
    "pt": "Glória ao Pai e ao Filho e ao Espírito Santo.",
@@ -1917,47 +1924,58 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "νῦν",
-     "tl": "nin"
+     "tl": "nin",
+     "pt": "agora"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀεὶ",
-     "tl": "aí"
+     "tl": "aí",
+     "pt": "sempre"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "pelos"
     },
     {
      "el": "τοὺς",
-     "tl": "tus"
+     "tl": "tus",
+     "pt": "os"
     },
     {
      "el": "αἰῶνας",
-     "tl": "eónas"
+     "tl": "eónas",
+     "pt": "séculos"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "dos"
     },
     {
      "el": "αἰώνων.",
-     "tl": "eónon."
+     "tl": "eónon.",
+     "pt": "séculos"
     },
     {
      "el": "Ἀμήν.",
-     "tl": "Amín."
+     "tl": "Amín.",
+     "pt": "amém"
     }
    ],
    "pt": "Agora e sempre e pelos séculos dos séculos. Amém.",
@@ -2011,11 +2029,13 @@
    "words": [
     {
      "el": "Σοφία·",
-     "tl": "Sofía;"
+     "tl": "Sofía;",
+     "pt": "sabedoria"
     },
     {
      "el": "ὀρθοί.",
-     "tl": "orthí."
+     "tl": "orthí.",
+     "pt": "de pé"
     }
    ],
    "pt": "Sabedoria! De pé!",
@@ -2053,39 +2073,48 @@
    "words": [
     {
      "el": "Ἅγιος",
-     "tl": "Áyios"
+     "tl": "Áyios",
+     "pt": "santo"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "ó"
     },
     {
      "el": "Θεός,",
-     "tl": "Theós,"
+     "tl": "Theós,",
+     "pt": "Deus"
     },
     {
      "el": "Ἅγιος",
-     "tl": "Áyios"
+     "tl": "Áyios",
+     "pt": "santo"
     },
     {
      "el": "Ἰσχυρός,",
-     "tl": "Ischirós,"
+     "tl": "Ischirós,",
+     "pt": "forte"
     },
     {
      "el": "Ἅγιος",
-     "tl": "Áyios"
+     "tl": "Áyios",
+     "pt": "santo"
     },
     {
      "el": "Ἀθάνατος,",
-     "tl": "Athánatos,"
+     "tl": "Athánatos,",
+     "pt": "imortal"
     },
     {
      "el": "ἐλέησον",
-     "tl": "eléison"
+     "tl": "eléison",
+     "pt": "tem piedade"
     },
     {
      "el": "ἡμᾶς.",
-     "tl": "imás."
+     "tl": "imás.",
+     "pt": "de nós"
     }
    ],
    "pt": "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós.",
@@ -2141,11 +2170,13 @@
    "words": [
     {
      "el": "Εἰρήνη",
-     "tl": "Iríni"
+     "tl": "Iríni",
+     "pt": "paz"
     },
     {
      "el": "πᾶσι.",
-     "tl": "pási."
+     "tl": "pási.",
+     "pt": "a todos"
     }
    ],
    "pt": "Paz a todos.",
@@ -2182,19 +2213,23 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "τῷ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "ao"
     },
     {
      "el": "πνεύματί",
-     "tl": "pnevmatí"
+     "tl": "pnevmatí",
+     "pt": "espírito"
     },
     {
      "el": "σου.",
-     "tl": "su."
+     "tl": "su.",
+     "pt": "teu"
     }
    ],
    "pt": "E ao teu espírito.",
@@ -2240,7 +2275,8 @@
    "words": [
     {
      "el": "Πρόσχωμεν.",
-     "tl": "Próschomen."
+     "tl": "Próschomen.",
+     "pt": "estejamos atentos"
     }
    ],
    "pt": "Estejamos atentos!",
@@ -2272,23 +2308,28 @@
    "words": [
     {
      "el": "Δόξα",
-     "tl": "Dóxa"
+     "tl": "Dóxa",
+     "pt": "glória"
     },
     {
      "el": "σοι,",
-     "tl": "si,"
+     "tl": "si,",
+     "pt": "a Ti"
     },
     {
      "el": "Κύριε,",
-     "tl": "Kírie,"
+     "tl": "Kírie,",
+     "pt": "Senhor"
     },
     {
      "el": "δόξα",
-     "tl": "dóxa"
+     "tl": "dóxa",
+     "pt": "glória"
     },
     {
      "el": "σοι.",
-     "tl": "si."
+     "tl": "si.",
+     "pt": "a Ti"
     }
    ],
    "pt": "Glória a Ti, Senhor, glória a Ti.",
