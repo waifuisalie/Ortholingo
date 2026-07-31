@@ -202,7 +202,7 @@
 	.ptrow { display: flex; flex-wrap: wrap; gap: 2px 4px; justify-content: center; margin: 12px 0 0; }
 	.parts { display: flex; flex-wrap: wrap; gap: 6px; justify-content: center; margin: 12px 0 0; }
 	.part {
-		display: inline-flex; align-items: center; gap: 1px;
+		display: inline-flex; flex-wrap: wrap; align-items: center; gap: 1px;
 		background: var(--raised); border: 1px solid var(--line);
 		border-radius: 10px; padding: 2px 6px 2px 4px;
 		transition: border-color 0.12s;
@@ -214,7 +214,7 @@
 	}
 	.pw {
 		background: none; border: 0; color: var(--parch); font: inherit; font-size: 13px;
-		cursor: pointer; border-radius: 6px; padding: 1px 5px;
+		cursor: pointer; border-radius: 6px; padding: 1px 5px; white-space: nowrap;
 		transition: background 0.12s, color 0.12s;
 	}
 	.pw:hover { background: var(--nave); }
