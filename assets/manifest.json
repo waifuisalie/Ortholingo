@@ -1227,101 +1227,108 @@
    "words": [
     {
      "el": "Ὑπὲρ",
-     "tl": "Ipér"
+     "tl": "Ipér",
+     "pt": "por"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "da"
     },
     {
      "el": "εἰρήνης",
-     "tl": "irínis"
+     "tl": "irínis",
+     "pt": "paz"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "do"
     },
     {
      "el": "σύμπαντος",
-     "tl": "símbandos"
+     "tl": "símbandos",
+     "pt": "inteiro"
     },
     {
      "el": "κόσμου,",
-     "tl": "kósmu,"
+     "tl": "kósmu,",
+     "pt": "mundo"
     },
     {
      "el": "εὐσταθείας",
-     "tl": "efstathías"
+     "tl": "efstathías",
+     "pt": "estabilidade"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "das"
     },
     {
      "el": "ἁγίων",
-     "tl": "ayíon"
+     "tl": "ayíon",
+     "pt": "santas"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "de"
     },
     {
      "el": "Θεοῦ",
-     "tl": "Theú"
+     "tl": "Theú",
+     "pt": "Deus"
     },
     {
      "el": "Ἐκκλησιῶν",
-     "tl": "Eklisión"
+     "tl": "Eklisión",
+     "pt": "Igrejas"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "da"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "de"
     },
     {
      "el": "πάντων",
-     "tl": "pándon"
+     "tl": "pándon",
+     "pt": "todos"
     },
     {
      "el": "ἑνώσεως",
-     "tl": "enóseos"
-    },
-    {
-     "el": "τοῦ",
-     "tl": "tu"
-    },
-    {
-     "el": "Κυρίου",
-     "tl": "Kiríu"
-    },
-    {
-     "el": "δεηθῶμεν.",
-     "tl": "deithómen."
-    }
-   ],
-   "pt": "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor.",
-   "gloss": [
-    {
-     "el": "σύμπαντος κόσμου",
-     "pt": "do mundo inteiro"
-    },
-    {
-     "el": "ἑνώσεως",
+     "tl": "enóseos",
      "pt": "união"
     },
     {
-     "el": "εὐσταθείας",
-     "pt": "estabilidade, firmeza"
+     "el": "τοῦ",
+     "tl": "tu",
+     "pt": "do"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu",
+     "pt": "Senhor"
+    },
+    {
+     "el": "δεηθῶμεν.",
+     "tl": "deithómen.",
+     "pt": "oremos"
     }
    ],
-   "title": "",
+   "pt": "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor.",
+   "gloss": [],
+   "title": "a paz do mundo",
    "context_pt": "Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]… τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a paz do mundo e a união de todos.",
    "source": "Divina Liturgia (GOA), p. 2",
    "tags": [
@@ -1355,6 +1362,50 @@
     "του",
     "κυριου",
     "δεηθωμεν"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      5
+     ],
+     "normal": [
+      0.1,
+      2.291
+     ],
+     "slow": [
+      0.1,
+      3.825
+     ]
+    },
+    {
+     "words": [
+      6,
+      11
+     ],
+     "normal": [
+      2.468,
+      4.6
+     ],
+     "slow": [
+      4.125,
+      7.75
+     ]
+    },
+    {
+     "words": [
+      12,
+      19
+     ],
+     "normal": [
+      4.6,
+      6.997
+     ],
+     "slow": [
+      7.75,
+      11.825
+     ]
+    }
    ]
   },
   "antilavou": {
@@ -1364,65 +1415,63 @@
    "words": [
     {
      "el": "Ἀντιλαβοῦ,",
-     "tl": "Andilavú,"
+     "tl": "Andilavú,",
+     "pt": "ampara"
     },
     {
      "el": "σῶσον,",
-     "tl": "sóson,"
+     "tl": "sóson,",
+     "pt": "salva"
     },
     {
      "el": "ἐλέησον",
-     "tl": "eléison"
+     "tl": "eléison",
+     "pt": "tem piedade"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "διαφύλαξον",
-     "tl": "diafílaxon"
+     "tl": "diafílaxon",
+     "pt": "guarda"
     },
     {
      "el": "ἡμᾶς,",
-     "tl": "imás,"
+     "tl": "imás,",
+     "pt": "nos"
     },
     {
      "el": "ὁ",
-     "tl": "o"
+     "tl": "o",
+     "pt": "ó"
     },
     {
      "el": "Θεός,",
-     "tl": "Theós,"
+     "tl": "Theós,",
+     "pt": "Deus"
     },
     {
      "el": "τῇ",
-     "tl": "ti"
+     "tl": "ti",
+     "pt": "pela"
     },
     {
      "el": "σῇ",
-     "tl": "si"
+     "tl": "si",
+     "pt": "tua"
     },
     {
      "el": "χάριτι.",
-     "tl": "cháriti."
+     "tl": "cháriti.",
+     "pt": "graça"
     }
    ],
    "pt": "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça.",
-   "gloss": [
-    {
-     "el": "ἀντιλαβοῦ",
-     "pt": "ampara, socorre"
-    },
-    {
-     "el": "διαφύλαξον",
-     "pt": "guarda, protege"
-    },
-    {
-     "el": "τῇ σῇ χάριτι",
-     "pt": "pela tua graça"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "o amparo final",
    "context_pt": "O refrão que fecha as petições de cada litania, logo antes do «Τῆς παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no «ἐλέησον» — a mesma palavra de «Κύριε, ἐλέησον».",
    "source": "Divina Liturgia (GOA), p. 3",
    "tags": [
@@ -1447,6 +1496,36 @@
     "τη",
     "ση",
     "χαριτι"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      5
+     ],
+     "normal": [
+      0.1,
+      4.188
+     ],
+     "slow": [
+      0.1,
+      7.05
+     ]
+    },
+    {
+     "words": [
+      6,
+      10
+     ],
+     "normal": [
+      4.394,
+      6.291
+     ],
+     "slow": [
+      7.4,
+      10.625
+     ]
+    }
    ]
   },
   "tis-panagias": {
@@ -1456,133 +1535,148 @@
    "words": [
     {
      "el": "Τῆς",
-     "tl": "Tis"
+     "tl": "Tis",
+     "pt": "a"
     },
     {
      "el": "παναγίας,",
-     "tl": "panayías,"
+     "tl": "panayías,",
+     "pt": "toda-santa"
     },
     {
      "el": "ἀχράντου,",
-     "tl": "achrándu,"
+     "tl": "achrándu,",
+     "pt": "imaculada"
     },
     {
      "el": "ὑπερευλογημένης,",
-     "tl": "iperevloyiménis,"
+     "tl": "iperevloyiménis,",
+     "pt": "sobremaneira bendita"
     },
     {
      "el": "ἐνδόξου,",
-     "tl": "endóxu,"
+     "tl": "endóxu,",
+     "pt": "gloriosa"
     },
     {
      "el": "δεσποίνης",
-     "tl": "despínis"
+     "tl": "despínis",
+     "pt": "Senhora"
     },
     {
      "el": "ἡμῶν",
-     "tl": "imón"
+     "tl": "imón",
+     "pt": "nossa"
     },
     {
      "el": "Θεοτόκου",
-     "tl": "Theotóku"
+     "tl": "Theotóku",
+     "pt": "Theotókos"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀειπαρθένου",
-     "tl": "aiparthénu"
+     "tl": "aiparthénu",
+     "pt": "sempre-virgem"
     },
     {
      "el": "Μαρίας",
-     "tl": "Marías"
+     "tl": "Marías",
+     "pt": "Maria"
     },
     {
      "el": "μετὰ",
-     "tl": "metá"
+     "tl": "metá",
+     "pt": "com"
     },
     {
      "el": "πάντων",
-     "tl": "pándon"
+     "tl": "pándon",
+     "pt": "todos"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "os"
     },
     {
      "el": "ἁγίων",
-     "tl": "ayíon"
+     "tl": "ayíon",
+     "pt": "santos"
     },
     {
      "el": "μνημονεύσαντες,",
-     "tl": "mnimonéfsandes,"
+     "tl": "mnimonéfsandes,",
+     "pt": "recordando"
     },
     {
      "el": "ἑαυτοὺς",
-     "tl": "eaftús"
+     "tl": "eaftús",
+     "pt": "a nós mesmos"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀλλήλους",
-     "tl": "allílus"
+     "tl": "allílus",
+     "pt": "uns aos outros"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "πᾶσαν",
-     "tl": "pásan"
+     "tl": "pásan",
+     "pt": "toda"
     },
     {
      "el": "τὴν",
-     "tl": "tin"
+     "tl": "tin",
+     "pt": "a"
     },
     {
      "el": "ζωὴν",
-     "tl": "zoín"
+     "tl": "zoín",
+     "pt": "vida"
     },
     {
      "el": "ἡμῶν",
-     "tl": "imón"
+     "tl": "imón",
+     "pt": "nossa"
     },
     {
      "el": "Χριστῷ",
-     "tl": "Christó"
+     "tl": "Christó",
+     "pt": "a Cristo"
     },
     {
      "el": "τῷ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "Θεῷ",
-     "tl": "Theó"
+     "tl": "Theó",
+     "pt": "Deus"
     },
     {
      "el": "παραθώμεθα.",
-     "tl": "parathómetha."
+     "tl": "parathómetha.",
+     "pt": "entreguemos"
     }
    ],
    "pt": "Recordando a nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria, com todos os santos, entreguemo-nos a nós mesmos, uns aos outros, e toda a nossa vida a Cristo, nosso Deus.",
-   "gloss": [
-    {
-     "el": "μνημονεύσαντες",
-     "pt": "tendo recordado (dos santos)"
-    },
-    {
-     "el": "ἀειπαρθένου",
-     "pt": "sempre-virgem (ἀεί + παρθένος)"
-    },
-    {
-     "el": "παραθώμεθα",
-     "pt": "entreguemo-nos, confiemos"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "a conclusão da litania",
    "context_pt": "A conclusão que o diácono dá a cada litania — longa, mas você a ouvirá muitas vezes. Termina pedindo que entreguemos tudo a Cristo; e o povo responde com o «Σοί, Κύριε» que você já sabe.",
    "source": "Divina Liturgia (GOA), p. 17",
    "tags": [
@@ -1623,6 +1717,64 @@
     "τω",
     "θεω",
     "παραθωμεθα"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      4
+     ],
+     "normal": [
+      0.1,
+      4.644
+     ],
+     "slow": [
+      0.1,
+      7.825
+     ]
+    },
+    {
+     "words": [
+      5,
+      10
+     ],
+     "normal": [
+      4.835,
+      7.306
+     ],
+     "slow": [
+      8.15,
+      12.35
+     ]
+    },
+    {
+     "words": [
+      11,
+      15
+     ],
+     "normal": [
+      7.306,
+      9.335
+     ],
+     "slow": [
+      12.35,
+      15.8
+     ]
+    },
+    {
+     "words": [
+      16,
+      27
+     ],
+     "normal": [
+      9.556,
+      13.365
+     ],
+     "slow": [
+      16.175,
+      22.65
+     ]
+    }
    ]
   },
   "si-kyrie": {
