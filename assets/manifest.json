@@ -2696,81 +2696,83 @@
    "words": [
     {
      "el": "Πιστεύω",
-     "tl": "Pistévo"
+     "tl": "Pistévo",
+     "pt": "creio"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "em"
     },
     {
      "el": "ἕνα",
-     "tl": "éna"
+     "tl": "éna",
+     "pt": "um só"
     },
     {
      "el": "Θεόν,",
-     "tl": "Theón,"
+     "tl": "Theón,",
+     "pt": "Deus"
     },
     {
      "el": "Πατέρα",
-     "tl": "Patéra"
+     "tl": "Patéra",
+     "pt": "Pai"
     },
     {
      "el": "Παντοκράτορα,",
-     "tl": "Pandokrátora,"
+     "tl": "Pandokrátora,",
+     "pt": "onipotente"
     },
     {
      "el": "ποιητὴν",
-     "tl": "piitín"
+     "tl": "piitín",
+     "pt": "Criador"
     },
     {
      "el": "οὐρανοῦ",
-     "tl": "uranú"
+     "tl": "uranú",
+     "pt": "do Céu"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "γῆς,",
-     "tl": "yis,"
+     "tl": "yis,",
+     "pt": "da terra"
     },
     {
      "el": "ὁρατῶν",
-     "tl": "oratón"
+     "tl": "oratón",
+     "pt": "visíveis"
     },
     {
      "el": "τε",
-     "tl": "te"
+     "tl": "te",
+     "pt": "e"
     },
     {
      "el": "πάντων",
-     "tl": "pándon"
+     "tl": "pándon",
+     "pt": "todas as coisas"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀοράτων.",
-     "tl": "aoráton."
+     "tl": "aoráton.",
+     "pt": "invisíveis"
     }
    ],
    "pt": "Creio em um só Deus, Pai onipotente, Criador do Céu e da terra, de todas as coisas visíveis e invisíveis.",
-   "gloss": [
-    {
-     "el": "Πιστεύω",
-     "pt": "creio (a primeira palavra: fé pessoal)"
-    },
-    {
-     "el": "Παντοκράτορα",
-     "pt": "Pantocrator — que tudo governa"
-    },
-    {
-     "el": "ὁρατῶν / ἀοράτων",
-     "pt": "visíveis / invisíveis"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "creio em um só Deus",
    "context_pt": "A palavra que abre o Credo, «Πιστεύω» — «creio» — é a mesma dos ícones do Pantocrator no teto das igrejas.",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -2796,6 +2798,36 @@
     "παντων",
     "και",
     "αορατων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      5
+     ],
+     "normal": [
+      0.1,
+      2.821
+     ],
+     "slow": [
+      0.1,
+      4.725
+     ]
+    },
+    {
+     "words": [
+      6,
+      14
+     ],
+     "normal": [
+      3.012,
+      6.35
+     ],
+     "slow": [
+      5.05,
+      10.725
+     ]
+    }
    ]
   },
   "credo-2": {
@@ -2805,101 +2837,113 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "em"
     },
     {
      "el": "ἕνα",
-     "tl": "éna"
+     "tl": "éna",
+     "pt": "um só"
     },
     {
      "el": "Κύριον",
-     "tl": "Kírion"
+     "tl": "Kírion",
+     "pt": "Senhor"
     },
     {
      "el": "Ἰησοῦν",
-     "tl": "Iisún"
+     "tl": "Iisún",
+     "pt": "Jesus"
     },
     {
      "el": "Χριστόν,",
-     "tl": "Christón,"
+     "tl": "Christón,",
+     "pt": "Cristo"
     },
     {
      "el": "τὸν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "o"
     },
     {
      "el": "υἱὸν",
-     "tl": "ión"
+     "tl": "ión",
+     "pt": "Filho"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "de"
     },
     {
      "el": "Θεοῦ",
-     "tl": "Theú"
+     "tl": "Theú",
+     "pt": "Deus"
     },
     {
      "el": "τὸν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "o"
     },
     {
      "el": "μονογενῆ,",
-     "tl": "monoyení,"
+     "tl": "monoyení,",
+     "pt": "unigênito"
     },
     {
      "el": "τὸν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "o"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "de"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "o"
     },
     {
      "el": "Πατρὸς",
-     "tl": "Patrós"
+     "tl": "Patrós",
+     "pt": "Pai"
     },
     {
      "el": "γεννηθέντα",
-     "tl": "yennithénda"
+     "tl": "yennithénda",
+     "pt": "nascido"
     },
     {
      "el": "πρὸ",
-     "tl": "pro"
+     "tl": "pro",
+     "pt": "antes"
     },
     {
      "el": "πάντων",
-     "tl": "pándon"
+     "tl": "pándon",
+     "pt": "de todos"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "os"
     },
     {
      "el": "αἰώνων·",
-     "tl": "eónon."
+     "tl": "eónon.",
+     "pt": "séculos"
     }
    ],
    "pt": "E em um só Senhor, Jesus Cristo, Filho unigênito de Deus, nascido do Pai antes de todos os séculos.",
-   "gloss": [
-    {
-     "el": "μονογενῆ",
-     "pt": "unigênito — único gerado"
-    },
-    {
-     "el": "πρὸ πάντων τῶν αἰώνων",
-     "pt": "antes de todos os séculos"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "em um só Senhor Jesus Cristo",
    "context_pt": "«Μονογενής» é a palavra de João 3:16 — o Filho único.",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -2931,6 +2975,36 @@
     "παντων",
     "των",
     "αιωνων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      11
+     ],
+     "normal": [
+      0.1,
+      3.762
+     ],
+     "slow": [
+      0.1,
+      6.325
+     ]
+    },
+    {
+     "words": [
+      12,
+      20
+     ],
+     "normal": [
+      4.012,
+      6.453
+     ],
+     "slow": [
+      6.75,
+      10.9
+     ]
+    }
    ]
   },
   "credo-3": {
@@ -2940,93 +3014,103 @@
    "words": [
     {
      "el": "Φῶς",
-     "tl": "Fos"
+     "tl": "Fos",
+     "pt": "Luz"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "da"
     },
     {
      "el": "φωτός,",
-     "tl": "fotós,"
+     "tl": "fotós,",
+     "pt": "Luz"
     },
     {
      "el": "Θεὸν",
-     "tl": "Theón"
+     "tl": "Theón",
+     "pt": "Deus"
     },
     {
      "el": "ἀληθινὸν",
-     "tl": "alithinón"
+     "tl": "alithinón",
+     "pt": "verdadeiro"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "do"
     },
     {
      "el": "Θεοῦ",
-     "tl": "Theú"
+     "tl": "Theú",
+     "pt": "Deus"
     },
     {
      "el": "ἀληθινοῦ,",
-     "tl": "alithinú,"
+     "tl": "alithinú,",
+     "pt": "verdadeiro"
     },
     {
      "el": "γεννηθέντα",
-     "tl": "yennithénda"
+     "tl": "yennithénda",
+     "pt": "gerado"
     },
     {
      "el": "οὐ",
-     "tl": "u"
+     "tl": "u",
+     "pt": "não"
     },
     {
      "el": "ποιηθέντα,",
-     "tl": "piithénda,"
+     "tl": "piithénda,",
+     "pt": "criado"
     },
     {
      "el": "ὁμοούσιον",
-     "tl": "omoúsion"
+     "tl": "omoúsion",
+     "pt": "consubstancial"
     },
     {
      "el": "τῷ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "ao"
     },
     {
      "el": "Πατρί,",
-     "tl": "Patrí,"
+     "tl": "Patrí,",
+     "pt": "Pai"
     },
     {
      "el": "δι'",
-     "tl": "di"
+     "tl": "di",
+     "pt": "por"
     },
     {
      "el": "οὗ",
-     "tl": "u"
+     "tl": "u",
+     "pt": "ele"
     },
     {
      "el": "τὰ",
-     "tl": "ta"
+     "tl": "ta",
+     "pt": "as coisas"
     },
     {
      "el": "πάντα",
-     "tl": "pánda"
+     "tl": "pánda",
+     "pt": "todas"
     },
     {
      "el": "ἐγένετο.",
-     "tl": "eyéneto."
+     "tl": "eyéneto.",
+     "pt": "foram feitas"
     }
    ],
    "pt": "Luz da Luz, Deus verdadeiro do Deus verdadeiro, gerado não criado, consubstancial ao Pai, por ele todas as coisas foram feitas.",
-   "gloss": [
-    {
-     "el": "ὁμοούσιον",
-     "pt": "consubstancial — da MESMA essência; a palavra que decidiu Niceia"
-    },
-    {
-     "el": "γεννηθέντα οὐ ποιηθέντα",
-     "pt": "gerado, não criado"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "Luz da Luz",
    "context_pt": "«Ὁμοούσιον» é a palavra mais disputada da história da Igreja — uma letra a separava da heresia (ὁμοιούσιον, «semelhante»).",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -3056,6 +3140,36 @@
     "τα",
     "παντα",
     "εγενετο"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      7
+     ],
+     "normal": [
+      0.1,
+      3.203
+     ],
+     "slow": [
+      0.1,
+      5.375
+     ]
+    },
+    {
+     "words": [
+      8,
+      18
+     ],
+     "normal": [
+      3.424,
+      8.482
+     ],
+     "slow": [
+      5.75,
+      14.35
+     ]
+    }
    ]
   },
   "credo-4": {
@@ -3065,121 +3179,133 @@
    "words": [
     {
      "el": "Τὸν",
-     "tl": "Ton"
+     "tl": "Ton",
+     "pt": "o qual"
     },
     {
      "el": "δι'",
-     "tl": "di"
+     "tl": "di",
+     "pt": "por"
     },
     {
      "el": "ἡμᾶς",
-     "tl": "imás"
+     "tl": "imás",
+     "pt": "nós"
     },
     {
      "el": "τοὺς",
-     "tl": "tus"
+     "tl": "tus",
+     "pt": "os"
     },
     {
      "el": "ἀνθρώπους",
-     "tl": "anthrópus"
+     "tl": "anthrópus",
+     "pt": "homens"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "διὰ",
-     "tl": "diá"
+     "tl": "diá",
+     "pt": "para"
     },
     {
      "el": "τὴν",
-     "tl": "tin"
+     "tl": "tin",
+     "pt": "a"
     },
     {
      "el": "ἡμετέραν",
-     "tl": "imetéran"
+     "tl": "imetéran",
+     "pt": "nossa"
     },
     {
      "el": "σωτηρίαν",
-     "tl": "sotirían"
+     "tl": "sotirían",
+     "pt": "salvação"
     },
     {
      "el": "κατελθόντα",
-     "tl": "katelthónda"
+     "tl": "katelthónda",
+     "pt": "desceu"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "de"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "os"
     },
     {
      "el": "οὐρανῶν",
-     "tl": "uranón"
+     "tl": "uranón",
+     "pt": "Céus"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "σαρκωθέντα",
-     "tl": "sarkothénda"
+     "tl": "sarkothénda",
+     "pt": "se encarnou"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "pelo"
     },
     {
      "el": "Πνεύματος",
-     "tl": "Pnévmatos"
+     "tl": "Pnévmatos",
+     "pt": "Espírito"
     },
     {
      "el": "ἁγίου",
-     "tl": "ayíu"
+     "tl": "ayíu",
+     "pt": "Santo"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "Μαρίας",
-     "tl": "Marías"
+     "tl": "Marías",
+     "pt": "Maria"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "a"
     },
     {
      "el": "Παρθένου",
-     "tl": "Parthénu"
+     "tl": "Parthénu",
+     "pt": "Virgem"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἐνανθρωπήσαντα.",
-     "tl": "enanthropísanda."
+     "tl": "enanthropísanda.",
+     "pt": "se fez homem"
     }
    ],
    "pt": "E, por nós, homens, e para a nossa salvação, desceu dos Céus e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem.",
-   "gloss": [
-    {
-     "el": "σωτηρίαν",
-     "pt": "salvação (soteriologia vem daqui)"
-    },
-    {
-     "el": "σαρκωθέντα",
-     "pt": "encarnado — fez-se carne (σάρξ)"
-    },
-    {
-     "el": "ἐνανθρωπήσαντα",
-     "pt": "fez-se homem — en + ánthropos"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "a Encarnação",
    "context_pt": "Neste artigo, na tradição, inclinamos a cabeça — é a Encarnação.",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -3215,6 +3341,50 @@
     "παρθενου",
     "και",
     "ενανθρωπησαντα"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      9
+     ],
+     "normal": [
+      0.1,
+      3.335
+     ],
+     "slow": [
+      0.1,
+      5.6
+     ]
+    },
+    {
+     "words": [
+      10,
+      13
+     ],
+     "normal": [
+      3.335,
+      4.703
+     ],
+     "slow": [
+      5.6,
+      7.925
+     ]
+    },
+    {
+     "words": [
+      14,
+      24
+     ],
+     "normal": [
+      4.703,
+      8.6
+     ],
+     "slow": [
+      7.925,
+      14.55
+     ]
+    }
    ]
   },
   "credo-5": {
@@ -3224,47 +3394,58 @@
    "words": [
     {
      "el": "Σταυρωθέντα",
-     "tl": "Stavrothénda"
+     "tl": "Stavrothénda",
+     "pt": "crucificado"
     },
     {
      "el": "τε",
-     "tl": "te"
+     "tl": "te",
+     "pt": "e"
     },
     {
      "el": "ὑπὲρ",
-     "tl": "ipér"
+     "tl": "ipér",
+     "pt": "por"
     },
     {
      "el": "ἡμῶν",
-     "tl": "imón"
+     "tl": "imón",
+     "pt": "nós"
     },
     {
      "el": "ἐπὶ",
-     "tl": "epí"
+     "tl": "epí",
+     "pt": "sob"
     },
     {
      "el": "Ποντίου",
-     "tl": "Pondíu"
+     "tl": "Pondíu",
+     "pt": "Pôncio"
     },
     {
      "el": "Πιλάτου",
-     "tl": "Pilátu"
+     "tl": "Pilátu",
+     "pt": "Pilatos"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "παθόντα",
-     "tl": "pathónda"
+     "tl": "pathónda",
+     "pt": "padeceu"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ταφέντα.",
-     "tl": "tafénda."
+     "tl": "tafénda.",
+     "pt": "foi sepultado"
     }
    ],
    "pt": "E por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado.",
@@ -3309,35 +3490,43 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "ἀναστάντα",
-     "tl": "anastánda"
+     "tl": "anastánda",
+     "pt": "ressuscitou"
     },
     {
      "el": "τῇ",
-     "tl": "ti"
+     "tl": "ti",
+     "pt": "ao"
     },
     {
      "el": "τρίτῃ",
-     "tl": "tríti"
+     "tl": "tríti",
+     "pt": "terceiro"
     },
     {
      "el": "ἡμέρᾳ,",
-     "tl": "iméra,"
+     "tl": "iméra,",
+     "pt": "dia"
     },
     {
      "el": "κατὰ",
-     "tl": "katá"
+     "tl": "katá",
+     "pt": "conforme"
     },
     {
      "el": "τὰς",
-     "tl": "tas"
+     "tl": "tas",
+     "pt": "as"
     },
     {
      "el": "Γραφάς.",
-     "tl": "Grafás."
+     "tl": "Grafás.",
+     "pt": "Escrituras"
     }
    ],
    "pt": "Ressuscitou ao terceiro dia, conforme as Escrituras.",
@@ -3379,47 +3568,58 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "ἀνελθόντα",
-     "tl": "anelthónda"
+     "tl": "anelthónda",
+     "pt": "subiu"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "a"
     },
     {
      "el": "τοὺς",
-     "tl": "tus"
+     "tl": "tus",
+     "pt": "os"
     },
     {
      "el": "οὐρανοὺς",
-     "tl": "uranús"
+     "tl": "uranús",
+     "pt": "Céus"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "καθεζόμενον",
-     "tl": "kathezómenon"
+     "tl": "kathezómenon",
+     "pt": "está sentado"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "à"
     },
     {
      "el": "δεξιῶν",
-     "tl": "dexión"
+     "tl": "dexión",
+     "pt": "direita"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "do"
     },
     {
      "el": "Πατρός.",
-     "tl": "Patrós."
+     "tl": "Patrós.",
+     "pt": "Pai"
     }
    ],
    "pt": "E subiu aos Céus, onde está sentado à direita do Pai.",
@@ -3460,77 +3660,83 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "πάλιν",
-     "tl": "pálin"
+     "tl": "pálin",
+     "pt": "de novo"
     },
     {
      "el": "ἐρχόμενον",
-     "tl": "erchómenon"
+     "tl": "erchómenon",
+     "pt": "há de vir"
     },
     {
      "el": "μετὰ",
-     "tl": "metá"
+     "tl": "metá",
+     "pt": "em"
     },
     {
      "el": "δόξης,",
-     "tl": "dóxis,"
+     "tl": "dóxis,",
+     "pt": "glória"
     },
     {
      "el": "κρῖναι",
-     "tl": "kríne"
+     "tl": "kríne",
+     "pt": "para julgar"
     },
     {
      "el": "ζῶντας",
-     "tl": "zóndas"
+     "tl": "zóndas",
+     "pt": "os vivos"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "νεκρούς,",
-     "tl": "nekrús,"
+     "tl": "nekrús,",
+     "pt": "os mortos"
     },
     {
      "el": "οὗ",
-     "tl": "u"
+     "tl": "u",
+     "pt": "cujo"
     },
     {
      "el": "τῆς",
-     "tl": "tis"
+     "tl": "tis",
+     "pt": "o"
     },
     {
      "el": "βασιλείας",
-     "tl": "vasilías"
+     "tl": "vasilías",
+     "pt": "Reino"
     },
     {
      "el": "οὐκ",
-     "tl": "uk"
+     "tl": "uk",
+     "pt": "não"
     },
     {
      "el": "ἔσται",
-     "tl": "éste"
+     "tl": "éste",
+     "pt": "terá"
     },
     {
      "el": "τέλος.",
-     "tl": "télos."
+     "tl": "télos.",
+     "pt": "fim"
     }
    ],
    "pt": "E de novo há de vir em sua glória, para julgar os vivos e os mortos. E o seu Reino não terá fim.",
-   "gloss": [
-    {
-     "el": "κρῖναι",
-     "pt": "julgar"
-    },
-    {
-     "el": "οὐκ ἔσται τέλος",
-     "pt": "não terá fim"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "e de novo há de vir",
    "context_pt": "«Βασιλεία» — o Reino — é a primeira palavra que o sacerdote abençoa na Liturgia: «Εὐλογημένη ἡ βασιλεία…».",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -3556,6 +3762,36 @@
     "ουκ",
     "εσται",
     "τελοσ"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      8
+     ],
+     "normal": [
+      0.1,
+      3.585
+     ],
+     "slow": [
+      0.1,
+      6.025
+     ]
+    },
+    {
+     "words": [
+      9,
+      14
+     ],
+     "normal": [
+      3.821,
+      5.747
+     ],
+     "slow": [
+      6.425,
+      9.7
+     ]
+    }
    ]
   },
   "credo-9": {
@@ -3565,129 +3801,148 @@
    "words": [
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "no"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "Πνεῦμα",
-     "tl": "Pnévma"
+     "tl": "Pnévma",
+     "pt": "Espírito"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "ἅγιον,",
-     "tl": "áyion,"
+     "tl": "áyion,",
+     "pt": "Santo"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "Κύριον,",
-     "tl": "Kírion,"
+     "tl": "Kírion,",
+     "pt": "Senhor"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "o"
     },
     {
      "el": "ζωοποιόν,",
-     "tl": "zoopión,"
+     "tl": "zoopión,",
+     "pt": "que dá a Vida"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "que"
     },
     {
      "el": "ἐκ",
-     "tl": "ek"
+     "tl": "ek",
+     "pt": "de"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "o"
     },
     {
      "el": "Πατρὸς",
-     "tl": "Patrós"
+     "tl": "Patrós",
+     "pt": "Pai"
     },
     {
      "el": "ἐκπορευόμενον,",
-     "tl": "ekporevómenon,"
+     "tl": "ekporevómenon,",
+     "pt": "procede"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "que"
     },
     {
      "el": "σὺν",
-     "tl": "sin"
+     "tl": "sin",
+     "pt": "com"
     },
     {
      "el": "Πατρὶ",
-     "tl": "Patrí"
+     "tl": "Patrí",
+     "pt": "o Pai"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "Υἱῷ",
-     "tl": "Ió"
+     "tl": "Ió",
+     "pt": "o Filho"
     },
     {
      "el": "συμπροσκυνούμενον",
-     "tl": "simbroskinúmenon"
+     "tl": "simbroskinúmenon",
+     "pt": "é adorado"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "συνδοξαζόμενον,",
-     "tl": "sindoxazómenon,"
+     "tl": "sindoxazómenon,",
+     "pt": "glorificado"
     },
     {
      "el": "τὸ",
-     "tl": "to"
+     "tl": "to",
+     "pt": "ele que"
     },
     {
      "el": "λαλῆσαν",
-     "tl": "lalísan"
+     "tl": "lalísan",
+     "pt": "falou"
     },
     {
      "el": "διὰ",
-     "tl": "diá"
+     "tl": "diá",
+     "pt": "pelos"
     },
     {
      "el": "τῶν",
-     "tl": "ton"
+     "tl": "ton",
+     "pt": "os"
     },
     {
      "el": "προφητῶν.",
-     "tl": "profitón."
+     "tl": "profitón.",
+     "pt": "Profetas"
     }
    ],
    "pt": "E no Espírito Santo, o Senhor que dá a Vida, que procede do Pai, e com o Pai e o Filho é adorado e glorificado, ele que falou pelos Profetas.",
-   "gloss": [
-    {
-     "el": "ζωοποιόν",
-     "pt": "que dá a vida — zoí + poiéo"
-    },
-    {
-     "el": "ἐκπορευόμενον",
-     "pt": "que procede (do Pai)"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "no Espírito Santo",
    "context_pt": "Note: «ἐκ τοῦ Πατρὸς ἐκπορευόμενον» — procede DO PAI. O Credo ortodoxo não tem o «filioque».",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -3726,6 +3981,50 @@
     "δια",
     "των",
     "προφητων"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      9
+     ],
+     "normal": [
+      0.1,
+      3.424
+     ],
+     "slow": [
+      0.1,
+      5.75
+     ]
+    },
+    {
+     "words": [
+      10,
+      14
+     ],
+     "normal": [
+      3.674,
+      5.262
+     ],
+     "slow": [
+      6.175,
+      8.875
+     ]
+    },
+    {
+     "words": [
+      15,
+      27
+     ],
+     "normal": [
+      5.468,
+      10.188
+     ],
+     "slow": [
+      9.225,
+      17.25
+     ]
+    }
    ]
   },
   "credo-10": {
@@ -3735,31 +4034,38 @@
    "words": [
     {
      "el": "Εἰς",
-     "tl": "Is"
+     "tl": "Is",
+     "pt": "na"
     },
     {
      "el": "μίαν,",
-     "tl": "mían,"
+     "tl": "mían,",
+     "pt": "una"
     },
     {
      "el": "ἁγίαν,",
-     "tl": "ayían,"
+     "tl": "ayían,",
+     "pt": "santa"
     },
     {
      "el": "καθολικὴν",
-     "tl": "katholikín"
+     "tl": "katholikín",
+     "pt": "católica"
     },
     {
      "el": "καὶ",
-     "tl": "ke"
+     "tl": "ke",
+     "pt": "e"
     },
     {
      "el": "ἀποστολικὴν",
-     "tl": "apostolikín"
+     "tl": "apostolikín",
+     "pt": "apostólica"
     },
     {
      "el": "Ἐκκλησίαν.",
-     "tl": "Ekklisían."
+     "tl": "Ekklisían.",
+     "pt": "Igreja"
     }
    ],
    "pt": "E na Igreja, Una, Santa, Católica e Apostólica.",
@@ -3800,27 +4106,33 @@
    "words": [
     {
      "el": "Ὁμολογῶ",
-     "tl": "Omologó"
+     "tl": "Omologó",
+     "pt": "professo"
     },
     {
      "el": "ἓν",
-     "tl": "en"
+     "tl": "en",
+     "pt": "um só"
     },
     {
      "el": "βάπτισμα",
-     "tl": "váptisma"
+     "tl": "váptisma",
+     "pt": "batismo"
     },
     {
      "el": "εἰς",
-     "tl": "is"
+     "tl": "is",
+     "pt": "para"
     },
     {
      "el": "ἄφεσιν",
-     "tl": "áfesin"
+     "tl": "áfesin",
+     "pt": "remissão"
     },
     {
      "el": "ἁμαρτιῶν.",
-     "tl": "amartión."
+     "tl": "amartión.",
+     "pt": "dos pecados"
     }
    ],
    "pt": "Professo um só batismo para remissão dos pecados.",
@@ -3860,53 +4172,53 @@
    "words": [
     {
      "el": "Προσδοκῶ",
-     "tl": "Prosdokó"
+     "tl": "Prosdokó",
+     "pt": "espero"
     },
     {
      "el": "ἀνάστασιν",
-     "tl": "anástasin"
+     "tl": "anástasin",
+     "pt": "a ressurreição"
     },
     {
      "el": "νεκρῶν.",
-     "tl": "nekrón."
+     "tl": "nekrón.",
+     "pt": "dos mortos"
     },
     {
      "el": "Καὶ",
-     "tl": "Ke"
+     "tl": "Ke",
+     "pt": "e"
     },
     {
      "el": "ζωὴν",
-     "tl": "zoín"
+     "tl": "zoín",
+     "pt": "a vida"
     },
     {
      "el": "τοῦ",
-     "tl": "tu"
+     "tl": "tu",
+     "pt": "do"
     },
     {
      "el": "μέλλοντος",
-     "tl": "méllondos"
+     "tl": "méllondos",
+     "pt": "que há de vir"
     },
     {
      "el": "αἰῶνος.",
-     "tl": "eónos."
+     "tl": "eónos.",
+     "pt": "mundo"
     },
     {
      "el": "Ἀμήν.",
-     "tl": "Amín."
+     "tl": "Amín.",
+     "pt": "amém"
     }
    ],
    "pt": "Espero a ressurreição dos mortos. E a vida do mundo que há de vir. Amém.",
-   "gloss": [
-    {
-     "el": "Προσδοκῶ",
-     "pt": "espero, aguardo com expectativa"
-    },
-    {
-     "el": "ἀνάστασιν",
-     "pt": "ressurreição — Anástasis"
-    }
-   ],
-   "title": "",
+   "gloss": [],
+   "title": "espero a ressurreição",
    "context_pt": "O Credo termina como a fé vive: em expectativa. «Προσδοκῶ» — não um talvez, mas uma espera certa.",
    "source": "Devocional, p. 7; Divina Liturgia (GOA)",
    "tags": [
@@ -3926,6 +4238,36 @@
     "μελλοντοσ",
     "αιωνοσ",
     "αμην"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      2
+     ],
+     "normal": [
+      0.1,
+      1.85
+     ],
+     "slow": [
+      0.1,
+      3.075
+     ]
+    },
+    {
+     "words": [
+      3,
+      8
+     ],
+     "normal": [
+      2.844,
+      6.3
+     ],
+     "slow": [
+      4.8,
+      10.675
+     ]
+    }
    ]
   },
   "anafora-stomen": {
