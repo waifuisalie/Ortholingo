@@ -99,11 +99,13 @@
   },
   {
    "id": "unit2-credo",
-   "title": "O Credo · Σύμβολον τῆς Πίστεως",
+   "title": "O Ósculo da Paz e o Credo",
    "section": "fieis",
    "order": 6,
-   "intro_pt": "O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará. Traduções conforme o Devocional.",
+   "intro_pt": "Antes de confessar a fé, fazemos as pazes: «Amemo-nos uns aos outros, para que confessemos…» — e é o povo que termina a frase do diácono. Só então vem o Símbolo da Fé de Niceia-Constantinopla, dito por TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará. Traduções conforme o Devocional.",
    "items": [
+    "agapisomen",
+    "patera-ion-pnevma",
     "credo-1",
     "credo-2",
     "credo-3",
@@ -3014,6 +3016,163 @@
     "κυριε"
    ]
   },
+  "agapisomen": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν.",
+   "words": [
+    {
+     "el": "Ἀγαπήσωμεν",
+     "tl": "Agapísomen",
+     "pt": "amemo-nos"
+    },
+    {
+     "el": "ἀλλήλους,",
+     "tl": "allílus,",
+     "pt": "uns aos outros"
+    },
+    {
+     "el": "ἵνα",
+     "tl": "ína",
+     "pt": "para que"
+    },
+    {
+     "el": "ἐν",
+     "tl": "en",
+     "pt": "em"
+    },
+    {
+     "el": "ὁμονοίᾳ",
+     "tl": "omonía",
+     "pt": "concórdia"
+    },
+    {
+     "el": "ὁμολογήσωμεν.",
+     "tl": "omoloyísomen.",
+     "pt": "confessemos"
+    }
+   ],
+   "pt": "Amemo-nos uns aos outros, para que confessemos em concórdia.",
+   "gloss": [
+    {
+     "el": "ἀγαπήσωμεν",
+     "pt": "amemo-nos — de ἀγάπη, o amor que se decide"
+    },
+    {
+     "el": "ὁμονοίᾳ",
+     "pt": "concórdia — ὁμός (mesmo) + νοῦς (mente)"
+    },
+    {
+     "el": "ὁμολογήσωμεν",
+     "pt": "confessemos — ὁμός (mesmo) + λόγος (palavra)"
+    }
+   ],
+   "title": "",
+   "context_pt": "O diácono começa a frase e o povo a termina — é uma só sentença partida entre os dois. Repare no ὁμο- («mesmo») que volta três vezes: mesma mente, mesma palavra, e daqui a pouco, no Credo, mesma essência («ὁμοούσιον»). Fazer as pazes vem antes de confessar a fé.",
+   "source": "Divina Liturgia (GOA), p. 18",
+   "tags": [
+    "liturgia",
+    "aspasmos",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "f53a192152f0d903",
+   "wordkeys": [
+    "αγαπησωμεν",
+    "αλληλουσ",
+    "ινα",
+    "εν",
+    "ομονοια",
+    "ομολογησωμεν"
+   ]
+  },
+  "patera-ion-pnevma": {
+   "unit": "unit2-credo",
+   "kind": "phrase",
+   "greek": "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον.",
+   "words": [
+    {
+     "el": "Πατέρα,",
+     "tl": "Patéra,",
+     "pt": "o Pai"
+    },
+    {
+     "el": "Υἱὸν",
+     "tl": "Ión",
+     "pt": "o Filho"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "ἅγιον",
+     "tl": "áyion",
+     "pt": "Santo"
+    },
+    {
+     "el": "Πνεῦμα,",
+     "tl": "Pnévma,",
+     "pt": "o Espírito"
+    },
+    {
+     "el": "Τριάδα",
+     "tl": "Triáda",
+     "pt": "Trindade"
+    },
+    {
+     "el": "ὁμοούσιον",
+     "tl": "omoúsion",
+     "pt": "consubstancial"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "ἀχώριστον.",
+     "tl": "achóriston.",
+     "pt": "indivisível"
+    }
+   ],
+   "pt": "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível.",
+   "gloss": [
+    {
+     "el": "ὁμοούσιον",
+     "pt": "consubstancial — a MESMA palavra que você dirá no Credo"
+    },
+    {
+     "el": "ἀχώριστον",
+     "pt": "indivisível — ἀ- (não) + χωρίζω (separar)"
+    }
+   ],
+   "title": "",
+   "context_pt": "É o povo que completa o que o diácono começou. E repare: «ὁμοούσιον» — a palavra que decidiu Niceia — você a diz aqui, minutos antes de dizê-la de novo no Credo. A fé é confessada duas vezes: em resumo e por extenso.",
+   "source": "Divina Liturgia (GOA), p. 18",
+   "tags": [
+    "liturgia",
+    "aspasmos",
+    "resposta-do-povo"
+   ],
+   "voice": "athina",
+   "review": "pending",
+   "hash": "aebb5f2b47f6e000",
+   "wordkeys": [
+    "πατερα",
+    "υιον",
+    "και",
+    "αγιον",
+    "πνευμα",
+    "τριαδα",
+    "ομοουσιον",
+    "και",
+    "αχωριστον"
+   ]
+  },
   "credo-1": {
    "unit": "unit2-credo",
    "kind": "phrase",
@@ -3671,28 +3830,14 @@
     {
      "words": [
       0,
-      9
-     ],
-     "normal": [
-      0.1,
-      3.335
-     ],
-     "slow": [
-      0.1,
-      5.6
-     ]
-    },
-    {
-     "words": [
-      10,
       13
      ],
      "normal": [
-      3.335,
+      0.1,
       4.703
      ],
      "slow": [
-      5.6,
+      0.1,
       7.925
      ]
     },
@@ -7858,6 +8003,7 @@
  "words": {
   "αγαπη": "audio/words/αγαπη.mp3",
   "αγαπησ": "audio/words/αγαπησ.mp3",
+  "αγαπησωμεν": "audio/words/αγαπησωμεν.mp3",
   "αγγελον": "audio/words/αγγελον.mp3",
   "αγια": "audio/words/αγια.mp3",
   "αγιαν": "audio/words/αγιαν.mp3",
@@ -7909,6 +8055,7 @@
   "αφεσιν": "audio/words/αφεσιν.mp3",
   "αφιεμεν": "audio/words/αφιεμεν.mp3",
   "αχραντου": "audio/words/αχραντου.mp3",
+  "αχωριστον": "audio/words/αχωριστον.mp3",
   "βαπτισμα": "audio/words/βαπτισμα.mp3",
   "βασιλεα": "audio/words/βασιλεα.mp3",
   "βασιλεια": "audio/words/βασιλεια.mp3",
@@ -8011,6 +8158,7 @@
   "ιησου": "audio/words/ιησου.mp3",
   "ιησουν": "audio/words/ιησουν.mp3",
   "ιησουσ": "audio/words/ιησουσ.mp3",
+  "ινα": "audio/words/ινα.mp3",
   "ισχυροσ": "audio/words/ισχυροσ.mp3",
   "καθεζομενον": "audio/words/καθεζομενον.mp3",
   "καθολικην": "audio/words/καθολικην.mp3",
@@ -8061,7 +8209,9 @@
   "οι": "audio/words/οι.mp3",
   "ολων": "audio/words/ολων.mp3",
   "ομικρον": "audio/words/ομικρον.mp3",
+  "ομολογησωμεν": "audio/words/ομολογησωμεν.mp3",
   "ομολογω": "audio/words/ομολογω.mp3",
+  "ομονοια": "audio/words/ομονοια.mp3",
   "ομοουσιον": "audio/words/ομοουσιον.mp3",
   "ονομα": "audio/words/ονομα.mp3",
   "ονοματι": "audio/words/ονοματι.mp3",

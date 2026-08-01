@@ -1,14 +1,69 @@
 unit:
   id: unit2-credo
-  title: "O Credo · Σύμβολον τῆς Πίστεως"
+  title: "O Ósculo da Paz e o Credo"
   section: fieis
   order: 6
   intro_pt: >-
-    O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por
-    TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na
-    ordem em que você o rezará. Traduções conforme o Devocional.
+    Antes de confessar a fé, fazemos as pazes: «Amemo-nos uns aos outros, para
+    que confessemos…» — e é o povo que termina a frase do diácono. Só então vem
+    o Símbolo da Fé de Niceia-Constantinopla, dito por TODO o povo, de pé, a
+    cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará.
+    Traduções conforme o Devocional.
 
 items:
+  - id: agapisomen
+    kind: phrase
+    greek: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν."
+    tts: "Αγαπήσωμεν αλλήλους, ίνα εν ομονοία ομολογήσωμεν."
+    words:
+      - { el: "Ἀγαπήσωμεν",    tl: "Agapísomen",    pt: "amemo-nos" }
+      - { el: "ἀλλήλους,",     tl: "allílus,",      pt: "uns aos outros" }
+      - { el: "ἵνα",           tl: "ína",           pt: "para que" }
+      - { el: "ἐν",            tl: "en",            pt: "em" }
+      - { el: "ὁμονοίᾳ",       tl: "omonía",        pt: "concórdia" }
+      - { el: "ὁμολογήσωμεν.", tl: "omoloyísomen.", pt: "confessemos" }
+    pt: "Amemo-nos uns aos outros, para que confessemos em concórdia."
+    gloss:
+      - { el: "ἀγαπήσωμεν",   pt: "amemo-nos — de ἀγάπη, o amor que se decide" }
+      - { el: "ὁμονοίᾳ",      pt: "concórdia — ὁμός (mesmo) + νοῦς (mente)" }
+      - { el: "ὁμολογήσωμεν", pt: "confessemos — ὁμός (mesmo) + λόγος (palavra)" }
+    context_pt: >-
+      O diácono começa a frase e o povo a termina — é uma só sentença partida
+      entre os dois. Repare no ὁμο- («mesmo») que volta três vezes: mesma
+      mente, mesma palavra, e daqui a pouco, no Credo, mesma essência
+      («ὁμοούσιον»). Fazer as pazes vem antes de confessar a fé.
+    source: "Divina Liturgia (GOA), p. 18"
+    tags: [liturgia, aspasmos, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: patera-ion-pnevma
+    kind: phrase
+    greek: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον."
+    tts: "Πατέρα, Υιόν και άγιον Πνεύμα, Τριάδα ομοούσιον και αχώριστον."
+    words:
+      - { el: "Πατέρα,",     tl: "Patéra,",     pt: "o Pai" }
+      - { el: "Υἱὸν",        tl: "Ión",         pt: "o Filho" }
+      - { el: "καὶ",         tl: "ke",          pt: "e" }
+      - { el: "ἅγιον",       tl: "áyion",       pt: "Santo" }
+      - { el: "Πνεῦμα,",     tl: "Pnévma,",     pt: "o Espírito" }
+      - { el: "Τριάδα",      tl: "Triáda",      pt: "Trindade" }
+      - { el: "ὁμοούσιον",   tl: "omoúsion",    pt: "consubstancial" }
+      - { el: "καὶ",         tl: "ke",          pt: "e" }
+      - { el: "ἀχώριστον.",  tl: "achóriston.", pt: "indivisível" }
+    pt: "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível."
+    gloss:
+      - { el: "ὁμοούσιον",  pt: "consubstancial — a MESMA palavra que você dirá no Credo" }
+      - { el: "ἀχώριστον",  pt: "indivisível — ἀ- (não) + χωρίζω (separar)" }
+    context_pt: >-
+      É o povo que completa o que o diácono começou. E repare: «ὁμοούσιον» — a
+      palavra que decidiu Niceia — você a diz aqui, minutos antes de dizê-la de
+      novo no Credo. A fé é confessada duas vezes: em resumo e por extenso.
+    source: "Divina Liturgia (GOA), p. 18"
+    tags: [liturgia, aspasmos, resposta-do-povo]
+    voice: athina
+    review: pending
+
   - id: credo-1
     kind: phrase
     title: "creio em um só Deus"
@@ -150,8 +205,9 @@ items:
       - { el: "ἐνανθρωπήσαντα.", tl: "enanthropísanda.", pt: "se fez homem" }
     pt: "E, por nós, homens, e para a nossa salvação, desceu dos Céus e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem."
     segments:
-      - { words: "0-9" }
-      - { words: "10-13" }
+      # 2 partes, não 3: esta lição já carrega credo-2 e credo-3, e cada parte
+      # é uma gravação de voz. Corte em «…dos Céus | e se encarnou…».
+      - { words: "0-13" }
       - { words: "14-24" }
     context_pt: >-
       Neste artigo, na tradição, inclinamos a cabeça — é a Encarnação.

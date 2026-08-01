@@ -129,17 +129,11 @@
    "items": [
     {
      "ref": "agapisomen",
-     "future": true,
-     "weight": 1,
-     "label_el": "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν.",
-     "label_pt": "Amemo-nos uns aos outros, para que confessemos em concórdia."
+     "weight": 1
     },
     {
      "ref": "patera-ion-pnevma",
-     "future": true,
-     "weight": 1,
-     "label_el": "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον.",
-     "label_pt": "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível."
+     "weight": 1
     }
    ]
   },

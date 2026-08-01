@@ -71,12 +71,8 @@ sections:
   - id: aspasmos
     title_pt: "O Ósculo da Paz"
     items:
-      - { ref: agapisomen, future: true, weight: 1,
-          label_el: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν.",
-          label_pt: "Amemo-nos uns aos outros, para que confessemos em concórdia." }
-      - { ref: patera-ion-pnevma, future: true, weight: 1,
-          label_el: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον.",
-          label_pt: "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível." }
+      - { ref: agapisomen, weight: 1 }
+      - { ref: patera-ion-pnevma, weight: 1 }
 
   - id: credo
     title_pt: "O Credo"
