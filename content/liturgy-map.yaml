@@ -64,12 +64,8 @@ sections:
   - id: plirotika
     title_pt: "Litania das Súplicas"
     items:
-      - { ref: plirosomen, future: true, weight: 2,
-          label_el: "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.",
-          label_pt: "Completemos a nossa oração ao Senhor." }
-      - { ref: angelon-irinis, future: true, weight: 2,
-          label_el: "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν…",
-          label_pt: "Um anjo de paz, guia fiel…" }
+      - { ref: plirosomen, weight: 2 }
+      - { ref: angelon-irinis, weight: 2 }
       - { ref: paraschu-kyrie, weight: 6 }
 
   - id: aspasmos

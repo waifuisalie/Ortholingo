@@ -111,17 +111,11 @@
    "items": [
     {
      "ref": "plirosomen",
-     "future": true,
-     "weight": 2,
-     "label_el": "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.",
-     "label_pt": "Completemos a nossa oração ao Senhor."
+     "weight": 2
     },
     {
      "ref": "angelon-irinis",
-     "future": true,
-     "weight": 2,
-     "label_el": "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν…",
-     "label_pt": "Um anjo de paz, guia fiel…"
+     "weight": 2
     },
     {
      "ref": "paraschu-kyrie",

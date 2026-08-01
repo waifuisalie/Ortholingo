@@ -34,9 +34,25 @@ divergências abaixo são **para você e o padre decidirem**, não correções.
 
 ---
 
-## 1. A lacuna que você perguntou: a Litania das Súplicas
+## 1. A lacuna que você perguntou: a Litania das Súplicas ✅ RESOLVIDA
 
-**Sim, está faltando — e é a lacuna mais séria do app.**
+**Estava faltando — era a lacuna mais séria do app. Foi construída em 31/07.**
+
+Adicionadas a `unit5-grande-entrada`, **antes** de `paraschu-kyrie`:
+
+| id | grego | duração |
+|---|---|---|
+| `plirosomen` | Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ. | 2,5s · inteira |
+| `angelon-irinis` | Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν, φύλακα τῶν ψυχῶν καὶ τῶν σωμάτων ἡμῶν παρὰ τοῦ Κυρίου αἰτησώμεθα. | 6,3s · 3 partes |
+
+A divisão das lições caiu bem: **Lição 2 = `angelon-irinis` + `paraschu-kyrie`**
+— a petição e a sua resposta lado a lado. **Não há mais respostas órfãs no app.**
+
+O `context_pt` de `plirosomen` ensina uma sutileza que só se vê ouvindo: a
+*primeira* petição desta litania ainda se responde «Κύριε, ἐλέησον»; só a
+partir da segunda é que muda para «Παράσχου, Κύριε».
+
+*O registro original da lacuna segue abaixo.*
 
 O que você chamou de «intercessão da paz» é a **Litania das Súplicas**
 (Τὰ Πληρωτικά; o missal a chama de **«éticis»**, de αἰτήσεις, «pedidos»).
@@ -169,14 +185,18 @@ mapa, à espera de uma fonte que as traga.
 
 ## 5. Recomendação
 
-1. **Preencher a Litania das Súplicas** — resolve a resposta órfã e responde
-   diretamente à sua pergunta. Requer TTS novo (síntese de rede, ao contrário
-   de tudo que fizemos hoje) e uma decisão sua sobre onde entra na ordem do
-   currículo.
+1. ~~Preencher a Litania das Súplicas~~ ✅ **feito em 31/07** (ver §1)
 2. **Ósculo da paz** — pequeno (2 frases), alto valor: o povo completa a frase
-   do sacerdote, e encaixa exatamente antes do Credo que já existe.
+   do sacerdote, e encaixa exatamente antes do Credo que já existe. É o
+   próximo candidato óbvio.
 3. **Oração pré-comunhão** — a que o catecúmeno mais vai querer.
-4. Levar as 4 divergências de tradução à revisão do padre, junto com todas as
-   glosas por palavra (tudo ainda `review: pending`).
+4. **Inclinação das cabeças** e os **Dípticos** — pequenos, reaproveitam
+   respostas que já existem (`si-kyrie`, `kyrie-eleison`).
+5. Conseguir uma fonte que contenha a **Ectenia** e a **despedida dos
+   catecúmenos** — o texto GOA em `sources/` é dominical e não as traz.
+6. Levar as 4 divergências de tradução à revisão do padre, junto com as **699
+   glosas por palavra e os 25 títulos** (ver §3b — nada disso vem de fonte).
 
-*Nada foi escrito no conteúdo a partir desta revisão — é só levantamento.*
+**Estado do mapa:** o medidor de `/liturgia` tem hoje teto de **94%**
+(era 90% antes da Litania das Súplicas; 100% falso antes da revisão).
+Restam 5 itens `future`.

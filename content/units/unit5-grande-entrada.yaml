@@ -93,6 +93,65 @@ items:
     voice: nestoras
     review: pending
 
+  - id: plirosomen
+    kind: phrase
+    greek: "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ."
+    tts: "Πληρώσωμεν την δέησιν ημών τω Κυρίω."
+    words:
+      - { el: "Πληρώσωμεν", tl: "Plirósomen", pt: "completemos" }
+      - { el: "τὴν",        tl: "tin",        pt: "a" }
+      - { el: "δέησιν",     tl: "déisin",     pt: "oração" }
+      - { el: "ἡμῶν",       tl: "imón",       pt: "nossa" }
+      - { el: "τῷ",         tl: "to",         pt: "ao" }
+      - { el: "Κυρίῳ.",     tl: "Kirío.",     pt: "Senhor" }
+    pt: "Completemos a nossa oração ao Senhor."
+    gloss:
+      - { el: "πληρώσωμεν", pt: "completemos, levemos a termo (de πλήρης, cheio)" }
+      - { el: "δέησιν",     pt: "súplica, oração de pedido" }
+    context_pt: >-
+      Abre a Litania das Súplicas (τὰ Πληρωτικά), logo depois da Grande
+      Entrada. Repare que esta primeira petição ainda se responde «Κύριε,
+      ἐλέησον» — só as seguintes é que mudam para «Παράσχου, Κύριε».
+    source: "Divina Liturgia (GOA), p. 16"
+    tags: [liturgia, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: angelon-irinis
+    kind: phrase
+    title: "um anjo de paz"
+    greek: "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν, φύλακα τῶν ψυχῶν καὶ τῶν σωμάτων ἡμῶν παρὰ τοῦ Κυρίου αἰτησώμεθα."
+    tts: "Άγγελον ειρήνης, πιστόν οδηγόν, φύλακα των ψυχών και των σωμάτων ημών παρά του Κυρίου αιτησώμεθα."
+    words:
+      - { el: "Ἄγγελον",      tl: "Ányelon",     pt: "um anjo" }
+      - { el: "εἰρήνης,",     tl: "irínis,",     pt: "de paz" }
+      - { el: "πιστὸν",       tl: "pistón",      pt: "fiel" }
+      - { el: "ὁδηγόν,",      tl: "odigón,",     pt: "guia" }
+      - { el: "φύλακα",       tl: "fílaka",      pt: "guardião" }
+      - { el: "τῶν",          tl: "ton",         pt: "das" }
+      - { el: "ψυχῶν",        tl: "psichón",     pt: "almas" }
+      - { el: "καὶ",          tl: "ke",          pt: "e" }
+      - { el: "τῶν",          tl: "ton",         pt: "dos" }
+      - { el: "σωμάτων",      tl: "somáton",     pt: "corpos" }
+      - { el: "ἡμῶν",         tl: "imón",        pt: "nossos" }
+      - { el: "παρὰ",         tl: "pará",        pt: "a" }
+      - { el: "τοῦ",          tl: "tu",          pt: "o" }
+      - { el: "Κυρίου",       tl: "Kiríu",       pt: "Senhor" }
+      - { el: "αἰτησώμεθα.",  tl: "etisómetha.", pt: "peçamos" }
+    pt: "Um anjo de paz, guia fiel, guardião das nossas almas e dos nossos corpos, peçamos ao Senhor."
+    segments:
+      - { words: "0-3" }    # um anjo de paz, guia fiel,
+      - { words: "4-10" }   # guardião das nossas almas e dos nossos corpos
+      - { words: "11-14" }  # peçamos ao Senhor
+    context_pt: >-
+      A mais amada das petições da Litania das Súplicas. Pedimos um anjo que
+      guarde alma e corpo — e o povo responde «Παράσχου, Κύριε». O γγ de
+      «Ἄγγελον» soa como o nh de «banho»: «Ányelon».
+    source: "Divina Liturgia (GOA), p. 16"
+    tags: [liturgia, litania, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
   - id: paraschu-kyrie
     kind: phrase
     greek: "Παράσχου, Κύριε."

@@ -92,6 +92,8 @@
    "items": [
     "cherubikon",
     "panton-imon",
+    "plirosomen",
+    "angelon-irinis",
     "paraschu-kyrie"
    ]
   },
@@ -2740,6 +2742,231 @@
      "slow": [
       7.3,
       11.125
+     ]
+    }
+   ]
+  },
+  "plirosomen": {
+   "unit": "unit5-grande-entrada",
+   "kind": "phrase",
+   "greek": "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.",
+   "words": [
+    {
+     "el": "Πληρώσωμεν",
+     "tl": "Plirósomen",
+     "pt": "completemos"
+    },
+    {
+     "el": "τὴν",
+     "tl": "tin",
+     "pt": "a"
+    },
+    {
+     "el": "δέησιν",
+     "tl": "déisin",
+     "pt": "oração"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón",
+     "pt": "nossa"
+    },
+    {
+     "el": "τῷ",
+     "tl": "to",
+     "pt": "ao"
+    },
+    {
+     "el": "Κυρίῳ.",
+     "tl": "Kirío.",
+     "pt": "Senhor"
+    }
+   ],
+   "pt": "Completemos a nossa oração ao Senhor.",
+   "gloss": [
+    {
+     "el": "πληρώσωμεν",
+     "pt": "completemos, levemos a termo (de πλήρης, cheio)"
+    },
+    {
+     "el": "δέησιν",
+     "pt": "súplica, oração de pedido"
+    }
+   ],
+   "title": "",
+   "context_pt": "Abre a Litania das Súplicas (τὰ Πληρωτικά), logo depois da Grande Entrada. Repare que esta primeira petição ainda se responde «Κύριε, ἐλέησον» — só as seguintes é que mudam para «Παράσχου, Κύριε».",
+   "source": "Divina Liturgia (GOA), p. 16",
+   "tags": [
+    "liturgia",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "8e0513f0163f8683",
+   "wordkeys": [
+    "πληρωσωμεν",
+    "την",
+    "δεησιν",
+    "ημων",
+    "τω",
+    "κυριω"
+   ]
+  },
+  "angelon-irinis": {
+   "unit": "unit5-grande-entrada",
+   "kind": "phrase",
+   "greek": "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν, φύλακα τῶν ψυχῶν καὶ τῶν σωμάτων ἡμῶν παρὰ τοῦ Κυρίου αἰτησώμεθα.",
+   "words": [
+    {
+     "el": "Ἄγγελον",
+     "tl": "Ányelon",
+     "pt": "um anjo"
+    },
+    {
+     "el": "εἰρήνης,",
+     "tl": "irínis,",
+     "pt": "de paz"
+    },
+    {
+     "el": "πιστὸν",
+     "tl": "pistón",
+     "pt": "fiel"
+    },
+    {
+     "el": "ὁδηγόν,",
+     "tl": "odigón,",
+     "pt": "guia"
+    },
+    {
+     "el": "φύλακα",
+     "tl": "fílaka",
+     "pt": "guardião"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton",
+     "pt": "das"
+    },
+    {
+     "el": "ψυχῶν",
+     "tl": "psichón",
+     "pt": "almas"
+    },
+    {
+     "el": "καὶ",
+     "tl": "ke",
+     "pt": "e"
+    },
+    {
+     "el": "τῶν",
+     "tl": "ton",
+     "pt": "dos"
+    },
+    {
+     "el": "σωμάτων",
+     "tl": "somáton",
+     "pt": "corpos"
+    },
+    {
+     "el": "ἡμῶν",
+     "tl": "imón",
+     "pt": "nossos"
+    },
+    {
+     "el": "παρὰ",
+     "tl": "pará",
+     "pt": "a"
+    },
+    {
+     "el": "τοῦ",
+     "tl": "tu",
+     "pt": "o"
+    },
+    {
+     "el": "Κυρίου",
+     "tl": "Kiríu",
+     "pt": "Senhor"
+    },
+    {
+     "el": "αἰτησώμεθα.",
+     "tl": "etisómetha.",
+     "pt": "peçamos"
+    }
+   ],
+   "pt": "Um anjo de paz, guia fiel, guardião das nossas almas e dos nossos corpos, peçamos ao Senhor.",
+   "gloss": [],
+   "title": "um anjo de paz",
+   "context_pt": "A mais amada das petições da Litania das Súplicas. Pedimos um anjo que guarde alma e corpo — e o povo responde «Παράσχου, Κύριε». O γγ de «Ἄγγελον» soa como o nh de «banho»: «Ányelon».",
+   "source": "Divina Liturgia (GOA), p. 16",
+   "tags": [
+    "liturgia",
+    "litania",
+    "diacono",
+    "para-reconhecer"
+   ],
+   "voice": "nestoras",
+   "review": "pending",
+   "hash": "5ba80f1fe9e18770",
+   "wordkeys": [
+    "αγγελον",
+    "ειρηνησ",
+    "πιστον",
+    "οδηγον",
+    "φυλακα",
+    "των",
+    "ψυχων",
+    "και",
+    "των",
+    "σωματων",
+    "ημων",
+    "παρα",
+    "του",
+    "κυριου",
+    "αιτησωμεθα"
+   ],
+   "segments": [
+    {
+     "words": [
+      0,
+      3
+     ],
+     "normal": [
+      0.1,
+      2.497
+     ],
+     "slow": [
+      0.1,
+      4.175
+     ]
+    },
+    {
+     "words": [
+      4,
+      10
+     ],
+     "normal": [
+      2.674,
+      4.629
+     ],
+     "slow": [
+      4.475,
+      7.8
+     ]
+    },
+    {
+     "words": [
+      11,
+      14
+     ],
+     "normal": [
+      4.629,
+      6.306
+     ],
+     "slow": [
+      7.8,
+      10.65
      ]
     }
    ]
@@ -7631,6 +7858,7 @@
  "words": {
   "αγαπη": "audio/words/αγαπη.mp3",
   "αγαπησ": "audio/words/αγαπησ.mp3",
+  "αγγελον": "audio/words/αγγελον.mp3",
   "αγια": "audio/words/αγια.mp3",
   "αγιαν": "audio/words/αγιαν.mp3",
   "αγιασθητω": "audio/words/αγιασθητω.mp3",
@@ -7648,6 +7876,7 @@
   "αθανατοσ": "audio/words/αθανατοσ.mp3",
   "αιμα": "audio/words/αιμα.mp3",
   "αινεσεωσ": "audio/words/αινεσεωσ.mp3",
+  "αιτησωμεθα": "audio/words/αιτησωμεθα.mp3",
   "αιωνασ": "audio/words/αιωνασ.mp3",
   "αιωνοσ": "audio/words/αιωνοσ.mp3",
   "αιωνων": "audio/words/αιωνων.mp3",
@@ -7695,6 +7924,7 @@
   "γιωτα": "audio/words/γιωτα.mp3",
   "γραφασ": "audio/words/γραφασ.mp3",
   "δεηθωμεν": "audio/words/δεηθωμεν.mp3",
+  "δεησιν": "audio/words/δεησιν.mp3",
   "δελτα": "audio/words/δελτα.mp3",
   "δεξιων": "audio/words/δεξιων.mp3",
   "δεομεθα": "audio/words/δεομεθα.mp3",
@@ -7827,6 +8057,7 @@
   "νυν": "audio/words/νυν.mp3",
   "ξι": "audio/words/ξι.mp3",
   "ο": "audio/words/ο.mp3",
+  "οδηγον": "audio/words/οδηγον.mp3",
   "οι": "audio/words/οι.mp3",
   "ολων": "audio/words/ολων.mp3",
   "ομικρον": "audio/words/ομικρον.mp3",
@@ -7857,6 +8088,7 @@
   "παντοκρατορα": "audio/words/παντοκρατορα.mp3",
   "παντοτε": "audio/words/παντοτε.mp3",
   "παντων": "audio/words/παντων.mp3",
+  "παρα": "audio/words/παρα.mp3",
   "παραθωμεθα": "audio/words/παραθωμεθα.mp3",
   "παρασχου": "audio/words/παρασχου.mp3",
   "παρθενου": "audio/words/παρθενου.mp3",
@@ -7873,7 +8105,9 @@
   "πιστευω": "audio/words/πιστευω.mp3",
   "πιστεωσ": "audio/words/πιστεωσ.mp3",
   "πιστιν": "audio/words/πιστιν.mp3",
+  "πιστον": "audio/words/πιστον.mp3",
   "πληρησ": "audio/words/πληρησ.mp3",
+  "πληρωσωμεν": "audio/words/πληρωσωμεν.mp3",
   "πνευμα": "audio/words/πνευμα.mp3",
   "πνευματι": "audio/words/πνευματι.mp3",
   "πνευματοσ": "audio/words/πνευματοσ.mp3",
@@ -7913,6 +8147,7 @@
   "συνδοξαζομενον": "audio/words/συνδοξαζομενον.mp3",
   "σχωμεν": "audio/words/σχωμεν.mp3",
   "σωμα": "audio/words/σωμα.mp3",
+  "σωματων": "audio/words/σωματων.mp3",
   "σων": "audio/words/σων.mp3",
   "σωσον": "audio/words/σωσον.mp3",
   "σωτηριαν": "audio/words/σωτηριαν.mp3",
@@ -7953,6 +8188,7 @@
   "φαγετε": "audio/words/φαγετε.mp3",
   "φι": "audio/words/φι.mp3",
   "φοβου": "audio/words/φοβου.mp3",
+  "φυλακα": "audio/words/φυλακα.mp3",
   "φωσ": "audio/words/φωσ.mp3",
   "φωτοσ": "audio/words/φωτοσ.mp3",
   "χαρισ": "audio/words/χαρισ.mp3",
@@ -7964,6 +8200,7 @@
   "χριστου": "audio/words/χριστου.mp3",
   "χριστω": "audio/words/χριστω.mp3",
   "ψι": "audio/words/ψι.mp3",
+  "ψυχων": "audio/words/ψυχων.mp3",
   "ωμεγα": "audio/words/ωμεγα.mp3",
   "ωσ": "audio/words/ωσ.mp3",
   "ωσαννα": "audio/words/ωσαννα.mp3"
