@@ -123,7 +123,51 @@ de registro, não erros.
 
 ---
 
-## 4. Recomendação
+## 3b. Procedência do que está no app — leitura honesta
+
+Nem tudo no app vem de uma fonte. Convém ter isso claro antes da revisão do padre:
+
+| O quê | Quanto | De onde vem |
+|---|---|---|
+| Tradução corrida (`pt`) de cada frase | 58 | **das fontes** — cada item cita Devocional / GOA no campo `source:` |
+| **Glosas por palavra (`words[].pt`)** | **699 palavras** | **escritas por mim** (31/07). Nenhuma fonte faz grego→português palavra a palavra |
+| **Títulos (`title`)** | **25** | **inventados por mim** (31/07) |
+
+As glosas por palavra são uma *decomposição* da tradução aprovada na ordem do
+grego — método defensável, e é exatamente por isso que tudo carrega
+`review: pending`. Mas **não são material de fonte**, e hoje são o maior corpo
+de texto não revisado do app.
+
+Além disso: das 58 traduções corridas, **13 foram conferidas** contra o missal
+(bateram, várias literalmente). As outras 45 não foram contraditadas — apenas
+não foram cotejadas, porque o missal é comentário e não cita todas as linhas.
+
+---
+
+## 4. Correção já aplicada: o mapa da Liturgia
+
+`content/liturgy-map.yaml` tinha dois defeitos, ambos corrigidos:
+
+1. **`paraschu-kyrie` estava na seção `enarxis`** — errado. A Grande Litania de
+   abertura é respondida com «Κύριε, ἐλέησον», não «Παράσχου, Κύριε». Verifiquei
+   por posição no texto GOA: Grande Litania (l. 84) → Querubikon (l. 667) →
+   Πληρωτικά (l. 726) → **primeiro «Παράσχου, Κύριε» (l. 759)**. Ele nunca ocorre
+   na enarxis. Movido para a nova seção **Litania das Súplicas**, depois da
+   Grande Entrada. (A unidade `unit5-grande-entrada` já estava certa.)
+2. **Zero itens marcados `future`** — o mapa afirmava cobertura total da
+   Liturgia, o que é falso. Agora há 7 itens `future`, todos com o grego
+   **copiado literalmente** do texto GOA.
+
+Efeito: o medidor da página `/liturgia` agora tem **teto de 90%**, não 100% —
+o app passa a admitir o que ainda lhe falta.
+
+**Duas lacunas foram deixadas FORA do mapa de propósito:** a Ectenia (Ἐκτενής)
+e a despedida dos catecúmenos. O texto GOA em `sources/` é de uma liturgia
+dominical e **não as contém** — o grego teria de ser inventado, e texto
+litúrgico aqui nunca é inventado. Estão registradas em comentário no topo do
+mapa, à espera de uma fonte que as traga.
+
+## 5. Recomendação
 
 1. **Preencher a Litania das Súplicas** — resolve a resposta órfã e responde
    diretamente à sua pergunta. Requer TTS novo (síntese de rede, ao contrário

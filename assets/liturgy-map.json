@@ -38,10 +38,6 @@
     {
      "ref": "si-kyrie",
      "weight": 3
-    },
-    {
-     "ref": "paraschu-kyrie",
-     "weight": 6
     }
    ]
   },
@@ -106,6 +102,50 @@
     {
      "ref": "panton-imon",
      "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "plirotika",
+   "title_pt": "Litania das Súplicas",
+   "items": [
+    {
+     "ref": "plirosomen",
+     "future": true,
+     "weight": 2,
+     "label_el": "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.",
+     "label_pt": "Completemos a nossa oração ao Senhor."
+    },
+    {
+     "ref": "angelon-irinis",
+     "future": true,
+     "weight": 2,
+     "label_el": "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν…",
+     "label_pt": "Um anjo de paz, guia fiel…"
+    },
+    {
+     "ref": "paraschu-kyrie",
+     "weight": 6
+    }
+   ]
+  },
+  {
+   "id": "aspasmos",
+   "title_pt": "O Ósculo da Paz",
+   "items": [
+    {
+     "ref": "agapisomen",
+     "future": true,
+     "weight": 1,
+     "label_el": "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν.",
+     "label_pt": "Amemo-nos uns aos outros, para que confessemos em concórdia."
+    },
+    {
+     "ref": "patera-ion-pnevma",
+     "future": true,
+     "weight": 1,
+     "label_el": "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον.",
+     "label_pt": "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível."
     }
    ]
   },
@@ -226,6 +266,13 @@
     {
      "ref": "anafora-axion-estin",
      "weight": 1
+    },
+    {
+     "ref": "ke-panton-ke-pason",
+     "future": true,
+     "weight": 1,
+     "label_el": "Καὶ ὧν ἕκαστος κατὰ διάνοιαν ἔχει, καὶ πάντων καὶ πασῶν.",
+     "label_pt": "E daqueles que cada um tem em mente, e de todos e de todas."
     }
    ]
   },
@@ -258,8 +305,22 @@
      "weight": 1
     },
     {
+     "ref": "tas-kefalas",
+     "future": true,
+     "weight": 2,
+     "label_el": "Τὰς κεφαλὰς ἡμῶν τῷ Κυρίῳ κλίνωμεν.",
+     "label_pt": "Inclinemos as nossas cabeças ao Senhor."
+    },
+    {
      "ref": "ta-agia",
      "weight": 1
+    },
+    {
+     "ref": "tu-dipnu-su",
+     "future": true,
+     "weight": 1,
+     "label_el": "Τοῦ δείπνου σου τοῦ μυστικοῦ σήμερον, Υἱὲ Θεοῦ, κοινωνόν με παράλαβε…",
+     "label_pt": "Recebe-me hoje, ó Filho de Deus, como participante da tua ceia mística…"
     },
     {
      "ref": "is-agios",

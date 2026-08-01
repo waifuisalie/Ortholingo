@@ -6,6 +6,14 @@
 #
 # `ref` must exist in the corpus, OR carry `future: true` with labels.
 # Weights are estimates pending clergy review (like all content).
+#
+# Every `future` entry's label_el is quoted verbatim from the GOA
+# Greek/English text in sources/. Two known gaps are deliberately NOT listed,
+# because that text is a Sunday liturgy and does not contain them — their Greek
+# would have to be invented, and liturgical text is never invented here:
+#   · the Ectenia (Ἐκτενής, the fervent litany)
+#   · the dismissal of the catechumens
+# Add them once a source containing them is in sources/.
 
 liturgy:
   title_pt: "Divina Liturgia de S. João Crisóstomo"
@@ -22,7 +30,6 @@ sections:
       - { ref: amin, weight: 10 }
       - { ref: tis-panagias, weight: 4 }
       - { ref: si-kyrie, weight: 3 }
-      - { ref: paraschu-kyrie, weight: 6 }
 
   - id: antifonas
     title_pt: "Antífonas e Pequena Entrada"
@@ -49,6 +56,31 @@ sections:
     items:
       - { ref: cherubikon, weight: 1 }
       - { ref: panton-imon, weight: 1 }
+
+  # Τὰ Πληρωτικά — where «Παράσχου, Κύριε» actually belongs. It is NOT part of
+  # the opening Great Litany (that one is answered «Κύριε, ἐλέησον»); it comes
+  # after the Great Entrance, and again after the Anaphora. Confirmed against
+  # the GOA text by position: Great Litany, then Cherubikon, then this.
+  - id: plirotika
+    title_pt: "Litania das Súplicas"
+    items:
+      - { ref: plirosomen, future: true, weight: 2,
+          label_el: "Πληρώσωμεν τὴν δέησιν ἡμῶν τῷ Κυρίῳ.",
+          label_pt: "Completemos a nossa oração ao Senhor." }
+      - { ref: angelon-irinis, future: true, weight: 2,
+          label_el: "Ἄγγελον εἰρήνης, πιστὸν ὁδηγόν…",
+          label_pt: "Um anjo de paz, guia fiel…" }
+      - { ref: paraschu-kyrie, weight: 6 }
+
+  - id: aspasmos
+    title_pt: "O Ósculo da Paz"
+    items:
+      - { ref: agapisomen, future: true, weight: 1,
+          label_el: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν.",
+          label_pt: "Amemo-nos uns aos outros, para que confessemos em concórdia." }
+      - { ref: patera-ion-pnevma, future: true, weight: 1,
+          label_el: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον.",
+          label_pt: "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível." }
 
   - id: credo
     title_pt: "O Credo"
@@ -84,6 +116,9 @@ sections:
       - { ref: anafora-se-ymnoumen, weight: 1 }
       - { ref: anafora-exeretos, weight: 1 }
       - { ref: anafora-axion-estin, weight: 1 }
+      - { ref: ke-panton-ke-pason, future: true, weight: 1,
+          label_el: "Καὶ ὧν ἕκαστος κατὰ διάνοιαν ἔχει, καὶ πάντων καὶ πασῶν.",
+          label_pt: "E daqueles que cada um tem em mente, e de todos e de todas." }
 
   - id: pai-nosso
     title_pt: "Pai Nosso e Comunhão"
@@ -94,7 +129,13 @@ sections:
       - { ref: pater-4, weight: 0.4 }
       - { ref: pater-5, weight: 0.4 }
       - { ref: pater-doxologia, weight: 1 }
+      - { ref: tas-kefalas, future: true, weight: 2,
+          label_el: "Τὰς κεφαλὰς ἡμῶν τῷ Κυρίῳ κλίνωμεν.",
+          label_pt: "Inclinemos as nossas cabeças ao Senhor." }
       - { ref: ta-agia, weight: 1 }
+      - { ref: tu-dipnu-su, future: true, weight: 1,
+          label_el: "Τοῦ δείπνου σου τοῦ μυστικοῦ σήμερον, Υἱὲ Θεοῦ, κοινωνόν με παράλαβε…",
+          label_pt: "Recebe-me hoje, ó Filho de Deus, como participante da tua ceia mística…" }
       - { ref: is-agios, weight: 1 }
       - { ref: meta-fovou, weight: 1 }
       - { ref: soson-o-theos, weight: 1 }
