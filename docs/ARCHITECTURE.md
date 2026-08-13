@@ -13,20 +13,27 @@ compresses into one box: **how a recorded take actually gets judged.**
 
 ```mermaid
 flowchart TB
-    TAKE["🎙️ learner's take<br/>(webm from MediaRecorder)"]
-    FF["ffmpeg → 16kHz mono wav"]
-    FAST["faster-whisper <b>small</b> int8<br/>~1.3s"]
-    Q{"score ≥ PASS (0.75)?"}
-    CARE["faster-whisper <b>large-v3-turbo</b> int8<br/>~5.6s · matched 1.00 / sep 0.86"]
-    FOLD["Byzantine phonetic folding<br/>η ι υ ει οι υι → i · αι → e · ω → ο · ου → u"]
-    DIFF["fuzzy per-word match<br/>vs expected word keys"]
+    TAKE["🎙️ learner's take (webm)"]
+    FF["ffmpeg → 16 kHz mono wav"]
+    FAST["faster-whisper small int8 — ~1.3s"]
+    Q{"score ≥ PASS 0.75 ?"}
+    CARE["large-v3-turbo int8 — ~5.6s"]
+    FOLD["Byzantine phonetic folding"]
+    DIFF["fuzzy per-word match"]
     OUT["per-word ✓ / ✗ + score"]
 
-    TAKE --> FF --> FAST --> Q
-    Q -->|"yes — trust the fast model"| FOLD
-    Q -->|"no — never fail a learner<br/>on the fast model alone"| CARE --> FOLD
-    FOLD --> DIFF --> OUT
+    TAKE --> FF
+    FF --> FAST
+    FAST --> Q
+    Q -->|"yes · trust the fast model"| FOLD
+    Q -->|"no · re-judge before failing a learner"| CARE
+    CARE --> FOLD
+    FOLD --> DIFF
+    DIFF --> OUT
 ```
+
+Folding collapses the homophone spellings before comparison —
+`η ι υ ει οι υι → i`, `αι → e`, `ω → ο`, `ου → u`.
 
 Worst case is ~7s, and only for a take that was probably wrong anyway; a correct
 take returns in ~1.3s. The folding step exists because Whisper *modernizes*

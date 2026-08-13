@@ -49,43 +49,39 @@ static files and works offline. Only *pronunciation scoring* has to happen live
 
 ```mermaid
 flowchart TB
-    subgraph BUILD["🔨 BUILD TIME · runs on the dev machine, output committed to git"]
+    subgraph BUILD["🔨 BUILD TIME — runs on the dev machine, output committed to git"]
         direction LR
-        YAML["content/units/*.yaml<br/>closed corpus · every phrase cited<br/>review: pending until clergy blessing"]
-        PIPE["pipeline/build_assets.py<br/>edge-tts → QC gate → ffmpeg"]
-        ASSETS[("assets/<br/>manifest.json · liturgy-map.json<br/>timings/*.json<br/>audio: phrases · words · segments")]
-        YAML --> PIPE --> ASSETS
+        Y["content/units/*.yaml"]
+        P["pipeline/build_assets.py"]
+        A[("assets/")]
+        Y -->|"edge-tts + QC gate"| P
+        P -->|"audio · word timings · manifest"| A
     end
 
-    subgraph RUN["▶️ RUNTIME"]
-        subgraph BROWSER["Browser · SvelteKit PWA — service worker precaches the whole corpus"]
-            PLAY["lesson player<br/>karaoke · phrase parts · quizzes"]
-            LS[("localStorage<br/>FSRS deck · progress · candle streak")]
-            MIC["🎙️ mic capture"]
-            PLAY <--> LS
-        end
-
-        subgraph API["Home server · FastAPI — stateless, two routes"]
-            SCORE["POST /api/speech/score"]
-            FAST["faster-whisper<br/>small int8 · ~1.3s"]
-            CARE["large-v3-turbo int8<br/>~5.6s"]
-            FOLD["Byzantine phonetic folding<br/>+ fuzzy per-word match"]
-            SCORE --> FAST
-            FAST -->|"scores ≥ 0.75 — trust it"| FOLD
-            FAST -->|"below pass — re-judge<br/>before failing a learner"| CARE --> FOLD
-        end
+    subgraph RUNTIME["▶️ RUNTIME"]
+        direction LR
+        APP["SvelteKit PWA"]
+        API["FastAPI scorer"]
+        APP -->|"a recorded take"| API
+        API -->|"per-word ✓ / ✗"| APP
     end
 
-    ASSETS ==>|"static files, shipped with the app"| BROWSER
-    MIC -->|"recorded take — the only network call"| SCORE
-    FOLD -->|"per-word ✓ / ✗"| PLAY
+    A ==>|"shipped as static files"| APP
 ```
 
+| | |
+|---|---|
+| **`content/`** | the closed corpus — every phrase cited, `review: pending` until clergy blessing |
+| **`assets/`** | phrase, word and phrase-part audio + word-boundary timings + the lesson manifest, all committed to git |
+| **PWA** | precaches the whole corpus, so lessons work offline; FSRS deck, progress and streak live in `localStorage` — nothing about a learner leaves their device |
+| **scorer** | stateless, two routes, no database. The recorded take is the app's *only* network call |
+
 **Why the scorer has two tiers.** `small` answers in ~1.3s but flunks long
-phrases; `large-v3-turbo` is accurate but takes ~5.6s. Running them in sequence
-means correct speech feels instant, and only a *possibly wrong* take pays the
-slow path — the learner is never failed by the fast model alone. Numbers are
-from `backend/bench.py`; the reasoning is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (D4).
+phrases; `large-v3-turbo` is accurate but takes ~5.6s. Ortholingo runs them in
+sequence, so correct speech feels instant and only a *possibly wrong* take pays
+the slow path — a learner is never failed by the fast model alone. The path is
+drawn in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#1-system-overview);
+the numbers come from `backend/bench.py`.
 
 **Why a tunnel for phone testing.** Browsers only grant microphone access in a
 secure context, so `http://<lan-ip>` is refused. `./dev.sh` starts a Cloudflare
