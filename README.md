@@ -76,12 +76,17 @@ flowchart TB
 | **PWA** | precaches the whole corpus, so lessons work offline; FSRS deck, progress and streak live in `localStorage` — nothing about a learner leaves their device |
 | **scorer** | stateless, two routes, no database. The recorded take is the app's *only* network call |
 
-**Why the scorer has two tiers.** `small` answers in ~1.3s but flunks long
-phrases; `large-v3-turbo` is accurate but takes ~5.6s. Ortholingo runs them in
-sequence, so correct speech feels instant and only a *possibly wrong* take pays
-the slow path — a learner is never failed by the fast model alone. The path is
-drawn in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#1-system-overview);
-the numbers come from `backend/bench.py`.
+**Why the scorer has two tiers.** On the machine that hosts it, `small` answers
+in ~1.5s but scores correct speech below the pass mark on 2 of 9 test phrases;
+`large-v3-turbo` never does, but costs ~5s on every take. Crucially, every one
+of `small`'s errors is a *false negative* — it never wrongly accepts a wrong
+phrase. So Ortholingo runs `small` first and escalates to `turbo` only when a
+take is about to be marked wrong: correct speech returns fast, and escalation
+can only rescue a failing take, never break a passing one.
+
+Measurements, including the surprise that latency barely depends on phrase
+length, are in **[docs/BENCHMARK.md](docs/BENCHMARK.md)**. The path is drawn in
+[docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#1-system-overview).
 
 **Why a tunnel for phone testing.** Browsers only grant microphone access in a
 secure context, so `http://<lan-ip>` is refused. `./dev.sh` starts a Cloudflare
@@ -107,7 +112,7 @@ pictures/   mascot art
 |---|---|
 | TTS (build-time) | Microsoft neural voices via edge-tts — `el-GR-AthinaNeural` for Greek, `en-US-AvaMultilingualNeural` for the mascot; official Azure Speech free tier for production |
 | Word sync | edge-tts WordBoundary events captured at generation into timing JSONs |
-| STT (runtime) | faster-whisper, two-tier: `small` int8 answers fast, `large-v3-turbo` re-judges anything below the pass mark; Byzantine phonetic folding before the word-level diff |
+| STT (runtime) | faster-whisper, two-tier: `small` int8 answers fast, `large-v3-turbo` re-judges anything below the pass mark; Byzantine phonetic folding before the word-level diff — [measured here](docs/BENCHMARK.md) |
 | Frontend | SvelteKit PWA — precaches the corpus, lessons work offline |
 | Backend | FastAPI — stateless, no database; its only job is scoring a recorded take |
 | Progress / SRS | FSRS in the browser (`localStorage`); nothing about a learner leaves their device |
