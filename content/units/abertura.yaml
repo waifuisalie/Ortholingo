@@ -12,34 +12,36 @@ unit:
 items:
   - id: evlogimeni-i-vasilia
     kind: phrase
+    title: "a bênção de abertura"   # short name for "parte 1 de 3 · …"
     greek: "Εὐλογημένη ἡ βασιλεία τοῦ Πατρὸς καὶ τοῦ Υἱοῦ καὶ τοῦ ἁγίου Πνεύματος, νῦν καὶ ἀεὶ καὶ εἰς τοὺς αἰῶνας τῶν αἰώνων."
     tts: "Ευλογημένη η βασιλεία του Πατρός και του Υιού και του αγίου Πνεύματος, νυν και αει και εις τους αιώνας των αιώνων."
     words:
-      - { el: "Εὐλογημένη", tl: "Evloyiméni" }
-      - { el: "ἡ",          tl: "i" }
-      - { el: "βασιλεία",   tl: "vasilía" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Πατρὸς",     tl: "Patrós" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Υἱοῦ",       tl: "Iú" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "ἁγίου",      tl: "ayíu" }
-      - { el: "Πνεύματος,", tl: "Pnévmatos," }
-      - { el: "νῦν",        tl: "nin" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "ἀεὶ",        tl: "aí" }
-      - { el: "καὶ",        tl: "ke" }
-      - { el: "εἰς",        tl: "is" }
-      - { el: "τοὺς",       tl: "tus" }
-      - { el: "αἰῶνας",     tl: "eónas" }
-      - { el: "τῶν",        tl: "ton" }
-      - { el: "αἰώνων.",    tl: "eónon." }
+      - { el: "Εὐλογημένη", tl: "Evloyiméni", pt: "bendito" }
+      - { el: "ἡ",          tl: "i",          pt: "o" }
+      - { el: "βασιλεία",   tl: "vasilía",    pt: "reino" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "Πατρὸς",     tl: "Patrós",     pt: "Pai" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "Υἱοῦ",       tl: "Iú",         pt: "Filho" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "τοῦ",        tl: "tu",         pt: "do" }
+      - { el: "ἁγίου",      tl: "ayíu",       pt: "santo" }
+      - { el: "Πνεύματος,", tl: "Pnévmatos,", pt: "Espírito" }
+      - { el: "νῦν",        tl: "nin",        pt: "agora" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "ἀεὶ",        tl: "aí",         pt: "sempre" }
+      - { el: "καὶ",        tl: "ke",         pt: "e" }
+      - { el: "εἰς",        tl: "is",         pt: "para" }
+      - { el: "τοὺς",       tl: "tus",        pt: "os" }
+      - { el: "αἰῶνας",     tl: "eónas",      pt: "séculos" }
+      - { el: "τῶν",        tl: "ton",        pt: "dos" }
+      - { el: "αἰώνων.",    tl: "eónon.",     pt: "séculos" }
     pt: "Bendito seja o reino do Pai e do Filho e do Espírito Santo, agora e sempre e pelos séculos dos séculos."
-    gloss:
-      - { el: "εὐλογημένη", pt: "bendito, abençoado" }
-      - { el: "βασιλεία",   pt: "reino" }
+    segments:
+      - { words: "0-2" }
+      - { words: "3-11" }
+      - { words: "12-20" }
     context_pt: >-
       As primeiríssimas palavras da Liturgia: o sacerdote bendiz o Reino, e o
       povo responde «Ἀμήν». Repare que termina com o «νῦν καὶ ἀεὶ…» que você já
@@ -54,7 +56,7 @@ items:
     greek: "Ἀμήν."
     tts: "Αμήν."
     words:
-      - { el: "Ἀμήν.", tl: "Amín." }
+      - { el: "Ἀμήν.", tl: "Amín.", pt: "amém" }
     pt: "Amém."
     gloss:
       - { el: "Ἀμήν", pt: "assim seja (do hebraico)" }
@@ -71,11 +73,11 @@ items:
     greek: "Ἐν εἰρήνῃ τοῦ Κυρίου δεηθῶμεν."
     tts: "Εν ειρήνη του Κυρίου δεηθώμεν."
     words:
-      - { el: "Ἐν",         tl: "En" }
-      - { el: "εἰρήνῃ",     tl: "iríni" }
-      - { el: "τοῦ",        tl: "tu" }
-      - { el: "Κυρίου",     tl: "Kiríu" }
-      - { el: "δεηθῶμεν.",  tl: "deithómen." }
+      - { el: "Ἐν",         tl: "En",         pt: "em" }
+      - { el: "εἰρήνῃ",     tl: "iríni",      pt: "paz" }
+      - { el: "τοῦ",        tl: "tu",         pt: "ao" }
+      - { el: "Κυρίου",     tl: "Kiríu",      pt: "Senhor" }
+      - { el: "δεηθῶμεν.",  tl: "deithómen.", pt: "oremos" }
     pt: "Em paz, oremos ao Senhor."
     gloss:
       - { el: "ἐν εἰρήνῃ", pt: "em paz" }
@@ -95,8 +97,8 @@ items:
     greek: "Κύριε, ἐλέησον."
     tts: "Κύριε, ελέησον."
     words:
-      - { el: "Κύριε,",   tl: "Kírie," }
-      - { el: "ἐλέησον.", tl: "eléison." }
+      - { el: "Κύριε,",   tl: "Kírie,",   pt: "Senhor" }
+      - { el: "ἐλέησον.", tl: "eléison.", pt: "tem piedade" }
     pt: "Senhor, tem piedade."
     gloss:
       - { el: "Κύριε",   pt: "Senhor (vocativo — chamando)" }
@@ -112,34 +114,35 @@ items:
 
   - id: iper-irinis-kosmou
     kind: phrase
+    title: "a paz do mundo"   # short name for "parte 1 de 3 · …"
     greek: "Ὑπὲρ τῆς εἰρήνης τοῦ σύμπαντος κόσμου, εὐσταθείας τῶν ἁγίων τοῦ Θεοῦ Ἐκκλησιῶν καὶ τῆς τῶν πάντων ἑνώσεως τοῦ Κυρίου δεηθῶμεν."
     tts: "Υπέρ της ειρήνης του σύμπαντος κόσμου, ευσταθείας των αγίων του Θεού Εκκλησιών και της των πάντων ενώσεως του Κυρίου δεηθώμεν."
     words:
-      - { el: "Ὑπὲρ",        tl: "Ipér" }
-      - { el: "τῆς",         tl: "tis" }
-      - { el: "εἰρήνης",     tl: "irínis" }
-      - { el: "τοῦ",         tl: "tu" }
-      - { el: "σύμπαντος",   tl: "símbandos" }
-      - { el: "κόσμου,",     tl: "kósmu," }
-      - { el: "εὐσταθείας",  tl: "efstathías" }
-      - { el: "τῶν",         tl: "ton" }
-      - { el: "ἁγίων",       tl: "ayíon" }
-      - { el: "τοῦ",         tl: "tu" }
-      - { el: "Θεοῦ",        tl: "Theú" }
-      - { el: "Ἐκκλησιῶν",   tl: "Eklisión" }
-      - { el: "καὶ",         tl: "ke" }
-      - { el: "τῆς",         tl: "tis" }
-      - { el: "τῶν",         tl: "ton" }
-      - { el: "πάντων",      tl: "pándon" }
-      - { el: "ἑνώσεως",     tl: "enóseos" }
-      - { el: "τοῦ",         tl: "tu" }
-      - { el: "Κυρίου",      tl: "Kiríu" }
-      - { el: "δεηθῶμεν.",   tl: "deithómen." }
+      - { el: "Ὑπὲρ",        tl: "Ipér",       pt: "por" }
+      - { el: "τῆς",         tl: "tis",        pt: "da" }
+      - { el: "εἰρήνης",     tl: "irínis",     pt: "paz" }
+      - { el: "τοῦ",         tl: "tu",         pt: "do" }
+      - { el: "σύμπαντος",   tl: "símbandos",  pt: "inteiro" }
+      - { el: "κόσμου,",     tl: "kósmu,",     pt: "mundo" }
+      - { el: "εὐσταθείας",  tl: "efstathías", pt: "estabilidade" }
+      - { el: "τῶν",         tl: "ton",        pt: "das" }
+      - { el: "ἁγίων",       tl: "ayíon",      pt: "santas" }
+      - { el: "τοῦ",         tl: "tu",         pt: "de" }
+      - { el: "Θεοῦ",        tl: "Theú",       pt: "Deus" }
+      - { el: "Ἐκκλησιῶν",   tl: "Eklisión",   pt: "Igrejas" }
+      - { el: "καὶ",         tl: "ke",         pt: "e" }
+      - { el: "τῆς",         tl: "tis",        pt: "da" }
+      - { el: "τῶν",         tl: "ton",        pt: "de" }
+      - { el: "πάντων",      tl: "pándon",     pt: "todos" }
+      - { el: "ἑνώσεως",     tl: "enóseos",    pt: "união" }
+      - { el: "τοῦ",         tl: "tu",         pt: "do" }
+      - { el: "Κυρίου",      tl: "Kiríu",      pt: "Senhor" }
+      - { el: "δεηθῶμεν.",   tl: "deithómen.", pt: "oremos" }
     pt: "Pela paz do mundo inteiro, pela estabilidade das santas Igrejas de Deus e pela união de todos, oremos ao Senhor."
-    gloss:
-      - { el: "σύμπαντος κόσμου", pt: "do mundo inteiro" }
-      - { el: "ἑνώσεως",          pt: "união" }
-      - { el: "εὐσταθείας",       pt: "estabilidade, firmeza" }
+    segments:
+      - { words: "0-5" }    # pela paz do mundo inteiro,
+      - { words: "6-11" }   # pela estabilidade das santas Igrejas de Deus
+      - { words: "12-19" }  # e pela união de todos, oremos ao Senhor
     context_pt: >-
       Uma das petições da Grande Litania — ouça o padrão: «Ὑπὲρ [intenção]…
       τοῦ Κυρίου δεηθῶμεν» («Por [tal coisa]… oremos ao Senhor»). Esta pede a
@@ -151,25 +154,25 @@ items:
 
   - id: antilavou
     kind: phrase
+    title: "o amparo final"   # short name for "parte 1 de 2 · …"
     greek: "Ἀντιλαβοῦ, σῶσον, ἐλέησον καὶ διαφύλαξον ἡμᾶς, ὁ Θεός, τῇ σῇ χάριτι."
     tts: "Αντιλαβού, σώσον, ελέησον και διαφύλαξον ημάς, ο Θεός, τη ση χάριτι."
     words:
-      - { el: "Ἀντιλαβοῦ,",  tl: "Andilavú," }
-      - { el: "σῶσον,",      tl: "sóson," }
-      - { el: "ἐλέησον",     tl: "eléison" }
-      - { el: "καὶ",         tl: "ke" }
-      - { el: "διαφύλαξον",  tl: "diafílaxon" }
-      - { el: "ἡμᾶς,",       tl: "imás," }
-      - { el: "ὁ",           tl: "o" }
-      - { el: "Θεός,",       tl: "Theós," }
-      - { el: "τῇ",          tl: "ti" }
-      - { el: "σῇ",          tl: "si" }
-      - { el: "χάριτι.",     tl: "cháriti." }
+      - { el: "Ἀντιλαβοῦ,",  tl: "Andilavú,",  pt: "ampara" }
+      - { el: "σῶσον,",      tl: "sóson,",     pt: "salva" }
+      - { el: "ἐλέησον",     tl: "eléison",    pt: "tem piedade" }
+      - { el: "καὶ",         tl: "ke",         pt: "e" }
+      - { el: "διαφύλαξον",  tl: "diafílaxon", pt: "guarda" }
+      - { el: "ἡμᾶς,",       tl: "imás,",      pt: "nos" }
+      - { el: "ὁ",           tl: "o",          pt: "ó" }
+      - { el: "Θεός,",       tl: "Theós,",     pt: "Deus" }
+      - { el: "τῇ",          tl: "ti",         pt: "pela" }
+      - { el: "σῇ",          tl: "si",         pt: "tua" }
+      - { el: "χάριτι.",     tl: "cháriti.",   pt: "graça" }
     pt: "Ampara-nos, salva-nos, tem piedade de nós e guarda-nos, ó Deus, pela tua graça."
-    gloss:
-      - { el: "ἀντιλαβοῦ",   pt: "ampara, socorre" }
-      - { el: "διαφύλαξον",  pt: "guarda, protege" }
-      - { el: "τῇ σῇ χάριτι", pt: "pela tua graça" }
+    segments:
+      - { words: "0-5" }   # ampara, salva, tem piedade e guarda-nos,
+      - { words: "6-10" }  # ó Deus, pela tua graça
     context_pt: >-
       O refrão que fecha as petições de cada litania, logo antes do «Τῆς
       παναγίας…». Quando você o ouve, a litania está chegando ao fim. Repare no
@@ -181,42 +184,44 @@ items:
 
   - id: tis-panagias
     kind: phrase
+    title: "a conclusão da litania"   # short name for "parte 1 de 4 · …"
     greek: "Τῆς παναγίας, ἀχράντου, ὑπερευλογημένης, ἐνδόξου, δεσποίνης ἡμῶν Θεοτόκου καὶ ἀειπαρθένου Μαρίας μετὰ πάντων τῶν ἁγίων μνημονεύσαντες, ἑαυτοὺς καὶ ἀλλήλους καὶ πᾶσαν τὴν ζωὴν ἡμῶν Χριστῷ τῷ Θεῷ παραθώμεθα."
     tts: "Της παναγίας, αχράντου, υπερευλογημένης, ενδόξου, δεσποίνης ημών Θεοτόκου και αειπαρθένου Μαρίας μετά πάντων των αγίων μνημονεύσαντες, εαυτούς και αλλήλους και πάσαν την ζωήν ημών Χριστώ τω Θεώ παραθώμεθα."
     words:
-      - { el: "Τῆς",              tl: "Tis" }
-      - { el: "παναγίας,",        tl: "panayías," }
-      - { el: "ἀχράντου,",        tl: "achrándu," }
-      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis," }
-      - { el: "ἐνδόξου,",         tl: "endóxu," }
-      - { el: "δεσποίνης",        tl: "despínis" }
-      - { el: "ἡμῶν",             tl: "imón" }
-      - { el: "Θεοτόκου",         tl: "Theotóku" }
-      - { el: "καὶ",              tl: "ke" }
-      - { el: "ἀειπαρθένου",      tl: "aiparthénu" }
-      - { el: "Μαρίας",           tl: "Marías" }
-      - { el: "μετὰ",             tl: "metá" }
-      - { el: "πάντων",           tl: "pándon" }
-      - { el: "τῶν",              tl: "ton" }
-      - { el: "ἁγίων",            tl: "ayíon" }
-      - { el: "μνημονεύσαντες,",  tl: "mnimonéfsandes," }
-      - { el: "ἑαυτοὺς",          tl: "eaftús" }
-      - { el: "καὶ",              tl: "ke" }
-      - { el: "ἀλλήλους",         tl: "allílus" }
-      - { el: "καὶ",              tl: "ke" }
-      - { el: "πᾶσαν",            tl: "pásan" }
-      - { el: "τὴν",              tl: "tin" }
-      - { el: "ζωὴν",             tl: "zoín" }
-      - { el: "ἡμῶν",             tl: "imón" }
-      - { el: "Χριστῷ",           tl: "Christó" }
-      - { el: "τῷ",               tl: "to" }
-      - { el: "Θεῷ",              tl: "Theó" }
-      - { el: "παραθώμεθα.",      tl: "parathómetha." }
+      - { el: "Τῆς",              tl: "Tis",              pt: "a" }
+      - { el: "παναγίας,",        tl: "panayías,",        pt: "toda-santa" }
+      - { el: "ἀχράντου,",        tl: "achrándu,",        pt: "imaculada" }
+      - { el: "ὑπερευλογημένης,", tl: "iperevloyiménis,", pt: "sobremaneira bendita" }
+      - { el: "ἐνδόξου,",         tl: "endóxu,",          pt: "gloriosa" }
+      - { el: "δεσποίνης",        tl: "despínis",         pt: "Senhora" }
+      - { el: "ἡμῶν",             tl: "imón",             pt: "nossa" }
+      - { el: "Θεοτόκου",         tl: "Theotóku",         pt: "Theotókos" }
+      - { el: "καὶ",              tl: "ke",               pt: "e" }
+      - { el: "ἀειπαρθένου",      tl: "aiparthénu",       pt: "sempre-virgem" }
+      - { el: "Μαρίας",           tl: "Marías",           pt: "Maria" }
+      - { el: "μετὰ",             tl: "metá",             pt: "com" }
+      - { el: "πάντων",           tl: "pándon",           pt: "todos" }
+      - { el: "τῶν",              tl: "ton",              pt: "os" }
+      - { el: "ἁγίων",            tl: "ayíon",            pt: "santos" }
+      - { el: "μνημονεύσαντες,",  tl: "mnimonéfsandes,",  pt: "recordando" }
+      - { el: "ἑαυτοὺς",          tl: "eaftús",           pt: "a nós mesmos" }
+      - { el: "καὶ",              tl: "ke",               pt: "e" }
+      - { el: "ἀλλήλους",         tl: "allílus",          pt: "uns aos outros" }
+      - { el: "καὶ",              tl: "ke",               pt: "e" }
+      - { el: "πᾶσαν",            tl: "pásan",            pt: "toda" }
+      - { el: "τὴν",              tl: "tin",              pt: "a" }
+      - { el: "ζωὴν",             tl: "zoín",             pt: "vida" }
+      - { el: "ἡμῶν",             tl: "imón",             pt: "nossa" }
+      - { el: "Χριστῷ",           tl: "Christó",          pt: "a Cristo" }
+      - { el: "τῷ",               tl: "to",               pt: "o" }
+      - { el: "Θεῷ",              tl: "Theó",             pt: "Deus" }
+      - { el: "παραθώμεθα.",      tl: "parathómetha.",    pt: "entreguemos" }
     pt: "Recordando a nossa toda-santa, imaculada, sobremaneira bendita e gloriosa Senhora, a Theotókos e sempre-virgem Maria, com todos os santos, entreguemo-nos a nós mesmos, uns aos outros, e toda a nossa vida a Cristo, nosso Deus."
-    gloss:
-      - { el: "μνημονεύσαντες", pt: "tendo recordado (dos santos)" }
-      - { el: "ἀειπαρθένου",    pt: "sempre-virgem (ἀεί + παρθένος)" }
-      - { el: "παραθώμεθα",     pt: "entreguemo-nos, confiemos" }
+    segments:
+      - { words: "0-4" }    # a toda-santa, imaculada, sobremaneira bendita, gloriosa,
+      - { words: "5-10" }   # nossa Senhora Theotókos e sempre-virgem Maria
+      - { words: "11-15" }  # com todos os santos, recordando,
+      - { words: "16-27" }  # entreguemo-nos a nós mesmos, uns aos outros, e toda a nossa vida a Cristo, nosso Deus
     context_pt: >-
       A conclusão que o diácono dá a cada litania — longa, mas você a ouvirá
       muitas vezes. Termina pedindo que entreguemos tudo a Cristo; e o povo
@@ -231,8 +236,8 @@ items:
     greek: "Σοί, Κύριε."
     tts: "Σοι, Κύριε."
     words:
-      - { el: "Σοί,",    tl: "Si," }
-      - { el: "Κύριε.",  tl: "Kírie." }
+      - { el: "Σοί,",    tl: "Si,",     pt: "a Ti" }
+      - { el: "Κύριε.",  tl: "Kírie.",  pt: "Senhor" }
     pt: "A Ti, Senhor."
     gloss:
       - { el: "σοί",   pt: "a ti (dativo)" }

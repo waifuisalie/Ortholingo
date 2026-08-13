@@ -16,18 +16,18 @@ items:
     # accentless "Ειη" is pronounced normally.
     tts: "Ειη το όνομα Κυρίου ευλογημένον από του νυν και έως του αιώνος."
     words:
-      - { el: "Εἴη",          tl: "Íi" }
-      - { el: "τὸ",           tl: "to" }
-      - { el: "ὄνομα",        tl: "ónoma" }
-      - { el: "Κυρίου",       tl: "Kiríu" }
-      - { el: "εὐλογημένον",  tl: "evloyiménon" }
-      - { el: "ἀπὸ",          tl: "apó" }
-      - { el: "τοῦ",          tl: "tu" }
-      - { el: "νῦν",          tl: "nin" }
-      - { el: "καὶ",          tl: "ke" }
-      - { el: "ἕως",          tl: "éos" }
-      - { el: "τοῦ",          tl: "tu" }
-      - { el: "αἰῶνος.",      tl: "eónos." }
+      - { el: "Εἴη",          tl: "Íi", pt: "seja" }
+      - { el: "τὸ",           tl: "to", pt: "o" }
+      - { el: "ὄνομα",        tl: "ónoma", pt: "nome" }
+      - { el: "Κυρίου",       tl: "Kiríu", pt: "do Senhor" }
+      - { el: "εὐλογημένον",  tl: "evloyiménon", pt: "bendito" }
+      - { el: "ἀπὸ",          tl: "apó", pt: "desde" }
+      - { el: "τοῦ",          tl: "tu", pt: "o" }
+      - { el: "νῦν",          tl: "nin", pt: "agora" }
+      - { el: "καὶ",          tl: "ke", pt: "e" }
+      - { el: "ἕως",          tl: "éos", pt: "até" }
+      - { el: "τοῦ",          tl: "tu", pt: "o" }
+      - { el: "αἰῶνος.",      tl: "eónos.", pt: "sempre" }
     pt: "Bendito seja o nome do Senhor, desde agora e para sempre."
     gloss:
       - { el: "εὐλογημένον", pt: "bendito, abençoado" }

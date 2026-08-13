@@ -31,6 +31,11 @@ export function wordAudio(key) {
 	return `/assets/audio/words/${key}.mp3`;
 }
 
+/** discrete clip for one sense-part (mobile can't seek a slice of the whole) */
+export function segmentAudio(id, i, speed = 'normal') {
+	return `/assets/audio/segments/${id}_${i}_${speed}.mp3`;
+}
+
 export async function loadTimings(id, fetchFn = fetch) {
 	const res = await fetchFn(`/assets/timings/${id}.json`);
 	return res.ok ? res.json() : null;

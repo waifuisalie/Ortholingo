@@ -14,15 +14,15 @@ items:
     greek: "Ἅγιος ὁ Θεός, Ἅγιος Ἰσχυρός, Ἅγιος Ἀθάνατος, ἐλέησον ἡμᾶς."
     tts: "Άγιος ο Θεός, Άγιος Ισχυρός, Άγιος Αθάνατος, ελέησον ημάς."
     words:
-      - { el: "Ἅγιος",     tl: "Áyios" }
-      - { el: "ὁ",         tl: "o" }
-      - { el: "Θεός,",     tl: "Theós," }
-      - { el: "Ἅγιος",     tl: "Áyios" }
-      - { el: "Ἰσχυρός,",  tl: "Ischirós," }
-      - { el: "Ἅγιος",     tl: "Áyios" }
-      - { el: "Ἀθάνατος,", tl: "Athánatos," }
-      - { el: "ἐλέησον",   tl: "eléison" }
-      - { el: "ἡμᾶς.",     tl: "imás." }
+      - { el: "Ἅγιος",     tl: "Áyios",     pt: "santo" }
+      - { el: "ὁ",         tl: "o",         pt: "ó" }
+      - { el: "Θεός,",     tl: "Theós,",    pt: "Deus" }
+      - { el: "Ἅγιος",     tl: "Áyios",     pt: "santo" }
+      - { el: "Ἰσχυρός,",  tl: "Ischirós,", pt: "forte" }
+      - { el: "Ἅγιος",     tl: "Áyios",     pt: "santo" }
+      - { el: "Ἀθάνατος,", tl: "Athánatos,", pt: "imortal" }
+      - { el: "ἐλέησον",   tl: "eléison",   pt: "tem piedade" }
+      - { el: "ἡμᾶς.",     tl: "imás.",     pt: "de nós" }
     pt: "Santo Deus, Santo Forte, Santo Imortal, tem piedade de nós."
     gloss:
       - { el: "ἅγιος",    pt: "santo" }
@@ -43,8 +43,8 @@ items:
     greek: "Εἰρήνη πᾶσι."
     tts: "Ειρήνη πάσι."
     words:
-      - { el: "Εἰρήνη", tl: "Iríni" }
-      - { el: "πᾶσι.",  tl: "pási." }
+      - { el: "Εἰρήνη", tl: "Iríni", pt: "paz" }
+      - { el: "πᾶσι.",  tl: "pási.", pt: "a todos" }
     pt: "Paz a todos."
     gloss:
       - { el: "εἰρήνη", pt: "paz (de onde vem o nome Irene)" }
@@ -62,10 +62,10 @@ items:
     greek: "Καὶ τῷ πνεύματί σου."
     tts: "Και τω πνεύματί σου."
     words:
-      - { el: "Καὶ",       tl: "Ke" }
-      - { el: "τῷ",        tl: "to" }
-      - { el: "πνεύματί",  tl: "pnevmatí" }
-      - { el: "σου.",      tl: "su." }
+      - { el: "Καὶ",       tl: "Ke",        pt: "e" }
+      - { el: "τῷ",        tl: "to",        pt: "ao" }
+      - { el: "πνεύματί",  tl: "pnevmatí",  pt: "espírito" }
+      - { el: "σου.",      tl: "su.",       pt: "teu" }
     pt: "E ao teu espírito."
     gloss:
       - { el: "καί",     pt: "e" }
@@ -85,7 +85,7 @@ items:
     greek: "Πρόσχωμεν."
     tts: "Πρόσχωμεν."
     words:
-      - { el: "Πρόσχωμεν.", tl: "Próschomen." }
+      - { el: "Πρόσχωμεν.", tl: "Próschomen.", pt: "estejamos atentos" }
     pt: "Estejamos atentos!"
     gloss:
       - { el: "πρόσχωμεν", pt: "prestemos atenção (exortação)" }
@@ -102,11 +102,11 @@ items:
     greek: "Δόξα σοι, Κύριε, δόξα σοι."
     tts: "Δόξα σοι, Κύριε, δόξα σοι."
     words:
-      - { el: "Δόξα",   tl: "Dóxa" }
-      - { el: "σοι,",   tl: "si," }
-      - { el: "Κύριε,", tl: "Kírie," }
-      - { el: "δόξα",   tl: "dóxa" }
-      - { el: "σοι.",   tl: "si." }
+      - { el: "Δόξα",   tl: "Dóxa",   pt: "glória" }
+      - { el: "σοι,",   tl: "si,",    pt: "a Ti" }
+      - { el: "Κύριε,", tl: "Kírie,", pt: "Senhor" }
+      - { el: "δόξα",   tl: "dóxa",   pt: "glória" }
+      - { el: "σοι.",   tl: "si.",    pt: "a Ti" }
     pt: "Glória a Ti, Senhor, glória a Ti."
     gloss:
       - { el: "δόξα",  pt: "glória" }

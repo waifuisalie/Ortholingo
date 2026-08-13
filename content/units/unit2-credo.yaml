@@ -1,39 +1,94 @@
 unit:
   id: unit2-credo
-  title: "O Credo · Σύμβολον τῆς Πίστεως"
+  title: "O Ósculo da Paz e o Credo"
   section: fieis
   order: 6
   intro_pt: >-
-    O Símbolo da Fé — a profissão de fé de Niceia-Constantinopla, dita por
-    TODO o povo, de pé, a cada Liturgia. Aprendemos artigo por artigo, na
-    ordem em que você o rezará. Traduções conforme o Devocional.
+    Antes de confessar a fé, fazemos as pazes: «Amemo-nos uns aos outros, para
+    que confessemos…» — e é o povo que termina a frase do diácono. Só então vem
+    o Símbolo da Fé de Niceia-Constantinopla, dito por TODO o povo, de pé, a
+    cada Liturgia. Aprendemos artigo por artigo, na ordem em que você o rezará.
+    Traduções conforme o Devocional.
 
 items:
+  - id: agapisomen
+    kind: phrase
+    greek: "Ἀγαπήσωμεν ἀλλήλους, ἵνα ἐν ὁμονοίᾳ ὁμολογήσωμεν."
+    tts: "Αγαπήσωμεν αλλήλους, ίνα εν ομονοία ομολογήσωμεν."
+    words:
+      - { el: "Ἀγαπήσωμεν",    tl: "Agapísomen",    pt: "amemo-nos" }
+      - { el: "ἀλλήλους,",     tl: "allílus,",      pt: "uns aos outros" }
+      - { el: "ἵνα",           tl: "ína",           pt: "para que" }
+      - { el: "ἐν",            tl: "en",            pt: "em" }
+      - { el: "ὁμονοίᾳ",       tl: "omonía",        pt: "concórdia" }
+      - { el: "ὁμολογήσωμεν.", tl: "omoloyísomen.", pt: "confessemos" }
+    pt: "Amemo-nos uns aos outros, para que confessemos em concórdia."
+    gloss:
+      - { el: "ἀγαπήσωμεν",   pt: "amemo-nos — de ἀγάπη, o amor que se decide" }
+      - { el: "ὁμονοίᾳ",      pt: "concórdia — ὁμός (mesmo) + νοῦς (mente)" }
+      - { el: "ὁμολογήσωμεν", pt: "confessemos — ὁμός (mesmo) + λόγος (palavra)" }
+    context_pt: >-
+      O diácono começa a frase e o povo a termina — é uma só sentença partida
+      entre os dois. Repare no ὁμο- («mesmo») que volta três vezes: mesma
+      mente, mesma palavra, e daqui a pouco, no Credo, mesma essência
+      («ὁμοούσιον»). Fazer as pazes vem antes de confessar a fé.
+    source: "Divina Liturgia (GOA), p. 18"
+    tags: [liturgia, aspasmos, diacono, para-reconhecer]
+    voice: nestoras
+    review: pending
+
+  - id: patera-ion-pnevma
+    kind: phrase
+    greek: "Πατέρα, Υἱὸν καὶ ἅγιον Πνεῦμα, Τριάδα ὁμοούσιον καὶ ἀχώριστον."
+    tts: "Πατέρα, Υιόν και άγιον Πνεύμα, Τριάδα ομοούσιον και αχώριστον."
+    words:
+      - { el: "Πατέρα,",     tl: "Patéra,",     pt: "o Pai" }
+      - { el: "Υἱὸν",        tl: "Ión",         pt: "o Filho" }
+      - { el: "καὶ",         tl: "ke",          pt: "e" }
+      - { el: "ἅγιον",       tl: "áyion",       pt: "Santo" }
+      - { el: "Πνεῦμα,",     tl: "Pnévma,",     pt: "o Espírito" }
+      - { el: "Τριάδα",      tl: "Triáda",      pt: "Trindade" }
+      - { el: "ὁμοούσιον",   tl: "omoúsion",    pt: "consubstancial" }
+      - { el: "καὶ",         tl: "ke",          pt: "e" }
+      - { el: "ἀχώριστον.",  tl: "achóriston.", pt: "indivisível" }
+    pt: "O Pai, o Filho e o Espírito Santo: Trindade consubstancial e indivisível."
+    gloss:
+      - { el: "ὁμοούσιον",  pt: "consubstancial — a MESMA palavra que você dirá no Credo" }
+      - { el: "ἀχώριστον",  pt: "indivisível — ἀ- (não) + χωρίζω (separar)" }
+    context_pt: >-
+      É o povo que completa o que o diácono começou. E repare: «ὁμοούσιον» — a
+      palavra que decidiu Niceia — você a diz aqui, minutos antes de dizê-la de
+      novo no Credo. A fé é confessada duas vezes: em resumo e por extenso.
+    source: "Divina Liturgia (GOA), p. 18"
+    tags: [liturgia, aspasmos, resposta-do-povo]
+    voice: athina
+    review: pending
+
   - id: credo-1
     kind: phrase
+    title: "creio em um só Deus"
     greek: "Πιστεύω εἰς ἕνα Θεόν, Πατέρα Παντοκράτορα, ποιητὴν οὐρανοῦ καὶ γῆς, ὁρατῶν τε πάντων καὶ ἀοράτων."
     tts: "Πιστεύω εις ένα Θεόν, Πατέρα Παντοκράτορα, ποιητήν ουρανού και γης, ορατών τε πάντων και αοράτων."
     words:
-      - { el: "Πιστεύω", tl: "Pistévo" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "ἕνα", tl: "éna" }
-      - { el: "Θεόν,", tl: "Theón," }
-      - { el: "Πατέρα", tl: "Patéra" }
-      - { el: "Παντοκράτορα,", tl: "Pandokrátora," }
-      - { el: "ποιητὴν", tl: "piitín" }
-      - { el: "οὐρανοῦ", tl: "uranú" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "γῆς,", tl: "yis," }
-      - { el: "ὁρατῶν", tl: "oratón" }
-      - { el: "τε", tl: "te" }
-      - { el: "πάντων", tl: "pándon" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἀοράτων.", tl: "aoráton." }
+      - { el: "Πιστεύω", tl: "Pistévo", pt: "creio" }
+      - { el: "εἰς", tl: "is", pt: "em" }
+      - { el: "ἕνα", tl: "éna", pt: "um só" }
+      - { el: "Θεόν,", tl: "Theón,", pt: "Deus" }
+      - { el: "Πατέρα", tl: "Patéra", pt: "Pai" }
+      - { el: "Παντοκράτορα,", tl: "Pandokrátora,", pt: "onipotente" }
+      - { el: "ποιητὴν", tl: "piitín", pt: "Criador" }
+      - { el: "οὐρανοῦ", tl: "uranú", pt: "do Céu" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "γῆς,", tl: "yis,", pt: "da terra" }
+      - { el: "ὁρατῶν", tl: "oratón", pt: "visíveis" }
+      - { el: "τε", tl: "te", pt: "e" }
+      - { el: "πάντων", tl: "pándon", pt: "todas as coisas" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἀοράτων.", tl: "aoráton.", pt: "invisíveis" }
     pt: "Creio em um só Deus, Pai onipotente, Criador do Céu e da terra, de todas as coisas visíveis e invisíveis."
-    gloss:
-      - { el: "Πιστεύω", pt: "creio (a primeira palavra: fé pessoal)" }
-      - { el: "Παντοκράτορα", pt: "Pantocrator — que tudo governa" }
-      - { el: "ὁρατῶν / ἀοράτων", pt: "visíveis / invisíveis" }
+    segments:
+      - { words: "0-5" }
+      - { words: "6-14" }
     context_pt: >-
       A palavra que abre o Credo, «Πιστεύω» — «creio» — é a mesma dos ícones
       do Pantocrator no teto das igrejas.
@@ -44,34 +99,35 @@ items:
 
   - id: credo-2
     kind: phrase
+    title: "em um só Senhor Jesus Cristo"
     greek: "Καὶ εἰς ἕνα Κύριον Ἰησοῦν Χριστόν, τὸν υἱὸν τοῦ Θεοῦ τὸν μονογενῆ, τὸν ἐκ τοῦ Πατρὸς γεννηθέντα πρὸ πάντων τῶν αἰώνων·"
     tts: "Και εις ένα Κύριον Ιησούν Χριστόν, τον υιόν του Θεού τον μονογενή, τον εκ του Πατρός γεννηθέντα προ πάντων των αιώνων."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "ἕνα", tl: "éna" }
-      - { el: "Κύριον", tl: "Kírion" }
-      - { el: "Ἰησοῦν", tl: "Iisún" }
-      - { el: "Χριστόν,", tl: "Christón," }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "υἱὸν", tl: "ión" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Θεοῦ", tl: "Theú" }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "μονογενῆ,", tl: "monoyení," }
-      - { el: "τὸν", tl: "ton" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Πατρὸς", tl: "Patrós" }
-      - { el: "γεννηθέντα", tl: "yennithénda" }
-      - { el: "πρὸ", tl: "pro" }
-      - { el: "πάντων", tl: "pándon" }
-      - { el: "τῶν", tl: "ton" }
-      - { el: "αἰώνων·", tl: "eónon." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "εἰς", tl: "is", pt: "em" }
+      - { el: "ἕνα", tl: "éna", pt: "um só" }
+      - { el: "Κύριον", tl: "Kírion", pt: "Senhor" }
+      - { el: "Ἰησοῦν", tl: "Iisún", pt: "Jesus" }
+      - { el: "Χριστόν,", tl: "Christón,", pt: "Cristo" }
+      - { el: "τὸν", tl: "ton", pt: "o" }
+      - { el: "υἱὸν", tl: "ión", pt: "Filho" }
+      - { el: "τοῦ", tl: "tu", pt: "de" }
+      - { el: "Θεοῦ", tl: "Theú", pt: "Deus" }
+      - { el: "τὸν", tl: "ton", pt: "o" }
+      - { el: "μονογενῆ,", tl: "monoyení,", pt: "unigênito" }
+      - { el: "τὸν", tl: "ton", pt: "o" }
+      - { el: "ἐκ", tl: "ek", pt: "de" }
+      - { el: "τοῦ", tl: "tu", pt: "o" }
+      - { el: "Πατρὸς", tl: "Patrós", pt: "Pai" }
+      - { el: "γεννηθέντα", tl: "yennithénda", pt: "nascido" }
+      - { el: "πρὸ", tl: "pro", pt: "antes" }
+      - { el: "πάντων", tl: "pándon", pt: "de todos" }
+      - { el: "τῶν", tl: "ton", pt: "os" }
+      - { el: "αἰώνων·", tl: "eónon.", pt: "séculos" }
     pt: "E em um só Senhor, Jesus Cristo, Filho unigênito de Deus, nascido do Pai antes de todos os séculos."
-    gloss:
-      - { el: "μονογενῆ", pt: "unigênito — único gerado" }
-      - { el: "πρὸ πάντων τῶν αἰώνων", pt: "antes de todos os séculos" }
+    segments:
+      - { words: "0-11" }
+      - { words: "12-20" }
     context_pt: >-
       «Μονογενής» é a palavra de João 3:16 — o Filho único.
     source: "Devocional, p. 7; Divina Liturgia (GOA)"
@@ -81,32 +137,33 @@ items:
 
   - id: credo-3
     kind: phrase
+    title: "Luz da Luz"
     greek: "Φῶς ἐκ φωτός, Θεὸν ἀληθινὸν ἐκ Θεοῦ ἀληθινοῦ, γεννηθέντα οὐ ποιηθέντα, ὁμοούσιον τῷ Πατρί, δι' οὗ τὰ πάντα ἐγένετο."
     tts: "Φως εκ φωτός, Θεόν αληθινόν εκ Θεού αληθινού, γεννηθέντα ου ποιηθέντα, ομοούσιον τω Πατρί, δι' ου τα πάντα εγένετο."
     words:
-      - { el: "Φῶς", tl: "Fos" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "φωτός,", tl: "fotós," }
-      - { el: "Θεὸν", tl: "Theón" }
-      - { el: "ἀληθινὸν", tl: "alithinón" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "Θεοῦ", tl: "Theú" }
-      - { el: "ἀληθινοῦ,", tl: "alithinú," }
-      - { el: "γεννηθέντα", tl: "yennithénda" }
-      - { el: "οὐ", tl: "u" }
-      - { el: "ποιηθέντα,", tl: "piithénda," }
-      - { el: "ὁμοούσιον", tl: "omoúsion" }
-      - { el: "τῷ", tl: "to" }
-      - { el: "Πατρί,", tl: "Patrí," }
-      - { el: "δι'", tl: "di" }
-      - { el: "οὗ", tl: "u" }
-      - { el: "τὰ", tl: "ta" }
-      - { el: "πάντα", tl: "pánda" }
-      - { el: "ἐγένετο.", tl: "eyéneto." }
+      - { el: "Φῶς", tl: "Fos", pt: "Luz" }
+      - { el: "ἐκ", tl: "ek", pt: "da" }
+      - { el: "φωτός,", tl: "fotós,", pt: "Luz" }
+      - { el: "Θεὸν", tl: "Theón", pt: "Deus" }
+      - { el: "ἀληθινὸν", tl: "alithinón", pt: "verdadeiro" }
+      - { el: "ἐκ", tl: "ek", pt: "do" }
+      - { el: "Θεοῦ", tl: "Theú", pt: "Deus" }
+      - { el: "ἀληθινοῦ,", tl: "alithinú,", pt: "verdadeiro" }
+      - { el: "γεννηθέντα", tl: "yennithénda", pt: "gerado" }
+      - { el: "οὐ", tl: "u", pt: "não" }
+      - { el: "ποιηθέντα,", tl: "piithénda,", pt: "criado" }
+      - { el: "ὁμοούσιον", tl: "omoúsion", pt: "consubstancial" }
+      - { el: "τῷ", tl: "to", pt: "ao" }
+      - { el: "Πατρί,", tl: "Patrí,", pt: "Pai" }
+      - { el: "δι'", tl: "di", pt: "por" }
+      - { el: "οὗ", tl: "u", pt: "ele" }
+      - { el: "τὰ", tl: "ta", pt: "as coisas" }
+      - { el: "πάντα", tl: "pánda", pt: "todas" }
+      - { el: "ἐγένετο.", tl: "eyéneto.", pt: "foram feitas" }
     pt: "Luz da Luz, Deus verdadeiro do Deus verdadeiro, gerado não criado, consubstancial ao Pai, por ele todas as coisas foram feitas."
-    gloss:
-      - { el: "ὁμοούσιον", pt: "consubstancial — da MESMA essência; a palavra que decidiu Niceia" }
-      - { el: "γεννηθέντα οὐ ποιηθέντα", pt: "gerado, não criado" }
+    segments:
+      - { words: "0-7" }
+      - { words: "8-18" }
     context_pt: >-
       «Ὁμοούσιον» é a palavra mais disputada da história da Igreja — uma
       letra a separava da heresia (ὁμοιούσιον, «semelhante»).
@@ -117,39 +174,41 @@ items:
 
   - id: credo-4
     kind: phrase
+    title: "a Encarnação"
     greek: "Τὸν δι' ἡμᾶς τοὺς ἀνθρώπους καὶ διὰ τὴν ἡμετέραν σωτηρίαν κατελθόντα ἐκ τῶν οὐρανῶν καὶ σαρκωθέντα ἐκ Πνεύματος ἁγίου καὶ Μαρίας τῆς Παρθένου καὶ ἐνανθρωπήσαντα."
     tts: "Τον δι' ημάς τους ανθρώπους και διά την ημετέραν σωτηρίαν κατελθόντα εκ των ουρανών και σαρκωθέντα εκ Πνεύματος αγίου και Μαρίας της Παρθένου και ενανθρωπήσαντα."
     words:
-      - { el: "Τὸν", tl: "Ton" }
-      - { el: "δι'", tl: "di" }
-      - { el: "ἡμᾶς", tl: "imás" }
-      - { el: "τοὺς", tl: "tus" }
-      - { el: "ἀνθρώπους", tl: "anthrópus" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "διὰ", tl: "diá" }
-      - { el: "τὴν", tl: "tin" }
-      - { el: "ἡμετέραν", tl: "imetéran" }
-      - { el: "σωτηρίαν", tl: "sotirían" }
-      - { el: "κατελθόντα", tl: "katelthónda" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "τῶν", tl: "ton" }
-      - { el: "οὐρανῶν", tl: "uranón" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "σαρκωθέντα", tl: "sarkothénda" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "Πνεύματος", tl: "Pnévmatos" }
-      - { el: "ἁγίου", tl: "ayíu" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "Μαρίας", tl: "Marías" }
-      - { el: "τῆς", tl: "tis" }
-      - { el: "Παρθένου", tl: "Parthénu" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἐνανθρωπήσαντα.", tl: "enanthropísanda." }
+      - { el: "Τὸν", tl: "Ton", pt: "o qual" }
+      - { el: "δι'", tl: "di", pt: "por" }
+      - { el: "ἡμᾶς", tl: "imás", pt: "nós" }
+      - { el: "τοὺς", tl: "tus", pt: "os" }
+      - { el: "ἀνθρώπους", tl: "anthrópus", pt: "homens" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "διὰ", tl: "diá", pt: "para" }
+      - { el: "τὴν", tl: "tin", pt: "a" }
+      - { el: "ἡμετέραν", tl: "imetéran", pt: "nossa" }
+      - { el: "σωτηρίαν", tl: "sotirían", pt: "salvação" }
+      - { el: "κατελθόντα", tl: "katelthónda", pt: "desceu" }
+      - { el: "ἐκ", tl: "ek", pt: "de" }
+      - { el: "τῶν", tl: "ton", pt: "os" }
+      - { el: "οὐρανῶν", tl: "uranón", pt: "Céus" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "σαρκωθέντα", tl: "sarkothénda", pt: "se encarnou" }
+      - { el: "ἐκ", tl: "ek", pt: "pelo" }
+      - { el: "Πνεύματος", tl: "Pnévmatos", pt: "Espírito" }
+      - { el: "ἁγίου", tl: "ayíu", pt: "Santo" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "Μαρίας", tl: "Marías", pt: "Maria" }
+      - { el: "τῆς", tl: "tis", pt: "a" }
+      - { el: "Παρθένου", tl: "Parthénu", pt: "Virgem" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἐνανθρωπήσαντα.", tl: "enanthropísanda.", pt: "se fez homem" }
     pt: "E, por nós, homens, e para a nossa salvação, desceu dos Céus e se encarnou pelo Espírito Santo, no seio da Virgem Maria, e se fez homem."
-    gloss:
-      - { el: "σωτηρίαν", pt: "salvação (soteriologia vem daqui)" }
-      - { el: "σαρκωθέντα", pt: "encarnado — fez-se carne (σάρξ)" }
-      - { el: "ἐνανθρωπήσαντα", pt: "fez-se homem — en + ánthropos" }
+    segments:
+      # 2 partes, não 3: esta lição já carrega credo-2 e credo-3, e cada parte
+      # é uma gravação de voz. Corte em «…dos Céus | e se encarnou…».
+      - { words: "0-13" }
+      - { words: "14-24" }
     context_pt: >-
       Neste artigo, na tradição, inclinamos a cabeça — é a Encarnação.
     source: "Devocional, p. 7; Divina Liturgia (GOA)"
@@ -162,17 +221,17 @@ items:
     greek: "Σταυρωθέντα τε ὑπὲρ ἡμῶν ἐπὶ Ποντίου Πιλάτου καὶ παθόντα καὶ ταφέντα."
     tts: "Σταυρωθέντα τε υπέρ ημών επί Ποντίου Πιλάτου και παθόντα και ταφέντα."
     words:
-      - { el: "Σταυρωθέντα", tl: "Stavrothénda" }
-      - { el: "τε", tl: "te" }
-      - { el: "ὑπὲρ", tl: "ipér" }
-      - { el: "ἡμῶν", tl: "imón" }
-      - { el: "ἐπὶ", tl: "epí" }
-      - { el: "Ποντίου", tl: "Pondíu" }
-      - { el: "Πιλάτου", tl: "Pilátu" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "παθόντα", tl: "pathónda" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ταφέντα.", tl: "tafénda." }
+      - { el: "Σταυρωθέντα", tl: "Stavrothénda", pt: "crucificado" }
+      - { el: "τε", tl: "te", pt: "e" }
+      - { el: "ὑπὲρ", tl: "ipér", pt: "por" }
+      - { el: "ἡμῶν", tl: "imón", pt: "nós" }
+      - { el: "ἐπὶ", tl: "epí", pt: "sob" }
+      - { el: "Ποντίου", tl: "Pondíu", pt: "Pôncio" }
+      - { el: "Πιλάτου", tl: "Pilátu", pt: "Pilatos" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "παθόντα", tl: "pathónda", pt: "padeceu" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ταφέντα.", tl: "tafénda.", pt: "foi sepultado" }
     pt: "E por nós foi crucificado sob Pôncio Pilatos; padeceu e foi sepultado."
     gloss:
       - { el: "Σταυρωθέντα", pt: "crucificado — de σταυρός, cruz" }
@@ -190,14 +249,14 @@ items:
     greek: "Καὶ ἀναστάντα τῇ τρίτῃ ἡμέρᾳ, κατὰ τὰς Γραφάς."
     tts: "Και αναστάντα τη τρίτη ημέρα, κατά τας Γραφάς."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "ἀναστάντα", tl: "anastánda" }
-      - { el: "τῇ", tl: "ti" }
-      - { el: "τρίτῃ", tl: "tríti" }
-      - { el: "ἡμέρᾳ,", tl: "iméra," }
-      - { el: "κατὰ", tl: "katá" }
-      - { el: "τὰς", tl: "tas" }
-      - { el: "Γραφάς.", tl: "Grafás." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "ἀναστάντα", tl: "anastánda", pt: "ressuscitou" }
+      - { el: "τῇ", tl: "ti", pt: "ao" }
+      - { el: "τρίτῃ", tl: "tríti", pt: "terceiro" }
+      - { el: "ἡμέρᾳ,", tl: "iméra,", pt: "dia" }
+      - { el: "κατὰ", tl: "katá", pt: "conforme" }
+      - { el: "τὰς", tl: "tas", pt: "as" }
+      - { el: "Γραφάς.", tl: "Grafás.", pt: "Escrituras" }
     pt: "Ressuscitou ao terceiro dia, conforme as Escrituras."
     gloss:
       - { el: "ἀναστάντα", pt: "ressuscitou — a mesma raiz de «Ἀνέστη» da Páscoa" }
@@ -215,17 +274,17 @@ items:
     greek: "Καὶ ἀνελθόντα εἰς τοὺς οὐρανοὺς καὶ καθεζόμενον ἐκ δεξιῶν τοῦ Πατρός."
     tts: "Και ανελθόντα εις τους ουρανούς και καθεζόμενον εκ δεξιών του Πατρός."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "ἀνελθόντα", tl: "anelthónda" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "τοὺς", tl: "tus" }
-      - { el: "οὐρανοὺς", tl: "uranús" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "καθεζόμενον", tl: "kathezómenon" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "δεξιῶν", tl: "dexión" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Πατρός.", tl: "Patrós." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "ἀνελθόντα", tl: "anelthónda", pt: "subiu" }
+      - { el: "εἰς", tl: "is", pt: "a" }
+      - { el: "τοὺς", tl: "tus", pt: "os" }
+      - { el: "οὐρανοὺς", tl: "uranús", pt: "Céus" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "καθεζόμενον", tl: "kathezómenon", pt: "está sentado" }
+      - { el: "ἐκ", tl: "ek", pt: "à" }
+      - { el: "δεξιῶν", tl: "dexión", pt: "direita" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "Πατρός.", tl: "Patrós.", pt: "Pai" }
     pt: "E subiu aos Céus, onde está sentado à direita do Pai."
     gloss:
       - { el: "ἐκ δεξιῶν", pt: "à direita — lugar de honra" }
@@ -238,28 +297,29 @@ items:
 
   - id: credo-8
     kind: phrase
+    title: "e de novo há de vir"
     greek: "Καὶ πάλιν ἐρχόμενον μετὰ δόξης, κρῖναι ζῶντας καὶ νεκρούς, οὗ τῆς βασιλείας οὐκ ἔσται τέλος."
     tts: "Και πάλιν ερχόμενον μετά δόξης, κρίναι ζώντας και νεκρούς, ου της βασιλείας ουκ έσται τέλος."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "πάλιν", tl: "pálin" }
-      - { el: "ἐρχόμενον", tl: "erchómenon" }
-      - { el: "μετὰ", tl: "metá" }
-      - { el: "δόξης,", tl: "dóxis," }
-      - { el: "κρῖναι", tl: "kríne" }
-      - { el: "ζῶντας", tl: "zóndas" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "νεκρούς,", tl: "nekrús," }
-      - { el: "οὗ", tl: "u" }
-      - { el: "τῆς", tl: "tis" }
-      - { el: "βασιλείας", tl: "vasilías" }
-      - { el: "οὐκ", tl: "uk" }
-      - { el: "ἔσται", tl: "éste" }
-      - { el: "τέλος.", tl: "télos." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "πάλιν", tl: "pálin", pt: "de novo" }
+      - { el: "ἐρχόμενον", tl: "erchómenon", pt: "há de vir" }
+      - { el: "μετὰ", tl: "metá", pt: "em" }
+      - { el: "δόξης,", tl: "dóxis,", pt: "glória" }
+      - { el: "κρῖναι", tl: "kríne", pt: "para julgar" }
+      - { el: "ζῶντας", tl: "zóndas", pt: "os vivos" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "νεκρούς,", tl: "nekrús,", pt: "os mortos" }
+      - { el: "οὗ", tl: "u", pt: "cujo" }
+      - { el: "τῆς", tl: "tis", pt: "o" }
+      - { el: "βασιλείας", tl: "vasilías", pt: "Reino" }
+      - { el: "οὐκ", tl: "uk", pt: "não" }
+      - { el: "ἔσται", tl: "éste", pt: "terá" }
+      - { el: "τέλος.", tl: "télos.", pt: "fim" }
     pt: "E de novo há de vir em sua glória, para julgar os vivos e os mortos. E o seu Reino não terá fim."
-    gloss:
-      - { el: "κρῖναι", pt: "julgar" }
-      - { el: "οὐκ ἔσται τέλος", pt: "não terá fim" }
+    segments:
+      - { words: "0-8" }
+      - { words: "9-14" }
     context_pt: >-
       «Βασιλεία» — o Reino — é a primeira palavra que o sacerdote abençoa
       na Liturgia: «Εὐλογημένη ἡ βασιλεία…».
@@ -270,41 +330,43 @@ items:
 
   - id: credo-9
     kind: phrase
+    title: "no Espírito Santo"
     greek: "Καὶ εἰς τὸ Πνεῦμα τὸ ἅγιον, τὸ Κύριον, τὸ ζωοποιόν, τὸ ἐκ τοῦ Πατρὸς ἐκπορευόμενον, τὸ σὺν Πατρὶ καὶ Υἱῷ συμπροσκυνούμενον καὶ συνδοξαζόμενον, τὸ λαλῆσαν διὰ τῶν προφητῶν."
     tts: "Και εις το Πνεύμα το άγιον, το Κύριον, το ζωοποιόν, το εκ του Πατρός εκπορευόμενον, το συν Πατρί και Υιώ συμπροσκυνούμενον και συνδοξαζόμενον, το λαλήσαν διά των προφητών."
     words:
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "Πνεῦμα", tl: "Pnévma" }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ἅγιον,", tl: "áyion," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "Κύριον,", tl: "Kírion," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ζωοποιόν,", tl: "zoopión," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "ἐκ", tl: "ek" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "Πατρὸς", tl: "Patrós" }
-      - { el: "ἐκπορευόμενον,", tl: "ekporevómenon," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "σὺν", tl: "sin" }
-      - { el: "Πατρὶ", tl: "Patrí" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "Υἱῷ", tl: "Ió" }
-      - { el: "συμπροσκυνούμενον", tl: "simbroskinúmenon" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "συνδοξαζόμενον,", tl: "sindoxazómenon," }
-      - { el: "τὸ", tl: "to" }
-      - { el: "λαλῆσαν", tl: "lalísan" }
-      - { el: "διὰ", tl: "diá" }
-      - { el: "τῶν", tl: "ton" }
-      - { el: "προφητῶν.", tl: "profitón." }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "εἰς", tl: "is", pt: "no" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "Πνεῦμα", tl: "Pnévma", pt: "Espírito" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "ἅγιον,", tl: "áyion,", pt: "Santo" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "Κύριον,", tl: "Kírion,", pt: "Senhor" }
+      - { el: "τὸ", tl: "to", pt: "o" }
+      - { el: "ζωοποιόν,", tl: "zoopión,", pt: "que dá a Vida" }
+      - { el: "τὸ", tl: "to", pt: "que" }
+      - { el: "ἐκ", tl: "ek", pt: "de" }
+      - { el: "τοῦ", tl: "tu", pt: "o" }
+      - { el: "Πατρὸς", tl: "Patrós", pt: "Pai" }
+      - { el: "ἐκπορευόμενον,", tl: "ekporevómenon,", pt: "procede" }
+      - { el: "τὸ", tl: "to", pt: "que" }
+      - { el: "σὺν", tl: "sin", pt: "com" }
+      - { el: "Πατρὶ", tl: "Patrí", pt: "o Pai" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "Υἱῷ", tl: "Ió", pt: "o Filho" }
+      - { el: "συμπροσκυνούμενον", tl: "simbroskinúmenon", pt: "é adorado" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "συνδοξαζόμενον,", tl: "sindoxazómenon,", pt: "glorificado" }
+      - { el: "τὸ", tl: "to", pt: "ele que" }
+      - { el: "λαλῆσαν", tl: "lalísan", pt: "falou" }
+      - { el: "διὰ", tl: "diá", pt: "pelos" }
+      - { el: "τῶν", tl: "ton", pt: "os" }
+      - { el: "προφητῶν.", tl: "profitón.", pt: "Profetas" }
     pt: "E no Espírito Santo, o Senhor que dá a Vida, que procede do Pai, e com o Pai e o Filho é adorado e glorificado, ele que falou pelos Profetas."
-    gloss:
-      - { el: "ζωοποιόν", pt: "que dá a vida — zoí + poiéo" }
-      - { el: "ἐκπορευόμενον", pt: "que procede (do Pai)" }
+    segments:
+      - { words: "0-9" }
+      - { words: "10-14" }
+      - { words: "15-27" }
     context_pt: >-
       Note: «ἐκ τοῦ Πατρὸς ἐκπορευόμενον» — procede DO PAI. O Credo
       ortodoxo não tem o «filioque».
@@ -318,13 +380,13 @@ items:
     greek: "Εἰς μίαν, ἁγίαν, καθολικὴν καὶ ἀποστολικὴν Ἐκκλησίαν."
     tts: "Εις μίαν, αγίαν, καθολικήν και αποστολικήν Εκκλησίαν."
     words:
-      - { el: "Εἰς", tl: "Is" }
-      - { el: "μίαν,", tl: "mían," }
-      - { el: "ἁγίαν,", tl: "ayían," }
-      - { el: "καθολικὴν", tl: "katholikín" }
-      - { el: "καὶ", tl: "ke" }
-      - { el: "ἀποστολικὴν", tl: "apostolikín" }
-      - { el: "Ἐκκλησίαν.", tl: "Ekklisían." }
+      - { el: "Εἰς", tl: "Is", pt: "na" }
+      - { el: "μίαν,", tl: "mían,", pt: "una" }
+      - { el: "ἁγίαν,", tl: "ayían,", pt: "santa" }
+      - { el: "καθολικὴν", tl: "katholikín", pt: "católica" }
+      - { el: "καὶ", tl: "ke", pt: "e" }
+      - { el: "ἀποστολικὴν", tl: "apostolikín", pt: "apostólica" }
+      - { el: "Ἐκκλησίαν.", tl: "Ekklisían.", pt: "Igreja" }
     pt: "E na Igreja, Una, Santa, Católica e Apostólica."
     gloss:
       - { el: "καθολικὴν", pt: "católica = universal, íntegra (kath' hólou)" }
@@ -342,12 +404,12 @@ items:
     greek: "Ὁμολογῶ ἓν βάπτισμα εἰς ἄφεσιν ἁμαρτιῶν."
     tts: "Ομολογώ εν βάπτισμα εις άφεσιν αμαρτιών."
     words:
-      - { el: "Ὁμολογῶ", tl: "Omologó" }
-      - { el: "ἓν", tl: "en" }
-      - { el: "βάπτισμα", tl: "váptisma" }
-      - { el: "εἰς", tl: "is" }
-      - { el: "ἄφεσιν", tl: "áfesin" }
-      - { el: "ἁμαρτιῶν.", tl: "amartión." }
+      - { el: "Ὁμολογῶ", tl: "Omologó", pt: "professo" }
+      - { el: "ἓν", tl: "en", pt: "um só" }
+      - { el: "βάπτισμα", tl: "váptisma", pt: "batismo" }
+      - { el: "εἰς", tl: "is", pt: "para" }
+      - { el: "ἄφεσιν", tl: "áfesin", pt: "remissão" }
+      - { el: "ἁμαρτιῶν.", tl: "amartión.", pt: "dos pecados" }
     pt: "Professo um só batismo para remissão dos pecados."
     gloss:
       - { el: "Ὁμολογῶ", pt: "professo, confesso — homo + logos, dizer o mesmo" }
@@ -362,22 +424,23 @@ items:
 
   - id: credo-12
     kind: phrase
+    title: "espero a ressurreição"
     greek: "Προσδοκῶ ἀνάστασιν νεκρῶν. Καὶ ζωὴν τοῦ μέλλοντος αἰῶνος. Ἀμήν."
     tts: "Προσδοκώ ανάστασιν νεκρών. Και ζωήν του μέλλοντος αιώνος. Αμήν."
     words:
-      - { el: "Προσδοκῶ", tl: "Prosdokó" }
-      - { el: "ἀνάστασιν", tl: "anástasin" }
-      - { el: "νεκρῶν.", tl: "nekrón." }
-      - { el: "Καὶ", tl: "Ke" }
-      - { el: "ζωὴν", tl: "zoín" }
-      - { el: "τοῦ", tl: "tu" }
-      - { el: "μέλλοντος", tl: "méllondos" }
-      - { el: "αἰῶνος.", tl: "eónos." }
-      - { el: "Ἀμήν.", tl: "Amín." }
+      - { el: "Προσδοκῶ", tl: "Prosdokó", pt: "espero" }
+      - { el: "ἀνάστασιν", tl: "anástasin", pt: "a ressurreição" }
+      - { el: "νεκρῶν.", tl: "nekrón.", pt: "dos mortos" }
+      - { el: "Καὶ", tl: "Ke", pt: "e" }
+      - { el: "ζωὴν", tl: "zoín", pt: "a vida" }
+      - { el: "τοῦ", tl: "tu", pt: "do" }
+      - { el: "μέλλοντος", tl: "méllondos", pt: "que há de vir" }
+      - { el: "αἰῶνος.", tl: "eónos.", pt: "mundo" }
+      - { el: "Ἀμήν.", tl: "Amín.", pt: "amém" }
     pt: "Espero a ressurreição dos mortos. E a vida do mundo que há de vir. Amém."
-    gloss:
-      - { el: "Προσδοκῶ", pt: "espero, aguardo com expectativa" }
-      - { el: "ἀνάστασιν", pt: "ressurreição — Anástasis" }
+    segments:
+      - { words: "0-2" }
+      - { words: "3-8" }
     context_pt: >-
       O Credo termina como a fé vive: em expectativa. «Προσδοκῶ» — não um
       talvez, mas uma espera certa.

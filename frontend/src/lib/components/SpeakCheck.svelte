@@ -2,10 +2,10 @@
 	import { onDestroy } from 'svelte';
 	import Mascot from './Mascot.svelte';
 	import { play, stop } from '$lib/audio.js';
-	import { phraseAudio, wordAudio } from '$lib/content.js';
+	import { phraseAudio, wordAudio, segmentAudio } from '$lib/content.js';
 
-	/** @type {{ item: any, onResult: (ok: boolean) => void, onDone: () => void }} */
-	let { item, onResult, onDone } = $props();
+	/** @type {{ item: any, onResult: (ok: boolean) => void, onDone: () => void, seg?: number|null }} */
+	let { item, onResult, onDone, seg = null } = $props();
 
 	const PASS = 0.75;
 	// runaway backstop only — the real stop is the user tapping again. Long
@@ -20,6 +20,17 @@
 	let recorder = null;
 	let chunks = [];
 	let timer = null;
+
+	// part mode: speak just one segment; whole mode: the full phrase
+	const segs = $derived(item.segments ?? []);
+	const part = $derived(seg != null && segs.length ? segs[seg] : null);
+	const wrange = $derived(
+		part
+			? Array.from({ length: part.words[1] - part.words[0] + 1 }, (_, k) => part.words[0] + k)
+			: item.words.map((_, i) => i)
+	);
+	/** result.words is aligned to the expected tokens, which are part-relative */
+	const wordOk = (i) => result?.words?.[part ? i - part.words[0] : i];
 
 	$effect(() => {
 		item.id;
@@ -70,7 +81,9 @@
 		try {
 			const form = new FormData();
 			form.append('audio', blob, 'take.webm');
-			form.append('expected', item.wordkeys.join(' '));
+			form.append('expected',
+				part ? item.wordkeys.slice(part.words[0], part.words[1] + 1).join(' ')
+				: item.wordkeys.join(' '));
 			form.append('lang', item.voice === 'ava' ? 'en' : 'el');
 			const res = await fetch('/api/speech/score', { method: 'POST', body: form });
 			if (!res.ok) throw new Error();
@@ -102,27 +115,26 @@
 
 <section>
 	<p class="eyebrow center">Agora você</p>
-	<Mascot {mood} size={96} />
+	{#if part}
+		<p class="crumb center">Fale a parte {seg + 1} de {segs.length}{item.title ? ` · ${item.title}` : ''}</p>
+	{/if}
+	<Mascot {mood} size={72} />
 
 	<div class="target">
-		<div class="gr greek">
-			{#each item.words as w, i}
-				<button type="button" class="w" class:hot={hot === i}
-					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
-					onclick={() => playWord(i)}>{w.el}</button>
-			{/each}
-		</div>
-		<div class="tl">
-			{#each item.words as w, i}
-				<button type="button" class="w" class:hot={hot === i}
-					class:ok={result && result.words[i]} class:err={result && !result.words[i]}
-					onclick={() => playWord(i)}>{w.tl}</button>
+		<div class="words">
+			{#each wrange as i}
+				<button type="button" class="wcol" class:hot={hot === i}
+					class:ok={result && wordOk(i)} class:err={result && !wordOk(i)}
+					onclick={() => playWord(i)}>
+					<span class="el greek">{item.words[i].el}</span>
+					<span class="tl">{item.words[i].tl}</span>
+				</button>
 			{/each}
 		</div>
 		{#if phase !== 'rec'}
 			<p class="taphint">Toque numa palavra para ouvi-la</p>
 		{/if}
-		<button class="hearbtn" onclick={() => play(phraseAudio(item.id, 'slow'))}>ouvir a frase (lento)</button>
+		<button class="hearbtn" onclick={() => play(part ? segmentAudio(item.id, seg, 'slow') : phraseAudio(item.id, 'slow'))}>ouvir {part ? 'a parte' : 'a frase'} (lento)</button>
 	</div>
 
 	{#if phase === 'idle' || phase === 'rec'}
@@ -153,19 +165,23 @@
 
 <style>
 	.center { text-align: center; }
-	.target { margin: 14px 0 4px; }
-	.gr, .tl { display: flex; flex-wrap: wrap; gap: 4px 8px; justify-content: center; }
-	.gr { font-size: 27px; }
-	.tl { font-size: 13.5px; font-style: italic; color: var(--dim); margin-top: 2px; }
-	.w {
+	.crumb { font-size: 12px; color: var(--gold2); letter-spacing: 0.02em; margin: 0 0 6px; }
+	.target { margin: 12px 0 4px; }
+	/* words as columns: Greek with its reading beneath (matches the karaoke card) */
+	.words { display: flex; flex-wrap: wrap; gap: 1px 4px; justify-content: center; align-items: flex-start; }
+	.wcol {
+		display: inline-flex; flex-direction: column; align-items: center;
 		background: none; border: 0; color: inherit; font: inherit;
-		cursor: pointer; border-radius: 8px; padding: 1px 6px;
+		cursor: pointer; border-radius: 8px; padding: 1px 4px 2px;
 		transition: background 0.12s, color 0.12s;
 	}
-	.w:hover { background: var(--raised); }
-	.w.ok { background: #82a85c26; box-shadow: inset 0 0 0 1.5px var(--good); }
-	.w.err { background: #c05a4426; box-shadow: inset 0 0 0 1.5px var(--bad); }
-	.w.hot { background: var(--gold); color: #241c08; box-shadow: none; }
+	.wcol .el { font-size: 23px; line-height: 1.12; }
+	.wcol .tl { font-size: 11px; font-style: italic; color: var(--dim); line-height: 1.05; margin-top: 1px; }
+	.wcol:hover { background: var(--raised); }
+	.wcol.ok { background: #82a85c26; box-shadow: inset 0 0 0 1.5px var(--good); }
+	.wcol.err { background: #c05a4426; box-shadow: inset 0 0 0 1.5px var(--bad); }
+	.wcol.hot { background: var(--gold); color: #241c08; box-shadow: none; }
+	.wcol.hot .tl { color: #241c08; }
 	.taphint { text-align: center; font-size: 11.5px; color: var(--dim); margin: 8px 0 0; }
 	.hearbtn {
 		display: block; margin: 10px auto 0; font-size: 12px; background: none;

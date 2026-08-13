@@ -41,6 +41,7 @@ CONTENT = REPO / "content" / "units"
 ASSETS = REPO / "assets"
 PHRASES_DIR = ASSETS / "audio" / "phrases"
 WORDS_DIR = ASSETS / "audio" / "words"
+SEGMENTS_DIR = ASSETS / "audio" / "segments"
 TIMINGS_DIR = ASSETS / "timings"
 MANIFEST = ASSETS / "manifest.json"
 
@@ -75,9 +76,33 @@ def letters(text: str) -> int:
     return sum(c.isalpha() for c in text)
 
 
+def seg_range(spec, nwords: int, item_id: str):
+    """Parse a segment 'words' spec ('a-b' or 'a') into inclusive (i0, i1)."""
+    s = str(spec)
+    try:
+        i0, i1 = (int(x) for x in s.split("-", 1)) if "-" in s else (int(s), int(s))
+    except ValueError:
+        die(f"{item_id}: bad segment range {spec!r} (want 'a-b' or 'a')")
+    if not (0 <= i0 <= i1 < nwords):
+        die(f"{item_id}: segment range {spec!r} out of bounds 0..{nwords - 1}")
+    return i0, i1
+
+
 def item_hash(item: dict) -> str:
     key = f"{item['tts']}|{item['voice']}|{NORMAL_RATE}|{SLOW_RATE}"
     return hashlib.sha256(key.encode()).hexdigest()[:16]
+
+
+def slice_audio(src: pathlib.Path, start: float, end: float, dst: pathlib.Path):
+    """Cut [start,end] of an mp3 into its own file (sample-accurate re-encode, so
+    parts play as discrete clips — mobile browsers can't seek a shared element)."""
+    dst.parent.mkdir(parents=True, exist_ok=True)
+    subprocess.run(
+        ["ffmpeg", "-y", "-loglevel", "error", "-i", str(src),
+         "-ss", f"{start:.3f}", "-to", f"{end:.3f}",
+         "-c:a", "libmp3lame", "-q:a", "4", str(dst)],
+        check=True,
+    )
 
 
 def mp3_duration(path: pathlib.Path) -> float:
@@ -112,6 +137,21 @@ def load_units(only=None):
             for w in item["words"]:
                 if not w.get("el") or not w.get("tl"):
                     die(f"{item['id']}: words[] entry missing el or tl: {w}")
+            # segments (optional) must tile words[] exactly, in order, no gaps
+            expect = 0
+            for seg in item.get("segments") or []:
+                i0, i1 = seg_range(seg["words"], nwords, item["id"])
+                if i0 != expect:
+                    die(f"{item['id']}: segments must tile words[] with no gap/overlap "
+                        f"(expected next start {expect}, got {i0})")
+                expect = i1 + 1
+            if item.get("segments"):
+                if expect != nwords:
+                    die(f"{item['id']}: segments cover 0..{expect - 1} but phrase has {nwords} words")
+                for wi, w in enumerate(item["words"]):  # parts render from per-word pt
+                    if not str(w.get("pt", "")).strip():
+                        die(f"{item['id']}: segmented phrase needs pt on every word "
+                            f"(word {wi}: {w['el']})")
             if item["voice"] not in VOICES:
                 die(f"{item['id']}: unknown voice {item['voice']}")
         units.append((unit, items))
@@ -219,6 +259,7 @@ async def main():
             entry = {
                 "unit": unit["id"], "kind": item["kind"], "greek": item["greek"],
                 "words": item["words"], "pt": item["pt"], "gloss": item.get("gloss", []),
+                "title": item.get("title", ""),  # short name for "parte 1 de 3 · …"
                 "context_pt": item.get("context_pt", ""), "source": item.get("source", ""),
                 "tags": item.get("tags", []), "voice": item["voice"],
                 "review": item.get("review", "pending"), "hash": h,
@@ -232,13 +273,28 @@ async def main():
                      and timings_path.exists())
             if fresh:
                 n_skip += 1
+                tdata = json.loads(timings_path.read_text())
             else:
                 t_normal = await gen_phrase_speed(item, "normal", NORMAL_RATE, qc_fn)
                 t_slow = await gen_phrase_speed(item, "slow", SLOW_RATE, qc_fn)
+                tdata = {"normal": t_normal, "slow": t_slow}
                 timings_path.parent.mkdir(parents=True, exist_ok=True)
-                timings_path.write_text(json.dumps({"normal": t_normal, "slow": t_slow}))
+                timings_path.write_text(json.dumps(tdata))
                 n_gen += 1
                 print(f"  {item['id']}")
+            # segments: resolve each part's [start,end] per speed AND cut a discrete
+            # clip (the phone can't seek a slice, so parts are their own files)
+            if item.get("segments"):
+                entry["segments"] = []
+                for si, seg in enumerate(item["segments"]):
+                    i0, i1 = seg_range(seg["words"], len(item["words"]), item["id"])
+                    part = {"words": [i0, i1]}
+                    for speed in ("normal", "slow"):
+                        s, e = tdata[speed][i0][0], tdata[speed][i1][1]
+                        part[speed] = [s, e]  # kept for word-highlight offset
+                        slice_audio(PHRASES_DIR / f"{item['id']}_{speed}.mp3", s, e,
+                                    SEGMENTS_DIR / f"{item['id']}_{si}_{speed}.mp3")
+                    entry["segments"].append(part)
             # word clips (deduped by normalized key)
             for token, key in zip(item["tts"].split(), entry["wordkeys"]):
                 if key in wordfiles or not key:

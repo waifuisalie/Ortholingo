@@ -38,10 +38,6 @@
     {
      "ref": "si-kyrie",
      "weight": 3
-    },
-    {
-     "ref": "paraschu-kyrie",
-     "weight": 6
     }
    ]
   },
@@ -105,6 +101,38 @@
     },
     {
      "ref": "panton-imon",
+     "weight": 1
+    }
+   ]
+  },
+  {
+   "id": "plirotika",
+   "title_pt": "Litania das Súplicas",
+   "items": [
+    {
+     "ref": "plirosomen",
+     "weight": 2
+    },
+    {
+     "ref": "angelon-irinis",
+     "weight": 2
+    },
+    {
+     "ref": "paraschu-kyrie",
+     "weight": 6
+    }
+   ]
+  },
+  {
+   "id": "aspasmos",
+   "title_pt": "O Ósculo da Paz",
+   "items": [
+    {
+     "ref": "agapisomen",
+     "weight": 1
+    },
+    {
+     "ref": "patera-ion-pnevma",
      "weight": 1
     }
    ]
@@ -226,6 +254,13 @@
     {
      "ref": "anafora-axion-estin",
      "weight": 1
+    },
+    {
+     "ref": "ke-panton-ke-pason",
+     "future": true,
+     "weight": 1,
+     "label_el": "Καὶ ὧν ἕκαστος κατὰ διάνοιαν ἔχει, καὶ πάντων καὶ πασῶν.",
+     "label_pt": "E daqueles que cada um tem em mente, e de todos e de todas."
     }
    ]
   },
@@ -258,8 +293,22 @@
      "weight": 1
     },
     {
+     "ref": "tas-kefalas",
+     "future": true,
+     "weight": 2,
+     "label_el": "Τὰς κεφαλὰς ἡμῶν τῷ Κυρίῳ κλίνωμεν.",
+     "label_pt": "Inclinemos as nossas cabeças ao Senhor."
+    },
+    {
      "ref": "ta-agia",
      "weight": 1
+    },
+    {
+     "ref": "tu-dipnu-su",
+     "future": true,
+     "weight": 1,
+     "label_el": "Τοῦ δείπνου σου τοῦ μυστικοῦ σήμερον, Υἱὲ Θεοῦ, κοινωνόν με παράλαβε…",
+     "label_pt": "Recebe-me hoje, ó Filho de Deus, como participante da tua ceia mística…"
     },
     {
      "ref": "is-agios",

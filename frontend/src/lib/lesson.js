@@ -65,12 +65,27 @@ export function buildLesson(manifest, unitId, n) {
 		.items.map((id) => ({ id, ...manifest.items[id] }));
 
 	const steps = [];
-	for (const item of items) steps.push({ type: 'karaoke', item });
-	const quizzes = items.map((item, i) =>
+	const simple = []; // short items that go through the shuffled recognition practice
+	for (const item of items) {
+		if (item.segments?.length) {
+			// long phrase: learn each part then speak it (interleaved), then the whole
+			item.segments.forEach((_, si) => {
+				steps.push({ type: 'karaoke', item, seg: si });
+				steps.push({ type: 'speak', item, seg: si });
+			});
+			steps.push({ type: 'karaoke', item }); // the parts assembled
+			steps.push({ type: 'speak', item }); // full phrase — optional capstone
+		} else {
+			steps.push({ type: 'karaoke', item });
+			simple.push(item);
+		}
+	}
+	// recognition + speak for the short items, shuffled together
+	const quizzes = simple.map((item, i) =>
 		item.kind === 'letter' || i % 2 === 0 ? listenChooseStep(item, pool) : chooseGreekStep(item, pool)
 	);
 	// phrases get a speak check (skippable, never penalized); letters don't
-	for (const item of items) {
+	for (const item of simple) {
 		if (item.kind === 'phrase') quizzes.push({ type: 'speak', item });
 	}
 	steps.push(...shuffle(quizzes));

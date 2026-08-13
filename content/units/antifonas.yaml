@@ -14,13 +14,13 @@ items:
     greek: "Δόξα Πατρὶ καὶ Υἱῷ καὶ Ἁγίῳ Πνεύματι."
     tts: "Δόξα Πατρί και Υιώ και Αγίω Πνεύματι."
     words:
-      - { el: "Δόξα",     tl: "Dóxa" }
-      - { el: "Πατρὶ",    tl: "Patrí" }
-      - { el: "καὶ",      tl: "ke" }
-      - { el: "Υἱῷ",      tl: "Ió" }
-      - { el: "καὶ",      tl: "ke" }
-      - { el: "Ἁγίῳ",     tl: "Ayío" }
-      - { el: "Πνεύματι.", tl: "Pnévmati." }
+      - { el: "Δόξα",     tl: "Dóxa",      pt: "glória" }
+      - { el: "Πατρὶ",    tl: "Patrí",     pt: "ao Pai" }
+      - { el: "καὶ",      tl: "ke",        pt: "e" }
+      - { el: "Υἱῷ",      tl: "Ió",        pt: "ao Filho" }
+      - { el: "καὶ",      tl: "ke",        pt: "e" }
+      - { el: "Ἁγίῳ",     tl: "Ayío",      pt: "Santo" }
+      - { el: "Πνεύματι.", tl: "Pnévmati.", pt: "ao Espírito" }
     pt: "Glória ao Pai e ao Filho e ao Espírito Santo."
     gloss:
       - { el: "δόξα",     pt: "glória" }
@@ -44,17 +44,17 @@ items:
     # aloud ("...me tono"); the accentless form is pronounced normally.
     tts: "Και νυν και αει και εις τους αιώνας των αιώνων. Αμήν."
     words:
-      - { el: "Καὶ",      tl: "Ke" }
-      - { el: "νῦν",      tl: "nin" }
-      - { el: "καὶ",      tl: "ke" }
-      - { el: "ἀεὶ",      tl: "aí" }
-      - { el: "καὶ",      tl: "ke" }
-      - { el: "εἰς",      tl: "is" }
-      - { el: "τοὺς",     tl: "tus" }
-      - { el: "αἰῶνας",   tl: "eónas" }
-      - { el: "τῶν",      tl: "ton" }
-      - { el: "αἰώνων.",  tl: "eónon." }
-      - { el: "Ἀμήν.",    tl: "Amín." }
+      - { el: "Καὶ",      tl: "Ke",       pt: "e" }
+      - { el: "νῦν",      tl: "nin",      pt: "agora" }
+      - { el: "καὶ",      tl: "ke",       pt: "e" }
+      - { el: "ἀεὶ",      tl: "aí",       pt: "sempre" }
+      - { el: "καὶ",      tl: "ke",       pt: "e" }
+      - { el: "εἰς",      tl: "is",       pt: "pelos" }
+      - { el: "τοὺς",     tl: "tus",      pt: "os" }
+      - { el: "αἰῶνας",   tl: "eónas",    pt: "séculos" }
+      - { el: "τῶν",      tl: "ton",      pt: "dos" }
+      - { el: "αἰώνων.",  tl: "eónon.",   pt: "séculos" }
+      - { el: "Ἀμήν.",    tl: "Amín.",    pt: "amém" }
     pt: "Agora e sempre e pelos séculos dos séculos. Amém."
     gloss:
       - { el: "νῦν",    pt: "agora" }
@@ -74,8 +74,8 @@ items:
     greek: "Σοφία· ὀρθοί."
     tts: "Σοφία. Ορθοί."
     words:
-      - { el: "Σοφία·", tl: "Sofía;" }
-      - { el: "ὀρθοί.", tl: "orthí." }
+      - { el: "Σοφία·", tl: "Sofía;", pt: "sabedoria" }
+      - { el: "ὀρθοί.", tl: "orthí.", pt: "de pé" }
     pt: "Sabedoria! De pé!"
     gloss:
       - { el: "σοφία", pt: "sabedoria" }
