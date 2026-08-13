@@ -23,6 +23,8 @@ from scoring import score_transcript
 REPO = pathlib.Path(__file__).resolve().parent.parent
 ASSETS = REPO / "assets"
 MODEL_NAME = os.environ.get("ORTHOLINGO_WHISPER", "large-v3-turbo")
+COMPUTE_TYPE = os.environ.get("ORTHOLINGO_COMPUTE", "int8")
+CPU_THREADS = int(os.environ.get("ORTHOLINGO_THREADS", "0"))  # 0 = CT2 default
 
 PHRASES = ["kyrie-eleison", "trisagion", "doxa-patri", "irini-pasi", "proschomen", "ke-nin"]
 
@@ -46,8 +48,10 @@ def transcribe(model, mp3):
 
 def main():
     manifest = json.loads((ASSETS / "manifest.json").read_text())
-    print(f"loading whisper {MODEL_NAME} int8…")
-    model = WhisperModel(MODEL_NAME, device="cpu", compute_type="int8")
+    print(f"loading whisper {MODEL_NAME} {COMPUTE_TYPE} threads={CPU_THREADS or 'default'}…")
+    model = WhisperModel(
+        MODEL_NAME, device="cpu", compute_type=COMPUTE_TYPE, cpu_threads=CPU_THREADS
+    )
 
     lat = []
     print("\n== matched pairs (should be HIGH) ==")
