@@ -39,6 +39,58 @@ naturally to the other liturgical languages of the one Orthodox Church:
 Church Slavonic, Romanian, Arabic, Georgian… One app, every tradition,
 starting from the nave of a Greek parish in Brazil.
 
+## How it works
+
+The whole design turns on one split: **the Liturgy is a fixed text, so almost
+everything can be computed ahead of time.** Audio, word timings and the lesson
+manifest are built once on the dev machine and committed to git, so the app is
+static files and works offline. Only *pronunciation scoring* has to happen live
+— it's the one thing that depends on a voice that didn't exist yet.
+
+```mermaid
+flowchart TB
+    subgraph BUILD["🔨 BUILD TIME · runs on the dev machine, output committed to git"]
+        direction LR
+        YAML["content/units/*.yaml<br/>closed corpus · every phrase cited<br/>review: pending until clergy blessing"]
+        PIPE["pipeline/build_assets.py<br/>edge-tts → QC gate → ffmpeg"]
+        ASSETS[("assets/<br/>manifest.json · liturgy-map.json<br/>timings/*.json<br/>audio: phrases · words · segments")]
+        YAML --> PIPE --> ASSETS
+    end
+
+    subgraph RUN["▶️ RUNTIME"]
+        subgraph BROWSER["Browser · SvelteKit PWA — service worker precaches the whole corpus"]
+            PLAY["lesson player<br/>karaoke · phrase parts · quizzes"]
+            LS[("localStorage<br/>FSRS deck · progress · candle streak")]
+            MIC["🎙️ mic capture"]
+            PLAY <--> LS
+        end
+
+        subgraph API["Home server · FastAPI — stateless, two routes"]
+            SCORE["POST /api/speech/score"]
+            FAST["faster-whisper<br/>small int8 · ~1.3s"]
+            CARE["large-v3-turbo int8<br/>~5.6s"]
+            FOLD["Byzantine phonetic folding<br/>+ fuzzy per-word match"]
+            SCORE --> FAST
+            FAST -->|"scores ≥ 0.75 — trust it"| FOLD
+            FAST -->|"below pass — re-judge<br/>before failing a learner"| CARE --> FOLD
+        end
+    end
+
+    ASSETS ==>|"static files, shipped with the app"| BROWSER
+    MIC -->|"recorded take — the only network call"| SCORE
+    FOLD -->|"per-word ✓ / ✗"| PLAY
+```
+
+**Why the scorer has two tiers.** `small` answers in ~1.3s but flunks long
+phrases; `large-v3-turbo` is accurate but takes ~5.6s. Running them in sequence
+means correct speech feels instant, and only a *possibly wrong* take pays the
+slow path — the learner is never failed by the fast model alone. Numbers are
+from `backend/bench.py`; the reasoning is in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) (D4).
+
+**Why a tunnel for phone testing.** Browsers only grant microphone access in a
+secure context, so `http://<lan-ip>` is refused. `./dev.sh` starts a Cloudflare
+quick tunnel to hand the phone an HTTPS URL.
+
 ## Repository layout
 
 ```
@@ -59,10 +111,10 @@ pictures/   mascot art
 |---|---|
 | TTS (build-time) | Microsoft neural voices via edge-tts — `el-GR-AthinaNeural` for Greek, `en-US-AvaMultilingualNeural` for the mascot; official Azure Speech free tier for production |
 | Word sync | edge-tts WordBoundary events captured at generation into timing JSONs |
-| STT (runtime) | faster-whisper `large-v3-turbo` int8, word-level diff scoring |
-| Frontend | SvelteKit PWA |
-| Backend | FastAPI + SQLite |
-| SRS | FSRS |
+| STT (runtime) | faster-whisper, two-tier: `small` int8 answers fast, `large-v3-turbo` re-judges anything below the pass mark; Byzantine phonetic folding before the word-level diff |
+| Frontend | SvelteKit PWA — precaches the corpus, lessons work offline |
+| Backend | FastAPI — stateless, no database; its only job is scoring a recorded take |
+| Progress / SRS | FSRS in the browser (`localStorage`); nothing about a learner leaves their device |
 
 ## Content sources
 
