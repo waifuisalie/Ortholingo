@@ -1,37 +1,57 @@
 # Ortholingo — Architecture & Decision Log
 
-Last updated: 2026-07-17 (phases 1–2). This file is the durable record of *why*
-things are the way they are. If you (human or AI) are about to change a
-decision recorded here, read its rationale first.
+Last updated: 2026-08-13. This file is the durable record of *why* things are
+the way they are. If you (human or AI) are about to change a decision recorded
+here, read its rationale first.
 
 ## 1. System overview
 
+The system diagram lives in the [README](../README.md#how-it-works) — build
+time (content → pipeline → committed assets) on one side, runtime (static PWA +
+a stateless scorer) on the other. What follows is the part that diagram
+compresses into one box: **how a recorded take actually gets judged.**
+
+```mermaid
+flowchart TB
+    TAKE["🎙️ learner's take (webm)"]
+    FF["ffmpeg → 16 kHz mono wav"]
+    FAST["faster-whisper small int8 — ~1.3s"]
+    Q{"score ≥ PASS 0.75 ?"}
+    CARE["large-v3-turbo int8 — ~5.6s"]
+    FOLD["Byzantine phonetic folding"]
+    DIFF["fuzzy per-word match"]
+    OUT["per-word ✓ / ✗ + score"]
+
+    TAKE --> FF
+    FF --> FAST
+    FAST --> Q
+    Q -->|"yes · trust the fast model"| FOLD
+    Q -->|"no · re-judge before failing a learner"| CARE
+    CARE --> FOLD
+    FOLD --> DIFF
+    DIFF --> OUT
 ```
-┌────────────────── Browser (SvelteKit PWA) ──────────────────┐
-│  Lesson player · karaoke cards · SRS review · mic capture   │
-│  progress cache (localStorage + device id)                  │
-└──────────────────────────┬──────────────────────────────────┘
-                           │ HTTPS · JSON (+ multipart audio)
-┌──────────────────────────▼──────────────────────────────────┐
-│  Caddy / dev server                                         │
-│    ├── /assets/audio/*   static phrase + word recordings    │
-│    ├── /assets/timings/* word-boundary JSONs                │
-│    └── /api → FastAPI                                       │
-│          ├── content endpoints                              │
-│          ├── progress + FSRS scheduling                     │
-│          └── POST /speech/score → ffmpeg → faster-whisper   │
-│                └─ normalize → word-level diff → per-word ✓✗ │
-│  SQLite                                                     │
-└─────────────────────────────────────────────────────────────┘
-             ▲
-   content/*.yaml ──> pipeline/build_assets.py ──> assets/
-   (priest-reviewable)     (edge-tts + QC gate)
-```
+
+Folding collapses the homophone spellings before comparison —
+`η ι υ ει οι υι → i`, `αι → e`, `ω → ο`, `ου → u`.
+
+Worst case is ~7s, and only for a take that was probably wrong anyway; a correct
+take returns in ~1.3s. The folding step exists because Whisper *modernizes*
+Koine (τῷ→το, Υἱῷ→Υιό) — homophone spellings are collapsed before comparison so
+grammatical spelling can never fail a learner (D4).
+
+**What is deliberately NOT here:** no database, no server-side sessions, no
+content API. The backend has exactly two routes (`/api/health`,
+`/api/speech/score`) and keeps nothing. All progress, FSRS scheduling and streak
+state live in the browser's `localStorage` — a learner's practice never leaves
+their device, and the server can be restarted or moved without migrating
+anything.
 
 **Hosting:** prototype runs on the developer desktop (Ryzen 7 5700G / 32GB);
 demos are shared via Cloudflare quick tunnel (`cloudflared tunnel --url …`)
 because browser mic capture requires a secure context (HTTPS or localhost).
-Production later = same Docker Compose on a small VPS.
+The laptop was measured and rejected as a host: no AVX-512/VNNI, turbo takes
+~19s per take. Production later = same Docker Compose on a small VPS.
 
 ## 2. Core design decisions
 
@@ -171,6 +191,14 @@ quiz-only (no mic friction). Transliteration fades per item at stability ≥ 4
 days, with an "Aa" peek button (D7). The Liturgy Map
 (`content/liturgy-map.yaml` → validated → `assets/liturgy-map.json`) places
 every phrase in its liturgical section with a frequency weight; "% da
-Liturgia" = weighted share of known items, and `future: true` placeholders
-(Credo, Anáfora, Pai Nosso…) keep the denominator honest about what the
-corpus doesn't cover yet. Weights are estimates pending clergy review.
+Liturgia" = weighted share of known items, and `future: true` placeholders keep
+the denominator honest about what the corpus doesn't cover yet. Weights are
+estimates pending clergy review.
+
+Update (2026-08-13): the Credo, Anáfora and Pai Nosso are **built** — the
+placeholders now standing are the diptychs, the bowing of heads and the
+pre-communion prayer, so the gauge tops out at 96%. Two further gaps (the
+Ectenia, the catechumens' dismissal) are deliberately absent even as
+placeholders: the GOA text in `sources/` is a Sunday liturgy and does not
+contain them, and liturgical Greek is never invented here. See
+`content/REVISAO-liturgia-2026-07-31.md`.

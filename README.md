@@ -39,6 +39,54 @@ naturally to the other liturgical languages of the one Orthodox Church:
 Church Slavonic, Romanian, Arabic, Georgian… One app, every tradition,
 starting from the nave of a Greek parish in Brazil.
 
+## How it works
+
+The whole design turns on one split: **the Liturgy is a fixed text, so almost
+everything can be computed ahead of time.** Audio, word timings and the lesson
+manifest are built once on the dev machine and committed to git, so the app is
+static files and works offline. Only *pronunciation scoring* has to happen live
+— it's the one thing that depends on a voice that didn't exist yet.
+
+```mermaid
+flowchart TB
+    subgraph BUILD["🔨 BUILD TIME — runs on the dev machine, output committed to git"]
+        direction LR
+        Y["content/units/*.yaml"]
+        P["pipeline/build_assets.py"]
+        A[("assets/")]
+        Y -->|"edge-tts + QC gate"| P
+        P -->|"audio · word timings · manifest"| A
+    end
+
+    subgraph RUNTIME["▶️ RUNTIME"]
+        direction LR
+        APP["SvelteKit PWA"]
+        API["FastAPI scorer"]
+        APP -->|"a recorded take"| API
+        API -->|"per-word ✓ / ✗"| APP
+    end
+
+    A ==>|"shipped as static files"| APP
+```
+
+| | |
+|---|---|
+| **`content/`** | the closed corpus — every phrase cited, `review: pending` until clergy blessing |
+| **`assets/`** | phrase, word and phrase-part audio + word-boundary timings + the lesson manifest, all committed to git |
+| **PWA** | precaches the whole corpus, so lessons work offline; FSRS deck, progress and streak live in `localStorage` — nothing about a learner leaves their device |
+| **scorer** | stateless, two routes, no database. The recorded take is the app's *only* network call |
+
+**Why the scorer has two tiers.** `small` answers in ~1.3s but flunks long
+phrases; `large-v3-turbo` is accurate but takes ~5.6s. Ortholingo runs them in
+sequence, so correct speech feels instant and only a *possibly wrong* take pays
+the slow path — a learner is never failed by the fast model alone. The path is
+drawn in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md#1-system-overview);
+the numbers come from `backend/bench.py`.
+
+**Why a tunnel for phone testing.** Browsers only grant microphone access in a
+secure context, so `http://<lan-ip>` is refused. `./dev.sh` starts a Cloudflare
+quick tunnel to hand the phone an HTTPS URL.
+
 ## Repository layout
 
 ```
@@ -59,10 +107,10 @@ pictures/   mascot art
 |---|---|
 | TTS (build-time) | Microsoft neural voices via edge-tts — `el-GR-AthinaNeural` for Greek, `en-US-AvaMultilingualNeural` for the mascot; official Azure Speech free tier for production |
 | Word sync | edge-tts WordBoundary events captured at generation into timing JSONs |
-| STT (runtime) | faster-whisper `large-v3-turbo` int8, word-level diff scoring |
-| Frontend | SvelteKit PWA |
-| Backend | FastAPI + SQLite |
-| SRS | FSRS |
+| STT (runtime) | faster-whisper, two-tier: `small` int8 answers fast, `large-v3-turbo` re-judges anything below the pass mark; Byzantine phonetic folding before the word-level diff |
+| Frontend | SvelteKit PWA — precaches the corpus, lessons work offline |
+| Backend | FastAPI — stateless, no database; its only job is scoring a recorded take |
+| Progress / SRS | FSRS in the browser (`localStorage`); nothing about a learner leaves their device |
 
 ## Content sources
 
